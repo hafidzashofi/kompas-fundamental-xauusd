@@ -150,7 +150,8 @@ def get_calendar():
     for url in FF_URLS:
         try:
             events.extend(fetch_json(url))
-        except Exception:
+        except Exception as e:
+            print(f"WARNING: failed to fetch {url}: {e}")
             continue
 
     now = datetime.now(timezone.utc)
