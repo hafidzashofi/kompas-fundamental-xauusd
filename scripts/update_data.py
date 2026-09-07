@@ -173,7 +173,7 @@ def get_calendar():
         out.append({
             "date": fmt_date(dt_wib, with_time=True),
             "event": ev["title"],
-            "note": f"High impact · forecast {ev.get('forecast') or '-'} · previous {ev.get('previous') or '-'}",
+            "note": f"Dampak tinggi · Prediksi {ev.get('forecast') or '-'} · Sebelumnya {ev.get('previous') or '-'}",
             "scenario": build_scenario(ev["title"]),
         })
     return out
@@ -227,6 +227,24 @@ def tag_news(text):
     return "Pasar"
 
 
+TRANSLATE_URL = "https://api.mymemory.translated.net/get"
+
+
+def translate_to_id(text):
+    """Best-effort EN->ID translation via MyMemory's free public API.
+    Falls back to the original text if the service is unreachable or
+    the text is too long for one request."""
+    if not text or len(text) > 480:
+        return text
+    try:
+        url = TRANSLATE_URL + "?" + urllib.parse.urlencode({"q": text, "langpair": "en|id"})
+        data = fetch_json(url)
+        translated = data.get("responseData", {}).get("translatedText")
+        return translated or text
+    except Exception:
+        return text
+
+
 def get_news():
     try:
         raw = urllib.request.urlopen(
@@ -252,9 +270,10 @@ def get_news():
         except ValueError:
             dt = None
 
+        summary_en = (desc[:180] + "…") if len(desc) > 180 else desc
         items.append({
-            "title": title,
-            "summary": (desc[:180] + "…") if len(desc) > 180 else desc,
+            "titleEn": title,
+            "summaryEn": summary_en,
             "link": link,
             "time": fmt_date(dt.astimezone(WIB), with_time=True) if dt else "-",
             "sortKey": dt or datetime(1970, 1, 1, tzinfo=timezone.utc),
@@ -262,9 +281,12 @@ def get_news():
         })
 
     items.sort(key=lambda x: x["sortKey"], reverse=True)
+    items = items[:8]
     for it in items:
         del it["sortKey"]
-    return items[:8]
+        it["titleId"] = translate_to_id(it["titleEn"])
+        it["summaryId"] = translate_to_id(it["summaryEn"])
+    return items
 
 
 def build_positioning(cot):
@@ -381,7 +403,10 @@ def compute_bias(cot, price):
         label = "NETRAL condong BEARISH"
     else:
         label = "NETRAL"
-    return score, label
+
+    bullish_pct = round((score + 100) / 2)
+    bearish_pct = 100 - bullish_pct
+    return score, label, bullish_pct, bearish_pct
 
 
 def build_narrative(cot, price, calendar, score, label):
@@ -426,7 +451,7 @@ def main():
     price = get_price()
     macro = get_macro()
     news = get_news()
-    score, label = compute_bias(cot, price)
+    score, label, bullish_pct, bearish_pct = compute_bias(cot, price)
     narrative = build_narrative(cot, price, calendar, score, label)
     positioning = build_positioning(cot)
     policy = build_policy(macro, price)
@@ -442,6 +467,8 @@ def main():
         "price": {"level": cot and price["level"]},
         "biasScore": score,
         "biasLabel": label,
+        "bullishPct": bullish_pct,
+        "bearishPct": bearish_pct,
         "narrative": narrative,
         "cot": {
             "reportDate": cot["reportDate"],

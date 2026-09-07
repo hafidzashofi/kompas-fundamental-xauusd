@@ -72,7 +72,12 @@
     border-radius: 14px; padding: 30px; box-shadow: var(--shadow); margin-bottom: 24px;
   }
   .gauge-col{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 6px; }
-  .gauge-label{ font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 4px;}
+  .gauge-label{ font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 4px; text-align:center;}
+  .confidence-row{ display:flex; gap: 22px; margin-top: -6px; }
+  .confidence-item{ display:flex; flex-direction:column; align-items:center; gap:1px; }
+  .confidence-pct{ font-family:'Fraunces', serif; font-weight:700; font-size: 26px; line-height:1; }
+  .confidence-pct.bull{ color: var(--bull); } .confidence-pct.bear{ color: var(--bear); }
+  .confidence-lbl{ font-size: 10.5px; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); }
   .gauge-score{ font-family:'Fraunces', serif; font-weight:700; font-size: 15px; }
   .bias-pill{
     margin-top: 6px; padding: 5px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
@@ -166,6 +171,14 @@
 
   /* news panel */
   .news-panel{ margin-bottom: 24px; }
+  .news-head-right{ display:flex; align-items:center; gap:10px; }
+  .lang-toggle{ display:flex; border:1px solid var(--border); border-radius:7px; overflow:hidden; }
+  .lang-btn{
+    font-family:'IBM Plex Mono', monospace; font-size: 11px; font-weight:600; letter-spacing:0.03em;
+    padding: 4px 10px; background: var(--surface); color: var(--text-muted); border:none; cursor:pointer;
+  }
+  .lang-btn.active{ background: var(--gold); color: var(--surface); }
+  .lang-btn:not(.active):hover{ background: var(--surface-2); }
   .news-list{ display:flex; flex-direction:column; }
   .news-item{ display:flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
   .news-item:last-child{ border-bottom:none; }
@@ -205,8 +218,17 @@
   <div class="hero">
     <div class="gauge-col">
       <svg id="gauge" width="240" height="150" viewBox="0 0 240 150"></svg>
-      <div class="gauge-score mono" id="gaugeScore">—</div>
-      <div class="gauge-label">Skor Bias (-100 Bearish &middot; +100 Bullish)</div>
+      <div class="confidence-row">
+        <div class="confidence-item">
+          <span class="confidence-pct bull mono" id="bullishPct">—</span>
+          <span class="confidence-lbl">Bullish</span>
+        </div>
+        <div class="confidence-item">
+          <span class="confidence-pct bear mono" id="bearishPct">—</span>
+          <span class="confidence-lbl">Bearish</span>
+        </div>
+      </div>
+      <div class="gauge-label">Tingkat keyakinan arah (skor <span class="mono" id="gaugeScore">—</span>/100)</div>
       <div class="bias-pill" id="biasPill">memuat&hellip;</div>
     </div>
     <div class="hero-text">
@@ -249,7 +271,16 @@
   </div>
 
   <div class="panel news-panel">
-    <div class="panel-head"><h2>Berita Pasar Terkini</h2><span class="panel-tag tag-event" id="newsTag">Live Feed</span></div>
+    <div class="panel-head">
+      <h2>Berita Pasar Terkini</h2>
+      <div class="news-head-right">
+        <div class="lang-toggle" role="group" aria-label="Bahasa berita">
+          <button type="button" class="lang-btn active" data-lang="id" id="langBtnId">ID</button>
+          <button type="button" class="lang-btn" data-lang="en" id="langBtnEn">EN</button>
+        </div>
+        <span class="panel-tag tag-event" id="newsTag">Live Feed</span>
+      </div>
+    </div>
     <div id="newsBody" class="news-list"></div>
     <div class="panel-foot">Sumber: FXStreet, disaring untuk topik emas/dolar/bank sentral/geopolitik</div>
   </div>
@@ -311,6 +342,8 @@
 
     drawGauge(d.biasScore);
     document.getElementById('gaugeScore').textContent = (d.biasScore>0?'+':'') + d.biasScore;
+    document.getElementById('bullishPct').textContent = d.bullishPct + '%';
+    document.getElementById('bearishPct').textContent = d.bearishPct + '%';
     document.getElementById('biasPill').textContent = d.biasLabel;
     document.getElementById('narrative').innerHTML = d.narrative.map(p=>`<p>${p}</p>`).join('');
 
@@ -424,19 +457,32 @@
     }
 
     // News panel
-    if (d.news) {
-      document.getElementById('newsBody').innerHTML = d.news.length ? d.news.map(n => `
+    window.__newsData = d.news || [];
+    renderNews(window.__newsLang || 'id');
+  }
+
+  function renderNews(lang){
+    const news = window.__newsData || [];
+    document.getElementById('langBtnId').classList.toggle('active', lang === 'id');
+    document.getElementById('langBtnEn').classList.toggle('active', lang === 'en');
+    document.getElementById('newsBody').innerHTML = news.length ? news.map(n => {
+      const title = lang === 'id' ? (n.titleId || n.titleEn) : n.titleEn;
+      const summary = lang === 'id' ? (n.summaryId || n.summaryEn) : n.summaryEn;
+      return `
         <div class="news-item">
           <div class="news-time mono">${n.time}</div>
           <div class="news-content">
-            <div class="news-title"><a href="${n.link}" target="_blank" rel="noopener">${n.title}</a></div>
-            <div class="news-summary">${n.summary}</div>
+            <div class="news-title"><a href="${n.link}" target="_blank" rel="noopener">${title}</a></div>
+            <div class="news-summary">${summary}</div>
             <span class="panel-tag tag-neutral news-tag">${n.tag}</span>
           </div>
         </div>
-      `).join('') : '<p style="color:var(--text-muted); font-size:13px;">Tidak ada berita relevan saat ini.</p>';
-    }
+      `;
+    }).join('') : '<p style="color:var(--text-muted); font-size:13px;">Tidak ada berita relevan saat ini.</p>';
   }
+
+  document.getElementById('langBtnId').addEventListener('click', () => { window.__newsLang = 'id'; renderNews('id'); });
+  document.getElementById('langBtnEn').addEventListener('click', () => { window.__newsLang = 'en'; renderNews('en'); });
 
   fetch('./data.json', {cache:'no-store'})
     .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
