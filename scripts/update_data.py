@@ -16,6 +16,7 @@ workflow in .github/workflows/update.yml.
 
 import html
 import json
+import os
 import re
 import urllib.parse
 import urllib.request
@@ -50,6 +51,8 @@ YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&
 YIELD_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?interval=1d&range=5d"
 DXY_URL = "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?interval=1d&range=5d"
 NEWS_URL = "https://www.fxstreet.com/rss/news"
+ALPHAVANTAGE_KEY = os.environ.get("ALPHAVANTAGE_API_KEY", "").strip()
+ALPHAVANTAGE_BASE = "https://www.alphavantage.co/query"
 
 
 def fetch_json(url):
@@ -289,6 +292,70 @@ def get_news():
     return items
 
 
+def get_fed_funds_rate():
+    """Actual current Fed policy rate from Alpha Vantage (free tier).
+    Returns None if no API key is configured or the call fails/limits out
+    -- this is an optional enhancement, the dashboard works without it."""
+    if not ALPHAVANTAGE_KEY:
+        return None
+    try:
+        url = ALPHAVANTAGE_BASE + "?" + urllib.parse.urlencode({
+            "function": "FEDERAL_FUNDS_RATE", "interval": "daily", "apikey": ALPHAVANTAGE_KEY,
+        })
+        data = fetch_json(url)
+        rows = data.get("data") or []
+        if len(rows) < 2:
+            return None
+        latest = float(rows[0]["value"])
+        month_ago = next((float(r["value"]) for r in rows if r["value"] != rows[0]["value"]), latest)
+        return {"rate": latest, "changeFromPrior": round(latest - month_ago, 2), "asOf": rows[0]["date"]}
+    except Exception as e:
+        print(f"WARNING: Alpha Vantage FEDERAL_FUNDS_RATE failed: {e}")
+        return None
+
+
+def get_media_sentiment():
+    """Aggregate financial-news sentiment from Alpha Vantage's News &
+    Sentiment API (free tier). Returns None if unavailable -- optional."""
+    if not ALPHAVANTAGE_KEY:
+        return None
+    try:
+        url = ALPHAVANTAGE_BASE + "?" + urllib.parse.urlencode({
+            "function": "NEWS_SENTIMENT",
+            "topics": "economy_monetary,financial_markets",
+            "apikey": ALPHAVANTAGE_KEY,
+            "limit": 50,
+        })
+        data = fetch_json(url)
+        feed = data.get("feed") or []
+        if not feed:
+            return None
+
+        scores = [float(a["overall_sentiment_score"]) for a in feed if "overall_sentiment_score" in a]
+        if not scores:
+            return None
+
+        avg = sum(scores) / len(scores)
+        bullish = sum(1 for s in scores if s >= 0.15)
+        bearish = sum(1 for s in scores if s <= -0.15)
+        neutral = len(scores) - bullish - bearish
+
+        if avg >= 0.15:
+            label = "BULLISH"
+        elif avg <= -0.15:
+            label = "BEARISH"
+        else:
+            label = "NETRAL"
+
+        return {
+            "avgScore": round(avg, 3), "label": label, "sampleSize": len(scores),
+            "bullishCount": bullish, "neutralCount": neutral, "bearishCount": bearish,
+        }
+    except Exception as e:
+        print(f"WARNING: Alpha Vantage NEWS_SENTIMENT failed: {e}")
+        return None
+
+
 def build_positioning(cot):
     def net_label(net):
         if net > 0:
@@ -328,7 +395,7 @@ def build_positioning(cot):
     }
 
 
-def build_policy(macro, price):
+def build_policy(macro, price, fed_funds, media_sentiment):
     yield_dir = "naik" if macro["yield10yChange"] > 0 else "turun"
     dxy_dir = "menguat" if macro["dxyChange"] > 0 else "melemah"
     gold_dir = "naik" if price["changePct"] > 0 else "turun"
@@ -381,7 +448,12 @@ def build_policy(macro, price):
         },
     ]
 
-    return {"todayNote": today_note, "mechanisms": mechanisms}
+    return {
+        "todayNote": today_note,
+        "mechanisms": mechanisms,
+        "fedFundsRate": fed_funds,
+        "mediaSentiment": media_sentiment,
+    }
 
 
 def compute_bias(cot, price):
@@ -451,10 +523,12 @@ def main():
     price = get_price()
     macro = get_macro()
     news = get_news()
+    fed_funds = get_fed_funds_rate()
+    media_sentiment = get_media_sentiment()
     score, label, bullish_pct, bearish_pct = compute_bias(cot, price)
     narrative = build_narrative(cot, price, calendar, score, label)
     positioning = build_positioning(cot)
-    policy = build_policy(macro, price)
+    policy = build_policy(macro, price, fed_funds, media_sentiment)
 
     cot_tag = "Crowded Long" if cot["netLongPct"] > 55 else "Crowded Short" if cot["netLongPct"] < 30 else "Seimbang"
     cot_tag_class = "tag-bull" if cot["netLongPct"] > 55 else "tag-bear" if cot["netLongPct"] < 30 else "tag-neutral"
@@ -505,7 +579,7 @@ def main():
             {"label": "FXStreet News", "url": "https://www.fxstreet.com/news"},
             {"label": "US 10Y Yield (^TNX)", "url": "https://finance.yahoo.com/quote/%5ETNX/"},
             {"label": "US Dollar Index (DXY)", "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"},
-        ],
+        ] + ([{"label": "Alpha Vantage", "url": "https://www.alphavantage.co/"}] if (fed_funds or media_sentiment) else []),
     }
 
     DATA_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")

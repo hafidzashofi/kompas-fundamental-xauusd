@@ -165,6 +165,19 @@
   .macro-item .val{ font-size: 15px; font-weight:600; }
   .macro-item .val.bull{ color: var(--bull); } .macro-item .val.bear{ color: var(--bear); }
   .today-note{ font-size: 12.5px; color: var(--text); line-height:1.55; }
+  .sentiment-block{
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; display:flex; flex-direction:column; gap: 8px;
+  }
+  .sentiment-head{ display:flex; justify-content:space-between; align-items:center; }
+  .sentiment-title{ font-size: 12.5px; font-weight:600; }
+  .sentiment-bar-track{ height:10px; border-radius:99px; overflow:hidden; display:flex; border:1px solid var(--border); }
+  .sentiment-seg.bull{ background: var(--bull); height:100%; }
+  .sentiment-seg.neutral{ background: var(--text-muted); opacity:0.35; height:100%; }
+  .sentiment-seg.bear{ background: var(--bear); height:100%; }
+  .sentiment-figs{ display:flex; justify-content:space-between; font-size: 11.5px; font-weight:600; }
+  .sentiment-figs .bull{ color: var(--bull); } .sentiment-figs .bear{ color: var(--bear); } .sentiment-figs .neutral{ color: var(--text-muted); }
+  .sentiment-note{ font-size: 11px; color: var(--text-muted); }
   .mech-list{ display:flex; flex-direction:column; gap: 10px; margin-top: 6px; }
   .mech-item .mech-title{ font-size: 12.5px; font-weight:600; margin-bottom: 2px; }
   .mech-item .mech-body{ font-size: 12px; color: var(--text-muted); line-height:1.5; }
@@ -433,6 +446,34 @@
     // Policy panel
     if (d.policy && d.macro) {
       const m = d.macro;
+      const ff = d.policy.fedFundsRate;
+      const ms = d.policy.mediaSentiment;
+
+      const ffItem = ff ? `
+          <div class="macro-item">
+            <span class="lbl">Fed Funds Rate</span>
+            <span class="val mono ${ff.changeFromPrior<0?'bull':ff.changeFromPrior>0?'bear':''}">${ff.rate}% <small>(${ff.changeFromPrior>0?'+':''}${ff.changeFromPrior})</small></span>
+          </div>` : '';
+
+      const sentimentBlock = ms ? `
+        <div class="sentiment-block">
+          <div class="sentiment-head">
+            <span class="sentiment-title">Sentimen Media Keuangan Global</span>
+            <span class="panel-tag ${ms.label==='BULLISH'?'tag-bull':ms.label==='BEARISH'?'tag-bear':'tag-neutral'}">${ms.label}</span>
+          </div>
+          <div class="sentiment-bar-track">
+            <div class="sentiment-seg bull" style="width:${ms.bullishCount/ms.sampleSize*100}%"></div>
+            <div class="sentiment-seg neutral" style="width:${ms.neutralCount/ms.sampleSize*100}%"></div>
+            <div class="sentiment-seg bear" style="width:${ms.bearishCount/ms.sampleSize*100}%"></div>
+          </div>
+          <div class="sentiment-figs">
+            <span class="bull">Bullish ${ms.bullishCount}</span>
+            <span class="neutral">Netral ${ms.neutralCount}</span>
+            <span class="bear">Bearish ${ms.bearishCount}</span>
+          </div>
+          <div class="sentiment-note">Dari ${ms.sampleSize} artikel finansial terbaru (skor rata-rata ${ms.avgScore>0?'+':''}${ms.avgScore}) &middot; Alpha Vantage News Sentiment</div>
+        </div>` : '';
+
       document.getElementById('policyBody').innerHTML = `
         <div class="macro-strip">
           <div class="macro-item">
@@ -443,8 +484,10 @@
             <span class="lbl">Dollar Index (DXY)</span>
             <span class="val mono ${m.dxyChange<0?'bull':'bear'}">${m.dxy} <small>(${m.dxyChange>0?'+':''}${m.dxyChange}%)</small></span>
           </div>
+          ${ffItem}
         </div>
         <div class="today-note">${d.policy.todayNote}</div>
+        ${sentimentBlock}
         <div class="mech-list">
           ${d.policy.mechanisms.map(mc => `
             <div class="mech-item">

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "8 Sep 2026, 01:30 WIB",
+  "updatedAt": "8 Sep 2026, 01:44 WIB",
   "price": {
     "level": "$4,476.60"
   },
@@ -199,7 +199,20 @@
         "title": "Kebijakan bank sentral lain (ECB, BOJ, PBOC)",
         "body": "Selisih suku bunga The Fed vs bank sentral lain menggerakkan pasangan mata uang utama, yang pada akhirnya memengaruhi DXY. Contoh: BOJ yang mulai hawkish menguatkan Yen → menekan DXY → cenderung mendukung harga emas meski tidak ada perubahan kebijakan dari The Fed."
       }
-    ]
+    ],
+    "fedFundsRate": {
+      "rate": 3.63,
+      "changeFromPrior": 0.01,
+      "asOf": "2026-09-03"
+    },
+    "mediaSentiment": {
+      "avgScore": 0.169,
+      "label": "BULLISH",
+      "sampleSize": 50,
+      "bullishCount": 24,
+      "neutralCount": 22,
+      "bearishCount": 4
+    }
   },
   "macro": {
     "yield10y": 4.78,
@@ -305,6 +318,10 @@
     {
       "label": "US Dollar Index (DXY)",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "label": "Alpha Vantage",
+      "url": "https://www.alphavantage.co/"
     }
   ]
 }
