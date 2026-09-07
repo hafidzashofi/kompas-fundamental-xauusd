@@ -329,6 +329,8 @@ def get_media_sentiment():
         data = fetch_json(url)
         feed = data.get("feed") or []
         if not feed:
+            note = data.get("Information") or data.get("Note") or data.get("Error Message") or "empty feed"
+            print(f"WARNING: Alpha Vantage NEWS_SENTIMENT returned no data: {note}")
             return None
 
         scores = [float(a["overall_sentiment_score"]) for a in feed if "overall_sentiment_score" in a]
