@@ -21,6 +21,18 @@
     --bear: #b6503f;
     --event: #4a6a8a;
     --shadow: 0 1px 2px rgba(20,18,10,0.04), 0 8px 24px rgba(20,18,10,0.06);
+    /* Instrument-cluster gauge: deliberately theme-invariant, like a
+       physical dash dial that looks the same regardless of daylight. */
+    --gauge-face-1: #2a2725;
+    --gauge-face-2: #100e0c;
+    --gauge-bezel-1: #7a5f28;
+    --gauge-bezel-2: #e8c874;
+    --gauge-bezel-3: #6b4f1f;
+    --gauge-tick: #e7e2d6;
+    --gauge-tick-dim: #6b665c;
+    --gauge-needle-1: #f2543d;
+    --gauge-needle-2: #a11f0f;
+    --gauge-glass: rgba(255,255,255,0.10);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
@@ -71,13 +83,25 @@
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 14px; padding: 30px; box-shadow: var(--shadow); margin-bottom: 24px;
   }
-  .gauge-col{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 6px; }
-  .gauge-label{ font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 4px; text-align:center;}
-  .confidence-row{ display:flex; gap: 22px; margin-top: -6px; }
-  .confidence-item{ display:flex; flex-direction:column; align-items:center; gap:1px; }
-  .confidence-pct{ font-family:'Fraunces', serif; font-weight:700; font-size: 26px; line-height:1; }
-  .confidence-pct.bull{ color: var(--bull); } .confidence-pct.bear{ color: var(--bear); }
-  .confidence-lbl{ font-size: 10.5px; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); }
+  .gauge-col{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 8px; }
+  .gauge-label{ font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 2px; text-align:center;}
+
+  /* LCD trip-computer style readout under the gauge */
+  .dash-readout{
+    display:flex; align-items:stretch; margin-top: -18px;
+    background: linear-gradient(180deg, #17140f, #0c0a08);
+    border: 1px solid #3a3020; border-radius: 9px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.25);
+    padding: 7px 4px;
+  }
+  .readout-cell{ display:flex; flex-direction:column; align-items:center; gap:1px; padding: 0 16px; }
+  .readout-divider{ width:1px; background: #3a3020; margin: 2px 0; }
+  .readout-val{
+    font-weight:700; font-size: 20px; line-height:1.1;
+    text-shadow: 0 0 8px currentColor;
+  }
+  .readout-val.bull{ color: #4fe3a0; } .readout-val.bear{ color: #ff6b57; }
+  .readout-lbl{ font-size: 9.5px; text-transform:uppercase; letter-spacing:0.12em; color: #948a72; }
   .gauge-score{ font-family:'Fraunces', serif; font-weight:700; font-size: 15px; }
   .bias-pill{
     margin-top: 6px; padding: 5px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
@@ -233,15 +257,16 @@
 
   <div class="hero">
     <div class="gauge-col">
-      <svg id="gauge" width="240" height="150" viewBox="0 0 240 150"></svg>
-      <div class="confidence-row">
-        <div class="confidence-item">
-          <span class="confidence-pct bull mono" id="bullishPct">—</span>
-          <span class="confidence-lbl">Bullish</span>
+      <svg id="gauge" width="280" height="190" viewBox="0 0 280 190"></svg>
+      <div class="dash-readout">
+        <div class="readout-cell">
+          <span class="readout-val bull mono" id="bullishPct">—</span>
+          <span class="readout-lbl">Bullish</span>
         </div>
-        <div class="confidence-item">
-          <span class="confidence-pct bear mono" id="bearishPct">—</span>
-          <span class="confidence-lbl">Bearish</span>
+        <div class="readout-divider"></div>
+        <div class="readout-cell">
+          <span class="readout-val bear mono" id="bearishPct">—</span>
+          <span class="readout-lbl">Bearish</span>
         </div>
       </div>
       <div class="gauge-label">Tingkat keyakinan arah (skor <span class="mono" id="gaugeScore">—</span>/100)</div>
@@ -314,17 +339,19 @@
 
   function drawGauge(score){
     const svg = document.getElementById('gauge');
-    const cx = 120, cy = 130, r = 100;
+    const cx = 140, cy = 168;
     const css = getComputedStyle(document.documentElement);
-    const bear = css.getPropertyValue('--bear').trim();
-    const gold = css.getPropertyValue('--gold').trim();
-    const bull = css.getPropertyValue('--bull').trim();
-    const text = css.getPropertyValue('--text').trim();
-    const muted = css.getPropertyValue('--text-muted').trim();
+    const g = name => css.getPropertyValue(name).trim();
+    const bear = g('--bear'), gold = g('--gold'), bull = g('--bull');
+    const face1 = g('--gauge-face-1'), face2 = g('--gauge-face-2');
+    const bez1 = g('--gauge-bezel-1'), bez2 = g('--gauge-bezel-2'), bez3 = g('--gauge-bezel-3');
+    const tick = g('--gauge-tick'), tickDim = g('--gauge-tick-dim');
+    const needle1 = g('--gauge-needle-1'), needle2 = g('--gauge-needle-2');
+    const glass = g('--gauge-glass');
 
-    function pt(deg, rad){
+    function pt(deg, rad, ccx = cx, ccy = cy){
       const a = (Math.PI/180) * deg;
-      return [cx - Math.cos(a)*rad, cy - Math.sin(a)*rad];
+      return [ccx - Math.cos(a)*rad, ccy - Math.sin(a)*rad];
     }
     function arcPath(deg1, deg2, rad){
       const [x1,y1] = pt(deg1, rad);
@@ -332,23 +359,95 @@
       return `M ${x1} ${y1} A ${rad} ${rad} 0 0 1 ${x2} ${y2}`;
     }
 
-    let html = '';
-    html += `<path d="${arcPath(180,120,r)}" stroke="${bear}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
-    html += `<path d="${arcPath(120,60,r)}" stroke="${gold}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
-    html += `<path d="${arcPath(60,0,r)}" stroke="${bull}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
+    const rBezel = 124, rFace = 112, rBand = 99, rTickOut = 91, rMajorIn = 76,
+          rMinorIn = 84, rLabel = 63, rNeedle = 80;
 
+    let svgml = `
+      <defs>
+        <linearGradient id="gBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${bez1}"/>
+          <stop offset="45%" stop-color="${bez2}"/>
+          <stop offset="55%" stop-color="${bez2}"/>
+          <stop offset="100%" stop-color="${bez3}"/>
+        </linearGradient>
+        <radialGradient id="gFace" cx="50%" cy="30%" r="80%">
+          <stop offset="0%" stop-color="${face1}"/>
+          <stop offset="100%" stop-color="${face2}"/>
+        </radialGradient>
+        <linearGradient id="gNeedle" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="${needle1}"/>
+          <stop offset="100%" stop-color="${needle2}"/>
+        </linearGradient>
+        <radialGradient id="gHub" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="${bez2}"/>
+          <stop offset="100%" stop-color="${bez3}"/>
+        </radialGradient>
+        <linearGradient id="gGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="${glass}"/>
+          <stop offset="100%" stop-color="transparent"/>
+        </linearGradient>
+        <clipPath id="gFaceClip">
+          <path d="M ${cx-rFace} ${cy} A ${rFace} ${rFace} 0 0 1 ${cx+rFace} ${cy} Z"/>
+        </clipPath>
+        <filter id="gNeedleShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#000" flood-opacity="0.55"/>
+        </filter>
+      </defs>`;
+
+    // Outer bezel ring (metallic)
+    svgml += `<path d="${arcPath(183,-3,rBezel)}" stroke="url(#gBezel)" stroke-width="15" fill="none" stroke-linecap="round"/>`;
+    svgml += `<path d="${arcPath(180,0,rBezel-8)}" stroke="#000" stroke-opacity="0.35" stroke-width="2" fill="none"/>`;
+
+    // Dial face
+    svgml += `<path d="M ${cx-rFace} ${cy} A ${rFace} ${rFace} 0 0 1 ${cx+rFace} ${cy} Z" fill="url(#gFace)" stroke="${bez3}" stroke-width="1.5"/>`;
+
+    // Color band (bearish / neutral / bullish zones)
+    svgml += `<path d="${arcPath(180,120,rBand)}" stroke="${bear}" stroke-width="7" fill="none"/>`;
+    svgml += `<path d="${arcPath(120,60,rBand)}" stroke="${gold}" stroke-width="7" fill="none"/>`;
+    svgml += `<path d="${arcPath(60,0,rBand)}" stroke="${bull}" stroke-width="7" fill="none"/>`;
+
+    // Minor ticks (every 10)
+    for (let v = -100; v <= 100; v += 10){
+      if (v % 50 === 0) continue;
+      const deg = 180 - ((v+100)/200)*180;
+      const [x1,y1] = pt(deg, rTickOut);
+      const [x2,y2] = pt(deg, rMinorIn);
+      svgml += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${tickDim}" stroke-width="1.5"/>`;
+    }
+    // Major ticks + labels (every 50)
     [-100,-50,0,50,100].forEach(v=>{
       const deg = 180 - ((v+100)/200)*180;
-      const [tx,ty] = pt(deg, r+20);
-      html += `<text x="${tx}" y="${ty}" font-size="10" fill="${muted}" font-family="IBM Plex Mono, monospace" text-anchor="middle">${v}</text>`;
+      const [x1,y1] = pt(deg, rTickOut);
+      const [x2,y2] = pt(deg, rMajorIn);
+      svgml += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${tick}" stroke-width="2.5" stroke-linecap="round"/>`;
+      const [tx,ty] = pt(deg, rLabel);
+      svgml += `<text x="${tx}" y="${ty}" font-size="11" font-weight="600" fill="${tick}" font-family="IBM Plex Mono, monospace" text-anchor="middle" dominant-baseline="middle">${v}</text>`;
     });
 
+    // Zone captions
+    const bearCap = pt(150, rLabel-16), bullCap = pt(30, rLabel-16);
+    svgml += `<text x="${bearCap[0]}" y="${bearCap[1]}" font-size="8" letter-spacing="1" fill="${bear}" font-family="IBM Plex Mono, monospace" text-anchor="middle">BEAR</text>`;
+    svgml += `<text x="${bullCap[0]}" y="${bullCap[1]}" font-size="8" letter-spacing="1" fill="${bull}" font-family="IBM Plex Mono, monospace" text-anchor="middle">BULL</text>`;
+
+    // Glass reflection
+    svgml += `<ellipse cx="${cx}" cy="${cy-rFace*0.55}" rx="${rFace*0.92}" ry="${rFace*0.5}" fill="url(#gGlass)" clip-path="url(#gFaceClip)"/>`;
+
+    // Needle
     const clamped = Math.max(-100, Math.min(100, score));
     const needleDeg = 180 - ((clamped+100)/200)*180;
-    const [nx, ny] = pt(needleDeg, r-14);
-    html += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="${text}" stroke-width="3" stroke-linecap="round"/>`;
-    html += `<circle cx="${cx}" cy="${cy}" r="6" fill="${text}"/>`;
-    svg.innerHTML = html;
+    const tip = pt(needleDeg, rNeedle);
+    const backTip = pt(needleDeg + 180, 14);
+    const sideA = pt(needleDeg + 90, 5);
+    const sideB = pt(needleDeg - 90, 5);
+    svgml += `<g filter="url(#gNeedleShadow)">
+        <polygon points="${tip[0]},${tip[1]} ${sideA[0]},${sideA[1]} ${backTip[0]},${backTip[1]} ${sideB[0]},${sideB[1]}" fill="url(#gNeedle)"/>
+      </g>`;
+
+    // Hub cap
+    svgml += `<circle cx="${cx}" cy="${cy}" r="12" fill="url(#gHub)" stroke="${bez3}" stroke-width="1"/>`;
+    svgml += `<ellipse cx="${cx-3.5}" cy="${cy-4}" rx="3.5" ry="2.2" fill="#fff" fill-opacity="0.55"/>`;
+
+    svg.innerHTML = svgml;
   }
 
   function render(d){
