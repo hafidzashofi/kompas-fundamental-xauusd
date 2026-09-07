@@ -1,5 +1,5 @@
 {
-  "updatedAt": "8 Sep 2026, 01:29 WIB",
+  "updatedAt": "8 Sep 2026, 01:30 WIB",
   "price": {
     "level": "$4,476.60"
   },
@@ -11,6 +11,7 @@
     "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,476.60</span>, melemah 1.39% pada sesi terakhir, dengan rentang 52 minggu $3,590–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 1 Sep 2026 tercatat net long <span class=\"accent\">228,124</span> kontrak (54.9% dari open interest) — relatif seimbang. Net long ini turun 15,210 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 415,196 kontrak (turun 12,761), mengindikasikan sebagian posisi ditutup.",
+    "Katalis terdekat: <b>Core PPI m/m</b> pada 10 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
     "<b>Kesimpulan:</b> skor komposit -48/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
@@ -36,9 +37,118 @@
   },
   "calendar": [
     {
-      "date": "-",
-      "event": "Tidak ada event high-impact USD terjadwal",
-      "note": "Cek kembali menjelang akhir pekan"
+      "date": "10 Sep 2026, 19:30 WIB",
+      "event": "Core PPI m/m",
+      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 0.2%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
+    },
+    {
+      "date": "10 Sep 2026, 19:30 WIB",
+      "event": "PPI m/m",
+      "note": "Dampak tinggi · Prediksi 0.4% · Sebelumnya 0.0%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "Core CPI m/m",
+      "note": "Dampak tinggi · Prediksi 0.2% · Sebelumnya 0.2%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "Core CPI y/y",
+      "note": "Dampak tinggi · Prediksi 2.4% · Sebelumnya 2.5%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "CPI m/m",
+      "note": "Dampak tinggi · Prediksi 0.4% · Sebelumnya 0.1%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "CPI y/y",
+      "note": "Dampak tinggi · Prediksi 3.4% · Sebelumnya 3.4%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     }
   ],
   "positioning": {
