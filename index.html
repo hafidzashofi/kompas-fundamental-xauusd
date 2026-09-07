@@ -8,21 +8,22 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
+  /* Deliberately single-theme: a premium instrument-panel look,
+     always black, regardless of the viewer's light/dark setting --
+     matching the speedometer gauge's own fixed dash aesthetic. */
   :root{
-    --bg: #f4f2ee;
-    --surface: #ffffff;
-    --surface-2: #eeece5;
-    --border: #ddd8cc;
-    --text: #1b1a17;
-    --text-muted: #6b675c;
-    --gold: #96742f;
-    --gold-bright: #b8903f;
-    --bull: #2f8f63;
-    --bear: #b6503f;
-    --event: #4a6a8a;
-    --shadow: 0 1px 2px rgba(20,18,10,0.04), 0 8px 24px rgba(20,18,10,0.06);
-    /* Instrument-cluster gauge: deliberately theme-invariant, like a
-       physical dash dial that looks the same regardless of daylight. */
+    --bg: #000000;
+    --surface: #0c0c0d;
+    --surface-2: #161615;
+    --border: #2b2924;
+    --text: #f0ede4;
+    --text-muted: #948d7d;
+    --gold: #c6a15b;
+    --gold-bright: #e7c784;
+    --bull: #4fae83;
+    --bear: #d0685a;
+    --event: #7c93b8;
+    --shadow: 0 1px 2px rgba(0,0,0,0.5), 0 14px 36px rgba(0,0,0,0.6);
     --gauge-face-1: #2a2725;
     --gauge-face-2: #100e0c;
     --gauge-bezel-1: #7a5f28;
@@ -33,20 +34,6 @@
     --gauge-needle-1: #f2543d;
     --gauge-needle-2: #a11f0f;
     --gauge-glass: rgba(255,255,255,0.10);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg: #0a0a0b; --surface: #131313; --surface-2: #1a1a1a; --border: #2a2822;
-      --text: #ece9e1; --text-muted: #9a9689; --gold: #c6a15b; --gold-bright: #e7c784;
-      --bull: #4fae83; --bear: #d0685a; --event: #7c93b8;
-      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.4);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg: #0a0a0b; --surface: #131313; --surface-2: #1a1a1a; --border: #2a2822;
-    --text: #ece9e1; --text-muted: #9a9689; --gold: #c6a15b; --gold-bright: #e7c784;
-    --bull: #4fae83; --bear: #d0685a; --event: #7c93b8;
-    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.4);
   }
 
   *{box-sizing:border-box;}
@@ -115,10 +102,12 @@
 
   .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
   .grid.grid-2col{ grid-template-columns: 1fr 1fr; }
-  .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 24px; align-items:start; }
   .calendar-panel{ margin-bottom: 24px; }
   .calendar-columns{ display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4px 28px; }
-  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .grid.grid-2col{ grid-template-columns: 1fr; } .grid2{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
+  .policy-panel{ margin-bottom: 24px; }
+  .center-row{ display:flex; justify-content:center; margin-bottom: 24px; }
+  .positioning-panel{ width:100%; max-width: 720px; }
+  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .grid.grid-2col{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
 
   .panel{
     background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
@@ -298,16 +287,16 @@
     <div class="panel-foot" id="calFoot"></div>
   </div>
 
-  <div class="grid2">
-    <div class="panel">
+  <div class="panel policy-panel">
+    <div class="panel-head"><h2>Dampak Kebijakan Bank Sentral</h2></div>
+    <div id="policyBody"></div>
+  </div>
+
+  <div class="center-row">
+    <div class="panel positioning-panel">
       <div class="panel-head"><h2>Sentimen Posisi &middot; Retail vs Hedge Fund</h2></div>
       <div id="posBody"></div>
       <div class="panel-foot" id="posFoot"></div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-head"><h2>Dampak Kebijakan Bank Sentral</h2></div>
-      <div id="policyBody"></div>
     </div>
   </div>
 
