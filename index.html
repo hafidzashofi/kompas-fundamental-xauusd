@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kompas Fundamental XAUUSD</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --bg: #f4f2ee;
+    --surface: #ffffff;
+    --surface-2: #eeece5;
+    --border: #ddd8cc;
+    --text: #1b1a17;
+    --text-muted: #6b675c;
+    --gold: #96742f;
+    --gold-bright: #b8903f;
+    --bull: #2f8f63;
+    --bear: #b6503f;
+    --event: #4a6a8a;
+    --shadow: 0 1px 2px rgba(20,18,10,0.04), 0 8px 24px rgba(20,18,10,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #0a0a0b; --surface: #131313; --surface-2: #1a1a1a; --border: #2a2822;
+      --text: #ece9e1; --text-muted: #9a9689; --gold: #c6a15b; --gold-bright: #e7c784;
+      --bull: #4fae83; --bear: #d0685a; --event: #7c93b8;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #0a0a0b; --surface: #131313; --surface-2: #1a1a1a; --border: #2a2822;
+    --text: #ece9e1; --text-muted: #9a9689; --gold: #c6a15b; --gold-bright: #e7c784;
+    --bull: #4fae83; --bear: #d0685a; --event: #7c93b8;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.4);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg); color: var(--text);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    padding: 28px 20px 60px; line-height: 1.5;
+  }
+  .wrap{ max-width: 1180px; margin: 0 auto; }
+  .mono{ font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .display{ font-family: 'Fraunces', Georgia, serif; text-wrap: balance; }
+
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap: 16px; flex-wrap: wrap; padding-bottom: 18px; margin-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+  }
+  .instrument{ display:flex; align-items:baseline; gap: 12px; }
+  .instrument .pair{ font-family:'Fraunces', serif; font-weight:700; font-size: 30px; letter-spacing: -0.01em; }
+  .instrument .desc{ color: var(--text-muted); font-size: 13px; }
+  .topbar-right{ display:flex; align-items:center; gap: 22px; flex-wrap: wrap; }
+  .stat{ text-align:right; }
+  .stat .label{ font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+  .stat .value{ font-size: 15px; font-weight: 600; }
+  .refresh-note{
+    font-size: 12px; color: var(--text-muted); background: var(--surface-2);
+    border: 1px solid var(--border); padding: 7px 12px; border-radius: 7px;
+  }
+  .refresh-note b{ color: var(--gold); font-weight:600; }
+
+  .hero{
+    display:grid; grid-template-columns: 300px 1fr; gap: 32px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 30px; box-shadow: var(--shadow); margin-bottom: 24px;
+  }
+  .gauge-col{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 6px; }
+  .gauge-label{ font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 4px;}
+  .gauge-score{ font-family:'Fraunces', serif; font-weight:700; font-size: 15px; }
+  .bias-pill{
+    margin-top: 6px; padding: 5px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
+    background: color-mix(in srgb, var(--gold) 16%, transparent); color: var(--gold-bright);
+    border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent);
+  }
+  .hero-text h1{ font-family:'Fraunces', serif; font-weight: 600; font-size: 22px; margin: 0 0 12px; text-wrap: balance; }
+  .hero-text p{ margin: 0 0 12px; color: var(--text); font-size: 14.5px; }
+  .hero-text p:last-child{ margin-bottom:0; }
+  .hero-text .accent{ color: var(--gold); font-weight: 600; }
+
+  .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
+  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
+
+  .panel{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; box-shadow: var(--shadow); display:flex; flex-direction:column; gap: 14px;
+  }
+  .panel-head{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  .panel-head h2{ font-family:'Fraunces', serif; font-size: 16px; font-weight: 600; margin:0; }
+  .panel-tag{
+    font-size: 10.5px; text-transform:uppercase; letter-spacing:0.06em; font-weight:600;
+    padding: 3px 9px; border-radius: 999px; white-space:nowrap;
+  }
+  .tag-bull{ background: color-mix(in srgb, var(--bull) 16%, transparent); color: var(--bull); }
+  .tag-bear{ background: color-mix(in srgb, var(--bear) 16%, transparent); color: var(--bear); }
+  .tag-event{ background: color-mix(in srgb, var(--event) 18%, transparent); color: var(--event); }
+  .tag-neutral{ background: var(--surface-2); color: var(--text-muted); border:1px solid var(--border); }
+
+  .kv-row{ display:flex; justify-content:space-between; align-items:baseline; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .kv-row:last-child{ border-bottom:none; }
+  .kv-row .k{ color: var(--text-muted); }
+  .kv-row .v{ font-weight:600; }
+  .v.bull{ color: var(--bull); } .v.bear{ color: var(--bear); }
+
+  .bar-track{ height:8px; border-radius:99px; background: var(--surface-2); overflow:hidden; border:1px solid var(--border); }
+  .bar-fill{ height:100%; border-radius:99px; }
+
+  .cal-item{ display:flex; gap:10px; align-items:flex-start; padding: 8px 0; border-bottom:1px solid var(--border); }
+  .cal-item:last-child{ border-bottom:none; }
+  .cal-date{ font-size: 11.5px; color: var(--text-muted); min-width: 78px; }
+  .cal-body .ev{ font-size: 13.5px; font-weight: 600; }
+  .cal-body .note{ font-size: 12px; color: var(--text-muted); margin-top:2px; }
+
+  .panel-foot{ font-size: 11.5px; color: var(--text-muted); padding-top: 6px; border-top: 1px dashed var(--border); }
+
+  .footer{
+    display:flex; justify-content:space-between; gap: 20px; flex-wrap:wrap;
+    font-size: 12px; color: var(--text-muted); padding-top: 18px; border-top: 1px solid var(--border);
+  }
+  .footer a{ color: var(--gold); text-decoration:none; }
+  .footer a:hover{ text-decoration:underline; }
+  .sources{ display:flex; flex-wrap:wrap; gap: 4px 14px; max-width: 640px; }
+
+  .err{ color: var(--bear); font-size: 13px; }
+  :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="instrument">
+      <span class="pair display">XAU/USD</span>
+      <span class="desc">Kompas Fundamental &middot; Gold Spot vs US Dollar</span>
+    </div>
+    <div class="topbar-right">
+      <div class="stat">
+        <div class="label">Area Harga</div>
+        <div class="value mono" id="priceLevel">—</div>
+      </div>
+      <div class="stat">
+        <div class="label">Data Terakhir</div>
+        <div class="value mono" id="updatedAt">—</div>
+      </div>
+      <div class="refresh-note">Data diperbarui <b>otomatis setiap hari</b> lewat GitHub Actions</div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="gauge-col">
+      <svg id="gauge" width="240" height="150" viewBox="0 0 240 150"></svg>
+      <div class="gauge-score mono" id="gaugeScore">—</div>
+      <div class="gauge-label">Skor Bias (-100 Bearish &middot; +100 Bullish)</div>
+      <div class="bias-pill" id="biasPill">memuat&hellip;</div>
+    </div>
+    <div class="hero-text">
+      <h1>Kesimpulan Fundamental</h1>
+      <div id="narrative"><p style="color:var(--text-muted)">Memuat ringkasan analisis&hellip;</p></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="panel-head"><h2>COT &middot; CFTC Legacy Report</h2><span class="panel-tag" id="cotTag">—</span></div>
+      <div id="cotBody"></div>
+      <div class="panel-foot" id="cotFoot"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>CME &middot; Open Interest GC</h2><span class="panel-tag" id="cmeTag">—</span></div>
+      <div id="cmeBody"></div>
+      <div class="panel-foot" id="cmeFoot"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>ForexFactory &middot; Kalender Risiko</h2><span class="panel-tag tag-event">High Impact</span></div>
+      <div id="calBody"></div>
+      <div class="panel-foot" id="calFoot"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="sources" id="sources"></div>
+    <div>Bukan saran investasi &middot; disusun otomatis dari sumber publik &middot; <span id="footUpdated"></span></div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  function fmt(n){ return new Intl.NumberFormat('id-ID').format(n); }
+
+  function drawGauge(score){
+    const svg = document.getElementById('gauge');
+    const cx = 120, cy = 130, r = 100;
+    const css = getComputedStyle(document.documentElement);
+    const bear = css.getPropertyValue('--bear').trim();
+    const gold = css.getPropertyValue('--gold').trim();
+    const bull = css.getPropertyValue('--bull').trim();
+    const text = css.getPropertyValue('--text').trim();
+    const muted = css.getPropertyValue('--text-muted').trim();
+
+    function pt(deg, rad){
+      const a = (Math.PI/180) * deg;
+      return [cx - Math.cos(a)*rad, cy - Math.sin(a)*rad];
+    }
+    function arcPath(deg1, deg2, rad){
+      const [x1,y1] = pt(deg1, rad);
+      const [x2,y2] = pt(deg2, rad);
+      return `M ${x1} ${y1} A ${rad} ${rad} 0 0 1 ${x2} ${y2}`;
+    }
+
+    let html = '';
+    html += `<path d="${arcPath(180,120,r)}" stroke="${bear}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
+    html += `<path d="${arcPath(120,60,r)}" stroke="${gold}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
+    html += `<path d="${arcPath(60,0,r)}" stroke="${bull}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
+
+    [-100,-50,0,50,100].forEach(v=>{
+      const deg = 180 - ((v+100)/200)*180;
+      const [tx,ty] = pt(deg, r+20);
+      html += `<text x="${tx}" y="${ty}" font-size="10" fill="${muted}" font-family="IBM Plex Mono, monospace" text-anchor="middle">${v}</text>`;
+    });
+
+    const clamped = Math.max(-100, Math.min(100, score));
+    const needleDeg = 180 - ((clamped+100)/200)*180;
+    const [nx, ny] = pt(needleDeg, r-14);
+    html += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="${text}" stroke-width="3" stroke-linecap="round"/>`;
+    html += `<circle cx="${cx}" cy="${cy}" r="6" fill="${text}"/>`;
+    svg.innerHTML = html;
+  }
+
+  function render(d){
+    document.getElementById('priceLevel').textContent = d.price.level;
+    document.getElementById('updatedAt').textContent = d.updatedAt;
+    document.getElementById('footUpdated').textContent = 'Snapshot: ' + d.updatedAt;
+
+    drawGauge(d.biasScore);
+    document.getElementById('gaugeScore').textContent = (d.biasScore>0?'+':'') + d.biasScore;
+    document.getElementById('biasPill').textContent = d.biasLabel;
+    document.getElementById('narrative').innerHTML = d.narrative.map(p=>`<p>${p}</p>`).join('');
+
+    const cot = d.cot;
+    document.getElementById('cotTag').textContent = cot.tagLabel;
+    document.getElementById('cotTag').className = 'panel-tag ' + cot.tagClass;
+    const cotPct = Math.min(100, Math.round((cot.ncLong/(cot.ncLong+cot.ncShort))*100));
+    document.getElementById('cotBody').innerHTML = `
+      <div class="kv-row"><span class="k">Non-Commercial Long</span><span class="v mono bull">${fmt(cot.ncLong)}</span></div>
+      <div class="kv-row"><span class="k">Non-Commercial Short</span><span class="v mono bear">${fmt(cot.ncShort)}</span></div>
+      <div class="kv-row"><span class="k">Net Long</span><span class="v mono">${cot.netLong>0?'+':''}${fmt(cot.netLong)}</span></div>
+      <div class="kv-row"><span class="k">Perubahan Mingguan (net)</span><span class="v mono ${cot.weeklyChange<0?'bear':'bull'}">${cot.weeklyChange>0?'+':''}${fmt(cot.weeklyChange)}</span></div>
+      <div class="kv-row"><span class="k">Commercial Net</span><span class="v mono bear">${fmt(cot.commercialNet)}</span></div>
+      <div class="kv-row"><span class="k">Total Open Interest</span><span class="v mono">${fmt(cot.openInterest)}</span></div>
+      <div class="bar-track" style="margin-top:4px;"><div class="bar-fill" style="width:${cotPct}%; background:var(--bull);"></div></div>
+    `;
+    document.getElementById('cotFoot').textContent = 'Laporan per ' + cot.reportDate + ' (CFTC, rilis mingguan)';
+
+    const cme = d.cme;
+    document.getElementById('cmeTag').textContent = cme.tagLabel;
+    document.getElementById('cmeTag').className = 'panel-tag ' + cme.tagClass;
+    document.getElementById('cmeBody').innerHTML = `
+      <div class="kv-row"><span class="k">Open Interest (GC)</span><span class="v mono">${fmt(cme.openInterest)}</span></div>
+      <div class="kv-row"><span class="k">Perubahan OI</span><span class="v mono ${cme.oiChange<0?'bear':'bull'}">${cme.oiChange>0?'+':''}${fmt(cme.oiChange)}</span></div>
+      <div class="kv-row"><span class="k">Rentang 52 Minggu</span><span class="v mono">${cme.rangeLow} &ndash; ${cme.rangeHigh}</span></div>
+      <div class="kv-row"><span class="k">Struktur Pasar</span><span class="v">${cme.structureNote}</span></div>
+    `;
+    document.getElementById('cmeFoot').textContent = cme.footnote;
+
+    document.getElementById('calBody').innerHTML = d.calendar.map(ev => `
+      <div class="cal-item">
+        <div class="cal-date mono">${ev.date}</div>
+        <div class="cal-body"><div class="ev">${ev.event}</div><div class="note">${ev.note}</div></div>
+      </div>
+    `).join('');
+    document.getElementById('calFoot').textContent = 'Sumber: feed kalender publik ForexFactory';
+
+    document.getElementById('sources').innerHTML = d.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('');
+  }
+
+  fetch('./data.json', {cache:'no-store'})
+    .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(render)
+    .catch(err => {
+      document.getElementById('narrative').innerHTML =
+        `<p class="err">Gagal memuat data.json (${err.message}). Jalankan scripts/update_data.py, atau tunggu GitHub Actions berjalan.</p>`;
+    });
+})();
+</script>
+</body>
+</html>

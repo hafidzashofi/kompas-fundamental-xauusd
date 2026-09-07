@@ -1,0 +1,82 @@
+{
+  "updatedAt": "8 Sep 2026, 00:38 WIB",
+  "price": {
+    "level": "$4,476.60"
+  },
+  "biasScore": -48,
+  "biasLabel": "BEARISH",
+  "narrative": [
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,476.60</span>, melemah 1.39% pada sesi terakhir, dengan rentang 52 minggu $3,590–$5,586.",
+    "Posisi non-commercial (spekulan besar) pada laporan COT per 1 Sep 2026 tercatat net long <span class=\"accent\">228,124</span> kontrak (54.9% dari open interest) — relatif seimbang. Net long ini turun 15,210 kontrak dibanding pekan sebelumnya.",
+    "Open interest COMEX tercatat 415,196 kontrak (turun 12,761), mengindikasikan sebagian posisi ditutup.",
+    "Katalis terdekat: <b>Core PPI m/m</b> pada 10 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
+    "<b>Kesimpulan:</b> skor komposit -48/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+  ],
+  "cot": {
+    "reportDate": "1 Sep 2026",
+    "ncLong": 260485,
+    "ncShort": 32361,
+    "netLong": 228124,
+    "weeklyChange": -15210,
+    "commercialNet": -264718,
+    "openInterest": 415196,
+    "tagLabel": "Seimbang",
+    "tagClass": "tag-neutral"
+  },
+  "cme": {
+    "openInterest": 415196,
+    "oiChange": -12761,
+    "rangeLow": "$3,590",
+    "rangeHigh": "$5,586",
+    "structureNote": "OI & harga bergerak searah",
+    "tagLabel": "Melemah",
+    "tagClass": "tag-bear",
+    "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 1 Sep 2026; rentang dari harga 52 minggu terakhir"
+  },
+  "calendar": [
+    {
+      "date": "10 Sep 2026, 19:30 WIB",
+      "event": "Core PPI m/m",
+      "note": "High impact · forecast 0.3% · previous 0.2%"
+    },
+    {
+      "date": "10 Sep 2026, 19:30 WIB",
+      "event": "PPI m/m",
+      "note": "High impact · forecast 0.4% · previous 0.0%"
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "Core CPI m/m",
+      "note": "High impact · forecast 0.2% · previous 0.2%"
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "Core CPI y/y",
+      "note": "High impact · forecast 2.4% · previous 2.5%"
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "CPI m/m",
+      "note": "High impact · forecast 0.4% · previous 0.1%"
+    },
+    {
+      "date": "11 Sep 2026, 19:30 WIB",
+      "event": "CPI y/y",
+      "note": "High impact · forecast 3.4% · previous 3.4%"
+    }
+  ],
+  "sources": [
+    {
+      "label": "CFTC COT (data.gov terbuka)",
+      "url": "https://publicreporting.cftc.gov/Market-Reports/Commitments-of-Traders/6dca-aqww"
+    },
+    {
+      "label": "ForexFactory Calendar",
+      "url": "https://www.forexfactory.com/calendar"
+    },
+    {
+      "label": "Yahoo Finance GC=F",
+      "url": "https://finance.yahoo.com/quote/GC=F/"
+    }
+  ]
+}
