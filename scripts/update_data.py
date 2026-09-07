@@ -45,7 +45,6 @@ COT_URL = "https://publicreporting.cftc.gov/resource/6dca-aqww.json?" + urllib.p
 })
 FF_URLS = [
     "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-    "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
 ]
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=5d"
 YIELD_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?interval=1d&range=5d"
