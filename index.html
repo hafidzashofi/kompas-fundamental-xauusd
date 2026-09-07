@@ -390,11 +390,6 @@
     // Dial face
     svgml += `<path d="M ${cx-rFace} ${cy} A ${rFace} ${rFace} 0 0 1 ${cx+rFace} ${cy} Z" fill="url(#gFace)" stroke="${bez3}" stroke-width="1.5"/>`;
 
-    // Color band (bearish / neutral / bullish zones)
-    svgml += `<path d="${arcPath(180,120,rBand)}" stroke="${bear}" stroke-width="7" fill="none"/>`;
-    svgml += `<path d="${arcPath(120,60,rBand)}" stroke="${gold}" stroke-width="7" fill="none"/>`;
-    svgml += `<path d="${arcPath(60,0,rBand)}" stroke="${bull}" stroke-width="7" fill="none"/>`;
-
     // Minor ticks (every 10)
     for (let v = -100; v <= 100; v += 10){
       if (v % 50 === 0) continue;
