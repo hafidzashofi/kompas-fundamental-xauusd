@@ -448,11 +448,25 @@
       const m = d.macro;
       const ff = d.policy.fedFundsRate;
       const ms = d.policy.mediaSentiment;
+      const cpi = d.policy.cpi;
+      const wti = d.policy.wti;
 
       const ffItem = ff ? `
           <div class="macro-item">
             <span class="lbl">Fed Funds Rate</span>
             <span class="val mono ${ff.changeFromPrior<0?'bull':ff.changeFromPrior>0?'bear':''}">${ff.rate}% <small>(${ff.changeFromPrior>0?'+':''}${ff.changeFromPrior})</small></span>
+          </div>` : '';
+
+      const cpiItem = cpi ? `
+          <div class="macro-item">
+            <span class="lbl">CPI AS (YoY)</span>
+            <span class="val mono ${cpi.yoyPct<3?'bull':'bear'}">${cpi.yoyPct}% <small>(m/m ${cpi.momPct>0?'+':''}${cpi.momPct}%)</small></span>
+          </div>` : '';
+
+      const wtiItem = wti ? `
+          <div class="macro-item">
+            <span class="lbl">Minyak WTI</span>
+            <span class="val mono">$${wti.price} <small>(${wti.changePct>0?'+':''}${wti.changePct}%)</small></span>
           </div>` : '';
 
       const sentimentBlock = ms ? `
@@ -485,6 +499,8 @@
             <span class="val mono ${m.dxyChange<0?'bull':'bear'}">${m.dxy} <small>(${m.dxyChange>0?'+':''}${m.dxyChange}%)</small></span>
           </div>
           ${ffItem}
+          ${cpiItem}
+          ${wtiItem}
         </div>
         <div class="today-note">${d.policy.todayNote}</div>
         ${sentimentBlock}

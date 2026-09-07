@@ -18,6 +18,7 @@ import html
 import json
 import os
 import re
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -358,6 +359,59 @@ def get_media_sentiment():
         return None
 
 
+def get_cpi_yoy():
+    """Actual US CPI (all urban consumers) with a self-computed YoY% --
+    Alpha Vantage returns the raw index, not a percentage. Optional;
+    returns None without a key or on failure."""
+    if not ALPHAVANTAGE_KEY:
+        return None
+    try:
+        url = ALPHAVANTAGE_BASE + "?" + urllib.parse.urlencode({
+            "function": "CPI", "interval": "monthly", "apikey": ALPHAVANTAGE_KEY,
+        })
+        data = fetch_json(url)
+        rows = data.get("data") or []
+        if len(rows) < 13:
+            note = data.get("Information") or data.get("Note") or "not enough data"
+            print(f"WARNING: Alpha Vantage CPI unavailable: {note}")
+            return None
+        latest = rows[0]
+        year_ago = rows[12]  # monthly series -> 12 rows back = same month last year
+        yoy_pct = round((float(latest["value"]) / float(year_ago["value"]) - 1) * 100, 2)
+        mom_pct = round((float(latest["value"]) / float(rows[1]["value"]) - 1) * 100, 2)
+        return {"index": float(latest["value"]), "yoyPct": yoy_pct, "momPct": mom_pct, "asOf": latest["date"]}
+    except Exception as e:
+        print(f"WARNING: Alpha Vantage CPI failed: {e}")
+        return None
+
+
+def get_wti_oil():
+    """Latest WTI crude price -- context for the inflation/geopolitical
+    narrative (oil often co-moves with gold on the same drivers).
+    Optional; returns None without a key or on failure."""
+    if not ALPHAVANTAGE_KEY:
+        return None
+    try:
+        url = ALPHAVANTAGE_BASE + "?" + urllib.parse.urlencode({
+            "function": "WTI", "interval": "daily", "apikey": ALPHAVANTAGE_KEY,
+        })
+        data = fetch_json(url)
+        rows = [r for r in (data.get("data") or []) if r.get("value") not in (None, ".")]
+        if len(rows) < 2:
+            note = data.get("Information") or data.get("Note") or "not enough data"
+            print(f"WARNING: Alpha Vantage WTI unavailable: {note}")
+            return None
+        latest, prev = float(rows[0]["value"]), float(rows[1]["value"])
+        return {
+            "price": latest,
+            "changePct": round((latest / prev - 1) * 100, 2),
+            "asOf": rows[0]["date"],
+        }
+    except Exception as e:
+        print(f"WARNING: Alpha Vantage WTI failed: {e}")
+        return None
+
+
 def build_positioning(cot):
     def net_label(net):
         if net > 0:
@@ -397,7 +451,7 @@ def build_positioning(cot):
     }
 
 
-def build_policy(macro, price, fed_funds, media_sentiment):
+def build_policy(macro, price, fed_funds, media_sentiment, cpi, wti):
     yield_dir = "naik" if macro["yield10yChange"] > 0 else "turun"
     dxy_dir = "menguat" if macro["dxyChange"] > 0 else "melemah"
     gold_dir = "naik" if price["changePct"] > 0 else "turun"
@@ -448,6 +502,13 @@ def build_policy(macro, price, fed_funds, media_sentiment):
                     "pada akhirnya memengaruhi DXY. Contoh: BOJ yang mulai hawkish menguatkan Yen → menekan DXY → "
                     "cenderung mendukung harga emas meski tidak ada perubahan kebijakan dari The Fed.",
         },
+        {
+            "title": "Harga minyak (WTI/Brent) & inflasi",
+            "body": "Minyak yang menguat tajam biasanya mendorong ekspektasi inflasi naik (biaya energi & logistik "
+                    "naik). Ini kadang bikin emas ikut naik sebagai lindung nilai inflasi, tapi di sisi lain juga "
+                    "bisa memicu The Fed lebih hawkish untuk meredam inflasi. Arahnya tidak selalu satu arah — "
+                    "harus dilihat bersama konteks CPI dan sikap The Fed saat itu.",
+        },
     ]
 
     return {
@@ -455,6 +516,8 @@ def build_policy(macro, price, fed_funds, media_sentiment):
         "mechanisms": mechanisms,
         "fedFundsRate": fed_funds,
         "mediaSentiment": media_sentiment,
+        "cpi": cpi,
+        "wti": wti,
     }
 
 
@@ -525,12 +588,20 @@ def main():
     price = get_price()
     macro = get_macro()
     news = get_news()
+    # Alpha Vantage free tier: keep to ~1 request/second to avoid the
+    # burst rate limit, on top of the 25 requests/day cap.
     fed_funds = get_fed_funds_rate()
+    time.sleep(1)
+    cpi = get_cpi_yoy()
+    time.sleep(1)
+    wti = get_wti_oil()
+    time.sleep(1)
     media_sentiment = get_media_sentiment()
+
     score, label, bullish_pct, bearish_pct = compute_bias(cot, price)
     narrative = build_narrative(cot, price, calendar, score, label)
     positioning = build_positioning(cot)
-    policy = build_policy(macro, price, fed_funds, media_sentiment)
+    policy = build_policy(macro, price, fed_funds, media_sentiment, cpi, wti)
 
     cot_tag = "Crowded Long" if cot["netLongPct"] > 55 else "Crowded Short" if cot["netLongPct"] < 30 else "Seimbang"
     cot_tag_class = "tag-bull" if cot["netLongPct"] > 55 else "tag-bear" if cot["netLongPct"] < 30 else "tag-neutral"
