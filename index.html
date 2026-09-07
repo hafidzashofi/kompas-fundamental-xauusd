@@ -111,11 +111,21 @@
   .bar-track{ height:8px; border-radius:99px; background: var(--surface-2); overflow:hidden; border:1px solid var(--border); }
   .bar-fill{ height:100%; border-radius:99px; }
 
-  .cal-item{ display:flex; gap:10px; align-items:flex-start; padding: 8px 0; border-bottom:1px solid var(--border); }
+  .cal-item{ display:flex; flex-direction:column; gap:6px; padding: 10px 0; border-bottom:1px solid var(--border); }
   .cal-item:last-child{ border-bottom:none; }
-  .cal-date{ font-size: 11.5px; color: var(--text-muted); min-width: 78px; }
+  .cal-head{ display:flex; gap:10px; align-items:flex-start; }
+  .cal-date{ font-size: 11.5px; color: var(--text-muted); min-width: 96px; }
   .cal-body .ev{ font-size: 13.5px; font-weight: 600; }
   .cal-body .note{ font-size: 12px; color: var(--text-muted); margin-top:2px; }
+  .scenario{ display:flex; flex-direction:column; gap:4px; margin-left: 106px; }
+  .scenario-row{ display:flex; gap:8px; align-items:flex-start; font-size:11.5px; }
+  .scenario-row .sc-chip{
+    flex-shrink:0; font-size: 10px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em;
+    padding: 2px 7px; border-radius: 5px; min-width: 56px; text-align:center;
+  }
+  .scenario-row .sc-text{ color: var(--text-muted); padding-top:1px; }
+  .scenario-row .sc-text b{ color: var(--text); font-weight:600; }
+  @media (max-width: 900px){ .scenario{ margin-left:0; } }
 
   .panel-foot{ font-size: 11.5px; color: var(--text-muted); padding-top: 6px; border-top: 1px dashed var(--border); }
 
@@ -271,12 +281,29 @@
     `;
     document.getElementById('cmeFoot').textContent = cme.footnote;
 
-    document.getElementById('calBody').innerHTML = d.calendar.map(ev => `
+    document.getElementById('calBody').innerHTML = d.calendar.map(ev => {
+      const sc = ev.scenario;
+      const scenarioHtml = sc ? `
+        <div class="scenario">
+          <div class="scenario-row">
+            <span class="sc-chip ${sc.strong.cls}">${sc.strong.impact}</span>
+            <span class="sc-text">Jika hasil <b>${sc.strong.label}</b> → ${sc.strong.reason}</span>
+          </div>
+          <div class="scenario-row">
+            <span class="sc-chip ${sc.weak.cls}">${sc.weak.impact}</span>
+            <span class="sc-text">Jika hasil <b>${sc.weak.label}</b> → ${sc.weak.reason}</span>
+          </div>
+        </div>` : '';
+      return `
       <div class="cal-item">
-        <div class="cal-date mono">${ev.date}</div>
-        <div class="cal-body"><div class="ev">${ev.event}</div><div class="note">${ev.note}</div></div>
+        <div class="cal-head">
+          <div class="cal-date mono">${ev.date}</div>
+          <div class="cal-body"><div class="ev">${ev.event}</div><div class="note">${ev.note}</div></div>
+        </div>
+        ${scenarioHtml}
       </div>
-    `).join('');
+    `;
+    }).join('');
     document.getElementById('calFoot').textContent = 'Sumber: feed kalender publik ForexFactory';
 
     document.getElementById('sources').innerHTML = d.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('');

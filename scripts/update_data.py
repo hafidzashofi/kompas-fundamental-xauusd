@@ -82,6 +82,49 @@ def get_cot():
     }
 
 
+# Events where a HIGHER-than-forecast number means a WEAKER economy
+# (unemployment/claims data) -- everything else defaults to "growth":
+# a higher-than-forecast number means a STRONGER economy.
+SLACK_KEYWORDS = ("unemployment rate", "jobless claims", "continuing claims", "unemployment claims")
+FOMC_KEYWORDS = ("fomc", "federal funds rate", "interest rate decision", "fed interest rate", "rate decision")
+
+
+def classify_event(title):
+    t = title.lower()
+    if any(k in t for k in FOMC_KEYWORDS):
+        return "fomc"
+    if any(k in t for k in SLACK_KEYWORDS):
+        return "slack"
+    return "growth"
+
+
+def build_scenario(title):
+    kind = classify_event(title)
+
+    if kind == "fomc":
+        return {
+            "strong": {"label": "Dovish (pangkas / sinyal pangkas suku bunga)", "impact": "Bullish", "cls": "tag-bull",
+                       "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."},
+            "weak": {"label": "Hawkish (tahan / naikkan suku bunga)", "impact": "Bearish", "cls": "tag-bear",
+                     "reason": "USD & yield naik → biaya peluang memegang emas meningkat."},
+        }
+    if kind == "slack":
+        # e.g. Unemployment Rate, Jobless Claims: a HIGH reading = weak labor market
+        return {
+            "strong": {"label": "Lebih tinggi dari forecast (pasar kerja melemah)", "impact": "Bullish", "cls": "tag-bull",
+                       "reason": "The Fed berpeluang lebih dovish → USD melemah → emas naik."},
+            "weak": {"label": "Lebih rendah dari forecast (pasar kerja menguat)", "impact": "Bearish", "cls": "tag-bear",
+                     "reason": "The Fed cenderung hawkish/tahan suku bunga → USD menguat → emas tertekan."},
+        }
+    # default "growth" type: CPI, PPI, NFP, Retail Sales, GDP, PMI, etc.
+    return {
+        "strong": {"label": "Lebih tinggi dari forecast (data lebih kuat)", "impact": "Bearish", "cls": "tag-bear",
+                   "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."},
+        "weak": {"label": "Lebih rendah dari forecast (data lebih lemah)", "impact": "Bullish", "cls": "tag-bull",
+                 "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."},
+    }
+
+
 def get_calendar():
     events = []
     for url in FF_URLS:
@@ -111,6 +154,7 @@ def get_calendar():
             "date": fmt_date(dt_wib, with_time=True),
             "event": ev["title"],
             "note": f"High impact · forecast {ev.get('forecast') or '-'} · previous {ev.get('previous') or '-'}",
+            "scenario": build_scenario(ev["title"]),
         })
     return out
 

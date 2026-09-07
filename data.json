@@ -1,5 +1,5 @@
 {
-  "updatedAt": "8 Sep 2026, 00:48 WIB",
+  "updatedAt": "8 Sep 2026, 00:58 WIB",
   "price": {
     "level": "$4,476.60"
   },
@@ -37,32 +37,116 @@
     {
       "date": "10 Sep 2026, 19:30 WIB",
       "event": "Core PPI m/m",
-      "note": "High impact · forecast 0.3% · previous 0.2%"
+      "note": "High impact · forecast 0.3% · previous 0.2%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     },
     {
       "date": "10 Sep 2026, 19:30 WIB",
       "event": "PPI m/m",
-      "note": "High impact · forecast 0.4% · previous 0.0%"
+      "note": "High impact · forecast 0.4% · previous 0.0%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     },
     {
       "date": "11 Sep 2026, 19:30 WIB",
       "event": "Core CPI m/m",
-      "note": "High impact · forecast 0.2% · previous 0.2%"
+      "note": "High impact · forecast 0.2% · previous 0.2%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     },
     {
       "date": "11 Sep 2026, 19:30 WIB",
       "event": "Core CPI y/y",
-      "note": "High impact · forecast 2.4% · previous 2.5%"
+      "note": "High impact · forecast 2.4% · previous 2.5%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     },
     {
       "date": "11 Sep 2026, 19:30 WIB",
       "event": "CPI m/m",
-      "note": "High impact · forecast 0.4% · previous 0.1%"
+      "note": "High impact · forecast 0.4% · previous 0.1%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     },
     {
       "date": "11 Sep 2026, 19:30 WIB",
       "event": "CPI y/y",
-      "note": "High impact · forecast 3.4% · previous 3.4%"
+      "note": "High impact · forecast 3.4% · previous 3.4%",
+      "scenario": {
+        "strong": {
+          "label": "Lebih tinggi dari forecast (data lebih kuat)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
+        },
+        "weak": {
+          "label": "Lebih rendah dari forecast (data lebih lemah)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
+        }
+      }
     }
   ],
   "sources": [
