@@ -90,8 +90,11 @@
   .hero-text .accent{ color: var(--gold); font-weight: 600; }
 
   .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
+  .grid.grid-2col{ grid-template-columns: 1fr 1fr; }
   .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 24px; align-items:start; }
-  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .grid2{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
+  .calendar-panel{ margin-bottom: 24px; }
+  .calendar-columns{ display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4px 28px; }
+  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .grid.grid-2col{ grid-template-columns: 1fr; } .grid2{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
 
   .panel{
     background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
@@ -250,7 +253,7 @@
     </div>
   </div>
 
-  <div class="grid">
+  <div class="grid grid-2col">
     <div class="panel">
       <div class="panel-head"><h2>COT &middot; CFTC Legacy Report</h2><span class="panel-tag" id="cotTag">—</span></div>
       <div id="cotBody"></div>
@@ -262,12 +265,12 @@
       <div id="cmeBody"></div>
       <div class="panel-foot" id="cmeFoot"></div>
     </div>
+  </div>
 
-    <div class="panel">
-      <div class="panel-head"><h2>ForexFactory &middot; Kalender Risiko</h2><span class="panel-tag tag-event">High Impact</span></div>
-      <div id="calBody"></div>
-      <div class="panel-foot" id="calFoot"></div>
-    </div>
+  <div class="panel calendar-panel">
+    <div class="panel-head"><h2>ForexFactory &middot; Kalender Risiko</h2><span class="panel-tag tag-event">High Impact</span></div>
+    <div id="calBody" class="calendar-columns"></div>
+    <div class="panel-foot" id="calFoot"></div>
   </div>
 
   <div class="grid2">
