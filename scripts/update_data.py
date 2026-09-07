@@ -14,9 +14,12 @@ scripts/update_data.py`, or on a schedule via the GitHub Actions
 workflow in .github/workflows/update.yml.
 """
 
+import html
 import json
+import re
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -45,6 +48,9 @@ FF_URLS = [
     "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
 ]
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=5d"
+YIELD_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?interval=1d&range=5d"
+DXY_URL = "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?interval=1d&range=5d"
+NEWS_URL = "https://www.fxstreet.com/rss/news"
 
 
 def fetch_json(url):
@@ -65,7 +71,15 @@ def get_cot():
 
     open_interest = int(latest["open_interest_all"])
     oi_change = int(latest["change_in_open_interest_all"])
-    commercial_net = int(latest["comm_positions_long_all"]) - int(latest["comm_positions_short_all"])
+
+    comm_long = int(latest["comm_positions_long_all"])
+    comm_short = int(latest["comm_positions_short_all"])
+    commercial_net = comm_long - comm_short
+
+    retail_long = int(latest["nonrept_positions_long_all"])
+    retail_short = int(latest["nonrept_positions_short_all"])
+    retail_net = retail_long - retail_short
+    prev_retail_net = int(prev["nonrept_positions_long_all"]) - int(prev["nonrept_positions_short_all"])
 
     report_date = fmt_date(datetime.fromisoformat(latest["report_date_as_yyyy_mm_dd"]))
 
@@ -75,7 +89,13 @@ def get_cot():
         "ncShort": nc_short,
         "netLong": net_long,
         "weeklyChange": weekly_change,
+        "commercialLong": comm_long,
+        "commercialShort": comm_short,
         "commercialNet": commercial_net,
+        "retailLong": retail_long,
+        "retailShort": retail_short,
+        "retailNet": retail_net,
+        "retailWeeklyChange": retail_net - prev_retail_net,
         "openInterest": open_interest,
         "oiChange": oi_change,
         "netLongPct": round(net_long / open_interest * 100, 1),
@@ -172,6 +192,176 @@ def get_price():
     }
 
 
+def get_macro():
+    yld = fetch_json(YIELD_URL)["chart"]["result"][0]["meta"]
+    dxy = fetch_json(DXY_URL)["chart"]["result"][0]["meta"]
+    return {
+        "yield10y": round(yld["regularMarketPrice"], 2),
+        "yield10yChange": round(yld.get("regularMarketChangePercent", 0.0), 2),
+        "dxy": round(dxy["regularMarketPrice"], 2),
+        "dxyChange": round(dxy.get("regularMarketChangePercent", 0.0), 2),
+    }
+
+
+NEWS_KEYWORDS = [
+    "gold", "xau", "silver", "fed", "fomc", "powell", "rate cut", "rate hike",
+    "interest rate", "dollar", "dxy", "treasury", "yield", "inflation", "cpi",
+    "ppi", "nonfarm", "payrolls", "jobless", "safe haven", "safe-haven",
+    "geopolit", "tariff", "war", "middle east", "opec", "central bank",
+    "recession", "jerome powell",
+]
+
+
+def tag_news(text):
+    t = text.lower()
+    if any(k in t for k in ("gold", "xau", "silver", "safe haven", "safe-haven")):
+        return "Emas"
+    if any(k in t for k in ("fed", "fomc", "powell", "rate cut", "rate hike", "interest rate", "central bank")):
+        return "Bank Sentral"
+    if any(k in t for k in ("dollar", "dxy", "treasury", "yield")):
+        return "Dolar/Yield"
+    if any(k in t for k in ("cpi", "ppi", "nonfarm", "payrolls", "jobless", "inflation", "recession")):
+        return "Data Ekonomi"
+    if any(k in t for k in ("geopolit", "tariff", "war", "middle east", "opec")):
+        return "Geopolitik"
+    return "Pasar"
+
+
+def get_news():
+    try:
+        raw = urllib.request.urlopen(
+            urllib.request.Request(NEWS_URL, headers=UA), timeout=20
+        ).read()
+    except Exception:
+        return []
+
+    root = ET.fromstring(raw)
+    items = []
+    for item in root.findall(".//item"):
+        title = (item.findtext("title") or "").strip()
+        desc = re.sub("<[^<]+?>", "", html.unescape(item.findtext("description") or "")).strip()
+        link = (item.findtext("link") or "").strip()
+        pub = (item.findtext("pubDate") or "").strip()
+
+        haystack = f"{title} {desc}".lower()
+        if not any(k in haystack for k in NEWS_KEYWORDS):
+            continue
+
+        try:
+            dt = datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
+        except ValueError:
+            dt = None
+
+        items.append({
+            "title": title,
+            "summary": (desc[:180] + "…") if len(desc) > 180 else desc,
+            "link": link,
+            "time": fmt_date(dt.astimezone(WIB), with_time=True) if dt else "-",
+            "sortKey": dt or datetime(1970, 1, 1, tzinfo=timezone.utc),
+            "tag": tag_news(haystack),
+        })
+
+    items.sort(key=lambda x: x["sortKey"], reverse=True)
+    for it in items:
+        del it["sortKey"]
+    return items[:8]
+
+
+def build_positioning(cot):
+    def net_label(net):
+        if net > 0:
+            return "NET LONG", "tag-bull"
+        if net < 0:
+            return "NET SHORT", "tag-bear"
+        return "SEIMBANG", "tag-neutral"
+
+    hedge_label, hedge_cls = net_label(cot["netLong"])
+    retail_label, retail_cls = net_label(cot["retailNet"])
+    comm_label, comm_cls = net_label(cot["commercialNet"])
+
+    same_direction = (cot["netLong"] > 0) == (cot["retailNet"] > 0)
+    alignment_note = (
+        "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan "
+        "cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
+        if same_direction else
+        "Retail dan hedge fund/spekulan besar berlawanan arah. Secara historis, "
+        "posisi retail sering jadi indikator kontrarian — saat retail net long besar-besaran "
+        "sementara smart money mulai berkurang, itu sinyal kewaspadaan akan potensi pembalikan."
+    )
+
+    return {
+        "hedgeFund": {
+            "long": cot["ncLong"], "short": cot["ncShort"], "net": cot["netLong"],
+            "label": hedge_label, "cls": hedge_cls,
+        },
+        "retail": {
+            "long": cot["retailLong"], "short": cot["retailShort"], "net": cot["retailNet"],
+            "weeklyChange": cot["retailWeeklyChange"], "label": retail_label, "cls": retail_cls,
+        },
+        "commercial": {
+            "long": cot["commercialLong"], "short": cot["commercialShort"], "net": cot["commercialNet"],
+            "label": comm_label, "cls": comm_cls,
+        },
+        "alignmentNote": alignment_note,
+    }
+
+
+def build_policy(macro, price):
+    yield_dir = "naik" if macro["yield10yChange"] > 0 else "turun"
+    dxy_dir = "menguat" if macro["dxyChange"] > 0 else "melemah"
+    gold_dir = "naik" if price["changePct"] > 0 else "turun"
+
+    today_note = (
+        f"Hari ini yield US Treasury 10-tahun {yield_dir} ke {macro['yield10y']}% "
+        f"({macro['yield10yChange']:+.2f}%) dan indeks dolar (DXY) {dxy_dir} ke {macro['dxy']} "
+        f"({macro['dxyChange']:+.2f}%), sementara XAU/USD {gold_dir} {abs(price['changePct'])}%. "
+        + (
+            "Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas."
+            if (macro["yield10yChange"] > 0 or macro["dxyChange"] > 0) and price["changePct"] < 0
+            else "Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas."
+            if (macro["yield10yChange"] < 0 or macro["dxyChange"] < 0) and price["changePct"] > 0
+            else "Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain "
+                 "(geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini."
+        )
+    )
+
+    mechanisms = [
+        {
+            "title": "Suku bunga The Fed (FOMC)",
+            "body": "Emas tidak memberi imbal hasil (non-yielding asset). Saat The Fed menaikkan suku bunga "
+                    "atau bersikap hawkish, yield obligasi & deposito USD jadi lebih menarik dibanding emas → "
+                    "dana mengalir keluar dari emas → harga tertekan. Sebaliknya, sikap dovish atau pemangkasan "
+                    "suku bunga menurunkan biaya peluang memegang emas → harga cenderung naik.",
+        },
+        {
+            "title": "Kekuatan Dolar AS (DXY)",
+            "body": "Emas dihargai dalam USD di pasar global. Saat dolar menguat (DXY naik), emas jadi lebih "
+                    "mahal bagi pemegang mata uang lain sehingga permintaan melemah → harga turun. Dolar yang "
+                    "melemah membuat emas relatif lebih murah → permintaan & harga naik.",
+        },
+        {
+            "title": "Quantitative Easing / Tightening",
+            "body": "QE (bank sentral mencetak uang, membeli obligasi) membanjiri sistem dengan likuiditas dan "
+                    "melemahkan mata uang → biasanya bullish untuk emas sebagai lindung nilai inflasi. QT "
+                    "(mengurangi neraca) menarik likuiditas keluar → cenderung bearish untuk emas.",
+        },
+        {
+            "title": "Pembelian emas bank sentral global",
+            "body": "Beberapa tahun terakhir, bank sentral negara berkembang (China, India, Turki, Polandia, dll) "
+                    "secara konsisten menjadi pembeli neto emas untuk diversifikasi cadangan devisa dari dolar. "
+                    "Ini jadi faktor bullish struktural jangka panjang yang independen dari siklus suku bunga.",
+        },
+        {
+            "title": "Kebijakan bank sentral lain (ECB, BOJ, PBOC)",
+            "body": "Selisih suku bunga The Fed vs bank sentral lain menggerakkan pasangan mata uang utama, yang "
+                    "pada akhirnya memengaruhi DXY. Contoh: BOJ yang mulai hawkish menguatkan Yen → menekan DXY → "
+                    "cenderung mendukung harga emas meski tidak ada perubahan kebijakan dari The Fed.",
+        },
+    ]
+
+    return {"todayNote": today_note, "mechanisms": mechanisms}
+
+
 def compute_bias(cot, price):
     # Heuristic composite score, -100 (bearish) .. +100 (bullish).
     # Not a trading signal by itself -- it blends speculative positioning
@@ -234,8 +424,12 @@ def main():
     cot = get_cot()
     calendar = get_calendar()
     price = get_price()
+    macro = get_macro()
+    news = get_news()
     score, label = compute_bias(cot, price)
     narrative = build_narrative(cot, price, calendar, score, label)
+    positioning = build_positioning(cot)
+    policy = build_policy(macro, price)
 
     cot_tag = "Crowded Long" if cot["netLongPct"] > 55 else "Crowded Short" if cot["netLongPct"] < 30 else "Seimbang"
     cot_tag_class = "tag-bull" if cot["netLongPct"] > 55 else "tag-bear" if cot["netLongPct"] < 30 else "tag-neutral"
@@ -273,10 +467,17 @@ def main():
         "calendar": calendar or [{
             "date": "-", "event": "Tidak ada event high-impact USD terjadwal", "note": "Cek kembali menjelang akhir pekan"
         }],
+        "positioning": positioning,
+        "policy": policy,
+        "macro": macro,
+        "news": news,
         "sources": [
             {"label": "CFTC COT (data.gov terbuka)", "url": "https://publicreporting.cftc.gov/Market-Reports/Commitments-of-Traders/6dca-aqww"},
             {"label": "ForexFactory Calendar", "url": "https://www.forexfactory.com/calendar"},
             {"label": "Yahoo Finance GC=F", "url": "https://finance.yahoo.com/quote/GC=F/"},
+            {"label": "FXStreet News", "url": "https://www.fxstreet.com/news"},
+            {"label": "US 10Y Yield (^TNX)", "url": "https://finance.yahoo.com/quote/%5ETNX/"},
+            {"label": "US Dollar Index (DXY)", "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"},
         ],
     }
 

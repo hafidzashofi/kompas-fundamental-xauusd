@@ -1,5 +1,5 @@
 {
-  "updatedAt": "8 Sep 2026, 00:58 WIB",
+  "updatedAt": "8 Sep 2026, 01:07 WIB",
   "price": {
     "level": "$4,476.60"
   },
@@ -149,6 +149,120 @@
       }
     }
   ],
+  "positioning": {
+    "hedgeFund": {
+      "long": 260485,
+      "short": 32361,
+      "net": 228124,
+      "label": "NET LONG",
+      "cls": "tag-bull"
+    },
+    "retail": {
+      "long": 52030,
+      "short": 15436,
+      "net": 36594,
+      "weeklyChange": 343,
+      "label": "NET LONG",
+      "cls": "tag-bull"
+    },
+    "commercial": {
+      "long": 61450,
+      "short": 326168,
+      "net": -264718,
+      "label": "NET SHORT",
+      "cls": "tag-bear"
+    },
+    "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
+  },
+  "policy": {
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.78% (+0.00%) dan indeks dolar (DXY) melemah ke 98.91 (-0.27%), sementara XAU/USD turun 1.39%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "mechanisms": [
+      {
+        "title": "Suku bunga The Fed (FOMC)",
+        "body": "Emas tidak memberi imbal hasil (non-yielding asset). Saat The Fed menaikkan suku bunga atau bersikap hawkish, yield obligasi & deposito USD jadi lebih menarik dibanding emas → dana mengalir keluar dari emas → harga tertekan. Sebaliknya, sikap dovish atau pemangkasan suku bunga menurunkan biaya peluang memegang emas → harga cenderung naik."
+      },
+      {
+        "title": "Kekuatan Dolar AS (DXY)",
+        "body": "Emas dihargai dalam USD di pasar global. Saat dolar menguat (DXY naik), emas jadi lebih mahal bagi pemegang mata uang lain sehingga permintaan melemah → harga turun. Dolar yang melemah membuat emas relatif lebih murah → permintaan & harga naik."
+      },
+      {
+        "title": "Quantitative Easing / Tightening",
+        "body": "QE (bank sentral mencetak uang, membeli obligasi) membanjiri sistem dengan likuiditas dan melemahkan mata uang → biasanya bullish untuk emas sebagai lindung nilai inflasi. QT (mengurangi neraca) menarik likuiditas keluar → cenderung bearish untuk emas."
+      },
+      {
+        "title": "Pembelian emas bank sentral global",
+        "body": "Beberapa tahun terakhir, bank sentral negara berkembang (China, India, Turki, Polandia, dll) secara konsisten menjadi pembeli neto emas untuk diversifikasi cadangan devisa dari dolar. Ini jadi faktor bullish struktural jangka panjang yang independen dari siklus suku bunga."
+      },
+      {
+        "title": "Kebijakan bank sentral lain (ECB, BOJ, PBOC)",
+        "body": "Selisih suku bunga The Fed vs bank sentral lain menggerakkan pasangan mata uang utama, yang pada akhirnya memengaruhi DXY. Contoh: BOJ yang mulai hawkish menguatkan Yen → menekan DXY → cenderung mendukung harga emas meski tidak ada perubahan kebijakan dari The Fed."
+      }
+    ]
+  },
+  "macro": {
+    "yield10y": 4.78,
+    "yield10yChange": 0.0,
+    "dxy": 98.91,
+    "dxyChange": -0.27
+  },
+  "news": [
+    {
+      "title": "United States Dollar Index trades under pressure as Yen buying accelerates",
+      "summary": "The US Dollar Index (DXY), which tracks the Greenback’s value against a basket of six major currencies, extends its decline on Monday as a sharp rally in the Japanese Yen (JPY) out…",
+      "link": "https://www.fxstreet.com/news/united-states-dollar-index-trades-under-pressure-as-yen-buying-accelerates-202609071803",
+      "time": "8 Sep 2026, 01:03 WIB",
+      "tag": "Bank Sentral"
+    },
+    {
+      "title": "Forex Today: Japanese GDP figures and China’s trade results in the limelight",
+      "summary": "The US Dollar (USD) has started the week on the back foot, rapidly leaving behind Friday’s uptick and refocusing on the downside.",
+      "link": "https://www.fxstreet.com/news/forex-today-japanese-gdp-figures-and-chinas-trade-results-in-the-limelight-202609071750",
+      "time": "8 Sep 2026, 00:50 WIB",
+      "tag": "Dolar/Yield"
+    },
+    {
+      "title": "The Euro waits for the sentence after the rate hike",
+      "summary": "EUR/USD holds above 1.1600 after a Monday that covered 28 pips. The Eurozone revised second-quarter growth up to 0.6% against a 0.4% consensus, the Sentix investor survey jumped to…",
+      "link": "https://www.fxstreet.com/news/the-euro-waits-for-the-sentence-after-the-rate-hike-202609071741",
+      "time": "8 Sep 2026, 00:41 WIB",
+      "tag": "Bank Sentral"
+    },
+    {
+      "title": "United States: Sideways growth and oil shock risks – TD Securities",
+      "summary": "TD Securities expects US output growth to move sideways in 2026 as the prior Oil shock lingers and the Iran conflict poses stagflationary risks. GDP is forecast to end 2026 at 2.1%…",
+      "link": "https://www.fxstreet.com/news/united-states-sideways-growth-and-oil-shock-risks-td-securities-202609071737",
+      "time": "8 Sep 2026, 00:37 WIB",
+      "tag": "Data Ekonomi"
+    },
+    {
+      "title": "The Japanese Yen has stopped trading the Federal Reserve",
+      "summary": "USD/JPY trades just above 154.00 after giving up close to two Yen on Monday, its weakest in six months. Nothing confirms an intervention, and Tokyo has no level left to defend at s…",
+      "link": "https://www.fxstreet.com/news/nobody-has-unwound-the-japanese-yen-carry-trade-yet-202609071701",
+      "time": "8 Sep 2026, 00:01 WIB",
+      "tag": "Bank Sentral"
+    },
+    {
+      "title": "British Pound climbs as USD fades, Hormuz risk keeps Fed in play",
+      "summary": "The Pound Sterling (GBP) rises over 0.23% amid thin trading, as US markets remain closed for the Labor Day weekend, while the US-Iran conflict escalated, with both countries exchan…",
+      "link": "https://www.fxstreet.com/news/british-pound-climbs-as-usd-fades-hormuz-risk-keeps-fed-in-play-202609071651",
+      "time": "7 Sep 2026, 23:51 WIB",
+      "tag": "Bank Sentral"
+    },
+    {
+      "title": "New Zealand Dollar struggles to gain traction as cautious RBNZ outlook weighs",
+      "summary": "NZD/USD trades around 0.5880 on Monday at the time of writing, posting a modest 0.06% decline on the day after two consecutive days of gains.",
+      "link": "https://www.fxstreet.com/news/new-zealand-dollar-struggles-to-gain-traction-as-cautious-rbnz-outlook-weighs-202609071609",
+      "time": "7 Sep 2026, 23:09 WIB",
+      "tag": "Dolar/Yield"
+    },
+    {
+      "title": "USD/CHF Price Forecast: Pair consolidates around the 50-day SMA",
+      "summary": "USD/CHF trades with a downside bias on Monday as the US Dollar (USD) stays on the defensive, largely due to broad Japanese Yen (JPY) strength. At the time of writing, the pair trad…",
+      "link": "https://www.fxstreet.com/news/usd-chf-price-forecast-pair-consolidates-around-the-50-day-sma-202609071602",
+      "time": "7 Sep 2026, 23:02 WIB",
+      "tag": "Dolar/Yield"
+    }
+  ],
   "sources": [
     {
       "label": "CFTC COT (data.gov terbuka)",
@@ -161,6 +275,18 @@
     {
       "label": "Yahoo Finance GC=F",
       "url": "https://finance.yahoo.com/quote/GC=F/"
+    },
+    {
+      "label": "FXStreet News",
+      "url": "https://www.fxstreet.com/news"
+    },
+    {
+      "label": "US 10Y Yield (^TNX)",
+      "url": "https://finance.yahoo.com/quote/%5ETNX/"
+    },
+    {
+      "label": "US Dollar Index (DXY)",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
     }
   ]
 }

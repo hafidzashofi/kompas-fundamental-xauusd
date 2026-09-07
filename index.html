@@ -85,7 +85,8 @@
   .hero-text .accent{ color: var(--gold); font-weight: 600; }
 
   .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
-  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
+  .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 24px; align-items:start; }
+  @media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } .grid2{ grid-template-columns: 1fr; } .hero{ grid-template-columns: 1fr; } }
 
   .panel{
     background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
@@ -136,6 +137,45 @@
   .footer a{ color: var(--gold); text-decoration:none; }
   .footer a:hover{ text-decoration:underline; }
   .sources{ display:flex; flex-wrap:wrap; gap: 4px 14px; max-width: 640px; }
+
+  /* positioning panel */
+  .pos-group{ display:flex; flex-direction:column; gap:6px; padding: 10px 0; border-bottom:1px solid var(--border); }
+  .pos-group:last-of-type{ border-bottom:none; }
+  .pos-head{ display:flex; justify-content:space-between; align-items:center; }
+  .pos-name{ font-size: 13px; font-weight:600; }
+  .pos-sub{ font-size: 11px; color: var(--text-muted); }
+  .pos-bar-track{ height:10px; border-radius:99px; background: var(--surface-2); border:1px solid var(--border); overflow:hidden; display:flex; }
+  .pos-bar-long{ background: var(--bull); height:100%; }
+  .pos-bar-short{ background: var(--bear); height:100%; }
+  .pos-figs{ display:flex; justify-content:space-between; font-size: 11px; color: var(--text-muted); }
+  .alignment-note{
+    font-size: 12.5px; color: var(--text); background: var(--surface-2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-top: 4px;
+  }
+
+  /* policy panel */
+  .macro-strip{ display:flex; gap: 14px; flex-wrap:wrap; padding-bottom: 12px; margin-bottom: 4px; border-bottom: 1px solid var(--border); }
+  .macro-item{ display:flex; flex-direction:column; gap: 2px; }
+  .macro-item .lbl{ font-size: 10.5px; text-transform:uppercase; letter-spacing:0.06em; color: var(--text-muted); }
+  .macro-item .val{ font-size: 15px; font-weight:600; }
+  .macro-item .val.bull{ color: var(--bull); } .macro-item .val.bear{ color: var(--bear); }
+  .today-note{ font-size: 12.5px; color: var(--text); line-height:1.55; }
+  .mech-list{ display:flex; flex-direction:column; gap: 10px; margin-top: 6px; }
+  .mech-item .mech-title{ font-size: 12.5px; font-weight:600; margin-bottom: 2px; }
+  .mech-item .mech-body{ font-size: 12px; color: var(--text-muted); line-height:1.5; }
+
+  /* news panel */
+  .news-panel{ margin-bottom: 24px; }
+  .news-list{ display:flex; flex-direction:column; }
+  .news-item{ display:flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .news-item:last-child{ border-bottom:none; }
+  .news-time{ font-size: 11px; color: var(--text-muted); min-width: 130px; flex-shrink:0; }
+  .news-content .news-title{ font-size: 13.5px; font-weight:600; }
+  .news-content .news-title a{ color: var(--text); text-decoration:none; }
+  .news-content .news-title a:hover{ color: var(--gold); text-decoration:underline; }
+  .news-content .news-summary{ font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+  .news-tag{ margin-top: 5px; }
+  @media (max-width: 700px){ .news-item{ flex-direction:column; gap:4px; } .news-time{ min-width:auto; } }
 
   .err{ color: var(--bear); font-size: 13px; }
   :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
@@ -193,6 +233,25 @@
       <div id="calBody"></div>
       <div class="panel-foot" id="calFoot"></div>
     </div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <div class="panel-head"><h2>Sentimen Posisi &middot; Retail vs Hedge Fund</h2></div>
+      <div id="posBody"></div>
+      <div class="panel-foot" id="posFoot"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>Dampak Kebijakan Bank Sentral</h2></div>
+      <div id="policyBody"></div>
+    </div>
+  </div>
+
+  <div class="panel news-panel">
+    <div class="panel-head"><h2>Berita Pasar Terkini</h2><span class="panel-tag tag-event" id="newsTag">Live Feed</span></div>
+    <div id="newsBody" class="news-list"></div>
+    <div class="panel-foot">Sumber: FXStreet, disaring untuk topik emas/dolar/bank sentral/geopolitik</div>
   </div>
 
   <div class="footer">
@@ -307,6 +366,76 @@
     document.getElementById('calFoot').textContent = 'Sumber: feed kalender publik ForexFactory';
 
     document.getElementById('sources').innerHTML = d.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('');
+
+    // Positioning panel
+    if (d.positioning) {
+      const groups = [
+        {name: 'Hedge Fund / Spekulan Besar', sub: '(Non-Commercial, COT)', g: d.positioning.hedgeFund},
+        {name: 'Retail / Trader Kecil', sub: '(Non-Reportable, COT)', g: d.positioning.retail},
+        {name: 'Commercial / Produsen & Hedger', sub: '(Commercial, COT)', g: d.positioning.commercial},
+      ];
+      document.getElementById('posBody').innerHTML = groups.map(({name, sub, g}) => {
+        const total = g.long + g.short;
+        const longPct = total ? Math.round((g.long/total)*100) : 50;
+        return `
+        <div class="pos-group">
+          <div class="pos-head">
+            <div><span class="pos-name">${name}</span> <span class="pos-sub">${sub}</span></div>
+            <span class="panel-tag ${g.cls}">${g.label}</span>
+          </div>
+          <div class="pos-bar-track">
+            <div class="pos-bar-long" style="width:${longPct}%"></div>
+            <div class="pos-bar-short" style="width:${100-longPct}%"></div>
+          </div>
+          <div class="pos-figs">
+            <span>Long ${fmt(g.long)}</span>
+            <span>Net ${g.net>0?'+':''}${fmt(g.net)}</span>
+            <span>Short ${fmt(g.short)}</span>
+          </div>
+        </div>`;
+      }).join('') + `<div class="alignment-note">${d.positioning.alignmentNote}</div>`;
+      document.getElementById('posFoot').textContent = 'Sumber: breakdown lengkap laporan CFTC COT (Legacy Report)';
+    }
+
+    // Policy panel
+    if (d.policy && d.macro) {
+      const m = d.macro;
+      document.getElementById('policyBody').innerHTML = `
+        <div class="macro-strip">
+          <div class="macro-item">
+            <span class="lbl">US 10Y Yield</span>
+            <span class="val mono ${m.yield10yChange<0?'bull':'bear'}">${m.yield10y}% <small>(${m.yield10yChange>0?'+':''}${m.yield10yChange}%)</small></span>
+          </div>
+          <div class="macro-item">
+            <span class="lbl">Dollar Index (DXY)</span>
+            <span class="val mono ${m.dxyChange<0?'bull':'bear'}">${m.dxy} <small>(${m.dxyChange>0?'+':''}${m.dxyChange}%)</small></span>
+          </div>
+        </div>
+        <div class="today-note">${d.policy.todayNote}</div>
+        <div class="mech-list">
+          ${d.policy.mechanisms.map(mc => `
+            <div class="mech-item">
+              <div class="mech-title">${mc.title}</div>
+              <div class="mech-body">${mc.body}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // News panel
+    if (d.news) {
+      document.getElementById('newsBody').innerHTML = d.news.length ? d.news.map(n => `
+        <div class="news-item">
+          <div class="news-time mono">${n.time}</div>
+          <div class="news-content">
+            <div class="news-title"><a href="${n.link}" target="_blank" rel="noopener">${n.title}</a></div>
+            <div class="news-summary">${n.summary}</div>
+            <span class="panel-tag tag-neutral news-tag">${n.tag}</span>
+          </div>
+        </div>
+      `).join('') : '<p style="color:var(--text-muted); font-size:13px;">Tidak ada berita relevan saat ini.</p>';
+    }
   }
 
   fetch('./data.json', {cache:'no-store'})
