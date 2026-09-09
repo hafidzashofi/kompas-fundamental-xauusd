@@ -1,18 +1,18 @@
 {
-  "updatedAt": "9 Sep 2026, 07:58 WIB",
+  "updatedAt": "9 Sep 2026, 21:58 WIB",
   "price": {
-    "level": "$4,398.50"
+    "level": "$4,465.50"
   },
-  "biasScore": -43,
-  "biasLabel": "BEARISH",
-  "bullishPct": 28,
-  "bearishPct": 72,
+  "biasScore": -28,
+  "biasLabel": "NETRAL condong BEARISH",
+  "bullishPct": 36,
+  "bearishPct": 64,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,398.50</span>, melemah 0.91% pada sesi terakhir, dengan rentang 52 minggu $3,618–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,465.50</span>, menguat 0.6% pada sesi terakhir, dengan rentang 52 minggu $3,618–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 1 Sep 2026 tercatat net long <span class=\"accent\">228,124</span> kontrak (54.9% dari open interest) — relatif seimbang. Net long ini turun 15,210 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 415,196 kontrak (turun 12,761), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core PPI m/m</b> pada 10 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -43/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -28/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "1 Sep 2026",
@@ -30,7 +30,7 @@
     "oiChange": -12761,
     "rangeLow": "$3,618",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 1 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -177,7 +177,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.81% (+0.46%) dan indeks dolar (DXY) melemah ke 98.78 (-0.00%), sementara XAU/USD turun 0.91%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.81% (+0.00%) dan indeks dolar (DXY) melemah ke 98.68 (-0.11%), sementara XAU/USD naik 0.6%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -210,11 +210,11 @@
       "asOf": "2026-09-07"
     },
     "mediaSentiment": {
-      "avgScore": 0.114,
+      "avgScore": 0.093,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 17,
-      "neutralCount": 28,
+      "bullishCount": 13,
+      "neutralCount": 32,
       "bearishCount": 5
     },
     "cpi": {
@@ -231,82 +231,82 @@
   },
   "macro": {
     "yield10y": 4.81,
-    "yield10yChange": 0.46,
-    "dxy": 98.78,
-    "dxyChange": -0.0
+    "yield10yChange": 0.0,
+    "dxy": 98.68,
+    "dxyChange": -0.11
   },
   "news": [
     {
-      "titleEn": "Euro grinds higher above 1.1600, traders await ECB rate decision, US inflation data",
-      "summaryEn": "The EUR/USD pair gains traction to near 1.1630 during the early Asian trading hours on Wednesday. Expectations of a rate hike from the European Central Bank (ECB) provide some supp…",
-      "link": "https://www.fxstreet.com/news/euro-grinds-higher-above-11600-traders-await-ecb-rate-decision-us-inflation-data-202609090058",
-      "time": "9 Sep 2026, 07:58 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro naik lebih tinggi di atas 1,1600, trader menunggu keputusan suku bunga ECB, data inflasi AS",
-      "summaryId": "Pasangan EUR/USD mendapatkan traksi mendekati 1,1630 selama jam perdagangan awal Asia pada hari Rabu. Ekspektasi kenaikan suku bunga dari Bank Sentral Eropa (ECB) memberikan beberapa dukungan…"
-    },
-    {
-      "titleEn": "US targets Iranian oil tankers in response to attacks on US ships",
-      "summaryEn": "US official said that US forces have struck multiple Iranian tankers tied to Iran’s Islamic Revolutionary Guard Corps (IRGC) in response to attempted missile attacks on a US warshi…",
-      "link": "https://www.fxstreet.com/news/us-targets-iranian-oil-tankers-in-response-to-attacks-on-us-ships-202609090001",
-      "time": "9 Sep 2026, 07:01 WIB",
-      "tag": "Geopolitik",
-      "titleId": "AS menargetkan kapal tanker minyak Iran sebagai tanggapan atas serangan terhadap kapal AS",
-      "summaryId": "Pejabat AS mengatakan bahwa pasukan AS telah menyerang beberapa kapal tanker Iran yang terkait dengan Korps Pengawal Revolusi Islam Iran (IRGC) sebagai tanggapan atas upaya serangan rudal terhadap warshi AS..."
-    },
-    {
-      "titleEn": "Gold slumps to near $4,350 amid oil-driven inflation fears, US inflation data in focus",
-      "summaryEn": "Gold price (XAU/USD) falls to near $4,350 during the early Asian session on Wednesday. The precious metal faces some selling pressure as rising oil prices fueled inflation ‌concern…",
-      "link": "https://www.fxstreet.com/news/gold-slumps-to-near-4-350-amid-oil-driven-inflation-fears-us-inflation-data-in-focus-202609082332",
-      "time": "9 Sep 2026, 06:32 WIB",
-      "tag": "Emas",
-      "titleId": "Emas merosot mendekati $ 4.350 di tengah kekhawatiran inflasi yang didorong oleh minyak, data inflasi AS menjadi fokus",
-      "summaryId": "Harga emas (XAU/USD) turun mendekati $ 4.350 selama awal sesi Asia pada hari Rabu. Logam mulia ini menghadapi beberapa tekanan jual karena kenaikan harga minyak memicu kekhawatiran inflasi..."
-    },
-    {
-      "titleEn": "Australian Dollar bulls run into Oil wall amid looming Fed decision",
-      "summaryEn": "The Aussie Dollar finished Tuesday’s session flat after bouncing off daily lows of 0.7204 but failed to sustain its gains as higher oil prices pushed the Greenback higher, leaving …",
-      "link": "https://www.fxstreet.com/news/australian-dollar-bulls-run-into-oil-wall-amid-looming-fed-decision-202609082326",
-      "time": "9 Sep 2026, 06:26 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Banteng Dolar Australia menabrak dinding Minyak di tengah menjulangnya keputusan Fed",
-      "summaryId": "Dolar Aussie menyelesaikan sesi Selasa datar setelah memantul dari posisi terendah harian 0,7204 tetapi gagal mempertahankan kenaikannya karena harga minyak yang lebih tinggi mendorong Greenback lebih tinggi, meninggalkan ..."
-    },
-    {
-      "titleEn": "Silver Price Forecast: Head-and-Shoulders risk builds below $67",
-      "summaryEn": "Silver price struggles to clear a key technical resistance near $67.00, retraces to two-day lows at $65.31, and records a 1.42% loss. The non-yielding metal failed to sustain its e…",
-      "link": "https://www.fxstreet.com/news/silver-price-forecast-head-and-shoulders-risk-builds-below-67-202609082205",
-      "time": "9 Sep 2026, 05:05 WIB",
-      "tag": "Emas",
-      "titleId": "Prakiraan Harga Perak: Risiko Head - and - Shoulders meningkat di bawah $ 67",
-      "summaryId": "Harga perak berjuang untuk menghapus resistensi teknis utama di dekat $ 67,00, menelusuri kembali ke posisi terendah dua hari di $ 65,31, dan mencatat kerugian 1,42%. Logam yang tidak menghasilkan gagal mempertahankan..."
-    },
-    {
-      "titleEn": "Forex Today: China’s inflation looms as Lagarde tees up ECB decision",
-      "summaryEn": "Forex markets have remained subdued since the beginning of the week, with the US Dollar (USD) holding near 99.00 on Tuesday, as depicted by the US Dollar Index (DXY).",
-      "link": "https://www.fxstreet.com/news/forex-today-chinas-inflation-looms-as-lagarde-tees-up-ecb-decision-202609082014",
-      "time": "9 Sep 2026, 03:14 WIB",
+      "titleEn": "British Pound: BoE tightening expectations lend support against US Dollar – Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note GBP/USD is steady after reaching a one-week high, with the British Pound (GBP) supported by rising Bank of England (BoE) …",
+      "link": "https://www.fxstreet.com/news/british-pound-boe-tightening-expectations-lend-support-against-us-dollar-scotiabank-202609091453",
+      "time": "9 Sep 2026, 21:53 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Forex Today: Inflasi Tiongkok membayang saat Lagarde mengambil keputusan ECB",
-      "summaryId": "Pasar valas tetap tenang sejak awal pekan ini, dengan Dolar AS (USD) bertahan di dekat 99,00 pada hari Selasa, seperti yang digambarkan oleh Indeks Dolar AS (DXY)."
+      "titleId": "Pound Inggris: Ekspektasi pengetatan BoE memberikan dukungan terhadap Dolar AS – Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat GBP/USD stabil setelah mencapai level tertinggi satu minggu, dengan Pound Inggris (GBP) didukung oleh Bank of England (BoE) yang naik…"
     },
     {
-      "titleEn": "British Pound: Short term bias tilts higher against US Dollar – UOB",
-      "summaryEn": "UOB’s Quek Ser Leang and Lee Sue Ann note GBP/USD edged higher to around 1.3545, with no significant build-up in momentum but a modest upside tilt toward 1.3565 in the near term.",
-      "link": "https://www.fxstreet.com/news/british-pound-short-term-bias-tilts-higher-against-us-dollar-uob-202609081930",
-      "time": "9 Sep 2026, 02:30 WIB",
+      "titleEn": "Swiss Franc gains ground as Japanese Yen-led weakness grips US Dollar",
+      "summaryEn": "USD/CHF edges lower on Wednesday as broad weakness in the US Dollar (USD) allows the Swiss Franc (CHF) to regain some ground. At the time of writing, the pair trades around 0.8078,…",
+      "link": "https://www.fxstreet.com/news/swiss-franc-gains-ground-as-japanese-yen-led-weakness-grips-us-dollar-202609091443",
+      "time": "9 Sep 2026, 21:43 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Pound Inggris: Bias jangka pendek miring lebih tinggi terhadap Dolar AS – UOB",
-      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari UOB mencatat GBP/USD naik tipis menjadi sekitar 1,3545, tanpa peningkatan momentum yang signifikan tetapi kemiringan naik yang moderat menuju 1,3565 dalam waktu dekat."
+      "titleId": "Franc Swiss menguat karena kelemahan yang dipimpin Yen Jepang mencengkeram Dolar AS",
+      "summaryId": "USD/CHF turun tipis pada hari Rabu karena pelemahan luas dalam Dolar AS (USD) memungkinkan Franc Swiss (CHF) untuk mendapatkan kembali beberapa poin. Pada saat penulisan, pasangan ini diperdagangkan sekitar 0,8078,…"
     },
     {
-      "titleEn": "United States: Core inflation stays contained as goods soften – TD Securities",
-      "summaryEn": "TD Securities economists Oscar Munoz, Eli Nir, Gennadiy Goldberg and Molly Brooks expect August Core CPI to rise 0.19% m/m, with services driving gains and core goods offsetting. T…",
-      "link": "https://www.fxstreet.com/news/united-states-core-inflation-stays-contained-as-goods-soften-td-securities-202609081917",
-      "time": "9 Sep 2026, 02:17 WIB",
+      "titleEn": "Turkish Lira: Disinflation supports gradual TRY repricing – ING",
+      "summaryEn": "ING analysts Muhammet Mercan, Frantisek Taborsky and James Wilson say normalising liquidity and a lower effective funding rate have pushed market pricing closer to their Central Ba…",
+      "link": "https://www.fxstreet.com/news/turkish-lira-disinflation-supports-gradual-try-repricing-ing-202609091443",
+      "time": "9 Sep 2026, 21:43 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Lira Turki: Disinflasi mendukung repricing COBA bertahap – ING",
+      "summaryId": "Analis ING Muhammet Mercan, Frantisek Taborsky dan James Wilson mengatakan normalisasi likuiditas dan tingkat pendanaan efektif yang lebih rendah telah mendorong harga pasar lebih dekat ke Central Ba..."
+    },
+    {
+      "titleEn": "Gold: Inflation data key catalyst – TD Securities",
+      "summaryEn": "TD Securities’ Ryan McKay and Bart Melek say Gold and broader precious metals have held firm despite higher near-term Fed hike probabilities.",
+      "link": "https://www.fxstreet.com/news/gold-inflation-data-key-catalyst-td-securities-202609091430",
+      "time": "9 Sep 2026, 21:30 WIB",
       "tag": "Emas",
-      "titleId": "Amerika Serikat: Inflasi inti tetap terkendali saat barang melunak – TD Securities",
-      "summaryId": "Ekonom TD Securities Oscar Munoz, Eli Nir, Gennadiy Goldberg dan Molly Brooks memperkirakan CPI Inti Agustus akan naik 0,19% m/m, dengan layanan yang mendorong kenaikan dan pengimbangan barang inti. T…"
+      "titleId": "Emas: Katalis kunci data inflasi – Efek TD",
+      "summaryId": "Ryan McKay dan Bart Melek dari TD Securities mengatakan bahwa Emas dan logam mulia yang lebih luas telah menguat meskipun ada probabilitas kenaikan Fed jangka pendek yang lebih tinggi."
+    },
+    {
+      "titleEn": "Euro: Hawkish ECB hike expected to support EUR against US Dollar – Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret report EUR/USD is flat in North American trade after touching a one-week high, with fundamentals supported by firmer European …",
+      "link": "https://www.fxstreet.com/news/euro-hawkish-ecb-hike-expected-to-support-eur-against-us-dollar-scotiabank-202609091414",
+      "time": "9 Sep 2026, 21:14 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro: Kenaikan ECB Hawkish diperkirakan akan mendukung EUR terhadap Dolar AS – Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret melaporkan EUR/USD datar dalam perdagangan Amerika Utara setelah menyentuh level tertinggi satu minggu, dengan fundamental yang didukung oleh Eropa yang lebih kuat..."
+    },
+    {
+      "titleEn": "Bank of Japan: Outsized hike risks carry shock – DBS",
+      "summaryEn": "DBS Group Research economist Ma Tieying expects the Bank of Japan (BoJ) to raise rates by 25bps at its September 17–18 meeting, describing a hike as almost certain given solid Gros…",
+      "link": "https://www.fxstreet.com/news/bank-of-japan-outsized-hike-risks-carry-shock-dbs-202609091402",
+      "time": "9 Sep 2026, 21:02 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Bank of Japan: Risiko kenaikan yang terlalu besar membawa kejutan – DBS",
+      "summaryId": "Ekonom Riset Grup DBS Ma Tieying memperkirakan Bank of Japan (BoJ) akan menaikkan suku bunga sebesar 25bps pada pertemuan 17 -18 September, menggambarkan kenaikan sebagai hampir pasti mengingat Gros yang solid…"
+    },
+    {
+      "titleEn": "Brazilian Real: Narrowing polls support BRL against US Dollar– ING",
+      "summaryEn": "ING’s Chris Turner notes USD/BRL is drifting towards 5.05/5.07 as election polls show challenger Flavio Bolsonaro overtaking President Lula in a run-off, with prediction markets st…",
+      "link": "https://www.fxstreet.com/news/brazilian-real-narrowing-polls-support-brl-against-us-dollar-ing-202609091351",
+      "time": "9 Sep 2026, 20:51 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Real Brasil: Jajak pendapat yang menyempit mendukung BRL terhadap Dolar AS",
+      "summaryId": "Chris Turner ING mencatat USD/BRL melayang menuju 5.05/5 .07 karena jajak pendapat pemilihan menunjukkan penantang Flavio Bolsonaro menyalip Presiden Lula dalam putaran kedua, dengan pasar prediksi masih…"
+    },
+    {
+      "titleEn": "Canadian Dollar: Further gains seen against US Dollar - Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret describe the Canadian Dollar (CAD) as steady despite renewed US–Canada trade tensions and targeted import bans. They highlight…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-further-gains-seen-against-us-dollar-scotiabank-202609091341",
+      "time": "9 Sep 2026, 20:41 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Kanada: Kenaikan lebih lanjut terlihat terhadap Dolar AS - Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret menggambarkan Dolar Kanada (CAD) stabil meskipun ada ketegangan perdagangan AS - Kanada yang baru dan larangan impor yang ditargetkan. Mereka menyoroti…"
     }
   ],
   "sources": [
