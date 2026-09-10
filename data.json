@@ -1,18 +1,18 @@
 {
-  "updatedAt": "10 Sep 2026, 07:45 WIB",
+  "updatedAt": "10 Sep 2026, 21:43 WIB",
   "price": {
-    "level": "$4,438.80"
+    "level": "$4,407.60"
   },
-  "biasScore": -39,
+  "biasScore": -46,
   "biasLabel": "BEARISH",
-  "bullishPct": 30,
-  "bearishPct": 70,
+  "bullishPct": 27,
+  "bearishPct": 73,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,438.80</span>, melemah 0.49% pada sesi terakhir, dengan rentang 52 minggu $3,618–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,407.60</span>, melemah 1.19% pada sesi terakhir, dengan rentang 52 minggu $3,618–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 1 Sep 2026 tercatat net long <span class=\"accent\">228,124</span> kontrak (54.9% dari open interest) — relatif seimbang. Net long ini turun 15,210 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 415,196 kontrak (turun 12,761), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core PPI m/m</b> pada 10 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -39/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -46/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "1 Sep 2026",
@@ -177,7 +177,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.84% (+0.65%) dan indeks dolar (DXY) melemah ke 98.82 (+0.00%), sementara XAU/USD turun 0.49%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.91% (+1.59%) dan indeks dolar (DXY) menguat ke 98.94 (+0.12%), sementara XAU/USD turun 1.19%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -210,12 +210,12 @@
       "asOf": "2026-09-08"
     },
     "mediaSentiment": {
-      "avgScore": 0.069,
+      "avgScore": 0.08,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 14,
-      "neutralCount": 28,
-      "bearishCount": 8
+      "bullishCount": 16,
+      "neutralCount": 25,
+      "bearishCount": 9
     },
     "cpi": {
       "index": 333.918,
@@ -230,83 +230,83 @@
     }
   },
   "macro": {
-    "yield10y": 4.84,
-    "yield10yChange": 0.65,
-    "dxy": 98.82,
-    "dxyChange": 0.0
+    "yield10y": 4.91,
+    "yield10yChange": 1.59,
+    "dxy": 98.94,
+    "dxyChange": 0.12
   },
   "news": [
     {
-      "titleEn": "BoJ to raise rates to 1.25% this month — Reuters poll",
-      "summaryEn": "A Reuters poll showed the Bank of Japan (BoJ) will hike interest rates to 1.25% at its September policy meeting and then to 1.75% in the second quarter (Q2) of 2027, earlier than p…",
-      "link": "https://www.fxstreet.com/news/boj-to-raise-rates-to-125-this-month-reuters-poll-202609100040",
-      "time": "10 Sep 2026, 07:40 WIB",
+      "titleEn": "European Central Bank: Two more hikes remain the baseline – Nordea",
+      "summaryEn": "Nordea analysts Jan von Gerich and Tuuli Koivu note that the European Central Bank (ECB) delivered a 25bp rate hike and signalled a bias toward further tightening as its projection…",
+      "link": "https://www.fxstreet.com/news/european-central-bank-two-more-hikes-remain-the-baseline-nordea-202609101440",
+      "time": "10 Sep 2026, 21:40 WIB",
       "tag": "Bank Sentral",
-      "titleId": "BoJ akan menaikkan suku bunga menjadi 1,25% bulan ini — jajak pendapat Reuters",
-      "summaryId": "Sebuah jajak pendapat Reuters menunjukkan Bank of Japan (BoJ) akan menaikkan suku bunga menjadi 1,25% pada pertemuan kebijakan September dan kemudian menjadi 1,75% pada kuartal kedua (Q2) 2027, lebih awal dari..."
+      "titleId": "Bank Sentral Eropa: Dua kenaikan lagi tetap menjadi dasar – Nordea",
+      "summaryId": "Analis Nordea Jan von Gerich dan Tuuli Koivu mencatat bahwa Bank Sentral Eropa (ECB) memberikan kenaikan suku bunga 25bp dan mengisyaratkan bias terhadap pengetatan lebih lanjut sebagai proyeksi..."
     },
     {
-      "titleEn": "Euro steadies above 1.1600 ahead of ECB rate decision, US PPI data",
-      "summaryEn": "The EUR/USD pair holds steady around 1.1635 during the early Asian trading hours on Thursday. Traders prefer to wait on the sidelines ahead of the European Central Bank (ECB) polic…",
-      "link": "https://www.fxstreet.com/news/euro-steadies-above-11600-ahead-of-ecb-rate-decision-us-ppi-data-202609100026",
-      "time": "10 Sep 2026, 07:26 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro menguat di atas 1,1600 menjelang keputusan suku bunga ECB, data PPI AS",
-      "summaryId": "Pasangan EUR/USD bertahan stabil di sekitar 1,1635 selama jam perdagangan awal Asia pada hari Kamis. Trader lebih suka menunggu di sela - sela jelang kebijakan Bank Sentral Eropa (ECB)..."
-    },
-    {
-      "titleEn": "Gold rebounds above $4,400 on weaker Dollar, US PPI inflation data looms",
-      "summaryEn": "Gold price (XAU/USD) recovers to near $4,400, snapping the three-day losing streak during the early Asian session on Thursday. The precious metal gains ground amid a weaker US Doll…",
-      "link": "https://www.fxstreet.com/news/gold-rebounds-above-4-400-on-weaker-dollar-us-ppi-inflation-data-looms-202609092322",
-      "time": "10 Sep 2026, 06:22 WIB",
-      "tag": "Emas",
-      "titleId": "Emas memantul di atas $ 4.400 pada Dolar yang lebih lemah, data inflasi PPI AS membayang",
-      "summaryId": "Harga emas (XAU/USD) pulih mendekati $ 4.400, mengakhiri kekalahan beruntun tiga hari selama sesi awal Asia pada hari Kamis. Logam mulia ini menguat di tengah - tengah US Doll yang lebih lemah..."
-    },
-    {
-      "titleEn": "Australian Dollar flatlines as US yield ripples meet RBA hawks",
-      "summaryEn": "The Australian Dollar is virtually unchanged against the US Dollar on Wednesday amid a light economic calendar, with the US Treasury's announcement of a buyback for the September 1…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-flatlines-as-us-yield-ripples-meet-rba-hawks-202609092136",
-      "time": "10 Sep 2026, 04:36 WIB",
+      "titleEn": "Canadian Dollar: Range trade with upside bias against US Dollar – Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note USD/CAD is holding a tight sideways range near 1.38 with no domestic data, leaving the Canadian Dollar (CAD) driven by ex…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-range-trade-with-upside-bias-against-us-dollar-scotiabank-202609101421",
+      "time": "10 Sep 2026, 21:21 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Garis datar Dolar Australia saat riak imbal hasil AS bertemu elang RBA",
-      "summaryId": "Dolar Australia hampir tidak berubah terhadap Dolar AS pada hari Rabu di tengah kalender ekonomi yang ringan, dengan pengumuman Departemen Keuangan AS tentang pembelian kembali untuk 1 September..."
+      "titleId": "Dolar Kanada: Rentang perdagangan dengan bias naik terhadap Dolar AS – Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat USD/CAD memegang kisaran menyamping yang ketat di dekat 1,38 tanpa data domestik, meninggalkan Dolar Kanada (CAD) didorong oleh mantan..."
     },
     {
-      "titleEn": "Pound Sterling awaits the Fed's two-strike inflation test",
-      "summaryEn": "The real tension weighing on GBP/USD is a rate parity that masks a divergence. Both central banks sit at 3.75%.",
-      "link": "https://www.fxstreet.com/news/pound-sterling-awaits-the-feds-two-strike-inflation-test-202609092119",
-      "time": "10 Sep 2026, 04:19 WIB",
+      "titleEn": "Japanese Yen comes under pressure as US PPI data boost US Dollar",
+      "summaryEn": "USD/JPY advances to around 154.15 on Thursday at the time of writing, up 0.40% on the day. The pair benefits from a rebound in the US Dollar (USD), supported by US data showing acc…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-comes-under-pressure-as-us-ppi-data-boost-us-dollar-202609101358",
+      "time": "10 Sep 2026, 20:58 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Yen Jepang berada di bawah tekanan karena data PPI AS meningkatkan Dolar AS",
+      "summaryId": "USD/JPY naik ke sekitar 154,15 pada hari Kamis pada saat penulisan, naik 0,40% pada hari itu. Pasangan ini mendapat manfaat dari pantulan dalam Dolar AS (USD), didukung oleh data AS yang menunjukkan kenaikan…"
+    },
+    {
+      "titleEn": "Copper: Record prices with real constraints – NBC",
+      "summaryEn": "National Bank of Canada's (NBC) Kyle Dahms highlights that Copper has reached a fresh nominal record, driven by AI-related data-centre demand, electricity grid expansion, tariff-dr…",
+      "link": "https://www.fxstreet.com/news/copper-record-prices-with-real-constraints-nbc-202609101343",
+      "time": "10 Sep 2026, 20:43 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Tembaga: Catat harga dengan kendala nyata – NBC",
+      "summaryId": "National Bank of Canada (NBC) Kyle Dahms menyoroti bahwa Copper telah mencapai rekor nominal baru, didorong oleh permintaan pusat data terkait AI, perluasan jaringan listrik, tarif - dr…"
+    },
+    {
+      "titleEn": "Lagarde speech: Surprised by economic resilience",
+      "summaryEn": "Christine Lagarde, President of the European Central Bank (ECB), explains the ECB's decision to raise key rates by 25 basis points (bps) at the September policy meeting and respond…",
+      "link": "https://www.fxstreet.com/news/lagarde-speech-surprised-by-economic-resilience-202609101324",
+      "time": "10 Sep 2026, 20:24 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Pound Sterling menunggu uji inflasi dua serangan The Fed",
-      "summaryId": "Ketegangan nyata yang membebani GBP/USD adalah paritas suku bunga yang menutupi perbedaan. Kedua bank sentral duduk di 3,75%."
+      "titleId": "Pidato Lagarde: Terkejut dengan ketahanan ekonomi",
+      "summaryId": "Christine Lagarde, Presiden Bank Sentral Eropa (ECB), menjelaskan keputusan ECB untuk menaikkan suku bunga utama sebesar 25 basis poin (BPS) pada pertemuan kebijakan September dan menanggapi..."
     },
     {
-      "titleEn": "US President Trump pins Iran endgame on midterms, open to talks",
-      "summaryEn": "US President Donald Trump crossed the wires on Wednesday, saying that the Iran war will end “immediately” right after the US midterm elections. He said that Iranians are “desperate…",
-      "link": "https://www.fxstreet.com/news/us-president-trump-pins-iran-endgame-on-midterms-open-to-talks-202609092100",
-      "time": "10 Sep 2026, 04:00 WIB",
+      "titleEn": "Gold: Near-term selling may only delay next leg higher - TD Securities",
+      "summaryEn": "TD Securities’ Ryan McKay and Bart Melek note that Gold is outperforming other precious metals even as higher energy prices and rising Fed hike expectations weigh on the complex.",
+      "link": "https://www.fxstreet.com/news/gold-near-term-selling-may-only-delay-next-leg-higher-td-securities-202609101317",
+      "time": "10 Sep 2026, 20:17 WIB",
+      "tag": "Emas",
+      "titleId": "Emas: Penjualan jangka pendek hanya dapat menunda leg berikutnya lebih tinggi - TD Securities",
+      "summaryId": "Ryan McKay dan Bart Melek dari TD Securities mencatat bahwa Emas mengungguli logam mulia lainnya bahkan ketika harga energi yang lebih tinggi dan meningkatnya ekspektasi kenaikan Fed membebani kompleks ini."
+    },
+    {
+      "titleEn": "Lagarde speech: Can't anticipate what will be the next move",
+      "summaryEn": "Christine Lagarde, President of the European Central Bank (ECB), explains the ECB's decision to raise key rates by 25 basis points (bps) at the September policy meeting and respond…",
+      "link": "https://www.fxstreet.com/news/lagarde-speech-cant-anticipate-what-will-be-the-next-move-202609101314",
+      "time": "10 Sep 2026, 20:14 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Pidato Lagarde: Tidak dapat mengantisipasi apa yang akan menjadi langkah selanjutnya",
+      "summaryId": "Christine Lagarde, Presiden Bank Sentral Eropa (ECB), menjelaskan keputusan ECB untuk menaikkan suku bunga utama sebesar 25 basis poin (BPS) pada pertemuan kebijakan September dan menanggapi..."
+    },
+    {
+      "titleEn": "WTI US Oil rebounds toward $97 as US-Iran conflict escalates",
+      "summaryEn": "West Texas Intermediate (WTI) US Oil rises sharply on Thursday, trading around $97.00 per barrel at the time of writing, up 2.93% on the day.",
+      "link": "https://www.fxstreet.com/news/wti-us-oil-rebounds-toward-97-as-us-iran-conflict-escalates-202609101306",
+      "time": "10 Sep 2026, 20:06 WIB",
       "tag": "Geopolitik",
-      "titleId": "Presiden AS Trump menyematkan Iran pada ujian tengah semester, terbuka untuk pembicaraan",
-      "summaryId": "Presiden AS Donald Trump menyeberangi kabel pada hari Rabu, mengatakan bahwa perang Iran akan berakhir \"segera\" tepat setelah pemilihan paruh waktu AS. Dia mengatakan bahwa orang Iran \"putus asa..."
-    },
-    {
-      "titleEn": "GBP/JPY Price Forecast: Bears Eye 207.00 as downtrend holds",
-      "summaryEn": "GBP/JPY falls for the third straight day on Wednesday, but it fails to register a lower low, suggesting buyers are stepping in but lack the strength to push the exchange rate past …",
-      "link": "https://www.fxstreet.com/news/gbp-jpy-price-forecast-bears-eye-20700-as-downtrend-holds-202609092050",
-      "time": "10 Sep 2026, 03:50 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Prakiraan Harga GBP/JPY: Bears Eye 207,00 sebagai tren turun bertahan",
-      "summaryId": "GBP/JPY jatuh untuk hari ketiga berturut - turut pada hari Rabu, tetapi gagal mencatat titik terendah yang lebih rendah, menunjukkan pembeli melangkah masuk tetapi tidak memiliki kekuatan untuk mendorong nilai tukar melewati ..."
-    },
-    {
-      "titleEn": "South Korean Won: Gains seen moderating after sharp repricing – DBS",
-      "summaryEn": "DBS Group Research’s Chang Wei Liang notes that USD/KRW has fallen toward 1340 in a steady decline since late June, reflecting earlier optimism on the Korean Won from a booming mem…",
-      "link": "https://www.fxstreet.com/news/south-korean-won-gains-seen-moderating-after-sharp-repricing-dbs-202609092041",
-      "time": "10 Sep 2026, 03:41 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Won Korea Selatan: Keuntungan terlihat moderat setelah repricing tajam – DBS",
-      "summaryId": "Chang Wei Liang dari DBS Group Research mencatat bahwa USD/KRW telah turun menuju 1340 dalam penurunan yang stabil sejak akhir Juni, mencerminkan optimisme sebelumnya pada Won Korea dari mem..."
+      "titleId": "Minyak AS WTI memantul menuju $ 97 karena konflik AS - Iran meningkat",
+      "summaryId": "Minyak AS West Texas Intermediate (WTI) naik tajam pada hari Kamis, diperdagangkan sekitar $ 97,00 per barel pada saat penulisan, naik 2,93% pada hari itu."
     }
   ],
   "sources": [
