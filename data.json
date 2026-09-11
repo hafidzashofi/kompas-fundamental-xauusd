@@ -1,18 +1,18 @@
 {
-  "updatedAt": "11 Sep 2026, 07:46 WIB",
+  "updatedAt": "11 Sep 2026, 21:47 WIB",
   "price": {
-    "level": "$4,362.20"
+    "level": "$4,412.20"
   },
-  "biasScore": -44,
+  "biasScore": -33,
   "biasLabel": "BEARISH",
-  "bullishPct": 28,
-  "bearishPct": 72,
+  "bullishPct": 34,
+  "bearishPct": 66,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,362.20</span>, melemah 1.02% pada sesi terakhir, dengan rentang 52 minggu $3,618–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,412.20</span>, menguat 0.11% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 1 Sep 2026 tercatat net long <span class=\"accent\">228,124</span> kontrak (54.9% dari open interest) — relatif seimbang. Net long ini turun 15,210 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 415,196 kontrak (turun 12,761), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core CPI m/m</b> pada 11 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -44/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -33/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "1 Sep 2026",
@@ -28,9 +28,9 @@
   "cme": {
     "openInterest": 415196,
     "oiChange": -12761,
-    "rangeLow": "$3,618",
+    "rangeLow": "$3,635",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 1 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -139,7 +139,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.94% (+2.21%) dan indeks dolar (DXY) menguat ke 99.07 (+0.02%), sementara XAU/USD turun 1.02%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.93% (-0.20%) dan indeks dolar (DXY) melemah ke 99.03 (-0.02%), sementara XAU/USD naik 0.11%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -172,12 +172,12 @@
       "asOf": "2026-09-09"
     },
     "mediaSentiment": {
-      "avgScore": 0.075,
+      "avgScore": 0.068,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 16,
-      "neutralCount": 23,
-      "bearishCount": 11
+      "bullishCount": 19,
+      "neutralCount": 19,
+      "bearishCount": 12
     },
     "cpi": {
       "index": 333.918,
@@ -192,83 +192,83 @@
     }
   },
   "macro": {
-    "yield10y": 4.94,
-    "yield10yChange": 2.21,
-    "dxy": 99.07,
-    "dxyChange": 0.02
+    "yield10y": 4.93,
+    "yield10yChange": -0.2,
+    "dxy": 99.03,
+    "dxyChange": -0.02
   },
   "news": [
     {
-      "titleEn": "Euro flatlines above 1.1600 despite ECB hawkish hike, traders brace for US CPI data",
-      "summaryEn": "The EUR/USD pair holds steady around 1.1610 during the early Asian session on Friday. Traders continue to assess a hawkish hike from the European Central Bank (ECB).",
-      "link": "https://www.fxstreet.com/news/euro-flatlines-above-11600-despite-ecb-hawkish-hike-traders-brace-for-us-cpi-data-202609110042",
-      "time": "11 Sep 2026, 07:42 WIB",
+      "titleEn": "Swiss Franc struggles even as US Dollar gives back CPI-led gains",
+      "summaryEn": "USD/CHF holds onto gains on Friday even as the US Dollar (USD) turns lower following the release of the latest United States (US) Consumer Price Index (CPI) report, which strengthe…",
+      "link": "https://www.fxstreet.com/news/swiss-franc-struggles-even-as-us-dollar-gives-back-cpi-led-gains-202609111435",
+      "time": "11 Sep 2026, 21:35 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Garis datar euro di atas 1,1600 meskipun ada kenaikan hawkish ECB, trader bersiap untuk data CPI AS",
-      "summaryId": "Pasangan EUR/USD bertahan stabil di sekitar 1,1610 selama awal sesi Asia pada hari Jumat. Trader terus menilai kenaikan hawkish dari Bank Sentral Eropa (ECB)."
+      "titleId": "Franc Swiss berjuang bahkan ketika Dolar AS mengembalikan kenaikan yang dipimpin CPI",
+      "summaryId": "USD/CHF mempertahankan kenaikan pada hari Jumat bahkan ketika Dolar AS (USD) berbalik lebih rendah setelah rilis laporan Indeks Harga Konsumen (IHK) Amerika Serikat (AS) terbaru, yang memperkuat…"
     },
     {
-      "titleEn": "Australian Dollar slides as US yields jump before pivotal CPI",
-      "summaryEn": "The Australian Dollar ended Thursday’s session with a 0.80% loss against the US Dollar after US producer inflation exceeded estimates, triggering pricing for a more hawkish Federal…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-slides-as-us-yields-jump-before-pivotal-cpi-202609102348",
-      "time": "11 Sep 2026, 06:48 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Australia meluncur karena imbal hasil AS melonjak sebelum CPI penting",
-      "summaryId": "Dolar Australia mengakhiri sesi Kamis dengan kerugian 0,80% terhadap Dolar AS setelah inflasi produsen AS melebihi perkiraan, memicu penetapan harga untuk Federal..."
+      "titleEn": "India: Inflation pressures point to tighter bias – DBS",
+      "summaryEn": "DBS Group Research expects India’s inflation to accelerate to 4.9% year-on-year, with food and energy costs driving a gradual broadening of price pressures.",
+      "link": "https://www.fxstreet.com/news/india-inflation-pressures-point-to-tighter-bias-dbs-202609111421",
+      "time": "11 Sep 2026, 21:21 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "India: Tekanan inflasi menunjukkan bias yang lebih ketat – DBS",
+      "summaryId": "DBS Group Research memperkirakan inflasi India akan meningkat menjadi 4,9% dari tahun ke tahun, dengan biaya pangan dan energi yang mendorong perluasan tekanan harga secara bertahap."
     },
     {
-      "titleEn": "Gold falls below $4,350 as rising oil prices, US PPI reinforces Fed hike bets",
-      "summaryEn": "Gold price (XAU/USD) tumbles to near $4,320 during the early Asian session on Friday. The precious metal faces some selling pressure after the US Producer Price Index (PPI) inflati…",
-      "link": "https://www.fxstreet.com/news/gold-falls-below-4-350-as-rising-oil-prices-us-ppi-reinforces-fed-hike-bets-202609102336",
-      "time": "11 Sep 2026, 06:36 WIB",
-      "tag": "Emas",
-      "titleId": "Emas turun di bawah $ 4.350 karena kenaikan harga minyak, PPI AS memperkuat taruhan kenaikan Fed",
-      "summaryId": "Harga emas (XAU/USD) jatuh mendekati $ 4.320 selama awal sesi Asia pada hari Jumat. Logam mulia ini menghadapi beberapa tekanan jual setelah inflasi Indeks Harga Produsen (PPI) AS..."
-    },
-    {
-      "titleEn": "AUD/JPY Price Forecast: Yen strength keeps 110.00 in sight",
-      "summaryEn": "The Australian Dollar weakens versus the Japanese Yen as risk-appetite shifted sour due to the escalation of the US-Iran conflict, which has broadened to a fight between Yemen’s Ho…",
-      "link": "https://www.fxstreet.com/news/aud-jpy-price-forecast-yen-strength-keeps-11000-in-sight-202609102252",
-      "time": "11 Sep 2026, 05:52 WIB",
+      "titleEn": "Canadian Dollar slides with Oil prices, US CPI fails to keep US Dollar higher",
+      "summaryEn": "USD/CAD rises 0.27% on Friday and trades around 1.3870 at the time of writing, after reaching a daily high of 1.3882 in the immediate reaction to the release of United States (US) …",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-slides-with-oil-prices-us-cpi-fails-to-keep-us-dollar-higher-202609111409",
+      "time": "11 Sep 2026, 21:09 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Prakiraan Harga AUD/JPY: Kekuatan Yen tetap 110,00 terlihat",
-      "summaryId": "Dolar Australia melemah versus Yen Jepang karena selera risiko bergeser masam karena eskalasi konflik AS - Iran, yang telah meluas ke pertarungan antara Ho..."
+      "titleId": "Dolar Kanada meluncur dengan harga Minyak, CPI AS gagal menjaga Dolar AS lebih tinggi",
+      "summaryId": "USD/CAD naik 0,27% pada hari Jumat dan diperdagangkan di sekitar 1,3870 pada saat penulisan, setelah mencapai level tertinggi harian 1,3882 dalam reaksi langsung terhadap rilis Amerika Serikat (AS)..."
     },
     {
-      "titleEn": "New Zealand Dollar steadies after two-month low slide",
-      "summaryEn": "NZD/USD is clinging to the 0.5800 mark at the start of the Asian session on Friday after dipping to a near two-month low around 0.5797 earlier in the American session.",
-      "link": "https://www.fxstreet.com/news/new-zealand-dollar-steadies-after-two-month-low-slide-202609102145",
-      "time": "11 Sep 2026, 04:45 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Selandia Baru menguat setelah meluncur rendah selama dua bulan",
-      "summaryId": "NZD/USD bertahan di level 0,5800 pada awal sesi Asia pada hari Jumat setelah turun ke level terendah hampir dua bulan di sekitar 0,5797 di awal sesi Amerika."
+      "titleEn": "Polish Zloty: Dovish stance leaves PLN vulnerable against Euro – ING",
+      "summaryEn": "ING’s Frantisek Taborsky notes that the National Bank of Poland maintained a dovish stance, signalling no need to adjust rates potentially until mid-next year despite rising inflat…",
+      "link": "https://www.fxstreet.com/news/polish-zloty-dovish-stance-leaves-pln-vulnerable-against-euro-ing-202609111343",
+      "time": "11 Sep 2026, 20:43 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Zloty Polandia: Sikap Dovish membuat PLN rentan terhadap Euro",
+      "summaryId": "Frantisek Taborsky dari ING mencatat bahwa Bank Nasional Polandia mempertahankan sikap dovish, menandakan tidak perlu menyesuaikan suku bunga secara potensial hingga pertengahan tahun depan meskipun inflasi meningkat…"
     },
     {
-      "titleEn": "WTI blasts past $100 as Red Sea, Hormuz risks collide",
-      "summaryEn": "West Texas Intermediate (WTI), the US crude Oil benchmark, rises more than 7% as attacks in the Middle East intensify, driving WTI above the $ 100-per-barrel barrier for the first …",
-      "link": "https://www.fxstreet.com/news/wti-blasts-past-100-as-red-sea-hormuz-risks-collide-202609102126",
-      "time": "11 Sep 2026, 04:26 WIB",
-      "tag": "Geopolitik",
-      "titleId": "WTI meledak melewati $ 100 saat Laut Merah, Hormuz berisiko bertabrakan",
-      "summaryId": "West Texas Intermediate (WTI), patokan Minyak mentah AS, naik lebih dari 7% karena serangan di Timur Tengah meningkat, mendorong WTI di atas penghalang $ 100 per barel untuk..."
-    },
-    {
-      "titleEn": "Forex Today: US Dollar rebounds on hot PPI ahead of US CPI",
-      "summaryEn": "The US Dollar Index (DXY) reclaimed the 99.00 barrier and then some, rebounding firmly as the hot Producer Price Index (PPI) rose 5.4% over the year to August, hardening expectatio…",
-      "link": "https://www.fxstreet.com/news/forex-today-us-dollar-rebounds-on-hot-ppi-ahead-of-us-cpi-202609101955",
-      "time": "11 Sep 2026, 02:55 WIB",
+      "titleEn": "European Central Bank: Hawkish rate path supports Euro – UOB",
+      "summaryEn": "UOB economist Lee Sue Ann notes that the European Central Bank (ECB) delivered a widely expected 25 bps hike but signalled a more hawkish stance as inflation risks from the Middle …",
+      "link": "https://www.fxstreet.com/news/european-central-bank-hawkish-rate-path-supports-euro-uob-202609111326",
+      "time": "11 Sep 2026, 20:26 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Forex Hari Ini: Dolar AS memantul pada PPI panas menjelang CPI AS",
-      "summaryId": "Indeks Dolar AS (DXY) merebut kembali penghalang 99,00 dan kemudian beberapa, memantul dengan kuat karena Indeks Harga Produsen (PPI) naik 5,4% sepanjang tahun hingga Agustus, memperkuat ekspektasi..."
+      "titleId": "Bank Sentral Eropa: Jalur suku bunga Hawkish mendukung Euro – UOB",
+      "summaryId": "Ekonom UOB Lee Sue Ann mencatat bahwa Bank Sentral Eropa (ECB) menyampaikan kenaikan 25 bps yang diperkirakan secara luas tetapi mengisyaratkan sikap yang lebih hawkish karena risiko inflasi dari Middle …"
     },
     {
-      "titleEn": "Silver Price Forecast: Head-and-shoulders break puts $60 back in play",
-      "summaryEn": "Silver (XAG/USD) price erases Wednesday's gains and forms a bearish head-and-shoulders chart pattern on Thursday after the white metal tanks and breaks a support trendline around $…",
-      "link": "https://www.fxstreet.com/news/silver-price-forecast-head-and-shoulders-break-puts-60-back-in-play-202609101943",
-      "time": "11 Sep 2026, 02:43 WIB",
-      "tag": "Emas",
-      "titleId": "Prakiraan Harga Perak: Istirahat kepala dan bahu membuat $ 60 kembali dimainkan",
-      "summaryId": "Harga perak (XAG/USD) menghapus kenaikan hari Rabu dan membentuk pola grafik kepala dan bahu bearish pada hari Kamis setelah tangki logam putih dan menembus garis tren dukungan sekitar $..."
+      "titleEn": "Bank of Japan: Hawkish hike prospects grow – DBS",
+      "summaryEn": "DBS Group Research analysts Taimur Baig and Chang Wei Liang expect the Bank of Japan (BoJ) to hike rates by 25 bps at its September 17–18 meeting, citing solid Gross Domestic Produ…",
+      "link": "https://www.fxstreet.com/news/bank-of-japan-hawkish-hike-prospects-grow-dbs-202609111316",
+      "time": "11 Sep 2026, 20:16 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Bank of Japan: Prospek kenaikan Hawkish tumbuh – DBS",
+      "summaryId": "Analis Riset Grup DBS Taimur Baig dan Chang Wei Liang memperkirakan Bank of Japan (BoJ) akan menaikkan suku bunga sebesar 25 bps pada pertemuan 17 -18 September, mengutip Produk Domestik Bruto yang solid…"
+    },
+    {
+      "titleEn": "Japanese Yen strengthens as US inflation fails to sustain Dollar rebound",
+      "summaryEn": "USD/JPY falls 0.54% on Friday and trades around 153.60 at the time of writing.",
+      "link": "https://www.fxstreet.com/news/japanese-yen-strengthens-as-us-inflation-fails-to-sustain-dollar-rebound-202609111304",
+      "time": "11 Sep 2026, 20:04 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Yen Jepang menguat karena inflasi AS gagal mempertahankan rebound Dolar",
+      "summaryId": "USD/JPY turun 0,54% pada hari Jumat dan diperdagangkan di sekitar 153,60 pada saat penulisan."
+    },
+    {
+      "titleEn": "Euro steadies against US Dollar after volatile reaction to US CPI",
+      "summaryEn": "EUR/USD reverses earlier losses on Friday after the latest United States (US) Consumer Price Index (CPI) report came broadly in line with expectations and failed to trigger a stron…",
+      "link": "https://www.fxstreet.com/news/euro-steadies-against-us-dollar-after-volatile-reaction-to-us-cpi-202609111302",
+      "time": "11 Sep 2026, 20:02 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Euro menguat terhadap Dolar AS setelah reaksi fluktuatif terhadap CPI AS",
+      "summaryId": "EUR/USD membalikkan kerugian sebelumnya pada hari Jumat setelah laporan Indeks Harga Konsumen (IHK) Amerika Serikat (AS) terbaru secara luas sejalan dengan ekspektasi dan gagal memicu stron…"
     }
   ],
   "sources": [
