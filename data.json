@@ -1,5 +1,5 @@
 {
-  "updatedAt": "13 Sep 2026, 07:33 WIB",
+  "updatedAt": "13 Sep 2026, 21:46 WIB",
   "price": {
     "level": "$4,408.90"
   },
@@ -11,6 +11,7 @@
     "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,408.90</span>, menguat 0.04% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
+    "Katalis terdekat: <b>Federal Funds Rate</b> pada 17 Sep 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
     "<b>Kesimpulan:</b> skor komposit +15/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
@@ -36,9 +37,80 @@
   },
   "calendar": [
     {
-      "date": "-",
-      "event": "Tidak ada event high-impact USD terjadwal",
-      "note": "Cek kembali menjelang akhir pekan"
+      "date": "17 Sep 2026, 01:00 WIB",
+      "event": "Federal Funds Rate",
+      "note": "Dampak tinggi · Prediksi - · Sebelumnya 3.75%",
+      "scenario": {
+        "strong": {
+          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
+        },
+        "weak": {
+          "label": "Hawkish (tahan / naikkan suku bunga)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
+        }
+      }
+    },
+    {
+      "date": "17 Sep 2026, 01:00 WIB",
+      "event": "FOMC Economic Projections",
+      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
+      "scenario": {
+        "strong": {
+          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
+        },
+        "weak": {
+          "label": "Hawkish (tahan / naikkan suku bunga)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
+        }
+      }
+    },
+    {
+      "date": "17 Sep 2026, 01:00 WIB",
+      "event": "FOMC Statement",
+      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
+      "scenario": {
+        "strong": {
+          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
+        },
+        "weak": {
+          "label": "Hawkish (tahan / naikkan suku bunga)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
+        }
+      }
+    },
+    {
+      "date": "17 Sep 2026, 01:30 WIB",
+      "event": "FOMC Press Conference",
+      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
+      "scenario": {
+        "strong": {
+          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
+        },
+        "weak": {
+          "label": "Hawkish (tahan / naikkan suku bunga)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
+        }
+      }
     }
   ],
   "positioning": {
@@ -100,12 +172,12 @@
       "asOf": "2026-09-10"
     },
     "mediaSentiment": {
-      "avgScore": 0.088,
+      "avgScore": 0.1,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 23,
-      "neutralCount": 17,
-      "bearishCount": 10
+      "bullishCount": 24,
+      "neutralCount": 18,
+      "bearishCount": 8
     },
     "cpi": {
       "index": 334.98,
