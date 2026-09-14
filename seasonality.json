@@ -1,0 +1,213 @@
+{
+  "generatedAt": "14 Sep 2026, 09:56 UTC",
+  "symbol": "GC=F",
+  "yearsCovered": "2000-2026",
+  "sampleCount": 27,
+  "months": [
+    {
+      "month": 1,
+      "name": "Jan",
+      "avgReturnPct": 2.47,
+      "winRatePct": 54.5,
+      "sampleYears": 22,
+      "best": {
+        "year": 2003,
+        "returnPct": 16.26
+      },
+      "worst": {
+        "year": 2011,
+        "returnPct": -6.14
+      },
+      "label": "Sideways",
+      "cls": "neutral"
+    },
+    {
+      "month": 2,
+      "name": "Feb",
+      "avgReturnPct": 2.6,
+      "winRatePct": 68.2,
+      "sampleYears": 22,
+      "best": {
+        "year": 2016,
+        "returnPct": 10.52
+      },
+      "worst": {
+        "year": 2021,
+        "returnPct": -6.45
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    },
+    {
+      "month": 3,
+      "name": "Mar",
+      "avgReturnPct": 0.91,
+      "winRatePct": 50.0,
+      "sampleYears": 22,
+      "best": {
+        "year": 2025,
+        "returnPct": 10.08
+      },
+      "worst": {
+        "year": 2008,
+        "returnPct": -5.75
+      },
+      "label": "Sideways",
+      "cls": "neutral"
+    },
+    {
+      "month": 4,
+      "name": "Apr",
+      "avgReturnPct": 0.88,
+      "winRatePct": 63.6,
+      "sampleYears": 22,
+      "best": {
+        "year": 2006,
+        "returnPct": 12.03
+      },
+      "worst": {
+        "year": 2004,
+        "returnPct": -9.43
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    },
+    {
+      "month": 5,
+      "name": "Mei",
+      "avgReturnPct": 1.19,
+      "winRatePct": 59.1,
+      "sampleYears": 22,
+      "best": {
+        "year": 2009,
+        "returnPct": 9.89
+      },
+      "worst": {
+        "year": 2012,
+        "returnPct": -6.39
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    },
+    {
+      "month": 6,
+      "name": "Jun",
+      "avgReturnPct": -2.02,
+      "winRatePct": 36.4,
+      "sampleYears": 22,
+      "best": {
+        "year": 2019,
+        "returnPct": 7.96
+      },
+      "worst": {
+        "year": 2013,
+        "returnPct": -12.12
+      },
+      "label": "Bearish",
+      "cls": "bear"
+    },
+    {
+      "month": 7,
+      "name": "Jul",
+      "avgReturnPct": 1.4,
+      "winRatePct": 68.2,
+      "sampleYears": 22,
+      "best": {
+        "year": 2020,
+        "returnPct": 9.47
+      },
+      "worst": {
+        "year": 2015,
+        "returnPct": -6.54
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    },
+    {
+      "month": 8,
+      "name": "Agu",
+      "avgReturnPct": 2.12,
+      "winRatePct": 69.6,
+      "sampleYears": 23,
+      "best": {
+        "year": 2011,
+        "returnPct": 12.3
+      },
+      "worst": {
+        "year": 2008,
+        "returnPct": -9.26
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    },
+    {
+      "month": 9,
+      "name": "Sep",
+      "avgReturnPct": 1.27,
+      "winRatePct": 47.8,
+      "sampleYears": 23,
+      "best": {
+        "year": 2010,
+        "returnPct": 10.67
+      },
+      "worst": {
+        "year": 2011,
+        "returnPct": -11.38
+      },
+      "label": "Sideways",
+      "cls": "neutral"
+    },
+    {
+      "month": 10,
+      "name": "Okt",
+      "avgReturnPct": 0.11,
+      "winRatePct": 50.0,
+      "sampleYears": 22,
+      "best": {
+        "year": 2024,
+        "returnPct": 9.8
+      },
+      "worst": {
+        "year": 2008,
+        "returnPct": -18.01
+      },
+      "label": "Sideways",
+      "cls": "neutral"
+    },
+    {
+      "month": 11,
+      "name": "Nov",
+      "avgReturnPct": 1.66,
+      "winRatePct": 52.2,
+      "sampleYears": 23,
+      "best": {
+        "year": 2008,
+        "returnPct": 13.87
+      },
+      "worst": {
+        "year": 2016,
+        "returnPct": -7.92
+      },
+      "label": "Sideways",
+      "cls": "neutral"
+    },
+    {
+      "month": 12,
+      "name": "Des",
+      "avgReturnPct": 1.29,
+      "winRatePct": 72.7,
+      "sampleYears": 22,
+      "best": {
+        "year": 2008,
+        "returnPct": 8.26
+      },
+      "worst": {
+        "year": 2011,
+        "returnPct": -10.3
+      },
+      "label": "Bullish",
+      "cls": "bull"
+    }
+  ],
+  "note": "Dihitung dari return bulanan historis GC=F (COMEX Gold futures, data Yahoo Finance sejak 2000). Statistik masa lalu, bukan jaminan pergerakan di masa depan."
+}

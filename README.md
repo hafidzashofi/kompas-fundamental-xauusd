@@ -10,12 +10,18 @@ Tidak ada dependensi ke akun atau langganan Claude.
 
 ## Struktur
 
-- `index.html` — halaman dashboard, membaca `data.json`.
+- `index.html` — halaman dashboard, membaca `data.json` dan `seasonality.json`.
 - `data.json` — snapshot data terbaru (ditulis ulang oleh script/Actions).
+- `seasonality.json` — statistik seasonality bulanan gold (rata-rata return &
+  win rate per bulan, dari histori GC=F sepanjang mungkin).
 - `scripts/update_data.py` — mengambil data dari CFTC, ForexFactory, dan
   Yahoo Finance, lalu menghitung skor bias dan menulis `data.json`.
-- `.github/workflows/update.yml` — menjalankan script otomatis 2x sehari
-  (06:00 & 18:00 WIB) lewat GitHub Actions.
+- `scripts/build_seasonality.py` — mengambil histori harga bulanan GC=F
+  (Yahoo Finance, `range=max`) dan menulis `seasonality.json`.
+- `.github/workflows/update.yml` — menjalankan `update_data.py` otomatis 2x
+  sehari (06:00 & 18:00 WIB) lewat GitHub Actions.
+- `.github/workflows/seasonality.yml` — menjalankan `build_seasonality.py`
+  otomatis 1x/bulan (histori jarang berubah, jadi tak perlu sesering data lain).
 
 ## Setup sekali di awal
 

@@ -219,6 +219,14 @@
   .news-tag{ margin-top: 5px; }
   @media (max-width: 700px){ .news-item{ flex-direction:column; gap:4px; } .news-time{ min-width:auto; } }
 
+  /* seasonality panel */
+  .seasonality-panel{ margin-bottom: 24px; }
+  #seasChart{ display:block; }
+  .seas-bar{ cursor: default; }
+  .seas-bar rect{ transition: opacity 0.15s; }
+  .seas-bar:hover rect{ opacity: 0.75; }
+  .seas-bar title{ font-family: 'IBM Plex Sans', sans-serif; }
+
   .err{ color: var(--bear); font-size: 13px; }
   :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
 </style>
@@ -298,6 +306,12 @@
       <div id="posBody"></div>
       <div class="panel-foot" id="posFoot"></div>
     </div>
+  </div>
+
+  <div class="panel seasonality-panel">
+    <div class="panel-head"><h2>Seasonality Bulanan &middot; Gold (GC)</h2><span class="panel-tag tag-event" id="seasYears">—</span></div>
+    <svg id="seasChart" width="100%" height="220" viewBox="0 0 1100 220" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="panel-foot" id="seasFoot"></div>
   </div>
 
   <div class="panel news-panel">
@@ -629,12 +643,60 @@
   document.getElementById('langBtnId').addEventListener('click', () => { window.__newsLang = 'id'; renderNews('id'); });
   document.getElementById('langBtnEn').addEventListener('click', () => { window.__newsLang = 'en'; renderNews('en'); });
 
+  function drawSeasonality(s){
+    document.getElementById('seasYears').textContent = s.yearsCovered + ' (' + s.sampleCount + ' thn)';
+    document.getElementById('seasFoot').textContent = s.note + ' · Diperbarui: ' + s.generatedAt;
+
+    const svg = document.getElementById('seasChart');
+    const css = getComputedStyle(document.documentElement);
+    const g = name => css.getPropertyValue(name).trim();
+    const bull = g('--bull'), bear = g('--bear'), neutralC = g('--text-muted'), border = g('--border'), textC = g('--text'), mutedC = g('--text-muted');
+
+    const W = 1100, H = 220;
+    const padL = 40, padR = 20, padTop = 24, padBottom = 34;
+    const plotW = W - padL - padR, plotH = H - padTop - padBottom;
+    const midY = padTop + plotH/2;
+
+    const maxAbs = Math.max(1, ...s.months.map(m => Math.abs(m.avgReturnPct))) * 1.15;
+    const scaleY = (plotH/2) / maxAbs;
+    const colW = plotW / s.months.length;
+    const barW = colW * 0.5;
+
+    let svgml = `<line x1="${padL}" y1="${midY}" x2="${W-padR}" y2="${midY}" stroke="${border}" stroke-width="1"/>`;
+
+    s.months.forEach((m, i) => {
+      const cx = padL + colW * i + colW/2;
+      const barH = Math.abs(m.avgReturnPct) * scaleY;
+      const y = m.avgReturnPct >= 0 ? midY - barH : midY;
+      const color = m.cls === 'bull' ? bull : m.cls === 'bear' ? bear : neutralC;
+      const valY = m.avgReturnPct >= 0 ? (midY - barH - 6) : (midY + barH + 14);
+
+      svgml += `<g class="seas-bar">
+        <title>${m.name}: rata-rata ${m.avgReturnPct>0?'+':''}${m.avgReturnPct}% &middot; win rate ${m.winRatePct}% dari ${m.sampleYears} tahun &middot; ${m.label}</title>
+        <rect x="${cx - barW/2}" y="${y}" width="${barW}" height="${Math.max(barH,1)}" rx="3" fill="${color}" fill-opacity="0.85"/>
+        <text x="${cx}" y="${valY}" font-size="11" font-weight="600" fill="${color}" font-family="IBM Plex Mono, monospace" text-anchor="middle">${m.avgReturnPct>0?'+':''}${m.avgReturnPct}%</text>
+        <text x="${cx}" y="${H-14}" font-size="12" fill="${textC}" font-family="IBM Plex Sans, sans-serif" text-anchor="middle">${m.name}</text>
+        <text x="${cx}" y="${H}" font-size="9.5" fill="${mutedC}" font-family="IBM Plex Mono, monospace" text-anchor="middle">${m.winRatePct}%</text>
+      </g>`;
+    });
+
+    svg.innerHTML = svgml;
+  }
+
   fetch('./data.json', {cache:'no-store'})
     .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
     .catch(err => {
       document.getElementById('narrative').innerHTML =
         `<p class="err">Gagal memuat data.json (${err.message}). Jalankan scripts/update_data.py, atau tunggu GitHub Actions berjalan.</p>`;
+    });
+
+  fetch('./seasonality.json', {cache:'no-store'})
+    .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(drawSeasonality)
+    .catch(err => {
+      document.getElementById('seasFoot').innerHTML =
+        `<span class="err">Gagal memuat seasonality.json (${err.message}). Jalankan scripts/build_seasonality.py.</span>`;
     });
 })();
 </script>
