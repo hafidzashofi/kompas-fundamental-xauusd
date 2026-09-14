@@ -226,6 +226,10 @@
   .seas-bar rect{ transition: opacity 0.15s; }
   .seas-bar:hover rect{ opacity: 0.75; }
   .seas-bar title{ font-family: 'IBM Plex Sans', sans-serif; }
+  .seas-sublabel{ font-size: 11px; text-transform:uppercase; letter-spacing:0.06em; color: var(--text-muted); margin-top: 4px; }
+  .seas-pt{ cursor: default; }
+  .seas-pt circle{ transition: r 0.15s; }
+  .seas-pt:hover circle{ r: 6; }
 
   .err{ color: var(--bear); font-size: 13px; }
   :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
@@ -310,7 +314,10 @@
 
   <div class="panel seasonality-panel">
     <div class="panel-head"><h2>Seasonality Bulanan &middot; Gold (GC)</h2><span class="panel-tag tag-event" id="seasYears">—</span></div>
-    <svg id="seasChart" width="100%" height="220" viewBox="0 0 1100 220" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="seas-sublabel">Rata-rata return per bulan</div>
+    <svg id="seasChart" width="100%" height="200" viewBox="0 0 1100 200" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="seas-sublabel">Alur musiman kumulatif (indeks mulai 100 di awal tahun)</div>
+    <svg id="seasFlow" width="100%" height="220" viewBox="0 0 1100 220" preserveAspectRatio="xMidYMid meet"></svg>
     <div class="panel-foot" id="seasFoot"></div>
   </div>
 
@@ -683,6 +690,44 @@
     svg.innerHTML = svgml;
   }
 
+  function drawSeasonalFlow(cumulative){
+    const svg = document.getElementById('seasFlow');
+    const css = getComputedStyle(document.documentElement);
+    const g = name => css.getPropertyValue(name).trim();
+    const gold = g('--gold'), goldBright = g('--gold-bright'), border = g('--border'), textC = g('--text'), mutedC = g('--text-muted'), bull = g('--bull'), bear = g('--bear');
+
+    const W = 1100, H = 220;
+    const padL = 46, padR = 20, padTop = 20, padBottom = 30;
+    const plotW = W - padL - padR, plotH = H - padTop - padBottom;
+
+    const vals = cumulative.map(p => p.index);
+    const min = Math.min(...vals), max = Math.max(...vals);
+    const span = Math.max(1, max - min) * 1.15;
+    const mid = (min + max) / 2;
+    const yFor = v => padTop + plotH/2 - ((v - mid) / span) * plotH;
+    const xFor = i => padL + (plotW / (cumulative.length - 1)) * i;
+
+    const baseY = yFor(100);
+    let svgml = `<line x1="${padL}" y1="${baseY}" x2="${W-padR}" y2="${baseY}" stroke="${border}" stroke-width="1" stroke-dasharray="3,3"/>`;
+    svgml += `<text x="${padL-8}" y="${baseY+3}" font-size="10" fill="${mutedC}" font-family="IBM Plex Mono, monospace" text-anchor="end">100</text>`;
+
+    const pathD = cumulative.map((p,i) => `${i===0?'M':'L'} ${xFor(i)} ${yFor(p.index)}`).join(' ');
+    svgml += `<path d="${pathD}" fill="none" stroke="${gold}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+
+    cumulative.forEach((p, i) => {
+      const x = xFor(i), y = yFor(p.index);
+      const prev = i > 0 ? cumulative[i-1].index : p.index;
+      const color = i === 0 ? goldBright : (p.index >= prev ? bull : bear);
+      svgml += `<g class="seas-pt">
+        <title>${p.label}: indeks ${p.index}</title>
+        <circle cx="${x}" cy="${y}" r="4" fill="${color}" stroke="${g('--surface')}" stroke-width="1.5"/>
+        <text x="${x}" y="${H-10}" font-size="12" fill="${textC}" font-family="IBM Plex Sans, sans-serif" text-anchor="middle">${p.label}</text>
+      </g>`;
+    });
+
+    svg.innerHTML = svgml;
+  }
+
   fetch('./data.json', {cache:'no-store'})
     .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
@@ -693,7 +738,7 @@
 
   fetch('./seasonality.json', {cache:'no-store'})
     .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(drawSeasonality)
+    .then(s => { drawSeasonality(s); if (s.cumulative) drawSeasonalFlow(s.cumulative); })
     .catch(err => {
       document.getElementById('seasFoot').innerHTML =
         `<span class="err">Gagal memuat seasonality.json (${err.message}). Jalankan scripts/build_seasonality.py.</span>`;

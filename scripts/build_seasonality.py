@@ -8,9 +8,10 @@ monthly schedule (see .github/workflows/seasonality.yml).
 import json
 import urllib.request
 import urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; kompas-xauusd-bot/1.0)"}
+WIB = timezone(timedelta(hours=7))
 SYMBOL = "GC=F"
 YAHOO_URL = f"https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}?interval=1mo&range=max"
 
@@ -93,12 +94,22 @@ def build_seasonality():
             "cls": cls,
         })
 
+    # Cumulative average seasonal path: start an index at 100 on Jan 1 and
+    # compound each month's average return in calendar order, so the line
+    # traces the "typical" path gold takes through a year (Jan..Dec).
+    cumulative = [{"label": "Awal Tahun", "index": 100.0}]
+    idx = 100.0
+    for mo in months_out:
+        idx *= (1 + mo["avgReturnPct"] / 100)
+        cumulative.append({"label": mo["name"], "index": round(idx, 2)})
+
     return {
-        "generatedAt": datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC"),
+        "generatedAt": datetime.now(WIB).strftime("%d %b %Y, %H:%M WIB"),
         "symbol": SYMBOL,
         "yearsCovered": f"{years_covered[0]}-{years_covered[-1]}" if years_covered else "-",
         "sampleCount": len(years_covered),
         "months": months_out,
+        "cumulative": cumulative,
         "note": (
             "Dihitung dari return bulanan historis GC=F (COMEX Gold futures, "
             f"data Yahoo Finance sejak {years_covered[0] if years_covered else '-'}). "

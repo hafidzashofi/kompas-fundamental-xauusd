@@ -1,5 +1,5 @@
 {
-  "generatedAt": "14 Sep 2026, 09:56 UTC",
+  "generatedAt": "14 Sep 2026, 19:59 WIB",
   "symbol": "GC=F",
   "yearsCovered": "2000-2026",
   "sampleCount": 27,
@@ -207,6 +207,60 @@
       },
       "label": "Bullish",
       "cls": "bull"
+    }
+  ],
+  "cumulative": [
+    {
+      "label": "Awal Tahun",
+      "index": 100.0
+    },
+    {
+      "label": "Jan",
+      "index": 102.47
+    },
+    {
+      "label": "Feb",
+      "index": 105.13
+    },
+    {
+      "label": "Mar",
+      "index": 106.09
+    },
+    {
+      "label": "Apr",
+      "index": 107.02
+    },
+    {
+      "label": "Mei",
+      "index": 108.3
+    },
+    {
+      "label": "Jun",
+      "index": 106.11
+    },
+    {
+      "label": "Jul",
+      "index": 107.6
+    },
+    {
+      "label": "Agu",
+      "index": 109.88
+    },
+    {
+      "label": "Sep",
+      "index": 111.27
+    },
+    {
+      "label": "Okt",
+      "index": 111.39
+    },
+    {
+      "label": "Nov",
+      "index": 113.24
+    },
+    {
+      "label": "Des",
+      "index": 114.7
     }
   ],
   "note": "Dihitung dari return bulanan historis GC=F (COMEX Gold futures, data Yahoo Finance sejak 2000). Statistik masa lalu, bukan jaminan pergerakan di masa depan."
