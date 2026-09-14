@@ -1,18 +1,18 @@
 {
-  "updatedAt": "13 Sep 2026, 21:46 WIB",
+  "updatedAt": "14 Sep 2026, 07:36 WIB",
   "price": {
-    "level": "$4,408.90"
+    "level": "$4,375.70"
   },
-  "biasScore": 15,
-  "biasLabel": "NETRAL condong BULLISH",
-  "bullishPct": 58,
-  "bearishPct": 42,
+  "biasScore": 7,
+  "biasLabel": "NETRAL",
+  "bullishPct": 54,
+  "bearishPct": 46,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,408.90</span>, menguat 0.04% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,375.70</span>, melemah 0.75% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Federal Funds Rate</b> pada 17 Sep 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit +15/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit +7/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "8 Sep 2026",
@@ -30,7 +30,7 @@
     "oiChange": -3969,
     "rangeLow": "$3,635",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 8 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -39,7 +39,7 @@
     {
       "date": "17 Sep 2026, 01:00 WIB",
       "event": "Federal Funds Rate",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya 3.75%",
+      "note": "Dampak tinggi · Prediksi 4.00% · Sebelumnya 3.75%",
       "scenario": {
         "strong": {
           "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
@@ -139,7 +139,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.97% (+0.63%) dan indeks dolar (DXY) melemah ke 99.09 (-0.03%), sementara XAU/USD naik 0.04%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.97% (+0.63%) dan indeks dolar (DXY) menguat ke 99.17 (+0.05%), sementara XAU/USD turun 0.75%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -172,12 +172,12 @@
       "asOf": "2026-09-10"
     },
     "mediaSentiment": {
-      "avgScore": 0.1,
+      "avgScore": 0.099,
       "label": "NETRAL",
       "sampleSize": 50,
       "bullishCount": 24,
-      "neutralCount": 18,
-      "bearishCount": 8
+      "neutralCount": 16,
+      "bearishCount": 10
     },
     "cpi": {
       "index": 334.98,
@@ -194,10 +194,19 @@
   "macro": {
     "yield10y": 4.97,
     "yield10yChange": 0.63,
-    "dxy": 99.09,
-    "dxyChange": -0.03
+    "dxy": 99.17,
+    "dxyChange": 0.05
   },
   "news": [
+    {
+      "titleEn": "Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
+      "summaryEn": "The AUD/USD pair edges lower to around 0.7160 during the early Asian session on Monday. Stronger-than-expected US inflation reports provide some support to the US Dollar (USD) agai…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-declines-to-near-07150-as-hot-us-inflation-data-boost-case-for-fed-rate-hike-202609132339",
+      "time": "14 Sep 2026, 06:39 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar Australia turun mendekati 0,7150 karena data inflasi AS yang panas mendorong kasus kenaikan suku bunga Fed",
+      "summaryId": "Pasangan AUD/USD beringsut lebih rendah ke sekitar 0,7160 selama sesi awal Asia pada hari Senin. Laporan inflasi AS yang lebih kuat dari perkiraan memberikan dukungan kepada agai Dolar AS (USD)..."
+    },
     {
       "titleEn": "AUD/USD Price Forecast: Doji high guards bulls as Fed bets bite",
       "summaryEn": "The AUD/USD ended the day in the green but finished the week 0.45% lower amid growing bets that the Fed will raise rates next week, boosting the US Dollar. Nevertheless, on Friday,…",
@@ -260,15 +269,6 @@
       "tag": "Bank Sentral",
       "titleId": "Meramalkan minggu yang akan datang: Fed, BoE, dan BoJ menjadi tajuk utama triple - header bank sentral",
       "summaryId": "Indeks Dolar AS (DXY) menutup minggu ini di dekat zona 99,00, sedikit berubah pada hari itu dan menahannya kembali setelah goyangan singkat pada rilis inflasi AS Kamis..."
-    },
-    {
-      "titleEn": "Bank of Japan: Gradual path toward neutral rate – ING",
-      "summaryEn": "ING analysts Chris Turner and Padhraic Garvey argue the Bank of Japan is likely to hike 25bp to 1.25% and then proceed cautiously.",
-      "link": "https://www.fxstreet.com/news/bank-of-japan-gradual-path-toward-neutral-rate-ing-202609111924",
-      "time": "12 Sep 2026, 02:24 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Bank of Japan: Jalur bertahap menuju tingkat netral – ING",
-      "summaryId": "Analis ING Chris Turner dan Padhraic Garvey berpendapat bahwa Bank of Japan kemungkinan akan menaikkan 25bp menjadi 1,25% dan kemudian melanjutkan dengan hati - hati."
     }
   ],
   "sources": [
