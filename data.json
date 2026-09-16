@@ -1,18 +1,18 @@
 {
-  "updatedAt": "15 Sep 2026, 22:24 WIB",
+  "updatedAt": "16 Sep 2026, 07:58 WIB",
   "price": {
-    "level": "$4,323.40"
+    "level": "$4,324.10"
   },
-  "biasScore": 8,
-  "biasLabel": "NETRAL",
-  "bullishPct": 54,
-  "bearishPct": 46,
+  "biasScore": 13,
+  "biasLabel": "NETRAL condong BULLISH",
+  "bullishPct": 56,
+  "bearishPct": 44,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,323.40</span>, melemah 0.66% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,324.10</span>, melemah 0.2% pada sesi terakhir, dengan rentang 52 minggu $3,635–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Federal Funds Rate</b> pada 17 Sep 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit +8/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit +13/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "8 Sep 2026",
@@ -139,7 +139,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.0% (+0.79%) dan indeks dolar (DXY) menguat ke 99.63 (+0.24%), sementara XAU/USD turun 0.66%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.0% (+0.70%) dan indeks dolar (DXY) menguat ke 99.7 (+0.09%), sementara XAU/USD turun 0.2%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -169,15 +169,15 @@
     "fedFundsRate": {
       "rate": 3.63,
       "changeFromPrior": 0.01,
-      "asOf": "2026-09-11"
+      "asOf": "2026-09-14"
     },
     "mediaSentiment": {
-      "avgScore": 0.067,
+      "avgScore": 0.054,
       "label": "NETRAL",
       "sampleSize": 50,
       "bullishCount": 16,
-      "neutralCount": 25,
-      "bearishCount": 9
+      "neutralCount": 24,
+      "bearishCount": 10
     },
     "cpi": {
       "index": 334.98,
@@ -193,82 +193,82 @@
   },
   "macro": {
     "yield10y": 5.0,
-    "yield10yChange": 0.79,
-    "dxy": 99.63,
-    "dxyChange": 0.24
+    "yield10yChange": 0.7,
+    "dxy": 99.7,
+    "dxyChange": 0.09
   },
   "news": [
     {
-      "titleEn": "Japanese Yen: Weak as markets price BoJ hike against US Dollar – Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret observe USD/JPY trading higher as the Japanese Yen underperforms G10 peers ahead of trade, Consumer Price Index (CPI) and the …",
-      "link": "https://www.fxstreet.com/news/japanese-yen-weak-as-markets-price-boj-hike-against-us-dollar-scotiabank-202609151506",
-      "time": "15 Sep 2026, 22:06 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Yen Jepang: Lemah karena harga pasar BoJ naik terhadap Dolar AS – Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mengamati perdagangan USD/JPY lebih tinggi karena Yen Jepang berkinerja buruk di G10 menjelang perdagangan, Indeks Harga Konsumen (IHK) dan..."
-    },
-    {
-      "titleEn": "United Kingdom: Wage momentum complicates the BoE outlook - Nomura",
-      "summaryEn": "Nomura’s Josie Anderson, George Buckley and Andrzej Szczepaniak say the latest UK labour data show strong private sector pay but softer employment, with payrolls falling and vacanc…",
-      "link": "https://www.fxstreet.com/news/united-kingdom-wage-momentum-complicates-the-boe-outlook-nomura-202609151457",
-      "time": "15 Sep 2026, 21:57 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Inggris: Momentum upah mempersulit prospek BoE - Nomura",
-      "summaryId": "Josie Anderson, George Buckley, dan Andrzej Szczepaniak dari Nomura mengatakan bahwa data ketenagakerjaan Inggris terbaru menunjukkan upah sektor swasta yang kuat tetapi pekerjaan yang lebih lembut, dengan penggajian yang menurun dan kekosongan…"
-    },
-    {
-      "titleEn": "British Pound: Further weakness eyed toward 1.3410 against US Dollar – UOB",
-      "summaryEn": "UOB’s Quek Ser Leang reports GBP/USD slipped below 1.3475 before rebounding, with intraday trade now expected between 1.3470 and 1.3520. He notes building downside momentum and see…",
-      "link": "https://www.fxstreet.com/news/british-pound-further-weakness-eyed-toward-13410-against-us-dollar-uob-202609151450",
-      "time": "15 Sep 2026, 21:50 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Pound Inggris: Kelemahan lebih lanjut mengarah ke 1,3410 terhadap Dolar AS – UOB",
-      "summaryId": "Quek Ser Leang dari UOB melaporkan GBP/USD tergelincir di bawah 1,3475 sebelum memantul, dengan perdagangan intraday sekarang diperkirakan antara 1,3470 dan 1,3520. Dia mencatat membangun momentum penurunan dan melihat..."
-    },
-    {
-      "titleEn": "Australian Dollar continues recent slide ahead of Fed decision",
-      "summaryEn": "AUD/USD trades near the 0.7120s, down from the four-month highs it set near 0.7200 earlier this month. The US Dollar (USD), tracked by the US Dollar Index (DXY), holds just below t…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-continues-recent-slide-ahead-of-fed-decision-202609151450",
-      "time": "15 Sep 2026, 21:50 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Australia melanjutkan penurunan baru - baru ini menjelang keputusan Fed",
-      "summaryId": "AUD/USD diperdagangkan di dekat level 0,7120, turun dari level tertinggi empat bulan yang ditetapkan di dekat 0,7200 awal bulan ini. Dolar AS (USD), dilacak oleh Indeks Dolar AS (DXY), bertahan tepat di bawah t..."
-    },
-    {
-      "titleEn": "Natural gas: European prices stay elevated – ING",
-      "summaryEn": "ING’s Warren Patterson and Ewa Manthey report that European Natural Gas prices at TTF remain well above EUR80/MWh as Middle East tensions curb hopes for increased LNG flows from th…",
-      "link": "https://www.fxstreet.com/news/natural-gas-european-prices-stay-elevated-ing-202609151441",
-      "time": "15 Sep 2026, 21:41 WIB",
+      "titleEn": "WTI slips to near $100.50 despite escalating Middle East supply disruptions",
+      "summaryEn": "West Texas Intermediate (WTI) oil price declines after two days of gains, trading around $100.50 per barrel during Asian hours on Wednesday. However, crude oil prices may rebound, …",
+      "link": "https://www.fxstreet.com/news/wti-slips-to-near-10050-despite-escalating-middle-east-supply-disruptions-202609160054",
+      "time": "16 Sep 2026, 07:54 WIB",
       "tag": "Geopolitik",
-      "titleId": "Gas alam: Harga Eropa tetap tinggi – ING",
-      "summaryId": "Warren Patterson dan Ewa Manthey dari ING melaporkan bahwa harga Gas Alam Eropa di TTF tetap jauh di atas EUR80/MWh karena ketegangan Timur Tengah mengekang harapan untuk peningkatan aliran LNG dari..."
+      "titleId": "WTI tergelincir mendekati $ 100,50 meskipun terjadi gangguan pasokan Timur Tengah yang meningkat",
+      "summaryId": "Harga minyak West Texas Intermediate (WTI) turun setelah dua hari kenaikan, diperdagangkan sekitar $ 100,50 per barel selama jam - jam Asia pada hari Rabu. Namun, harga minyak mentah dapat memantul,..."
     },
     {
-      "titleEn": "USD/CHF Price Forecast: RSI and MACD signal firm upside momentum",
-      "summaryEn": "USD/CHF extends its advance for a fifth consecutive day on Tuesday as the US Dollar (USD) stays firmly bid ahead of the Federal Reserve’s (Fed) monetary policy announcement on Wedn…",
-      "link": "https://www.fxstreet.com/news/usd-chf-price-forecast-rsi-and-macd-signal-firm-upside-momentum-202609151433",
-      "time": "15 Sep 2026, 21:33 WIB",
+      "titleEn": "Japanese Yen flatlines ahead of Fed rate decicion",
+      "summaryEn": "The USD/JPY pair holds steady near 155.25 during the early Asian session on Wednesday. Traders prefer to wait on the sidelines ahead of the US Federal Reserve (Fed) interest rate d…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-flatlines-ahead-of-fed-rate-decicion-202609160022",
+      "time": "16 Sep 2026, 07:22 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Prakiraan Harga USD/CHF: Momentum naik perusahaan sinyal RSI dan MACD",
-      "summaryId": "USD/CHF memperpanjang kenaikannya untuk hari kelima berturut - turut pada hari Selasa karena Dolar AS (USD) tetap melakukan penawaran kuat menjelang pengumuman kebijakan moneter Federal Reserve (Fed) pada hari Rabu..."
+      "titleId": "Yen Jepang datar menjelang penentuan suku bunga Fed",
+      "summaryId": "Pasangan USD/JPY bertahan stabil di dekat 155,25 selama awal sesi Asia pada hari Rabu. Trader lebih suka menunggu di sela - sela jelang suku bunga Federal Reserve (Fed) AS d..."
     },
     {
-      "titleEn": "Euro: Support holds near 1.15 against US Dollar – Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret report EUR/USD is fractionally lower but stabilizing just above Monday’s one-month low in the mid/lower-1.15s.",
-      "link": "https://www.fxstreet.com/news/euro-support-holds-near-115-against-us-dollar-scotiabank-202609151425",
-      "time": "15 Sep 2026, 21:25 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Euro: Dukungan bertahan di dekat 1,15 terhadap Dolar AS – Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret melaporkan EUR/USD secara fraksional lebih rendah tetapi stabil tepat di atas level terendah satu bulan Senin di pertengahan/bawah 1,15 - an."
-    },
-    {
-      "titleEn": "Gold: CTA selling intensifies ahead of Fed decision - TD Securities",
-      "summaryEn": "TD Securities analysts Ryan McKay and Bart Melek report that Gold remains under pressure as CTAs accelerate selling ahead of the upcoming Fed meeting, with prices nearing levels th…",
-      "link": "https://www.fxstreet.com/news/gold-cta-selling-intensifies-ahead-of-fed-decision-td-securities-202609151417",
-      "time": "15 Sep 2026, 21:17 WIB",
+      "titleEn": "Gold declines below $4,300 as US yields climb, Fed rate decision looms",
+      "summaryEn": "Gold price (XAU/USD) declines to near $4,285 during the early Asian session on Wednesday.",
+      "link": "https://www.fxstreet.com/news/gold-declines-below-4-300-as-us-yields-climb-fed-rate-decision-looms-202609152313",
+      "time": "16 Sep 2026, 06:13 WIB",
       "tag": "Emas",
-      "titleId": "Emas: Penjualan CTA meningkat menjelang keputusan Fed - TD Securities",
-      "summaryId": "Analis TD Securities Ryan McKay dan Bart Melek melaporkan bahwa Emas tetap di bawah tekanan karena CTA mempercepat penjualan menjelang pertemuan Fed mendatang, dengan harga mendekati level…"
+      "titleId": "Emas turun di bawah $ 4.300 karena imbal hasil AS naik, keputusan suku bunga Fed membayangi",
+      "summaryId": "Harga emas (XAU/USD) turun mendekati $ 4.285 selama awal sesi Asia pada hari Rabu."
+    },
+    {
+      "titleEn": "Australian Dollar softens as risk-off mood meets FOMC countdown",
+      "summaryEn": "The Aussie Dollar loses 0.11% against the Greenback on Tuesday as risk appetite remains negative amid calls from AI company CEOs to slow development, while the FOMC monetary policy…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-as-risk-off-mood-meets-fomc-countdown-202609152255",
+      "time": "16 Sep 2026, 05:55 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar Australia melunak karena suasana risk - off memenuhi hitungan mundur FOMC",
+      "summaryId": "Dolar Australia kehilangan 0,11% terhadap Greenback pada hari Selasa karena selera risiko tetap negatif di tengah seruan dari CEO perusahaan AI untuk memperlambat perkembangan, sementara kebijakan moneter FOMC..."
+    },
+    {
+      "titleEn": "The Euro edges lower as Frankfurt's hike takes effect the day Washington votes",
+      "summaryEn": "EUR/USD closed Tuesday near 1.1540, down 0.1%. It fell on the day the European Central Bank (ECB) raised its deposit rate to 2.50% and in each of the three sessions since.",
+      "link": "https://www.fxstreet.com/news/the-euro-edges-lower-as-frankfurts-hike-takes-effect-the-day-washington-votes-202609152226",
+      "time": "16 Sep 2026, 05:26 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro turun lebih rendah karena kenaikan Frankfurt berlaku pada hari pemungutan suara Washington",
+      "summaryId": "EUR/USD ditutup Selasa di dekat 1,1540, turun 0,1%. Ini jatuh pada hari Bank Sentral Eropa (ECB) menaikkan suku bunga deposito menjadi 2,50% dan di masing - masing dari tiga sesi sejak itu."
+    },
+    {
+      "titleEn": "GBP/JPY Price Forecast: Rebounds above 207.00 as oversold risk eases",
+      "summaryEn": "The GBP/JPY edges higher by about 0.29% on Tuesday, even as risk appetite has shifted to the sour side due to geopolitical developments that are driving global bond yields higher a…",
+      "link": "https://www.fxstreet.com/news/gbp-jpy-price-forecast-rebounds-above-20700-as-oversold-risk-eases-202609152222",
+      "time": "16 Sep 2026, 05:22 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Prakiraan Harga GBP/JPY: Rebound di atas 207,00 karena risiko jenuh jual berkurang",
+      "summaryId": "GBP/JPY naik lebih tinggi sekitar 0,29% pada hari Selasa, bahkan ketika selera risiko telah bergeser ke sisi asam karena perkembangan geopolitik yang mendorong imbal hasil obligasi global lebih tinggi…"
+    },
+    {
+      "titleEn": "The Pound drifts lower as the Fed lines up a rate above the Bank of England's",
+      "summaryEn": "GBP/USD closed Tuesday near 1.3470, down 0.2%. Wednesday's Asian and London hours are the last before the Fed is expected to raise its rate for the first time since July 2023. By t…",
+      "link": "https://www.fxstreet.com/news/the-pound-drifts-lower-as-the-fed-lines-up-a-rate-above-the-bank-of-englands-202609152209",
+      "time": "16 Sep 2026, 05:09 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Pound melayang lebih rendah karena The Fed menaikkan suku bunga di atas Bank of England",
+      "summaryId": "GBP/USD ditutup Selasa di dekat 1,3470, turun 0,2%. Jam kerja di Asia dan London pada hari Rabu adalah yang terakhir sebelum The Fed diperkirakan akan menaikkan suku bunganya untuk pertama kalinya sejak Juli 2023. Pada…"
+    },
+    {
+      "titleEn": "New Zealand Dollar slides ahead of Fed’s decision",
+      "summaryEn": "NZD/USD trades close to the 0.5760s, extending a run of losses that has dragged it toward the lower end of its recent range. A broadly firmer US Dollar (USD) is behind the slide, w…",
+      "link": "https://www.fxstreet.com/news/new-zealand-dollar-slides-ahead-of-feds-decision-202609152129",
+      "time": "16 Sep 2026, 04:29 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar Selandia Baru meluncur menjelang keputusan Fed",
+      "summaryId": "NZD/USD diperdagangkan mendekati level 0,5760 - an, memperpanjang serangkaian kerugian yang telah menyeretnya ke ujung bawah kisaran baru - baru ini. Dolar AS (USD) yang lebih kuat berada di belakang slide, dengan..."
     }
   ],
   "sources": [
