@@ -1,18 +1,17 @@
 {
-  "updatedAt": "16 Sep 2026, 22:17 WIB",
+  "updatedAt": "17 Sep 2026, 08:01 WIB",
   "price": {
-    "level": "$4,392.90"
+    "level": "$4,320.10"
   },
-  "biasScore": 29,
-  "biasLabel": "NETRAL condong BULLISH",
-  "bullishPct": 64,
-  "bearishPct": 36,
+  "biasScore": -1,
+  "biasLabel": "NETRAL",
+  "bullishPct": 50,
+  "bearishPct": 50,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,392.90</span>, menguat 1.39% pada sesi terakhir, dengan rentang 52 minggu $3,660–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,320.10</span>, melemah 1.54% pada sesi terakhir, dengan rentang 52 minggu $3,660–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
-    "Katalis terdekat: <b>Federal Funds Rate</b> pada 17 Sep 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit +29/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -1/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "8 Sep 2026",
@@ -30,87 +29,16 @@
     "oiChange": -3969,
     "rangeLow": "$3,660",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 8 Sep 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
     {
-      "date": "17 Sep 2026, 01:00 WIB",
-      "event": "Federal Funds Rate",
-      "note": "Dampak tinggi · Prediksi 4.00% · Sebelumnya 3.75%",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
-    {
-      "date": "17 Sep 2026, 01:00 WIB",
-      "event": "FOMC Economic Projections",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
-    {
-      "date": "17 Sep 2026, 01:00 WIB",
-      "event": "FOMC Statement",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
-    {
-      "date": "17 Sep 2026, 01:30 WIB",
-      "event": "FOMC Press Conference",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
+      "date": "-",
+      "event": "Tidak ada event high-impact USD terjadwal",
+      "note": "Cek kembali menjelang akhir pekan"
     }
   ],
   "positioning": {
@@ -139,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.78%) dan indeks dolar (DXY) menguat ke 99.67 (+0.06%), sementara XAU/USD naik 1.39%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.01% (+0.20%) dan indeks dolar (DXY) menguat ke 100.3 (+0.05%), sementara XAU/USD turun 1.54%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -166,109 +94,89 @@
         "body": "Minyak yang menguat tajam biasanya mendorong ekspektasi inflasi naik (biaya energi & logistik naik). Ini kadang bikin emas ikut naik sebagai lindung nilai inflasi, tapi di sisi lain juga bisa memicu The Fed lebih hawkish untuk meredam inflasi. Arahnya tidak selalu satu arah — harus dilihat bersama konteks CPI dan sikap The Fed saat itu."
       }
     ],
-    "fedFundsRate": {
-      "rate": 3.63,
-      "changeFromPrior": 0.01,
-      "asOf": "2026-09-14"
-    },
-    "mediaSentiment": {
-      "avgScore": 0.035,
-      "label": "NETRAL",
-      "sampleSize": 50,
-      "bullishCount": 14,
-      "neutralCount": 25,
-      "bearishCount": 11
-    },
-    "cpi": {
-      "index": 334.98,
-      "yoyPct": 3.4,
-      "momPct": 0.32,
-      "asOf": "2026-08-01"
-    },
-    "wti": {
-      "price": 97.26,
-      "changePct": 3.24,
-      "asOf": "2026-09-09"
-    }
+    "fedFundsRate": null,
+    "mediaSentiment": null,
+    "cpi": null,
+    "wti": null
   },
   "macro": {
-    "yield10y": 4.96,
-    "yield10yChange": -0.78,
-    "dxy": 99.67,
-    "dxyChange": 0.06
+    "yield10y": 5.01,
+    "yield10yChange": 0.2,
+    "dxy": 100.3,
+    "dxyChange": 0.05
   },
   "news": [
     {
-      "titleEn": "Dow Jones Industrial Average huddles ahead of Fed action",
-      "summaryEn": "The Dow Jones Industrial Average trades just above 52,100 and has spent the morning going nowhere, on the day the Federal Reserve is expected to raise its rate for the first time s…",
-      "link": "https://www.fxstreet.com/news/dow-jones-industrial-average-huddles-ahead-of-fed-action-202609161514",
-      "time": "16 Sep 2026, 22:14 WIB",
+      "titleEn": "US President Donald Trump to hold Iran talks with Gulf leaders next week — Reuters",
+      "summaryEn": "US President Donald Trump is expected ‌to meet Gulf leaders on the sidelines of the UN General Assembly in New York next Tuesday to discuss the next steps in the Iran war, Reuters …",
+      "link": "https://www.fxstreet.com/news/us-president-donald-trump-to-hold-iran-talks-with-gulf-leaders-next-week-reuters-202609170015",
+      "time": "17 Sep 2026, 07:15 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Presiden AS Donald Trump akan mengadakan pembicaraan Iran dengan para pemimpin Teluk minggu depan — Reuters",
+      "summaryId": "Presiden AS Donald Trump diperkirakan akan bertemu para pemimpin Teluk di sela - sela Sidang Umum PBB di New York Selasa depan untuk membahas langkah selanjutnya dalam perang Iran, Reuters ..."
+    },
+    {
+      "titleEn": "New Zealand Dollar remains weak below 0.5750 despite better-than-expected GDP data",
+      "summaryEn": "The NZD/USD pair falls to near 0.5725 during the early Asian session on Thursday. The New Zealand Dollar (NZD) remains under selling pressure against the US Dollar (USD) despite th…",
+      "link": "https://www.fxstreet.com/news/new-zealand-dollar-remains-weak-below-05750-despite-better-than-expected-gdp-data-202609170006",
+      "time": "17 Sep 2026, 07:06 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Selandia Baru tetap lemah di bawah 0,5750 meskipun data PDB lebih baik dari perkiraan",
+      "summaryId": "Pasangan NZD/USD turun ke dekat 0,5725 selama awal sesi Asia pada hari Kamis. Dolar Selandia Baru (NZD) tetap berada di bawah tekanan jual terhadap Dolar AS (USD) meskipun..."
+    },
+    {
+      "titleEn": "Gold falls to near $4,250 after Fed delivers rate hike",
+      "summaryEn": "Gold price (XAU/USD) attracts some sellers to around $4,265 during the early Asian session on Thursday. The precious metal extends its downside after the US Federal Reserve (Fed) r…",
+      "link": "https://www.fxstreet.com/news/gold-falls-to-near-4-250-after-fed-delivers-rate-hike-202609162325",
+      "time": "17 Sep 2026, 06:25 WIB",
+      "tag": "Emas",
+      "titleId": "Emas turun mendekati $ 4.250 setelah Fed memberikan kenaikan suku bunga",
+      "summaryId": "Harga emas (XAU/USD) menarik beberapa penjual ke sekitar $ 4.265 selama sesi awal Asia pada hari Kamis. Logam mulia memperpanjang sisi negatifnya setelah Federal Reserve AS (Fed) r..."
+    },
+    {
+      "titleEn": "The Pound drops below its long-run average as the Fed's rate passes Britain's",
+      "summaryEn": "The Fed raised rates by a quarter point to 3.75-4.00% on Wednesday, the first hike since 2023, and the vote was 12-0. The middle of the new range is 3.875%, which puts US rates abo…",
+      "link": "https://www.fxstreet.com/news/the-pound-drops-below-its-long-run-average-as-the-feds-rate-passes-britains-202609162219",
+      "time": "17 Sep 2026, 05:19 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dow Jones Industrial Average meringkuk menjelang aksi Fed",
-      "summaryId": "Dow Jones Industrial Average diperdagangkan tepat di atas 52.100 dan telah menghabiskan pagi hari ke mana - mana, pada hari Federal Reserve diperkirakan akan menaikkan suku bunga untuk pertama kalinya..."
+      "titleId": "Pound turun di bawah rata - rata jangka panjangnya karena suku bunga Fed melewati Inggris",
+      "summaryId": "The Fed menaikkan suku bunga seperempat poin menjadi 3,75 -4,00% pada hari Rabu, kenaikan pertama sejak 2023, dan pemungutan suara adalah 12 -0. Bagian tengah kisaran baru adalah 3,875%, yang menempatkan suku bunga AS di atas…"
     },
     {
-      "titleEn": "Euro: Consolidation with downside risks against US Dollar – Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note the Euro (EUR) is consolidating in a tight range around the mid-1.15s as markets await the Federal Open Market Committee …",
-      "link": "https://www.fxstreet.com/news/euro-consolidation-with-downside-risks-against-us-dollar-scotiabank-202609161509",
-      "time": "16 Sep 2026, 22:09 WIB",
+      "titleEn": "The Euro's losing streak runs on as the Fed matches the ECB's rate hike",
+      "summaryEn": "The European Central Bank (ECB) raised its deposit rate to 2.50% on September 10, and the Euro has fallen every session since. The Fed raised its own rate to 3.75-4.00% on Wednesda…",
+      "link": "https://www.fxstreet.com/news/the-euros-losing-streak-runs-on-as-the-fed-matches-the-ecbs-rate-hike-202609162201",
+      "time": "17 Sep 2026, 05:01 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Euro: Konsolidasi dengan risiko penurunan terhadap Dolar AS – Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Euro (EUR) berkonsolidasi dalam kisaran ketat sekitar pertengahan 1,15 - an karena pasar menunggu Komite Pasar Terbuka Federal..."
+      "titleId": "Kekalahan beruntun Euro berlanjut saat The Fed menyamai kenaikan suku bunga ECB",
+      "summaryId": "Bank Sentral Eropa (ECB) menaikkan suku bunga deposito menjadi 2,50% pada 10 September, dan Euro telah turun setiap sesi sejak itu. The Fed menaikkan suku bunga sendiri menjadi 3,75 -4,00% pada hari Rabu..."
     },
     {
-      "titleEn": "US Dollar: Fed repricing risk caps downside – Rabobank",
-      "summaryEn": "Rabobank’s Senior FX Strategist Jane Foley notes the US Dollar (USD) has outperformed G10 peers on expectations the Fed will deliver around 100 bps of tightening over 12 months, bu…",
-      "link": "https://www.fxstreet.com/news/us-dollar-fed-repricing-risk-caps-downside-rabobank-202609161501",
-      "time": "16 Sep 2026, 22:01 WIB",
+      "titleEn": "The Japanese Yen gives back more of its rally as the Fed raises rates",
+      "summaryEn": "The Bank of Japan meets on Friday, and the market has a quarter-point hike to 1.25% priced at 100%. The Yen has been falling anyway. USD/JPY is up three sessions in a row, Wednesda…",
+      "link": "https://www.fxstreet.com/news/the-japanese-yen-gives-back-more-of-its-rally-as-the-fed-raises-rates-202609162118",
+      "time": "17 Sep 2026, 04:18 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar AS: Fed repricing risk caps downside – Rabobank",
-      "summaryId": "Senior FX Strategist Rabobank Jane Foley mencatat Dolar AS (USD) telah mengungguli rekan - rekan G10 karena ekspektasi Fed akan memberikan pengetatan sekitar 100 bps selama 12 bulan, bu…"
+      "titleId": "Yen Jepang memberikan lebih banyak reli karena The Fed menaikkan suku bunga",
+      "summaryId": "Bank of Japan bertemu pada hari Jumat, dan pasar memiliki kenaikan seperempat poin menjadi 1,25% dengan harga 100%. Yen telah jatuh. USD/JPY naik tiga sesi berturut - turut, Rabu…"
     },
     {
-      "titleEn": "British Pound: BoE repricing risk grows – BBH",
-      "summaryEn": "Brown Brothers Harriman’s (BBH) Elias Haddad notes GBP/USD is trading heavy near its 200-day moving average as United Kingdom (UK) gilts stabilize. August Consumer Price Index (CPI…",
-      "link": "https://www.fxstreet.com/news/british-pound-boe-repricing-risk-grows-bbh-202609161453",
-      "time": "16 Sep 2026, 21:53 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Pound Inggris: Risiko repricing BoE meningkat – BBH",
-      "summaryId": "Brown Brothers Harriman (BBH) Elias Haddad mencatat bahwa GBP/USD diperdagangkan berat di dekat rata - rata pergerakan 200 hari karena gilts Inggris (UK) stabil. Indeks Harga Konsumen Agustus (IHK…"
-    },
-    {
-      "titleEn": "Australian Dollar holds ground as Fed decision looms",
-      "summaryEn": "AUD/USD trades in a narrow range on Wednesday as investors hold back from taking strong positions ahead of the Federal Reserve’s (Fed) monetary policy announcement. At the time of …",
-      "link": "https://www.fxstreet.com/news/australian-dollar-holds-ground-against-us-dollar-as-fed-decision-looms-202609161453",
-      "time": "16 Sep 2026, 21:53 WIB",
+      "titleEn": "Trump demands 1% rates hours after the Fed raised them",
+      "summaryEn": "Trump posted on Wednesday that US rates should be 1% or less and that the country has the strongest credit anywhere. He also wrote that cutting off trade with every nation the US r…",
+      "link": "https://www.fxstreet.com/news/trump-demands-1-rates-hours-after-the-fed-raised-them-202609162104",
+      "time": "17 Sep 2026, 04:04 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Australia bertahan saat keputusan Fed membayangi",
-      "summaryId": "AUD/USD diperdagangkan dalam kisaran sempit pada hari Rabu karena investor menahan diri untuk tidak mengambil posisi kuat menjelang pengumuman kebijakan moneter Federal Reserve (Fed). Pada saat..."
+      "titleId": "Trump menuntut suku bunga 1% beberapa jam setelah The Fed menaikkan suku bunga",
+      "summaryId": "Trump memposting pada hari Rabu bahwa suku bunga AS harus 1% atau kurang dan bahwa negara ini memiliki kredit terkuat di mana pun. Dia juga menulis bahwa memotong perdagangan dengan setiap negara di AS..."
     },
     {
-      "titleEn": "Canadian Dollar: BoC hawkish tilt and key levels – Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret report USD/CAD is steady near 1.39 as markets await the Federal Reserve (Fed) and the Bank of Canada’s (BoC) summary of delibe…",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-boc-hawkish-tilt-and-key-levels-scotiabank-202609161441",
-      "time": "16 Sep 2026, 21:41 WIB",
+      "titleEn": "New Zealand Dollar sinks toward its July low after the Fed hikes",
+      "summaryEn": "NZD/USD has dropped in six straight sessions. The run started near 0.5900 on September 8, went through both long-run averages near 0.5850 early in the run, and the last three sessi…",
+      "link": "https://www.fxstreet.com/news/new-zealand-dollar-sinks-toward-its-july-low-after-the-fed-hikes-202609162101",
+      "time": "17 Sep 2026, 04:01 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Kanada: Kemiringan hawkish BoC dan level kunci – Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret melaporkan USD/CAD stabil di dekat 1,39 karena pasar menunggu ringkasan Federal Reserve (Fed) dan Bank of Canada (BoC) tentang delibe…"
-    },
-    {
-      "titleEn": "United Kingdom: BoE hold view reinforced – Nomura",
-      "summaryEn": "Nomura’s Global Markets Research team, including Josie Anderson, George Buckley and Andrzej Szczepaniak, notes that UK CPI data for August came in broadly as expected, with headlin…",
-      "link": "https://www.fxstreet.com/news/united-kingdom-boe-hold-view-reinforced-nomura-202609161418",
-      "time": "16 Sep 2026, 21:18 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Inggris: Tampilan hold BoE diperkuat – Nomura",
-      "summaryId": "Tim Riset Pasar Global Nomura, termasuk Josie Anderson, George Buckley dan Andrzej Szczepaniak, mencatat bahwa data CPI Inggris untuk bulan Agustus datang secara luas seperti yang diharapkan, dengan headlin…"
-    },
-    {
-      "titleEn": "Federal Reserve set to raise interest rate after five meetings on hold",
-      "summaryEn": "The United States (US) Federal Reserve (Fed) announces its interest rate decision on Wednesday, following another pivotal meeting that could provide key insights into the monetary …",
-      "link": "https://www.fxstreet.com/news/federal-reserve-set-to-raise-interest-rate-after-five-meetings-on-hold-202609161400",
-      "time": "16 Sep 2026, 21:00 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Federal Reserve akan menaikkan suku bunga setelah lima pertemuan tertunda",
-      "summaryId": "Federal Reserve (Fed) Amerika Serikat mengumumkan keputusan suku bunganya pada hari Rabu, menyusul pertemuan penting lainnya yang dapat memberikan wawasan penting tentang..."
+      "titleId": "Dolar Selandia Baru merosot menuju level terendah Juli setelah kenaikan Fed",
+      "summaryId": "NZD/USD telah turun dalam enam sesi berturut - turut. Lari dimulai di dekat 0,5900 pada 8 September, melalui rata - rata jangka panjang di dekat 0,5850 di awal lari, dan tiga sessi terakhir…"
     }
   ],
   "sources": [
@@ -295,10 +203,6 @@
     {
       "label": "US Dollar Index (DXY)",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
-    },
-    {
-      "label": "Alpha Vantage",
-      "url": "https://www.alphavantage.co/"
     }
   ]
 }
