@@ -1,17 +1,17 @@
 {
-  "updatedAt": "18 Sep 2026, 07:57 WIB",
+  "updatedAt": "18 Sep 2026, 21:44 WIB",
   "price": {
-    "level": "$4,395.00"
+    "level": "$4,383.40"
   },
-  "biasScore": 14,
+  "biasScore": 11,
   "biasLabel": "NETRAL condong BULLISH",
-  "bullishPct": 57,
-  "bearishPct": 43,
+  "bullishPct": 56,
+  "bearishPct": 44,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,395.00</span>, melemah 0.11% pada sesi terakhir, dengan rentang 52 minggu $3,660–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,383.40</span>, melemah 0.37% pada sesi terakhir, dengan rentang 52 minggu $3,664–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit +14/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit +11/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "8 Sep 2026",
@@ -27,7 +27,7 @@
   "cme": {
     "openInterest": 411227,
     "oiChange": -3969,
-    "rangeLow": "$3,660",
+    "rangeLow": "$3,664",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.95% (-1.18%) dan indeks dolar (DXY) melemah ke 100.25 (-0.00%), sementara XAU/USD turun 0.11%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.0% (+1.15%) dan indeks dolar (DXY) menguat ke 100.5 (+0.26%), sementara XAU/USD turun 0.37%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -100,12 +100,12 @@
       "asOf": "2026-09-16"
     },
     "mediaSentiment": {
-      "avgScore": 0.016,
+      "avgScore": 0.08,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 10,
-      "neutralCount": 27,
-      "bearishCount": 13
+      "bullishCount": 16,
+      "neutralCount": 23,
+      "bearishCount": 11
     },
     "cpi": {
       "index": 334.98,
@@ -120,83 +120,83 @@
     }
   },
   "macro": {
-    "yield10y": 4.95,
-    "yield10yChange": -1.18,
-    "dxy": 100.25,
-    "dxyChange": -0.0
+    "yield10y": 5.0,
+    "yield10yChange": 1.15,
+    "dxy": 100.5,
+    "dxyChange": 0.26
   },
   "news": [
     {
-      "titleEn": "1.9%: Japan’s National CPI steadies in August",
-      "summaryEn": "Japan’s National Consumer Price Index (CPI) climbed by 1.9% YoY in August, compared to the previous reading of 1.9%, according to the latest data released by the Japan Statistics B…",
-      "link": "https://www.fxstreet.com/news/19-japans-national-cpi-steadies-in-august-202609172333",
-      "time": "18 Sep 2026, 06:33 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "1,9%: CPI Nasional Jepang menguat pada bulan Agustus",
-      "summaryId": "Indeks Harga Konsumen Nasional (IHK) Jepang naik 1,9% YoY pada bulan Agustus, dibandingkan dengan pembacaan sebelumnya sebesar 1,9%, menurut data terbaru yang dirilis oleh Japan Statistics B…"
-    },
-    {
-      "titleEn": "Gold rebounds to near $4,350 on weaker US Dollar, falling oil prices",
-      "summaryEn": "Gold price (XAU/USD) rises to near $4,345 during the early Asian session on Friday. The precious metal rebounds from a six-week low amid falling oil prices and a weaker US Dollar (…",
-      "link": "https://www.fxstreet.com/news/gold-rebounds-to-near-4-350-on-weaker-us-dollar-falling-oil-prices-202609172320",
-      "time": "18 Sep 2026, 06:20 WIB",
-      "tag": "Emas",
-      "titleId": "Emas memantul mendekati $ 4.350 pada Dolar AS yang lebih lemah, penurunan harga minyak",
-      "summaryId": "Harga emas (XAU/USD) naik mendekati $ 4.345 selama awal sesi Asia pada hari Jumat. Logam mulia memantul dari level terendah enam minggu di tengah jatuhnya harga minyak dan melemahnya Dolar AS (..."
-    },
-    {
-      "titleEn": "Australian Dollar finds a floor as Oil retreat loosens USD’s grip",
-      "summaryEn": "The Australian Dollar recovered some ground versus the US Dollar on Thursday, following the Federal Reserve’s monetary policy decision on Wednesday, which witnessed a 0.25% rate hi…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-finds-a-floor-as-oil-retreat-loosens-usds-grip-202609172315",
-      "time": "18 Sep 2026, 06:15 WIB",
+      "titleEn": "British Pound: Retail rebound but BoE risks – BBH",
+      "summaryEn": "Brown Brothers Harriman’s (BBH) Elias Haddad notes GBP/USD is holding just above recent lows as UK August retail sales beat expectations, reversing July’s decline and firming marke…",
+      "link": "https://www.fxstreet.com/news/british-pound-retail-rebound-but-boe-risks-bbh-202609181443",
+      "time": "18 Sep 2026, 21:43 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Australia naik karena retret Minyak melonggarkan cengkeraman USD",
-      "summaryId": "Dolar Australia pulih kembali terhadap Dolar AS pada hari Kamis, menyusul keputusan kebijakan moneter Federal Reserve pada hari Rabu, yang menyaksikan suku bunga 0,25%..."
+      "titleId": "Pound Inggris: Rebound ritel tetapi risiko BoE – BBH",
+      "summaryId": "Brown Brothers Harriman (BBH) Elias Haddad mencatat GBP/USD bertahan tepat di atas posisi terendah baru - baru ini karena penjualan ritel Agustus Inggris mengalahkan ekspektasi, membalikkan penurunan Juli dan memperkuat marke…"
     },
     {
-      "titleEn": "Bank of Japan is set to raise interest rates as inflation pressures build",
-      "summaryEn": "The Bank of Japan’s (BoJ) monetary policy meeting will close a week packed with central bank decisions on Friday, with markets particularly interested in confirming expectations of…",
-      "link": "https://www.fxstreet.com/news/bank-of-japan-is-expected-to-deliver-a-hawkish-hike-pressured-by-rising-inflation-202609172200",
-      "time": "18 Sep 2026, 05:00 WIB",
+      "titleEn": "Canadian Dollar dips as Fed, US yields support the US Dollar",
+      "summaryEn": "USD/CAD edges higher on Friday, trading around 1.4000 at the time of writing, up 0.10% on the day. The US Dollar (USD) remains supported by expectations of further interest rate hi…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-dips-as-fed-us-yields-support-the-us-dollar-202609181443",
+      "time": "18 Sep 2026, 21:43 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Bank of Japan akan menaikkan suku bunga karena tekanan inflasi meningkat",
-      "summaryId": "Pertemuan kebijakan moneter Bank of Japan (BoJ) akan menutup minggu yang penuh dengan keputusan bank sentral pada hari Jumat, dengan pasar sangat tertarik untuk mengkonfirmasi ekspektasi..."
+      "titleId": "Dolar Kanada turun seiring Fed, imbal hasil AS mendukung Dolar AS",
+      "summaryId": "USD/CAD naik tipis pada hari Jumat, diperdagangkan sekitar 1,4000 pada saat penulisan, naik 0,10% pada hari itu. Dolar AS (USD) tetap didukung oleh ekspektasi suku bunga lebih lanjut hi..."
     },
     {
-      "titleEn": "EUR/JPY Price Forecast: Spinning tops warn bulls near 180.00",
-      "summaryEn": "The EUR/JPY drops by about 0.08% on Thursday, forming back-to-back spinning tops near the 180.00 area, the top of a consolidation range capped to the downside by 178.00. At the tim…",
-      "link": "https://www.fxstreet.com/news/eur-jpy-price-forecast-spinning-tops-warn-bulls-near-18000-202609172144",
-      "time": "18 Sep 2026, 04:44 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Prakiraan Harga EUR/JPY: Puncak berputar memperingatkan banteng di dekat 180,00",
-      "summaryId": "EUR/JPY turun sekitar 0,08% pada hari Kamis, membentuk puncak berputar back - to - back di dekat area 180,00, bagian atas kisaran konsolidasi dibatasi ke sisi bawah sebesar 178,00. Pada waktunya..."
-    },
-    {
-      "titleEn": "US Dollar slips against the Japanese Yen before the Bank of Japan raises rates",
-      "summaryEn": "USD/JPY trades near 156.00 after a session high at 156.32 and a low at 155.34, which leaves it three Yen above the September 8 low and four below the September 2 high. The Bank of …",
-      "link": "https://www.fxstreet.com/news/us-dollar-slips-against-the-japanese-yen-before-the-bank-of-japan-raises-rates-202609172057",
-      "time": "18 Sep 2026, 03:57 WIB",
+      "titleEn": "Canadian Dollar: Pressure builds near 1.40 against US Dollar - Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note the Canadian Dollar (CAD) remains under pressure near 1.40 against the Dollar, reflecting a firm USD tone and wider US–Ca…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-pressure-builds-near-140-against-us-dollar-scotiabank-202609181426",
+      "time": "18 Sep 2026, 21:26 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar AS tergelincir terhadap Yen Jepang sebelum Bank of Japan menaikkan suku bunga",
-      "summaryId": "USD/JPY diperdagangkan di dekat 156,00 setelah sesi tertinggi di 156,32 dan terendah di 155,34, yang membuatnya tiga Yen di atas level terendah 8 September dan empat di bawah level tertinggi 2 September. Bank of …"
+      "titleId": "Dolar Kanada: Tekanan meningkat mendekati 1,40 terhadap Dolar AS - Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Dolar Kanada (CAD) tetap berada di bawah tekanan mendekati 1,40 terhadap Dolar, yang mencerminkan nada USD yang kuat dan US - Ca yang lebih luas…"
     },
     {
-      "titleEn": "GBP/JPY Price Forecast: Evening star puts 207.00 back in play",
-      "summaryEn": "GBP/JPY makes a U-turn and loses about 0.39% on Thursday as risk appetite improves, while traders await a potential rate hike by the Bank of Japan (BoJ) later in Friday’s session. …",
-      "link": "https://www.fxstreet.com/news/gbp-jpy-price-forecast-evening-star-puts-20700-back-in-play-202609172047",
-      "time": "18 Sep 2026, 03:47 WIB",
+      "titleEn": "Bank of Canada: Rate path risks tilt earlier – RBC",
+      "summaryEn": "Nathan Janzen at Royal Bank of Canada (RBC) notes that markets are focused on whether the Bank of Canada (BoC) will raise rates in October after the Federal Reserve’s (Fed) move.",
+      "link": "https://www.fxstreet.com/news/bank-of-canada-rate-path-risks-tilt-earlier-rbc-202609181404",
+      "time": "18 Sep 2026, 21:04 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Prakiraan Harga GBP/JPY: Evening Star mengembalikan 207,00",
-      "summaryId": "GBP/JPY berputar balik dan kehilangan sekitar 0,39% pada hari Kamis karena selera risiko meningkat, sementara para trader menunggu potensi kenaikan suku bunga oleh Bank of Japan (BoJ) di akhir sesi Jumat .…"
+      "titleId": "Bank of Canada: Risiko jalur suku bunga miring lebih awal – RBC",
+      "summaryId": "Nathan Janzen di Royal Bank of Canada (RBC) mencatat bahwa pasar fokus pada apakah Bank of Canada (BoC) akan menaikkan suku bunga pada bulan Oktober setelah langkah Federal Reserve (Fed)."
     },
     {
-      "titleEn": "Singapore Dollar: Strong Dollar keeps pair supported – OCBC",
-      "summaryEn": "OCBC strategist Christopher Wong highlights that Singapore Dollar (SGD) remains largely driven by the broader Dollar story after the FOMC, given its high sensitivity to USD moves.",
-      "link": "https://www.fxstreet.com/news/singapore-dollar-strong-dollar-keeps-pair-supported-ocbc-202609172012",
-      "time": "18 Sep 2026, 03:12 WIB",
+      "titleEn": "European Central Bank: Quarterly hikes still baseline – Nordea",
+      "summaryEn": "Nordea’s team sees the European Central Bank delivering two more 25bp rate hikes, in December and March 2027, despite more aggressive market pricing.",
+      "link": "https://www.fxstreet.com/news/european-central-bank-quarterly-hikes-still-baseline-nordea-202609181350",
+      "time": "18 Sep 2026, 20:50 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Singapura: Dolar yang kuat membuat pasangan tetap didukung – OCBC",
-      "summaryId": "Ahli strategi OCBC Christopher Wong menyoroti bahwa Dolar Singapura (SGD) sebagian besar tetap didorong oleh cerita Dolar yang lebih luas setelah FOMC, mengingat sensitivitasnya yang tinggi terhadap pergerakan USD."
+      "titleId": "Bank Sentral Eropa: Kenaikan triwulanan masih menjadi dasar – Nordea",
+      "summaryId": "Tim Nordea melihat Bank Sentral Eropa memberikan dua kenaikan suku bunga 25bp lagi, pada bulan Desember dan Maret 2027, meskipun harga pasar lebih agresif."
+    },
+    {
+      "titleEn": "Euro heads for weekly loss against US Dollar on hawkish Fed outlook",
+      "summaryEn": "EUR/USD remains on the defensive on Friday and heads for a weekly loss as the Federal Reserve’s (Fed) hawkish policy outlook keeps the US Dollar (USD) firmly supported. A rebound i…",
+      "link": "https://www.fxstreet.com/news/euro-heads-for-weekly-loss-against-us-dollar-on-hawkish-fed-outlook-202609181344",
+      "time": "18 Sep 2026, 20:44 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro menuju kerugian mingguan terhadap Dolar AS pada prospek Fed yang hawkish",
+      "summaryId": "EUR/USD tetap bertahan pada hari Jumat dan menuju kerugian mingguan karena prospek kebijakan hawkish Federal Reserve (Fed) membuat Dolar AS (USD) tetap didukung kuat. Rebound i…"
+    },
+    {
+      "titleEn": "Japanese Yen: BoJ hike fails to lift JPY against US Dollar – Danske Bank",
+      "summaryEn": "Danske Bank’s Danske Research Team notes that the Bank of Japan raised its policy rate to 1.25% with a 7-2 vote, signalling continued but cautious tightening.",
+      "link": "https://www.fxstreet.com/news/japanese-yen-boj-hike-fails-to-lift-jpy-against-us-dollar-danske-bank-202609181329",
+      "time": "18 Sep 2026, 20:29 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Yen Jepang: Kenaikan BoJ gagal mengangkat JPY terhadap Dolar AS – Danske Bank",
+      "summaryId": "Tim Riset Danske Bank Danske mencatat bahwa Bank of Japan menaikkan suku bunga kebijakannya menjadi 1,25% dengan suara 7 -2, menandakan pengetatan yang berkelanjutan tetapi hati - hati."
+    },
+    {
+      "titleEn": "European Central Bank: One more hike then pause – Rabobank",
+      "summaryEn": "Rabobank strategists Bas van Geffen and Elwin de Groot expect the European Central Bank (ECB) to raise the deposit facility rate by 25bp to 2.75% in December, driven by higher ener…",
+      "link": "https://www.fxstreet.com/news/european-central-bank-one-more-hike-then-pause-rabobank-202609181249",
+      "time": "18 Sep 2026, 19:49 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Bank Sentral Eropa: Satu kenaikan lagi lalu jeda – Rabobank",
+      "summaryId": "Ahli strategi Rabobank Bas van Geffen dan Elwin de Groot memperkirakan Bank Sentral Eropa (ECB) akan menaikkan suku bunga fasilitas deposito sebesar 25bp menjadi 2,75% pada bulan Desember, didorong oleh ener yang lebih tinggi…"
     }
   ],
   "sources": [
