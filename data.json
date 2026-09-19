@@ -1,38 +1,38 @@
 {
-  "updatedAt": "18 Sep 2026, 21:44 WIB",
+  "updatedAt": "19 Sep 2026, 07:53 WIB",
   "price": {
-    "level": "$4,383.40"
+    "level": "$4,415.90"
   },
-  "biasScore": 11,
-  "biasLabel": "NETRAL condong BULLISH",
-  "bullishPct": 56,
-  "bearishPct": 44,
+  "biasScore": 5,
+  "biasLabel": "NETRAL",
+  "bullishPct": 52,
+  "bearishPct": 48,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,383.40</span>, melemah 0.37% pada sesi terakhir, dengan rentang 52 minggu $3,664–$5,586.",
-    "Posisi non-commercial (spekulan besar) pada laporan COT per 8 Sep 2026 tercatat net long <span class=\"accent\">231,960</span> kontrak (56.4% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini naik 3,836 kontrak dibanding pekan sebelumnya.",
-    "Open interest COMEX tercatat 411,227 kontrak (turun 3,969), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit +11/100 → bias <b>NETRAL condong BULLISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,415.90</span>, menguat 0.37% pada sesi terakhir, dengan rentang 52 minggu $3,664–$5,586.",
+    "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
+    "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
+    "<b>Kesimpulan:</b> skor komposit +5/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
-    "reportDate": "8 Sep 2026",
-    "ncLong": 261007,
-    "ncShort": 29047,
-    "netLong": 231960,
-    "weeklyChange": 3836,
-    "commercialNet": -270274,
-    "openInterest": 411227,
+    "reportDate": "15 Sep 2026",
+    "ncLong": 258059,
+    "ncShort": 27721,
+    "netLong": 230338,
+    "weeklyChange": -1622,
+    "commercialNet": -261721,
+    "openInterest": 409899,
     "tagLabel": "Crowded Long",
     "tagClass": "tag-bull"
   },
   "cme": {
-    "openInterest": 411227,
-    "oiChange": -3969,
+    "openInterest": 409899,
+    "oiChange": -1328,
     "rangeLow": "$3,664",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
-    "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 8 Sep 2026; rentang dari harga 52 minggu terakhir"
+    "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
     {
@@ -43,31 +43,31 @@
   ],
   "positioning": {
     "hedgeFund": {
-      "long": 261007,
-      "short": 29047,
-      "net": 231960,
+      "long": 258059,
+      "short": 27721,
+      "net": 230338,
       "label": "NET LONG",
       "cls": "tag-bull"
     },
     "retail": {
-      "long": 52554,
-      "short": 14240,
-      "net": 38314,
-      "weeklyChange": 1720,
+      "long": 47460,
+      "short": 16077,
+      "net": 31383,
+      "weeklyChange": -6931,
       "label": "NET LONG",
       "cls": "tag-bull"
     },
     "commercial": {
-      "long": 54403,
-      "short": 324677,
-      "net": -270274,
+      "long": 56417,
+      "short": 318138,
+      "net": -261721,
       "label": "NET SHORT",
       "cls": "tag-bear"
     },
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.0% (+1.15%) dan indeks dolar (DXY) menguat ke 100.5 (+0.26%), sementara XAU/USD turun 0.37%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.0% (+1.03%) dan indeks dolar (DXY) melemah ke 100.22 (-0.03%), sementara XAU/USD naik 0.37%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -95,17 +95,17 @@
       }
     ],
     "fedFundsRate": {
-      "rate": 3.63,
-      "changeFromPrior": 0.01,
-      "asOf": "2026-09-16"
+      "rate": 3.88,
+      "changeFromPrior": 0.25,
+      "asOf": "2026-09-17"
     },
     "mediaSentiment": {
-      "avgScore": 0.08,
+      "avgScore": 0.116,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 16,
-      "neutralCount": 23,
-      "bearishCount": 11
+      "bullishCount": 17,
+      "neutralCount": 25,
+      "bearishCount": 8
     },
     "cpi": {
       "index": 334.98,
@@ -121,82 +121,82 @@
   },
   "macro": {
     "yield10y": 5.0,
-    "yield10yChange": 1.15,
-    "dxy": 100.5,
-    "dxyChange": 0.26
+    "yield10yChange": 1.03,
+    "dxy": 100.22,
+    "dxyChange": -0.03
   },
   "news": [
     {
-      "titleEn": "British Pound: Retail rebound but BoE risks – BBH",
-      "summaryEn": "Brown Brothers Harriman’s (BBH) Elias Haddad notes GBP/USD is holding just above recent lows as UK August retail sales beat expectations, reversing July’s decline and firming marke…",
-      "link": "https://www.fxstreet.com/news/british-pound-retail-rebound-but-boe-risks-bbh-202609181443",
-      "time": "18 Sep 2026, 21:43 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Pound Inggris: Rebound ritel tetapi risiko BoE – BBH",
-      "summaryId": "Brown Brothers Harriman (BBH) Elias Haddad mencatat GBP/USD bertahan tepat di atas posisi terendah baru - baru ini karena penjualan ritel Agustus Inggris mengalahkan ekspektasi, membalikkan penurunan Juli dan memperkuat marke…"
-    },
-    {
-      "titleEn": "Canadian Dollar dips as Fed, US yields support the US Dollar",
-      "summaryEn": "USD/CAD edges higher on Friday, trading around 1.4000 at the time of writing, up 0.10% on the day. The US Dollar (USD) remains supported by expectations of further interest rate hi…",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-dips-as-fed-us-yields-support-the-us-dollar-202609181443",
-      "time": "18 Sep 2026, 21:43 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Kanada turun seiring Fed, imbal hasil AS mendukung Dolar AS",
-      "summaryId": "USD/CAD naik tipis pada hari Jumat, diperdagangkan sekitar 1,4000 pada saat penulisan, naik 0,10% pada hari itu. Dolar AS (USD) tetap didukung oleh ekspektasi suku bunga lebih lanjut hi..."
-    },
-    {
-      "titleEn": "Canadian Dollar: Pressure builds near 1.40 against US Dollar - Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note the Canadian Dollar (CAD) remains under pressure near 1.40 against the Dollar, reflecting a firm USD tone and wider US–Ca…",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-pressure-builds-near-140-against-us-dollar-scotiabank-202609181426",
-      "time": "18 Sep 2026, 21:26 WIB",
+      "titleEn": "Taiwan Dollar: Mildly hawkish CBC but flows drive – OCBC",
+      "summaryEn": "OCBC strategist Christopher Wong highlights that Taiwan’s CBC kept its policy rate at 2% for a tenth straight quarter with a mildly hawkish tone, sharply raising 2026 growth and in…",
+      "link": "https://www.fxstreet.com/news/taiwan-dollar-mildly-hawkish-cbc-but-flows-drive-ocbc-202609182355",
+      "time": "19 Sep 2026, 06:55 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Kanada: Tekanan meningkat mendekati 1,40 terhadap Dolar AS - Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Dolar Kanada (CAD) tetap berada di bawah tekanan mendekati 1,40 terhadap Dolar, yang mencerminkan nada USD yang kuat dan US - Ca yang lebih luas…"
+      "titleId": "Dolar Taiwan: CBC hawkish ringan tetapi penggerak arus – OCBC",
+      "summaryId": "Ahli strategi OCBC Christopher Wong menyoroti bahwa CBC Taiwan mempertahankan tingkat kebijakannya pada 2% untuk kuartal kesepuluh berturut - turut dengan nada yang agak hawkish, meningkatkan pertumbuhan 2026 secara tajam dan dalam..."
     },
     {
-      "titleEn": "Bank of Canada: Rate path risks tilt earlier – RBC",
-      "summaryEn": "Nathan Janzen at Royal Bank of Canada (RBC) notes that markets are focused on whether the Bank of Canada (BoC) will raise rates in October after the Federal Reserve’s (Fed) move.",
-      "link": "https://www.fxstreet.com/news/bank-of-canada-rate-path-risks-tilt-earlier-rbc-202609181404",
-      "time": "18 Sep 2026, 21:04 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Bank of Canada: Risiko jalur suku bunga miring lebih awal – RBC",
-      "summaryId": "Nathan Janzen di Royal Bank of Canada (RBC) mencatat bahwa pasar fokus pada apakah Bank of Canada (BoC) akan menaikkan suku bunga pada bulan Oktober setelah langkah Federal Reserve (Fed)."
-    },
-    {
-      "titleEn": "European Central Bank: Quarterly hikes still baseline – Nordea",
-      "summaryEn": "Nordea’s team sees the European Central Bank delivering two more 25bp rate hikes, in December and March 2027, despite more aggressive market pricing.",
-      "link": "https://www.fxstreet.com/news/european-central-bank-quarterly-hikes-still-baseline-nordea-202609181350",
-      "time": "18 Sep 2026, 20:50 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Bank Sentral Eropa: Kenaikan triwulanan masih menjadi dasar – Nordea",
-      "summaryId": "Tim Nordea melihat Bank Sentral Eropa memberikan dua kenaikan suku bunga 25bp lagi, pada bulan Desember dan Maret 2027, meskipun harga pasar lebih agresif."
-    },
-    {
-      "titleEn": "Euro heads for weekly loss against US Dollar on hawkish Fed outlook",
-      "summaryEn": "EUR/USD remains on the defensive on Friday and heads for a weekly loss as the Federal Reserve’s (Fed) hawkish policy outlook keeps the US Dollar (USD) firmly supported. A rebound i…",
-      "link": "https://www.fxstreet.com/news/euro-heads-for-weekly-loss-against-us-dollar-on-hawkish-fed-outlook-202609181344",
-      "time": "18 Sep 2026, 20:44 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro menuju kerugian mingguan terhadap Dolar AS pada prospek Fed yang hawkish",
-      "summaryId": "EUR/USD tetap bertahan pada hari Jumat dan menuju kerugian mingguan karena prospek kebijakan hawkish Federal Reserve (Fed) membuat Dolar AS (USD) tetap didukung kuat. Rebound i…"
-    },
-    {
-      "titleEn": "Japanese Yen: BoJ hike fails to lift JPY against US Dollar – Danske Bank",
-      "summaryEn": "Danske Bank’s Danske Research Team notes that the Bank of Japan raised its policy rate to 1.25% with a 7-2 vote, signalling continued but cautious tightening.",
-      "link": "https://www.fxstreet.com/news/japanese-yen-boj-hike-fails-to-lift-jpy-against-us-dollar-danske-bank-202609181329",
-      "time": "18 Sep 2026, 20:29 WIB",
+      "titleEn": "Taiwan Dollar: CBC holds rates but flags inflation risks – Commerzbank",
+      "summaryEn": "Commerzbank’s Charlie Lay and Henry Hao report that Taiwan’s CBC kept its policy rate at 2.0% for a tenth straight meeting, signalling a patient stance.",
+      "link": "https://www.fxstreet.com/news/taiwan-dollar-cbc-holds-rates-but-flags-inflation-risks-commerzbank-202609182332",
+      "time": "19 Sep 2026, 06:32 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Yen Jepang: Kenaikan BoJ gagal mengangkat JPY terhadap Dolar AS – Danske Bank",
-      "summaryId": "Tim Riset Danske Bank Danske mencatat bahwa Bank of Japan menaikkan suku bunga kebijakannya menjadi 1,25% dengan suara 7 -2, menandakan pengetatan yang berkelanjutan tetapi hati - hati."
+      "titleId": "Dolar Taiwan: CBC mempertahankan suku bunga tetapi menandai risiko inflasi – Commerzbank",
+      "summaryId": "Charlie Lay dan Henry Hao dari Commerzbank melaporkan bahwa CBC Taiwan mempertahankan tingkat kebijakannya di 2,0% untuk pertemuan kesepuluh berturut - turut, menandakan sikap sabar."
     },
     {
-      "titleEn": "European Central Bank: One more hike then pause – Rabobank",
-      "summaryEn": "Rabobank strategists Bas van Geffen and Elwin de Groot expect the European Central Bank (ECB) to raise the deposit facility rate by 25bp to 2.75% in December, driven by higher ener…",
-      "link": "https://www.fxstreet.com/news/european-central-bank-one-more-hike-then-pause-rabobank-202609181249",
-      "time": "18 Sep 2026, 19:49 WIB",
+      "titleEn": "South Korean Won: Foreign equity flows keep KRW heavy against US Dollar – OCBC",
+      "summaryEn": "OCBC strategist Christopher Wong notes that the Korean Won remains under pressure as foreign selling of Korean equities persists and elevated US yields after the FOMC continue to w…",
+      "link": "https://www.fxstreet.com/news/south-korean-won-foreign-equity-flows-keep-krw-heavy-against-us-dollar-ocbc-202609182327",
+      "time": "19 Sep 2026, 06:27 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Bank Sentral Eropa: Satu kenaikan lagi lalu jeda – Rabobank",
-      "summaryId": "Ahli strategi Rabobank Bas van Geffen dan Elwin de Groot memperkirakan Bank Sentral Eropa (ECB) akan menaikkan suku bunga fasilitas deposito sebesar 25bp menjadi 2,75% pada bulan Desember, didorong oleh ener yang lebih tinggi…"
+      "titleId": "Won Korea Selatan: Aliran ekuitas asing membuat KRW tetap kuat terhadap Dolar AS – OCBC",
+      "summaryId": "Ahli strategi OCBC Christopher Wong mencatat bahwa Won Korea tetap di bawah tekanan karena penjualan asing ekuitas Korea berlanjut dan peningkatan imbal hasil AS setelah FOMC terus berlanjut…"
+    },
+    {
+      "titleEn": "Japanese Yen: Dovish BoJ hike weighs on yen – Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note the Japanese Yen (JPY) is down sharply versus the US Dollar (USD) after a dovishly delivered 25 bps Bank of Japan (BoJ) h…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-dovish-boj-hike-weighs-on-yen-scotiabank-202609182307",
+      "time": "19 Sep 2026, 06:07 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Yen Jepang: Kenaikan BoJ Dovish membebani yen – Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Yen Jepang (JPY) turun tajam terhadap Dolar AS (USD) setelah 25 BPS Bank of Japan (BoJ) h…"
+    },
+    {
+      "titleEn": "Singapore Dollar: Strong NODX but USD still drives USD/SGD – OCBC",
+      "summaryEn": "OCBC’s Christopher Wong highlights that Singapore’s August NODX surged 46.2% year-on-year, far above consensus, with electronics exports jumping on AI-related demand and broad-base…",
+      "link": "https://www.fxstreet.com/news/singapore-dollar-strong-nodx-but-usd-still-drives-usd-sgd-ocbc-202609182149",
+      "time": "19 Sep 2026, 04:49 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Singapura: NODX kuat tetapi USD masih mendorong USD/SGD – OCBC",
+      "summaryId": "Christopher Wong dari OCBC menyoroti bahwa NODX Agustus Singapura melonjak 46,2% dari tahun ke tahun, jauh di atas konsensus, dengan ekspor elektronik melonjak pada permintaan terkait AI dan basis luas..."
+    },
+    {
+      "titleEn": "AUD/USD Price Forecast: Bulls eye 0.7200 after 0.7100 break",
+      "summaryEn": "The Aussie Dollar is poised to end the week on a positive note versus the US Dollar, up 0.21% as improved risk appetite keeps AUD/USD trading near 0.7124, closing near Friday's hig…",
+      "link": "https://www.fxstreet.com/news/aud-usd-price-forecast-bulls-eye-07200-after-07100-break-202609182116",
+      "time": "19 Sep 2026, 04:16 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Prakiraan Harga AUD/USD: Bulls eye 0,7200 setelah break 0,7100",
+      "summaryId": "Dolar Aussie siap untuk mengakhiri minggu ini dengan catatan positif versus Dolar AS, naik 0,21% karena peningkatan selera risiko membuat perdagangan AUD/USD tetap di dekat 0,7124, ditutup di dekat hig Jumat…"
+    },
+    {
+      "titleEn": "Chinese Yuan: Pre-summit support and firmer bias – DBS",
+      "summaryEn": "Chang Wei Liang at DBS Group Research highlights that USD/CNH is easing toward 6.70 despite a stronger Dollar, with the Renminbi (RMB) supported by a lower USD/CNY fixing below 6.7…",
+      "link": "https://www.fxstreet.com/news/chinese-yuan-pre-summit-support-and-firmer-bias-dbs-202609182112",
+      "time": "19 Sep 2026, 04:12 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Yuan Tiongkok: Dukungan pra - KTT dan bias yang lebih kuat – DBS",
+      "summaryId": "Chang Wei Liang di DBS Group Research menyoroti bahwa USD/CNH melemah menuju 6,70 meskipun Dolar menguat, dengan Renminbi (RMB) didukung oleh perbaikan USD/CNY yang lebih rendah di bawah 6,7…"
+    },
+    {
+      "titleEn": "NZD/USD Price Forecast: Kiwi reversal puts 0.5700 under pressure",
+      "summaryEn": "The New Zealand Dollar (NZD) turns negative on Friday, down 0.11% against the US Dollar (USD), in a week that saw the Federal Reserve's (Fed) first rate hike in three years, which …",
+      "link": "https://www.fxstreet.com/news/nzd-usd-price-forecast-kiwi-reversal-puts-05700-under-pressure-202609182044",
+      "time": "19 Sep 2026, 03:44 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Prakiraan Harga NZD/USD: Pembalikan kiwi menempatkan 0,5700 di bawah tekanan",
+      "summaryId": "Dolar Selandia Baru (NZD) berubah negatif pada hari Jumat, turun 0,11% terhadap Dolar AS (USD), dalam seminggu yang melihat kenaikan suku bunga pertama Federal Reserve (Fed) dalam tiga tahun, yang …"
     }
   ],
   "sources": [
