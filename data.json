@@ -1,5 +1,5 @@
 {
-  "updatedAt": "20 Sep 2026, 07:34 WIB",
+  "updatedAt": "20 Sep 2026, 21:25 WIB",
   "price": {
     "level": "$4,424.90"
   },
@@ -100,12 +100,12 @@
       "asOf": "2026-09-17"
     },
     "mediaSentiment": {
-      "avgScore": 0.085,
+      "avgScore": 0.097,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 18,
-      "neutralCount": 22,
-      "bearishCount": 10
+      "bullishCount": 21,
+      "neutralCount": 20,
+      "bearishCount": 9
     },
     "cpi": {
       "index": 334.98,
