@@ -1,17 +1,17 @@
 {
-  "updatedAt": "21 Sep 2026, 23:44 WIB",
+  "updatedAt": "22 Sep 2026, 08:23 WIB",
   "price": {
-    "level": "$4,390.10"
+    "level": "$4,393.30"
   },
-  "biasScore": -7,
+  "biasScore": 3,
   "biasLabel": "NETRAL",
-  "bullishPct": 46,
-  "bearishPct": 54,
+  "bullishPct": 52,
+  "bearishPct": 48,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,390.10</span>, melemah 0.79% pada sesi terakhir, dengan rentang 52 minggu $3,718–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,393.30</span>, menguat 0.21% pada sesi terakhir, dengan rentang 52 minggu $3,718–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit -7/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit +3/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "15 Sep 2026",
@@ -29,7 +29,7 @@
     "oiChange": -1328,
     "rangeLow": "$3,718",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.82%) dan indeks dolar (DXY) menguat ke 100.38 (+0.15%), sementara XAU/USD turun 0.79%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.70%) dan indeks dolar (DXY) melemah ke 100.41 (-0.02%), sementara XAU/USD naik 0.21%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -97,15 +97,15 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-09-17"
+      "asOf": "2026-09-18"
     },
     "mediaSentiment": {
-      "avgScore": 0.108,
+      "avgScore": 0.14,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 20,
+      "bullishCount": 23,
       "neutralCount": 24,
-      "bearishCount": 6
+      "bearishCount": 3
     },
     "cpi": {
       "index": 334.98,
@@ -121,82 +121,82 @@
   },
   "macro": {
     "yield10y": 4.96,
-    "yield10yChange": -0.82,
-    "dxy": 100.38,
-    "dxyChange": 0.15
+    "yield10yChange": -0.7,
+    "dxy": 100.41,
+    "dxyChange": -0.02
   },
   "news": [
     {
-      "titleEn": "British Pound loses grip on 1.34 as Fed hawks stay in charge",
-      "summaryEn": "The Pound Sterling retreats by some 0.17% on Monday as the Greenback trades in the green following last week’s Fed rate hike, which widened the interest rate differential between t…",
-      "link": "https://www.fxstreet.com/news/british-pound-loses-grip-on-134-as-fed-hawks-stay-in-charge-202609211631",
-      "time": "21 Sep 2026, 23:31 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Pound Inggris kehilangan kendali atas 1,34 karena elang Fed tetap bertanggung jawab",
-      "summaryId": "Pound Sterling mundur sekitar 0,17% pada hari Senin karena Greenback diperdagangkan di zona hijau setelah kenaikan suku bunga Fed pekan lalu, yang memperluas perbedaan suku bunga antara t..."
-    },
-    {
-      "titleEn": "BoC’s Macklem: Rate decisions must look beyond initial Oil shock",
-      "summaryEn": "Bank of Canada (BoC) Governor Tiff Macklem, speaking in Halifax, Nova Scotia, on Monday, offered a cautious assessment of the economy as higher energy prices and US tariffs create …",
-      "link": "https://www.fxstreet.com/news/bocs-macklem-rate-decisions-must-look-beyond-initial-oil-shock-202609211609",
-      "time": "21 Sep 2026, 23:09 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Macklem BoC: Keputusan suku bunga harus melampaui guncangan awal Minyak",
-      "summaryId": "Gubernur Bank of Canada (BoC) Tiff Macklem, berbicara di Halifax, Nova Scotia, pada hari Senin, menawarkan penilaian ekonomi yang hati - hati karena harga energi yang lebih tinggi dan tarif AS menciptakan …"
-    },
-    {
-      "titleEn": "WTI Oil extends losing streak as resilient Saudi exports outweigh Middle East risk premium",
-      "summaryEn": "West Texas Intermediate (WTI) US Oil extends its decline for the fourth consecutive day on Monday, trading around $91.90 per barrel at the time of writing, down 3.54% on the day.",
-      "link": "https://www.fxstreet.com/news/wti-oil-extends-losing-streak-as-resilient-saudi-exports-outweigh-middle-east-risk-premium-202609211606",
-      "time": "21 Sep 2026, 23:06 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Minyak WTI memperpanjang penurunan beruntun karena ekspor Saudi yang tangguh lebih besar daripada premi risiko Timur Tengah",
-      "summaryId": "Minyak AS West Texas Intermediate (WTI) memperpanjang penurunannya untuk hari keempat berturut - turut pada hari Senin, diperdagangkan sekitar $ 91,90 per barel pada saat penulisan, turun 3,54% pada hari itu."
-    },
-    {
-      "titleEn": "Japanese Yen: Intervention risk high as 160 seen possible against US Dollar – ING",
-      "summaryEn": "ING’s Francesco Pesole notes that a reported Bank of Japan rate check briefly pushed USD/JPY below 157.0 and suggests authorities may focus on the pace of moves rather than a speci…",
-      "link": "https://www.fxstreet.com/news/japanese-yen-intervention-risk-high-as-160-seen-possible-against-us-dollar-ing-202609211504",
-      "time": "21 Sep 2026, 22:04 WIB",
+      "titleEn": "US Treasury Secretary Bessent says all Iranian airlines to shut down worldwide by September 23",
+      "summaryEn": "US Treasury Secretary Scott Bessent said that Iranian airlines could effectively be shut out of international travel from September 23, as the United States threatens foreign compa…",
+      "link": "https://www.fxstreet.com/news/us-treasury-secretary-bessent-says-all-iranian-airlines-to-shut-down-worldwide-by-september-23-202609220112",
+      "time": "22 Sep 2026, 08:12 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Yen Jepang: Risiko intervensi setinggi 160 kemungkinan terhadap Dolar AS – ING",
-      "summaryId": "ING'S Francesco Pesole mencatat bahwa pemeriksaan suku bunga Bank of Japan yang dilaporkan secara singkat mendorong USD/JPY di bawah 157,0 dan menyarankan pihak berwenang dapat fokus pada laju pergerakan daripada speci..."
+      "titleId": "US Treasury Secretary Bessent says all Iranian airlines to shut down worldwide by September 23",
+      "summaryId": "US Treasury Secretary Scott Bessent said that Iranian airlines could effectively be shut out of international travel from September 23, as the United States threatens foreign compa…"
     },
     {
-      "titleEn": "Japanese Yen slides as Fed hawkishness, intervention fears grow",
-      "summaryEn": "USD/JPY extends its advance on Monday and trades around 157.45 at the time of writing, up 0.36% on the day.",
-      "link": "https://www.fxstreet.com/news/apanese-yen-slides-as-fed-hawkishness-intervention-fears-grow-202609211459",
-      "time": "21 Sep 2026, 21:59 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Yen Jepang meluncur seiring hawkishness Fed, ketakutan intervensi tumbuh",
-      "summaryId": "USD/JPY memperpanjang kenaikannya pada hari Senin dan diperdagangkan di sekitar 157,45 pada saat penulisan, naik 0,36% pada hari itu."
-    },
-    {
-      "titleEn": "Euro struggles against US Dollar as hawkish Fed outlook weighs",
-      "summaryEn": "EUR/USD trades with a downside bias on Monday as the US Dollar holds near recent highs, supported by expectations of additional Federal Reserve (Fed) interest rate hikes. Developme…",
-      "link": "https://www.fxstreet.com/news/euro-struggles-against-us-dollar-as-hawkish-fed-outlook-weighs-202609211444",
-      "time": "21 Sep 2026, 21:44 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro berjuang melawan Dolar AS karena prospek Fed yang hawkish membebani",
-      "summaryId": "EUR/USD diperdagangkan dengan bias penurunan pada hari Senin karena Dolar AS bertahan di dekat level tertinggi baru - baru ini, didukung oleh ekspektasi kenaikan suku bunga Federal Reserve (Fed) tambahan. Developme…"
-    },
-    {
-      "titleEn": "United States: Midterm outcomes and policy paths – NBC",
-      "summaryEn": "National Bank of Canada (NBC) strategist Angelo Katsoras analyzes how the 2026 United States (US) midterm elections could reshape policy under President Trump. He notes Democrats a…",
-      "link": "https://www.fxstreet.com/news/united-states-midterm-outcomes-and-policy-paths-nbc-202609211417",
-      "time": "21 Sep 2026, 21:17 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Amerika Serikat: Hasil jangka menengah dan jalur kebijakan – NBC",
-      "summaryId": "Ahli strategi Bank Nasional Kanada (NBC) Angelo Katsoras menganalisis bagaimana pemilihan paruh waktu Amerika Serikat (AS) 2026 dapat membentuk kembali kebijakan di bawah Presiden Trump. Dia mencatat Demokrat sebagai..."
-    },
-    {
-      "titleEn": "Indian Rupee: AI imports add pressure against US Dollar – Standard Chartered",
-      "summaryEn": "Standard Chartered economists Anubhuti Sahay and Saurav Anand highlight that India’s AI-enabling goods trade deficit has become the second-largest contributor to the country’s trad…",
-      "link": "https://www.fxstreet.com/news/indian-rupee-ai-imports-add-pressure-against-us-dollar-standard-chartered-202609211339",
-      "time": "21 Sep 2026, 20:39 WIB",
+      "titleEn": "Silver Price Forecast: XAG/USD sticks to gains near mid-$66.00s; 23.6% Fibo. holds the key",
+      "summaryEn": "Silver (XAG/USD) attracts fresh buyers following the previous day's two-way price moves and trades around the $66.40-$66.45 region during the Asian session on Tuesday, up nearly 0.…",
+      "link": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-sticks-to-gains-near-mid-6600s-236-fibo-holds-the-key-202609220056",
+      "time": "22 Sep 2026, 07:56 WIB",
       "tag": "Emas",
-      "titleId": "Rupee India: Impor AI menambah tekanan terhadap Dolar AS – Standard Chartered",
-      "summaryId": "Ekonom Standard Chartered Anubhuti Sahay dan Saurav Anand menyoroti bahwa defisit perdagangan barang yang memungkinkan AI India telah menjadi kontributor terbesar kedua bagi perdagangan negara..."
+      "titleId": "Silver Price Forecast: XAG/USD sticks to gains near mid-$66.00s; 23.6% Fibo. holds the key",
+      "summaryId": "Silver (XAG/USD) attracts fresh buyers following the previous day's two-way price moves and trades around the $66.40-$66.45 region during the Asian session on Tuesday, up nearly 0.…"
+    },
+    {
+      "titleEn": "Euro edges higher above 1.1450 despite German political risks, hawkish Fed rhetoric",
+      "summaryEn": "The EUR/USD pair trades with mild gains near 1.1470 during the early Asian trading hours on Tuesday. Middle East diplomacy hopes provide some support to the riskier assets such as …",
+      "link": "https://www.fxstreet.com/news/euro-edges-higher-above-11450-despite-german-political-risks-hawkish-fed-rhetoric-202609220053",
+      "time": "22 Sep 2026, 07:53 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro edges higher above 1.1450 despite German political risks, hawkish Fed rhetoric",
+      "summaryId": "The EUR/USD pair trades with mild gains near 1.1470 during the early Asian trading hours on Tuesday. Middle East diplomacy hopes provide some support to the riskier assets such as …"
+    },
+    {
+      "titleEn": "Donald Trump administration plans $5 billion Middle East reconstruction fund for Iran war",
+      "summaryEn": "US President Donald Trump administration ‌has proposed investing $5 billion in a new fund to help rebuild critical infrastructure across the Middle East damaged in the war with Ira…",
+      "link": "https://www.fxstreet.com/news/donald-trump-administration-plans-5-billion-middle-east-reconstruction-fund-for-iran-war-202609220024",
+      "time": "22 Sep 2026, 07:24 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Donald Trump administration plans $5 billion Middle East reconstruction fund for Iran war",
+      "summaryId": "US President Donald Trump administration ‌has proposed investing $5 billion in a new fund to help rebuild critical infrastructure across the Middle East damaged in the war with Ira…"
+    },
+    {
+      "titleEn": "RBA’s Hunter backs more hikes as inflation risks entrench",
+      "summaryEn": "The Reserve Bank of Australia (RBA) Assistant Governor Sarah Hunter confirmed the need for further rate hikes this year, to keep inflation in check. This has increased the chances …",
+      "link": "https://www.fxstreet.com/news/rbas-hunter-backs-more-hikes-as-inflation-risks-entrench-202609212357",
+      "time": "22 Sep 2026, 06:57 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "RBA’s Hunter backs more hikes as inflation risks entrench",
+      "summaryId": "The Reserve Bank of Australia (RBA) Assistant Governor Sarah Hunter confirmed the need for further rate hikes this year, to keep inflation in check. This has increased the chances …"
+    },
+    {
+      "titleEn": "ECB’s Lane says energy shock could delay inflation’s return to 2%",
+      "summaryEn": "The European Central Bank (ECB) Chief Economist Philip Lane stated that the European economy will expand steadily at a moderate pace if the energy shocks ease, according to Le Temp…",
+      "link": "https://www.fxstreet.com/news/ecbs-lane-says-energy-shock-could-delay-inflations-return-to-2-202609212347",
+      "time": "22 Sep 2026, 06:47 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "ECB’s Lane says energy shock could delay inflation’s return to 2%",
+      "summaryId": "The European Central Bank (ECB) Chief Economist Philip Lane stated that the European economy will expand steadily at a moderate pace if the energy shocks ease, according to Le Temp…"
+    },
+    {
+      "titleEn": "Australian Dollar holds its nerve as Fed hawks meet RBA hike bets",
+      "summaryEn": "The Aussie Dollar holds firm versus the Greenback at the start of the week, hovering near 0.7119 as risk appetite remains positive despite Fed officials turning more hawkish than e…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-holds-its-nerve-as-fed-hawks-meet-rba-hike-bets-202609212339",
+      "time": "22 Sep 2026, 06:39 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Australian Dollar holds its nerve as Fed hawks meet RBA hike bets",
+      "summaryId": "The Aussie Dollar holds firm versus the Greenback at the start of the week, hovering near 0.7119 as risk appetite remains positive despite Fed officials turning more hawkish than e…"
+    },
+    {
+      "titleEn": "Iranian President will head to New York for UN meeting",
+      "summaryEn": "President Masoud Pezeshkian will lead an Iranian delegation at the United Nations General Assembly in New York on Tuesday, amid renewed hopes for a diplomatic solution to the Middl…",
+      "link": "https://www.fxstreet.com/news/iranian-president-will-head-to-new-york-for-un-meeting-202609212332",
+      "time": "22 Sep 2026, 06:32 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Iranian President will head to New York for UN meeting",
+      "summaryId": "President Masoud Pezeshkian will lead an Iranian delegation at the United Nations General Assembly in New York on Tuesday, amid renewed hopes for a diplomatic solution to the Middl…"
     }
   ],
   "sources": [
