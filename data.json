@@ -1,17 +1,17 @@
 {
-  "updatedAt": "22 Sep 2026, 08:23 WIB",
+  "updatedAt": "22 Sep 2026, 22:21 WIB",
   "price": {
-    "level": "$4,393.30"
+    "level": "$4,374.90"
   },
-  "biasScore": 3,
+  "biasScore": -1,
   "biasLabel": "NETRAL",
-  "bullishPct": 52,
-  "bearishPct": 48,
+  "bullishPct": 50,
+  "bearishPct": 50,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,393.30</span>, menguat 0.21% pada sesi terakhir, dengan rentang 52 minggu $3,718–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,374.90</span>, melemah 0.2% pada sesi terakhir, dengan rentang 52 minggu $3,750–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit +3/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -1/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "15 Sep 2026",
@@ -27,9 +27,9 @@
   "cme": {
     "openInterest": 409899,
     "oiChange": -1328,
-    "rangeLow": "$3,718",
+    "rangeLow": "$3,750",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.70%) dan indeks dolar (DXY) melemah ke 100.41 (-0.02%), sementara XAU/USD naik 0.21%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.08%) dan indeks dolar (DXY) menguat ke 100.59 (+0.16%), sementara XAU/USD turun 0.2%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -100,12 +100,12 @@
       "asOf": "2026-09-18"
     },
     "mediaSentiment": {
-      "avgScore": 0.14,
-      "label": "NETRAL",
+      "avgScore": 0.16,
+      "label": "BULLISH",
       "sampleSize": 50,
       "bullishCount": 23,
-      "neutralCount": 24,
-      "bearishCount": 3
+      "neutralCount": 25,
+      "bearishCount": 2
     },
     "cpi": {
       "index": 334.98,
@@ -121,82 +121,82 @@
   },
   "macro": {
     "yield10y": 4.96,
-    "yield10yChange": -0.7,
-    "dxy": 100.41,
-    "dxyChange": -0.02
+    "yield10yChange": -0.08,
+    "dxy": 100.59,
+    "dxyChange": 0.16
   },
   "news": [
     {
-      "titleEn": "US Treasury Secretary Bessent says all Iranian airlines to shut down worldwide by September 23",
-      "summaryEn": "US Treasury Secretary Scott Bessent said that Iranian airlines could effectively be shut out of international travel from September 23, as the United States threatens foreign compa…",
-      "link": "https://www.fxstreet.com/news/us-treasury-secretary-bessent-says-all-iranian-airlines-to-shut-down-worldwide-by-september-23-202609220112",
-      "time": "22 Sep 2026, 08:12 WIB",
+      "titleEn": "Bank of Canada: Slack delays hikes despite crude shock – NBC",
+      "summaryEn": "National Bank of Canada's Ethan Currie notes that while oil-driven inflation risks have increased, the Bank of Canada is likely to remain on hold in October as domestic slack and t…",
+      "link": "https://www.fxstreet.com/news/bank-of-canada-slack-delays-hikes-despite-crude-shock-nbc-202609221506",
+      "time": "22 Sep 2026, 22:06 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Bank of Canada: Slack menunda kenaikan meskipun ada kejutan minyak mentah – NBC",
+      "summaryId": "Ethan Currie dari National Bank of Canada mencatat bahwa sementara risiko inflasi yang didorong oleh minyak telah meningkat, Bank of Canada kemungkinan akan tetap ditahan pada bulan Oktober karena kelonggaran domestik dan t..."
+    },
+    {
+      "titleEn": "United States: September inflation profile – TD Securities",
+      "summaryEn": "TD Securities economists Oscar Munoz and Eli Nir provide an early projection for United States (US) September Consumer Price Index (CPI , expecting Headline CPI to rise 0.54% m/m, …",
+      "link": "https://www.fxstreet.com/news/united-states-september-inflation-profile-td-securities-202609221456",
+      "time": "22 Sep 2026, 21:56 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Amerika Serikat: profil inflasi September – TD Securities",
+      "summaryId": "Ekonom TD Securities Oscar Munoz dan Eli Nir memberikan proyeksi awal untuk Indeks Harga Konsumen (IHK) September Amerika Serikat (AS), mengharapkan IHK Headline naik 0,54% m/m ,…"
+    },
+    {
+      "titleEn": "Canadian Dollar: USD strength keeps CAD weakness in focus - Scotiabank",
+      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note that the Canadian Dollar (CAD) is largely unchanged, with Governor Macklem’s comments leaving the Bank of Canada (BoC) ou…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-usd-strength-keeps-cad-weakness-in-focus-scotiabank-202609221427",
+      "time": "22 Sep 2026, 21:27 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "US Treasury Secretary Bessent says all Iranian airlines to shut down worldwide by September 23",
-      "summaryId": "US Treasury Secretary Scott Bessent said that Iranian airlines could effectively be shut out of international travel from September 23, as the United States threatens foreign compa…"
+      "titleId": "Dolar Kanada: Kekuatan USD membuat CAD tetap fokus - Scotiabank",
+      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Dolar Kanada (CAD) sebagian besar tidak berubah, dengan komentar Gubernur Macklem meninggalkan Bank of Canada (BoC) ou…"
     },
     {
-      "titleEn": "Silver Price Forecast: XAG/USD sticks to gains near mid-$66.00s; 23.6% Fibo. holds the key",
-      "summaryEn": "Silver (XAG/USD) attracts fresh buyers following the previous day's two-way price moves and trades around the $66.40-$66.45 region during the Asian session on Tuesday, up nearly 0.…",
-      "link": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-sticks-to-gains-near-mid-6600s-236-fibo-holds-the-key-202609220056",
-      "time": "22 Sep 2026, 07:56 WIB",
+      "titleEn": "Fed’s Collins: More restrictive policy should help inflation return to 2%",
+      "summaryEn": "Boston Federal Reserve (Fed) President Susan Collins said in a LinkedIn post on Tuesday that she supported last week’s interest-rate hike and sees a somewhat more restrictive polic…",
+      "link": "https://www.fxstreet.com/news/feds-collins-more-restrictive-policy-should-help-inflation-return-to-2-202609221422",
+      "time": "22 Sep 2026, 21:22 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Fed's Collins: Kebijakan yang lebih ketat akan membantu inflasi kembali ke 2%",
+      "summaryId": "Presiden Federal Reserve (Fed) Boston Susan Collins mengatakan dalam sebuah posting LinkedIn pada hari Selasa bahwa dia mendukung kenaikan suku bunga pekan lalu dan melihat kebijakan yang agak lebih ketat..."
+    },
+    {
+      "titleEn": "Risk sentiment improved and Oil prices fell: Why the US Dollar is still holding firm",
+      "summaryEn": "The US Dollar (USD) remains on a solid footing following a hawkish Federal Reserve (Fed) interest rate decision and persistent hawkish rhetoric from Fed officials.",
+      "link": "https://www.fxstreet.com/news/risk-sentiment-improved-and-oil-prices-fell-why-the-us-dollar-is-still-holding-firm-202609221420",
+      "time": "22 Sep 2026, 21:20 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Sentimen risiko meningkat dan harga Minyak turun: Mengapa Dolar AS masih menguat",
+      "summaryId": "Dolar AS (USD) tetap pada pijakan yang kokoh menyusul keputusan suku bunga Federal Reserve (Fed) yang hawkish dan retorika hawkish yang terus - menerus dari pejabat Fed."
+    },
+    {
+      "titleEn": "Euro remains cautious as Middle East headlines, Fed outlook drive sentiment",
+      "summaryEn": "EUR/USD is little changed on Tuesday as the US Dollar (USD) gives back earlier gains following fresh diplomatic signals surrounding the war between the United States (US) and Iran.",
+      "link": "https://www.fxstreet.com/news/euro-remains-cautious-as-middle-east-headlines-fed-outlook-drive-sentiment-202609221411",
+      "time": "22 Sep 2026, 21:11 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro tetap berhati - hati karena berita utama Timur Tengah, prospek Fed mendorong sentimen",
+      "summaryId": "EUR/USD sedikit berubah pada hari Selasa karena Dolar AS (USD) mengembalikan kenaikan sebelumnya menyusul sinyal diplomatik baru seputar perang antara Amerika Serikat (AS) dan Iran."
+    },
+    {
+      "titleEn": "Silver edges lower as demand-led inflation keeps Fed tightening risks in focus",
+      "summaryEn": "Silver (XAG/USD) declines 0.38% on Tuesday and trades around $65.85 at the time of writing.",
+      "link": "https://www.fxstreet.com/news/silver-edges-lower-as-demand-led-inflation-keeps-fed-tightening-risks-in-focus-202609221407",
+      "time": "22 Sep 2026, 21:07 WIB",
       "tag": "Emas",
-      "titleId": "Silver Price Forecast: XAG/USD sticks to gains near mid-$66.00s; 23.6% Fibo. holds the key",
-      "summaryId": "Silver (XAG/USD) attracts fresh buyers following the previous day's two-way price moves and trades around the $66.40-$66.45 region during the Asian session on Tuesday, up nearly 0.…"
+      "titleId": "Perak turun lebih rendah karena inflasi yang dipicu permintaan membuat risiko pengetatan Fed tetap menjadi fokus",
+      "summaryId": "Perak (XAG/USD) turun 0,38% pada hari Selasa dan diperdagangkan sekitar $ 65,85 pada saat penulisan."
     },
     {
-      "titleEn": "Euro edges higher above 1.1450 despite German political risks, hawkish Fed rhetoric",
-      "summaryEn": "The EUR/USD pair trades with mild gains near 1.1470 during the early Asian trading hours on Tuesday. Middle East diplomacy hopes provide some support to the riskier assets such as …",
-      "link": "https://www.fxstreet.com/news/euro-edges-higher-above-11450-despite-german-political-risks-hawkish-fed-rhetoric-202609220053",
-      "time": "22 Sep 2026, 07:53 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro edges higher above 1.1450 despite German political risks, hawkish Fed rhetoric",
-      "summaryId": "The EUR/USD pair trades with mild gains near 1.1470 during the early Asian trading hours on Tuesday. Middle East diplomacy hopes provide some support to the riskier assets such as …"
-    },
-    {
-      "titleEn": "Donald Trump administration plans $5 billion Middle East reconstruction fund for Iran war",
-      "summaryEn": "US President Donald Trump administration ‌has proposed investing $5 billion in a new fund to help rebuild critical infrastructure across the Middle East damaged in the war with Ira…",
-      "link": "https://www.fxstreet.com/news/donald-trump-administration-plans-5-billion-middle-east-reconstruction-fund-for-iran-war-202609220024",
-      "time": "22 Sep 2026, 07:24 WIB",
+      "titleEn": "Oil: Supply shock keeps prices elevated – NBC",
+      "summaryEn": "National Bank of Canada's (NBC) Ethan Currie reassesses Oil pricing, highlighting persistent Middle East disruptions, depleted reserves and refined product shortages.",
+      "link": "https://www.fxstreet.com/news/oil-supply-shock-keeps-prices-elevated-nbc-202609221401",
+      "time": "22 Sep 2026, 21:01 WIB",
       "tag": "Geopolitik",
-      "titleId": "Donald Trump administration plans $5 billion Middle East reconstruction fund for Iran war",
-      "summaryId": "US President Donald Trump administration ‌has proposed investing $5 billion in a new fund to help rebuild critical infrastructure across the Middle East damaged in the war with Ira…"
-    },
-    {
-      "titleEn": "RBA’s Hunter backs more hikes as inflation risks entrench",
-      "summaryEn": "The Reserve Bank of Australia (RBA) Assistant Governor Sarah Hunter confirmed the need for further rate hikes this year, to keep inflation in check. This has increased the chances …",
-      "link": "https://www.fxstreet.com/news/rbas-hunter-backs-more-hikes-as-inflation-risks-entrench-202609212357",
-      "time": "22 Sep 2026, 06:57 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "RBA’s Hunter backs more hikes as inflation risks entrench",
-      "summaryId": "The Reserve Bank of Australia (RBA) Assistant Governor Sarah Hunter confirmed the need for further rate hikes this year, to keep inflation in check. This has increased the chances …"
-    },
-    {
-      "titleEn": "ECB’s Lane says energy shock could delay inflation’s return to 2%",
-      "summaryEn": "The European Central Bank (ECB) Chief Economist Philip Lane stated that the European economy will expand steadily at a moderate pace if the energy shocks ease, according to Le Temp…",
-      "link": "https://www.fxstreet.com/news/ecbs-lane-says-energy-shock-could-delay-inflations-return-to-2-202609212347",
-      "time": "22 Sep 2026, 06:47 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "ECB’s Lane says energy shock could delay inflation’s return to 2%",
-      "summaryId": "The European Central Bank (ECB) Chief Economist Philip Lane stated that the European economy will expand steadily at a moderate pace if the energy shocks ease, according to Le Temp…"
-    },
-    {
-      "titleEn": "Australian Dollar holds its nerve as Fed hawks meet RBA hike bets",
-      "summaryEn": "The Aussie Dollar holds firm versus the Greenback at the start of the week, hovering near 0.7119 as risk appetite remains positive despite Fed officials turning more hawkish than e…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-holds-its-nerve-as-fed-hawks-meet-rba-hike-bets-202609212339",
-      "time": "22 Sep 2026, 06:39 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Australian Dollar holds its nerve as Fed hawks meet RBA hike bets",
-      "summaryId": "The Aussie Dollar holds firm versus the Greenback at the start of the week, hovering near 0.7119 as risk appetite remains positive despite Fed officials turning more hawkish than e…"
-    },
-    {
-      "titleEn": "Iranian President will head to New York for UN meeting",
-      "summaryEn": "President Masoud Pezeshkian will lead an Iranian delegation at the United Nations General Assembly in New York on Tuesday, amid renewed hopes for a diplomatic solution to the Middl…",
-      "link": "https://www.fxstreet.com/news/iranian-president-will-head-to-new-york-for-un-meeting-202609212332",
-      "time": "22 Sep 2026, 06:32 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Iranian President will head to New York for UN meeting",
-      "summaryId": "President Masoud Pezeshkian will lead an Iranian delegation at the United Nations General Assembly in New York on Tuesday, amid renewed hopes for a diplomatic solution to the Middl…"
+      "titleId": "Minyak: Guncangan pasokan membuat harga tetap tinggi – NBC",
+      "summaryId": "Ethan Currie dari National Bank of Canada (NBC) menilai kembali harga Minyak, menyoroti gangguan Timur Tengah yang terus - menerus, cadangan yang habis, dan kekurangan produk olahan."
     }
   ],
   "sources": [
