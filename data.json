@@ -1,17 +1,17 @@
 {
-  "updatedAt": "22 Sep 2026, 22:21 WIB",
+  "updatedAt": "23 Sep 2026, 08:09 WIB",
   "price": {
-    "level": "$4,374.90"
+    "level": "$4,394.40"
   },
-  "biasScore": -1,
+  "biasScore": 5,
   "biasLabel": "NETRAL",
-  "bullishPct": 50,
-  "bearishPct": 50,
+  "bullishPct": 52,
+  "bearishPct": 48,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,374.90</span>, melemah 0.2% pada sesi terakhir, dengan rentang 52 minggu $3,750–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,394.40</span>, menguat 0.41% pada sesi terakhir, dengan rentang 52 minggu $3,750–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit -1/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit +5/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "15 Sep 2026",
@@ -29,7 +29,7 @@
     "oiChange": -1328,
     "rangeLow": "$3,750",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.96% (-0.08%) dan indeks dolar (DXY) menguat ke 100.59 (+0.16%), sementara XAU/USD turun 0.2%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.97% (+0.10%) dan indeks dolar (DXY) melemah ke 100.58 (-0.03%), sementara XAU/USD naik 0.41%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -97,15 +97,15 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-09-18"
+      "asOf": "2026-09-21"
     },
     "mediaSentiment": {
-      "avgScore": 0.16,
-      "label": "BULLISH",
+      "avgScore": 0.143,
+      "label": "NETRAL",
       "sampleSize": 50,
       "bullishCount": 23,
-      "neutralCount": 25,
-      "bearishCount": 2
+      "neutralCount": 23,
+      "bearishCount": 4
     },
     "cpi": {
       "index": 334.98,
@@ -120,83 +120,83 @@
     }
   },
   "macro": {
-    "yield10y": 4.96,
-    "yield10yChange": -0.08,
-    "dxy": 100.59,
-    "dxyChange": 0.16
+    "yield10y": 4.97,
+    "yield10yChange": 0.1,
+    "dxy": 100.58,
+    "dxyChange": -0.03
   },
   "news": [
     {
-      "titleEn": "Bank of Canada: Slack delays hikes despite crude shock – NBC",
-      "summaryEn": "National Bank of Canada's Ethan Currie notes that while oil-driven inflation risks have increased, the Bank of Canada is likely to remain on hold in October as domestic slack and t…",
-      "link": "https://www.fxstreet.com/news/bank-of-canada-slack-delays-hikes-despite-crude-shock-nbc-202609221506",
-      "time": "22 Sep 2026, 22:06 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Bank of Canada: Slack menunda kenaikan meskipun ada kejutan minyak mentah – NBC",
-      "summaryId": "Ethan Currie dari National Bank of Canada mencatat bahwa sementara risiko inflasi yang didorong oleh minyak telah meningkat, Bank of Canada kemungkinan akan tetap ditahan pada bulan Oktober karena kelonggaran domestik dan t..."
-    },
-    {
-      "titleEn": "United States: September inflation profile – TD Securities",
-      "summaryEn": "TD Securities economists Oscar Munoz and Eli Nir provide an early projection for United States (US) September Consumer Price Index (CPI , expecting Headline CPI to rise 0.54% m/m, …",
-      "link": "https://www.fxstreet.com/news/united-states-september-inflation-profile-td-securities-202609221456",
-      "time": "22 Sep 2026, 21:56 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Amerika Serikat: profil inflasi September – TD Securities",
-      "summaryId": "Ekonom TD Securities Oscar Munoz dan Eli Nir memberikan proyeksi awal untuk Indeks Harga Konsumen (IHK) September Amerika Serikat (AS), mengharapkan IHK Headline naik 0,54% m/m ,…"
-    },
-    {
-      "titleEn": "Canadian Dollar: USD strength keeps CAD weakness in focus - Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note that the Canadian Dollar (CAD) is largely unchanged, with Governor Macklem’s comments leaving the Bank of Canada (BoC) ou…",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-usd-strength-keeps-cad-weakness-in-focus-scotiabank-202609221427",
-      "time": "22 Sep 2026, 21:27 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Kanada: Kekuatan USD membuat CAD tetap fokus - Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Dolar Kanada (CAD) sebagian besar tidak berubah, dengan komentar Gubernur Macklem meninggalkan Bank of Canada (BoC) ou…"
-    },
-    {
-      "titleEn": "Fed’s Collins: More restrictive policy should help inflation return to 2%",
-      "summaryEn": "Boston Federal Reserve (Fed) President Susan Collins said in a LinkedIn post on Tuesday that she supported last week’s interest-rate hike and sees a somewhat more restrictive polic…",
-      "link": "https://www.fxstreet.com/news/feds-collins-more-restrictive-policy-should-help-inflation-return-to-2-202609221422",
-      "time": "22 Sep 2026, 21:22 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Fed's Collins: Kebijakan yang lebih ketat akan membantu inflasi kembali ke 2%",
-      "summaryId": "Presiden Federal Reserve (Fed) Boston Susan Collins mengatakan dalam sebuah posting LinkedIn pada hari Selasa bahwa dia mendukung kenaikan suku bunga pekan lalu dan melihat kebijakan yang agak lebih ketat..."
-    },
-    {
-      "titleEn": "Risk sentiment improved and Oil prices fell: Why the US Dollar is still holding firm",
-      "summaryEn": "The US Dollar (USD) remains on a solid footing following a hawkish Federal Reserve (Fed) interest rate decision and persistent hawkish rhetoric from Fed officials.",
-      "link": "https://www.fxstreet.com/news/risk-sentiment-improved-and-oil-prices-fell-why-the-us-dollar-is-still-holding-firm-202609221420",
-      "time": "22 Sep 2026, 21:20 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Sentimen risiko meningkat dan harga Minyak turun: Mengapa Dolar AS masih menguat",
-      "summaryId": "Dolar AS (USD) tetap pada pijakan yang kokoh menyusul keputusan suku bunga Federal Reserve (Fed) yang hawkish dan retorika hawkish yang terus - menerus dari pejabat Fed."
-    },
-    {
-      "titleEn": "Euro remains cautious as Middle East headlines, Fed outlook drive sentiment",
-      "summaryEn": "EUR/USD is little changed on Tuesday as the US Dollar (USD) gives back earlier gains following fresh diplomatic signals surrounding the war between the United States (US) and Iran.",
-      "link": "https://www.fxstreet.com/news/euro-remains-cautious-as-middle-east-headlines-fed-outlook-drive-sentiment-202609221411",
-      "time": "22 Sep 2026, 21:11 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro tetap berhati - hati karena berita utama Timur Tengah, prospek Fed mendorong sentimen",
-      "summaryId": "EUR/USD sedikit berubah pada hari Selasa karena Dolar AS (USD) mengembalikan kenaikan sebelumnya menyusul sinyal diplomatik baru seputar perang antara Amerika Serikat (AS) dan Iran."
-    },
-    {
-      "titleEn": "Silver edges lower as demand-led inflation keeps Fed tightening risks in focus",
-      "summaryEn": "Silver (XAG/USD) declines 0.38% on Tuesday and trades around $65.85 at the time of writing.",
-      "link": "https://www.fxstreet.com/news/silver-edges-lower-as-demand-led-inflation-keeps-fed-tightening-risks-in-focus-202609221407",
-      "time": "22 Sep 2026, 21:07 WIB",
-      "tag": "Emas",
-      "titleId": "Perak turun lebih rendah karena inflasi yang dipicu permintaan membuat risiko pengetatan Fed tetap menjadi fokus",
-      "summaryId": "Perak (XAG/USD) turun 0,38% pada hari Selasa dan diperdagangkan sekitar $ 65,85 pada saat penulisan."
-    },
-    {
-      "titleEn": "Oil: Supply shock keeps prices elevated – NBC",
-      "summaryEn": "National Bank of Canada's (NBC) Ethan Currie reassesses Oil pricing, highlighting persistent Middle East disruptions, depleted reserves and refined product shortages.",
-      "link": "https://www.fxstreet.com/news/oil-supply-shock-keeps-prices-elevated-nbc-202609221401",
-      "time": "22 Sep 2026, 21:01 WIB",
+      "titleEn": "US Special Envoy Witkoff says mediators completed round of US-Iran talks",
+      "summaryEn": "United States (US) Special Envoy to the Middle East, Steve Witkoff, said the US held \"lengthy\" indirect talks with the Iranian delegation via mediators on the sidelines of the Unit…",
+      "link": "https://www.fxstreet.com/news/us-special-envoy-witkoff-says-mediators-completed-round-of-us-iran-talks-202609230102",
+      "time": "23 Sep 2026, 08:02 WIB",
       "tag": "Geopolitik",
-      "titleId": "Minyak: Guncangan pasokan membuat harga tetap tinggi – NBC",
-      "summaryId": "Ethan Currie dari National Bank of Canada (NBC) menilai kembali harga Minyak, menyoroti gangguan Timur Tengah yang terus - menerus, cadangan yang habis, dan kekurangan produk olahan."
+      "titleId": "Utusan Khusus AS Witkoff mengatakan mediator menyelesaikan putaran pembicaraan AS - Iran",
+      "summaryId": "Utusan Khusus Amerika Serikat (AS) untuk Timur Tengah, Steve Witkoff, mengatakan AS mengadakan pembicaraan tidak langsung \"panjang\" dengan delegasi Iran melalui mediator di sela - sela Unit…"
+    },
+    {
+      "titleEn": "Gold recovers above $4,350 on US–Iran diplomacy hopes",
+      "summaryEn": "Gold price (XAU/USD) rebounds to near $4,360 during the early Asian session on Wednesday. The precious metal edges higher amid hopes for diplomatic progress between the US and Iran…",
+      "link": "https://www.fxstreet.com/news/gold-recovers-above-4-350-on-us-iran-diplomacy-hopes-202609222322",
+      "time": "23 Sep 2026, 06:22 WIB",
+      "tag": "Emas",
+      "titleId": "Emas pulih di atas $ 4.350 karena harapan diplomasi AS - Iran",
+      "summaryId": "Harga emas (XAU/USD) memantul mendekati $ 4.360 selama awal sesi Asia pada hari Rabu. Logam mulia tepi lebih tinggi di tengah harapan untuk kemajuan diplomatik antara AS dan Iran..."
+    },
+    {
+      "titleEn": "The New Zealand Dollar dips to a new low and bounces as Crude Oil gets cheaper",
+      "summaryEn": "Four weeks of selling have taken NZD/USD from just under 0.6000 to its lowest since early July. On Tuesday the pair dipped under 0.5700, then climbed back into the 0.5700 to 0.5800…",
+      "link": "https://www.fxstreet.com/news/the-new-zealand-dollar-dips-to-a-new-low-and-bounces-as-crude-oil-gets-cheaper-202609222254",
+      "time": "23 Sep 2026, 05:54 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Selandia Baru turun ke level terendah baru dan memantul karena Minyak Mentah menjadi lebih murah",
+      "summaryId": "Penjualan selama empat minggu telah membawa NZD/USD dari hanya di bawah 0,6000 ke level terendah sejak awal Juli. Pada hari Selasa pasangan ini turun di bawah 0,5700, kemudian naik kembali ke 0,5700 menjadi 0,5800..."
+    },
+    {
+      "titleEn": "Australian Dollar remains subdued as Fed and RBA hawks collide",
+      "summaryEn": "The Aussie Dollar is poised to end Tuesday’s session unchanged versus the Greenback amid renewed hopes for an end of the Middle East conflict, while Federal Reserve officials struc…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-remains-subdued-as-fed-and-rba-hawks-collide-202609222249",
+      "time": "23 Sep 2026, 05:49 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar Australia tetap tenang saat elang Fed dan RBA bertabrakan",
+      "summaryId": "Dolar Australia siap untuk mengakhiri sesi Selasa tidak berubah versus Greenback di tengah harapan baru untuk mengakhiri konflik Timur Tengah, sementara pejabat Federal Reserve…"
+    },
+    {
+      "titleEn": "The Euro drops to its lowest since July as the Dollar keeps climbing",
+      "summaryEn": "About 80% of the Euro's August rally is gone. EUR/USD climbed from near 1.1350 at the end of July to just above 1.1700 in the second half of August, and on Tuesday it dipped under …",
+      "link": "https://www.fxstreet.com/news/the-euro-drops-to-its-lowest-since-july-as-the-dollar-keeps-climbing-202609222219",
+      "time": "23 Sep 2026, 05:19 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Euro turun ke level terendah sejak Juli karena Dolar terus naik",
+      "summaryId": "Sekitar 80% dari reli Agustus Euro hilang. EUR/USD naik dari dekat 1,1350 pada akhir Juli menjadi tepat di atas 1,1700 pada paruh kedua Agustus, dan pada hari Selasa turun di bawah …"
+    },
+    {
+      "titleEn": "The British Pound sets a new September low as Fed officials argue for more",
+      "summaryEn": "1.3400 has capped GBP/USD in every session since the Fed raised rates on September 16. The pair went through that level on the day of the decision and has failed to get back above …",
+      "link": "https://www.fxstreet.com/news/the-british-pound-sets-a-new-september-low-as-fed-officials-argue-for-more-202609222204",
+      "time": "23 Sep 2026, 05:04 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Pound Inggris menetapkan level terendah September baru karena pejabat Fed berdebat untuk mendapatkan lebih banyak",
+      "summaryId": "1,3400 telah membatasi GBP/USD di setiap sesi sejak The Fed menaikkan suku bunga pada 16 September. Pasangan ini melewati level itu pada hari keputusan dan gagal kembali ke atas ..."
+    },
+    {
+      "titleEn": "Singapore Dollar: Sideways bias holds above support against US Dollar – UOB",
+      "summaryEn": "United Overseas Bank’s (UOB) Quek Ser Leang and Lee Sue Ann maintain a constructive short-term view on USD/SGD, noting recent sideways trade around 1.2760.",
+      "link": "https://www.fxstreet.com/news/singapore-dollar-sideways-bias-holds-above-support-against-us-dollar-uob-202609222112",
+      "time": "23 Sep 2026, 04:12 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Singapura: Bias menyamping bertahan di atas dukungan terhadap Dolar AS – UOB",
+      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari United Overseas Bank (UOB) mempertahankan pandangan jangka pendek yang konstruktif terhadap USD/SGD, mencatat perdagangan sideways baru - baru ini di sekitar 1,2760."
+    },
+    {
+      "titleEn": "Banxico expected to stay put as inflation risks block easing – Reuters",
+      "summaryEn": "A Reuters poll shows that all economists expect that the Mexican Central Bank (Banxico) will hold rates unchanged at 6.50% for the third straight meeting on Thursday.",
+      "link": "https://www.fxstreet.com/news/banxico-expected-to-stay-put-as-inflation-risks-block-easing-reuters-202609222051",
+      "time": "23 Sep 2026, 03:51 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Banxico diperkirakan akan tetap bertahan karena risiko inflasi menghalangi pelonggaran – Reuters",
+      "summaryId": "Sebuah jajak pendapat Reuters menunjukkan bahwa semua ekonom memperkirakan bahwa Bank Sentral Meksiko (Banxico) akan mempertahankan suku bunga tidak berubah pada 6,50% untuk pertemuan ketiga berturut - turut pada hari Kamis."
     }
   ],
   "sources": [
