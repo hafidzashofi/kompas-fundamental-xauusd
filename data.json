@@ -1,17 +1,17 @@
 {
-  "updatedAt": "24 Sep 2026, 08:00 WIB",
+  "updatedAt": "24 Sep 2026, 22:40 WIB",
   "price": {
-    "level": "$4,328.10"
+    "level": "$4,284.70"
   },
-  "biasScore": 3,
+  "biasScore": -7,
   "biasLabel": "NETRAL",
-  "bullishPct": 52,
-  "bearishPct": 48,
+  "bullishPct": 46,
+  "bearishPct": 54,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,328.10</span>, menguat 0.23% pada sesi terakhir, dengan rentang 52 minggu $3,750–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,284.70</span>, melemah 0.78% pada sesi terakhir, dengan rentang 52 minggu $3,752–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit +3/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -7/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "15 Sep 2026",
@@ -27,9 +27,9 @@
   "cme": {
     "openInterest": 409899,
     "oiChange": -1328,
-    "rangeLow": "$3,750",
+    "rangeLow": "$3,752",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.11% (+2.94%) dan indeks dolar (DXY) menguat ke 101.21 (+0.11%), sementara XAU/USD naik 0.23%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.15% (+0.70%) dan indeks dolar (DXY) menguat ke 101.35 (+0.25%), sementara XAU/USD turun 0.78%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -100,12 +100,12 @@
       "asOf": "2026-09-22"
     },
     "mediaSentiment": {
-      "avgScore": 0.045,
+      "avgScore": -0.086,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 17,
-      "neutralCount": 23,
-      "bearishCount": 10
+      "bullishCount": 11,
+      "neutralCount": 13,
+      "bearishCount": 26
     },
     "cpi": {
       "index": 334.98,
@@ -120,83 +120,83 @@
     }
   },
   "macro": {
-    "yield10y": 5.11,
-    "yield10yChange": 2.94,
-    "dxy": 101.21,
-    "dxyChange": 0.11
+    "yield10y": 5.15,
+    "yield10yChange": 0.7,
+    "dxy": 101.35,
+    "dxyChange": 0.25
   },
   "news": [
     {
-      "titleEn": "Euro weakens below 1.1400 as Fed rate hike expectations reinforce US Dollar strength",
-      "summaryEn": "The EUR/USD pair loses ground to near 1.1380 during the early Asian trading hours on Thursday. The major pair extends its downside as hawkish signals from the US Federal Reserve (F…",
-      "link": "https://www.fxstreet.com/news/euro-weakens-below-11400-as-fed-rate-hike-expectations-reinforce-us-dollar-strength-202609240057",
-      "time": "24 Sep 2026, 07:57 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Euro melemah di bawah 1,1400 karena ekspektasi kenaikan suku bunga Fed memperkuat kekuatan Dolar AS",
-      "summaryId": "Pasangan EUR/USD turun ke dekat 1,1380 selama jam perdagangan awal Asia pada hari Kamis. Pasangan utama memperpanjang sisi negatifnya karena sinyal hawkish dari Federal Reserve AS (F..."
+      "titleEn": "Europe: Rightward risks build – Standard Chartered",
+      "summaryEn": "Standard Chartered argues that Europe’s political balance could shift to the right in 2027, with key elections in France, Spain, Italy and Poland. The bank highlights France’s pres…",
+      "link": "https://www.fxstreet.com/news/europe-rightward-risks-build-standard-chartered-202609241528",
+      "time": "24 Sep 2026, 22:28 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Eropa: Membangun risiko ke kanan – Standard Chartered",
+      "summaryId": "Standard Chartered berpendapat bahwa keseimbangan politik Eropa dapat bergeser ke kanan pada tahun 2027, dengan pemilihan utama di Prancis, Spanyol, Italia, dan Polandia. Bank ini menyoroti pres Prancis..."
     },
     {
-      "titleEn": "US Treasury Secretary Bessent says US-China trade truce extended through January 10",
-      "summaryEn": "US Treasury Secretary Scott Bessent said that the United States (US) and China have agreed to extend a bilateral trade truce that was set to expire in November through January 10, …",
-      "link": "https://www.fxstreet.com/news/us-treasury-secretary-bessent-says-us-china-trade-truce-extended-through-january-10-202609240003",
-      "time": "24 Sep 2026, 07:03 WIB",
+      "titleEn": "Canadian Dollar falls to two-month low as higher US yields outweigh Oil support",
+      "summaryEn": "USD/CAD extends its advance on Thursday, climbing to its highest level since mid-July. The pair has posted only one daily decline over the past 12 trading days, reflecting the dive…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-falls-to-two-month-low-as-higher-us-yields-outweigh-oil-support-202609241528",
+      "time": "24 Sep 2026, 22:28 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar Kanada turun ke level terendah dua bulan karena imbal hasil AS yang lebih tinggi melebihi dukungan Minyak",
+      "summaryId": "USD/CAD memperpanjang kenaikannya pada hari Kamis, naik ke level tertinggi sejak pertengahan Juli. Pasangan ini hanya mencatat satu penurunan harian selama 12 hari perdagangan terakhir, yang mencerminkan penurunan..."
+    },
+    {
+      "titleEn": "Germany: Resilient but modest recovery – Commerzbank",
+      "summaryEn": "Commerzbank’s Chief Economist Dr. Jörg Krämer notes that leading indicators such as the Ifo business climate index and PMIs have surprised to the upside, showing the German economy…",
+      "link": "https://www.fxstreet.com/news/germany-resilient-but-modest-recovery-commerzbank-202609241519",
+      "time": "24 Sep 2026, 22:19 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Jerman: Pemulihan tangguh tetapi sederhana – Commerzbank",
+      "summaryId": "Kepala Ekonom Commerzbank Dr. Jörg Krämer mencatat bahwa indikator utama seperti indeks iklim bisnis Ifo dan PMI telah mengejutkan sisi positifnya, menunjukkan ekonomi Jerman…"
+    },
+    {
+      "titleEn": "Xi pitches cooperation, friendship, and fairness amid overhanging trade war truce",
+      "summaryEn": "China's paramount leader Xi Jinping's remarks at the White House ran to 21 lines on the wires, covering friendship, artificial intelligence (AI), counter-narcotics work and fair tr…",
+      "link": "https://www.fxstreet.com/news/xi-pitches-cooperation-friendship-and-fairness-amid-overhanging-trade-war-truce-202609241516",
+      "time": "24 Sep 2026, 22:16 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Xi menjalin kerja sama, persahabatan, dan keadilan di tengah gencatan senjata perang dagang yang menjorok",
+      "summaryId": "Pernyataan pemimpin terpenting Tiongkok Xi Jinping di Gedung Putih mencapai 21 baris pada kabel, meliputi persahabatan, kecerdasan buatan (AI), pekerjaan kontra - narkotika dan transaksi yang adil…"
+    },
+    {
+      "titleEn": "US Dollar: Fed resilience supports gains – BBH",
+      "summaryEn": "Brown Brothers Harriman’s (BBH) Elias Haddad highlights that the Dollar is advancing broadly as a hawkish Federal Reserve stance combines with strong US economic outperformance.",
+      "link": "https://www.fxstreet.com/news/us-dollar-fed-resilience-supports-gains-bbh-202609241448",
+      "time": "24 Sep 2026, 21:48 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Dolar AS: Ketahanan Fed mendukung kenaikan – BBH",
+      "summaryId": "Brown Brothers Harriman (BBH) Elias Haddad menyoroti bahwa Dolar maju secara luas karena sikap Federal Reserve yang hawkish bergabung dengan kinerja ekonomi AS yang kuat."
+    },
+    {
+      "titleEn": "Fed's Paulson warns more hikes possible as inflation fight hardens",
+      "summaryEn": "Philadelphia Federal Reserve (Fed) President Anna Paulson crossed the wires on Thursday, signaling that further rate hikes may be needed to lower inflation. She acknowledged that t…",
+      "link": "https://www.fxstreet.com/news/feds-paulson-warns-more-hikes-possible-as-inflation-fight-hardens-202609241447",
+      "time": "24 Sep 2026, 21:47 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Paulson dari The Fed memperingatkan lebih banyak kenaikan mungkin terjadi karena pertarungan inflasi mengeras",
+      "summaryId": "Presiden Federal Reserve (Fed) Philadelphia Anna Paulson menyeberangi kabel pada hari Kamis, menandakan bahwa kenaikan suku bunga lebih lanjut mungkin diperlukan untuk menurunkan inflasi. Dia mengakui bahwa t..."
+    },
+    {
+      "titleEn": "Euro hovers near two-month low as hawkish Fed outlook weighs",
+      "summaryEn": "EUR/USD hovers near a two-month low on Thursday as expectations of another Federal Reserve (Fed) interest-rate hike keep the US Dollar (USD) firmly supported. At the time of writin…",
+      "link": "https://www.fxstreet.com/news/euro-hovers-near-two-month-low-as-hawkish-fed-outlook-weighs-202609241424",
+      "time": "24 Sep 2026, 21:24 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro melayang di dekat level terendah dua bulan karena prospek Fed yang hawkish berbobot",
+      "summaryId": "EUR/USD melayang di dekat level terendah dua bulan pada hari Kamis karena ekspektasi kenaikan suku bunga Federal Reserve (Fed) lainnya membuat Dolar AS (USD) tetap didukung kuat. Pada saat writin…"
+    },
+    {
+      "titleEn": "Australian Dollar remains under pressure despite stronger-than-expected jobs data",
+      "summaryEn": "AUD/USD trims its losses on Thursday and trades around 0.7030 at the time of writing, down 0.15% on the day.",
+      "link": "https://www.fxstreet.com/news/australian-dollar-remains-under-pressure-despite-stronger-than-expected-jobs-data-202609241422",
+      "time": "24 Sep 2026, 21:22 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Menteri Keuangan AS Bessent mengatakan gencatan senjata perdagangan AS - China diperpanjang hingga 10 Januari",
-      "summaryId": "Menteri Keuangan AS Scott Bessent mengatakan bahwa Amerika Serikat (AS) dan China telah sepakat untuk memperpanjang gencatan senjata perdagangan bilateral yang akan berakhir pada bulan November hingga 10 Januari,..."
-    },
-    {
-      "titleEn": "Australian Dollar cools off against the New Zealand Dollar before jobs data",
-      "summaryEn": "Tuesday's peak just under 1.2500 was the highest for AUD/NZD since early 2013. The cross is trading just above 1.2400, on track for a second straight down day.",
-      "link": "https://www.fxstreet.com/news/australian-dollar-cools-off-against-the-new-zealand-dollar-before-jobs-data-202609232330",
-      "time": "24 Sep 2026, 06:30 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Australia mendingin terhadap Dolar Selandia Baru sebelum data pekerjaan",
-      "summaryId": "Puncak hari Selasa tepat di bawah 1,2500 adalah yang tertinggi untuk AUD/NZD sejak awal 2013. Salib diperdagangkan tepat di atas 1,2400, di jalur untuk hari kedua berturut - turut."
-    },
-    {
-      "titleEn": "Gold falls below $4,300 on Fed hawkish signals",
-      "summaryEn": "Gold price (XAU/USD) tumbles to near $4,290 during the early Asian session on Thursday. The precious metal loses momentum as hawkish signals from Federal Reserve (Fed) policymakers…",
-      "link": "https://www.fxstreet.com/news/gold-falls-below-4-300-on-fed-hawkish-signals-202609232321",
-      "time": "24 Sep 2026, 06:21 WIB",
-      "tag": "Emas",
-      "titleId": "Emas turun di bawah $ 4.300 pada sinyal hawkish Fed",
-      "summaryId": "Harga emas (XAU/USD) jatuh mendekati $ 4.290 selama sesi awal Asia pada hari Kamis. Logam mulia kehilangan momentum karena sinyal hawkish dari pembuat kebijakan Federal Reserve (Fed)..."
-    },
-    {
-      "titleEn": "Australian Dollar tumbles amid soaring US yields, ahead of jobs data",
-      "summaryEn": "The Aussie Dollar stumbles over 1% against the US Dollar on Wednesday as US Treasury yields soar, with the US 5- and 10-year T-note yields surpassing the 5% threshold amid investor…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-tumbles-amid-soaring-us-yields-ahead-of-jobs-data-202609232306",
-      "time": "24 Sep 2026, 06:06 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Australia jatuh di tengah melonjaknya imbal hasil AS, di depan data pekerjaan",
-      "summaryId": "Dolar Aussie tersandung lebih dari 1% terhadap Dolar AS pada hari Rabu karena imbal hasil Treasury AS melonjak, dengan imbal hasil T - note 5 dan 10 tahun AS melampaui ambang batas 5% di tengah investor..."
-    },
-    {
-      "titleEn": "New Zealand Dollar slides toward its range floor as US yields climb",
-      "summaryEn": "The bottom of NZD/USD's range since April is about 0.5600, and the pair is back in the lower part of it. It is trading just under 0.5700, its lowest since early July, which is abou…",
-      "link": "https://www.fxstreet.com/news/new-zealand-dollar-slides-toward-its-range-floor-as-us-yields-climb-202609232300",
-      "time": "24 Sep 2026, 06:00 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Selandia Baru meluncur ke lantai kisarannya saat imbal hasil AS naik",
-      "summaryId": "Bagian bawah kisaran NZD/USD sejak April adalah sekitar 0,5600, dan pasangan ini kembali ke bagian bawahnya. Ini diperdagangkan hanya di bawah 0,5700, terendah sejak awal Juli, yaitu sekitar…"
-    },
-    {
-      "titleEn": "Japanese Yen gives back most of its rally as Fed hike talk grows",
-      "summaryEn": "Holding up the Yen is costing Japan more each time and working for less time. USD/JPY is trading above 158.00, on track for its first daily close above its 200-day average since Se…",
-      "link": "https://www.fxstreet.com/news/japanese-yen-gives-back-most-of-its-rally-as-fed-hike-talk-grows-202609232245",
-      "time": "24 Sep 2026, 05:45 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Yen Jepang memberikan kembali sebagian besar relinya saat pembicaraan kenaikan Fed tumbuh",
-      "summaryId": "Menahan Yen membuat Jepang lebih mahal setiap kali dan bekerja untuk waktu yang lebih singkat. USD/JPY diperdagangkan di atas 158,00, di jalur untuk penutupan harian pertamanya di atas rata - rata 200 hari sejak Se..."
-    },
-    {
-      "titleEn": "Mexican Peso selloff deepens as Fed hawks drive USD/MXN toward 17.50",
-      "summaryEn": "The Mexican Peso (MXN) extends its depreciation against the Greenback as the USD/MXN pair rallies over 1.25% amid speculation that the Federal Reserve (Fed) will raise rates again,…",
-      "link": "https://www.fxstreet.com/news/mexican-peso-selloff-deepens-as-fed-hawks-drive-usd-mxn-toward-1750-202609232057",
-      "time": "24 Sep 2026, 03:57 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Aksi jual Peso Meksiko semakin dalam karena elang Fed mendorong USD/MXN menuju 17,50",
-      "summaryId": "Peso Meksiko (MXN) memperpanjang depresiasinya terhadap Greenback karena pasangan USD/MXN rally lebih dari 1,25% di tengah spekulasi bahwa Federal Reserve (Fed) akan menaikkan suku bunga lagi,..."
+      "titleId": "Dolar Australia tetap di bawah tekanan meskipun data pekerjaan lebih kuat dari perkiraan",
+      "summaryId": "AUD/USD memangkas kerugiannya pada hari Kamis dan diperdagangkan di sekitar 0,7030 pada saat penulisan, turun 0,15% pada hari itu."
     }
   ],
   "sources": [
