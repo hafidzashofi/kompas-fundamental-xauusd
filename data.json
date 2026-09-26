@@ -1,38 +1,38 @@
 {
-  "updatedAt": "25 Sep 2026, 22:42 WIB",
+  "updatedAt": "26 Sep 2026, 08:07 WIB",
   "price": {
-    "level": "$4,319.10"
+    "level": "$4,320.50"
   },
-  "biasScore": 6,
+  "biasScore": -2,
   "biasLabel": "NETRAL",
-  "bullishPct": 53,
-  "bearishPct": 47,
+  "bullishPct": 49,
+  "bearishPct": 51,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,319.10</span>, menguat 0.49% pada sesi terakhir, dengan rentang 52 minggu $3,764–$5,586.",
-    "Posisi non-commercial (spekulan besar) pada laporan COT per 15 Sep 2026 tercatat net long <span class=\"accent\">230,338</span> kontrak (56.2% dari open interest) — sangat crowded (rawan aksi profit taking). Net long ini turun 1,622 kontrak dibanding pekan sebelumnya.",
-    "Open interest COMEX tercatat 409,899 kontrak (turun 1,328), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit +6/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,320.50</span>, menguat 0.52% pada sesi terakhir, dengan rentang 52 minggu $3,764–$5,586.",
+    "Posisi non-commercial (spekulan besar) pada laporan COT per 22 Sep 2026 tercatat net long <span class=\"accent\">225,853</span> kontrak (54.7% dari open interest) — relatif seimbang. Net long ini turun 4,485 kontrak dibanding pekan sebelumnya.",
+    "Open interest COMEX tercatat 412,800 kontrak (naik 2,901), mengindikasikan minat baru masuk pasar.",
+    "<b>Kesimpulan:</b> skor komposit -2/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
-    "reportDate": "15 Sep 2026",
-    "ncLong": 258059,
-    "ncShort": 27721,
-    "netLong": 230338,
-    "weeklyChange": -1622,
-    "commercialNet": -261721,
-    "openInterest": 409899,
-    "tagLabel": "Crowded Long",
-    "tagClass": "tag-bull"
+    "reportDate": "22 Sep 2026",
+    "ncLong": 253982,
+    "ncShort": 28129,
+    "netLong": 225853,
+    "weeklyChange": -4485,
+    "commercialNet": -262903,
+    "openInterest": 412800,
+    "tagLabel": "Seimbang",
+    "tagClass": "tag-neutral"
   },
   "cme": {
-    "openInterest": 409899,
-    "oiChange": -1328,
+    "openInterest": 412800,
+    "oiChange": 2901,
     "rangeLow": "$3,764",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
-    "tagLabel": "Melemah",
-    "tagClass": "tag-bear",
-    "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 15 Sep 2026; rentang dari harga 52 minggu terakhir"
+    "structureNote": "OI & harga bergerak searah",
+    "tagLabel": "Menguat",
+    "tagClass": "tag-bull",
+    "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 22 Sep 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
     {
@@ -43,31 +43,31 @@
   ],
   "positioning": {
     "hedgeFund": {
-      "long": 258059,
-      "short": 27721,
-      "net": 230338,
+      "long": 253982,
+      "short": 28129,
+      "net": 225853,
       "label": "NET LONG",
       "cls": "tag-bull"
     },
     "retail": {
-      "long": 47460,
-      "short": 16077,
-      "net": 31383,
-      "weeklyChange": -6931,
+      "long": 52437,
+      "short": 15387,
+      "net": 37050,
+      "weeklyChange": 5667,
       "label": "NET LONG",
       "cls": "tag-bull"
     },
     "commercial": {
-      "long": 56417,
-      "short": 318138,
-      "net": -261721,
+      "long": 57458,
+      "short": 320361,
+      "net": -262903,
       "label": "NET SHORT",
       "cls": "tag-bear"
     },
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.21% (+0.99%) dan indeks dolar (DXY) melemah ke 101.0 (-0.28%), sementara XAU/USD naik 0.49%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.18% (+0.43%) dan indeks dolar (DXY) melemah ke 101.03 (-0.25%), sementara XAU/USD naik 0.52%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -97,15 +97,15 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-09-23"
+      "asOf": "2026-09-24"
     },
     "mediaSentiment": {
-      "avgScore": 0.006,
+      "avgScore": 0.057,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 11,
-      "neutralCount": 20,
-      "bearishCount": 19
+      "bullishCount": 15,
+      "neutralCount": 21,
+      "bearishCount": 14
     },
     "cpi": {
       "index": 334.98,
@@ -120,83 +120,83 @@
     }
   },
   "macro": {
-    "yield10y": 5.21,
-    "yield10yChange": 0.99,
-    "dxy": 101.0,
-    "dxyChange": -0.28
+    "yield10y": 5.18,
+    "yield10yChange": 0.43,
+    "dxy": 101.03,
+    "dxyChange": -0.25
   },
   "news": [
     {
-      "titleEn": "British Pound finds relief as USD pauses, but inflation risks linger",
-      "summaryEn": "The Pound Sterling trims some of its weekly losses, gaining over 0.18% against the US Dollar on Friday as the US Dollar takes a breather, even as US Treasury yields continue to ris…",
-      "link": "https://www.fxstreet.com/news/british-pound-finds-relief-as-usd-pauses-but-inflation-risks-linger-202609251536",
-      "time": "25 Sep 2026, 22:36 WIB",
+      "titleEn": "South Korean Won: Export strength supports KRW – Societe Generale",
+      "summaryEn": "Societe Generale notes the Korean Won has been one of Asia’s standout performers, with USD/KRW slipping from around 1,390 to 1,360 as local exporters sold Dollars ahead of the Chus…",
+      "link": "https://www.fxstreet.com/news/south-korean-won-export-strength-supports-krw-societe-generale-202609252141",
+      "time": "26 Sep 2026, 04:41 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Pound Inggris menemukan kelegaan karena USD berhenti, tetapi risiko inflasi tetap ada",
-      "summaryId": "Pound Sterling memangkas beberapa kerugian mingguannya, naik lebih dari 0,18% terhadap Dolar AS pada hari Jumat karena Dolar AS mengambil nafas, bahkan ketika imbal hasil Treasury AS terus meningkat..."
+      "titleId": "Won Korea Selatan: Kekuatan ekspor mendukung KRW – Societe Generale",
+      "summaryId": "Societe Generale mencatat bahwa Won Korea telah menjadi salah satu pemain yang menonjol di Asia, dengan USD/KRW merosot dari sekitar 1.390 menjadi 1.360 karena eksportir lokal menjual Dolar di depan Chus..."
     },
     {
-      "titleEn": "Canadian Dollar: Undervalued near 1.41 against US Dollar – Scotiabank",
-      "summaryEn": "Scotiabank strategists Shaun Osborne and Eric Theoret note that the Canadian Dollar (CAD) is flat versus the US Dollar (USD) and lagging most G10 peers. They highlight that wider U…",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-undervalued-near-141-against-us-dollar-scotiabank-202609251514",
-      "time": "25 Sep 2026, 22:14 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Kanada: Undervalued mendekati 1,41 terhadap Dolar AS – Scotiabank",
-      "summaryId": "Ahli strategi Scotiabank Shaun Osborne dan Eric Theoret mencatat bahwa Dolar Kanada (CAD) datar terhadap Dolar AS (USD) dan tertinggal dari sebagian besar mata uang G10. Mereka menyoroti bahwa U..."
+      "titleEn": "Chinese Yuan: Consolidation with downside risk toward 6.7330 – UOB",
+      "summaryEn": "UOB’s Quek Ser Leang and Lee Sue Ann describe USD/CNH as consolidating after a move to 6.7200, with momentum slowing in the very near term.",
+      "link": "https://www.fxstreet.com/news/chinese-yuan-consolidation-with-downside-risk-toward-67330-uob-202609252056",
+      "time": "26 Sep 2026, 03:56 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Yuan Tiongkok: Konsolidasi dengan risiko penurunan menuju 6,7330 – UOB",
+      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari UOB menggambarkan USD/CNH sebagai konsolidasi setelah pindah ke 6,7200, dengan momentum melambat dalam waktu dekat."
     },
     {
-      "titleEn": "Euro: Correction seen near key averages against US Dollar – Societe Generale",
-      "summaryEn": "Societe Generale’s Morning Briefing reports EUR/USD traded between 1.1359 and 1.1387 overnight and is on course for a second weekly drop. The defence of the 100‑week moving average…",
-      "link": "https://www.fxstreet.com/news/euro-correction-seen-near-key-averages-against-us-dollar-societe-generale-202609251501",
-      "time": "25 Sep 2026, 22:01 WIB",
+      "titleEn": "US Treasury yields rise as 30-year bond hits 22-year high",
+      "summaryEn": "US Treasury yields turned mixed on Friday as the long-end of the curve, the 20s and 30s, posted gains while the short-end and the belly of the yield curve retreated from multi-year…",
+      "link": "https://www.fxstreet.com/news/us-treasury-yields-rise-as-30-year-yield-hits-22-year-high-202609252022",
+      "time": "26 Sep 2026, 03:22 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Euro: Koreksi terlihat di dekat rata - rata kunci terhadap Dolar AS – Societe Generale",
-      "summaryId": "Pengarahan Pagi Societe Generale melaporkan EUR/USD diperdagangkan antara 1,1359 dan 1,1387 semalam dan berada di jalur untuk penurunan mingguan kedua. Pertahanan rata - rata pergerakan 100 minggu..."
+      "titleId": "Imbal hasil Treasury AS naik karena obligasi 30 tahun mencapai level tertinggi 22 tahun",
+      "summaryId": "Imbal hasil Treasury AS berubah beragam pada hari Jumat karena akhir kurva yang panjang, 20 - an dan 30 - an, membukukan kenaikan sementara short - end dan perut kurva imbal hasil mundur dari multi - tahun..."
     },
     {
-      "titleEn": "Euro set for third weekly decline as hawkish Federal Reserve outlook weighs",
-      "summaryEn": "EUR/USD edges higher on Friday as the US Dollar (USD) pauses after a strong weekly rally, allowing the Euro (EUR) to recover some ground. However, the pair remains on track for a t…",
-      "link": "https://www.fxstreet.com/news/euro-set-for-third-weekly-decline-as-hawkish-federal-reserve-outlook-weighs-202609251451",
-      "time": "25 Sep 2026, 21:51 WIB",
+      "titleEn": "Chinese Yuan: PBoC keeps yuan broadly stable – Societe Generale",
+      "summaryEn": "Societe Generale describes a limited impact from President Xi’s US visit, with no new tariff cuts or AI dialogue mechanism agreed as the trade truce was only extended to January.",
+      "link": "https://www.fxstreet.com/news/chinese-yuan-pboc-keeps-yuan-broadly-stable-societe-generale-202609251931",
+      "time": "26 Sep 2026, 02:31 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Yuan Tiongkok: PBoC membuat yuan stabil secara luas – Societe Generale",
+      "summaryId": "Societe Generale menggambarkan dampak terbatas dari kunjungan Presiden Xi ke AS, tanpa pemotongan tarif baru atau mekanisme dialog AI yang disepakati karena gencatan senjata perdagangan hanya diperpanjang hingga Januari."
+    },
+    {
+      "titleEn": "Fed’s Hammack says policy still isn’t restrictive despite high inflation",
+      "summaryEn": "Cleveland Federal Reserve (Fed) President Beth Hammack said on Friday the two sides of the Fed's dual mandate are not in conflict. She said that “high inflation complicates economi…",
+      "link": "https://www.fxstreet.com/news/feds-hammack-says-policy-still-isnt-restrictive-despite-high-inflation-202609251900",
+      "time": "26 Sep 2026, 02:00 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Euro ditetapkan untuk penurunan mingguan ketiga karena prospek Federal Reserve yang hawkish membebani",
-      "summaryId": "EUR/USD naik lebih tinggi pada hari Jumat karena Dolar AS (USD) berhenti setelah reli mingguan yang kuat, memungkinkan Euro (EUR) untuk pulih kembali. Namun, pasangan ini tetap berada di jalur untuk t..."
+      "titleId": "Fed's Hammack mengatakan kebijakan masih tidak membatasi meskipun inflasi tinggi",
+      "summaryId": "Presiden Federal Reserve (Fed) Cleveland Beth Hammack mengatakan pada hari Jumat bahwa kedua sisi mandat ganda Fed tidak bertentangan. Dia mengatakan bahwa \"inflasi yang tinggi mempersulit ekonomi..."
     },
     {
-      "titleEn": "Australian Dollar: RBA hike expectations shape outlook – ING",
-      "summaryEn": "ING economists Deepali Bhargava and Lynn Song expect the Reserve Bank of Australia (RBA) to raise rates by 25bp, citing a still-hot economy, tight labour market conditions and upsi…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-rba-hike-expectations-shape-outlook-ing-202609251433",
-      "time": "25 Sep 2026, 21:33 WIB",
+      "titleEn": "Singapore Dollar: Consolidation near lows against US Dollar – UOB",
+      "summaryEn": "UOB’s Quek Ser Leang and Lee Sue Ann note USD/SGD held steady around 1.2800 after Wednesday’s surge, with the Singapore Dollar (SGD) supported by expectations of further MAS tighte…",
+      "link": "https://www.fxstreet.com/news/singapore-dollar-consolidation-near-lows-against-us-dollar-uob-202609251854",
+      "time": "26 Sep 2026, 01:54 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Australia: Ekspektasi kenaikan RBA membentuk prospek – ING",
-      "summaryId": "Ekonom ING Deepali Bhargava dan Lynn Song memperkirakan Reserve Bank of Australia (RBA) akan menaikkan suku bunga sebesar 25bp, mengutip ekonomi yang masih panas, kondisi pasar tenaga kerja yang ketat, dan upsi…"
+      "titleId": "Dolar Singapura: Konsolidasi mendekati posisi terendah terhadap Dolar AS – UOB",
+      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari UOB mencatat USD/SGD bertahan stabil di sekitar 1,2800 setelah lonjakan hari Rabu, dengan Dolar Singapura (SGD) didukung oleh ekspektasi pengetatan MAS lebih lanjut…"
     },
     {
-      "titleEn": "US Dollar: Yields support Greenback strength – OCBC",
-      "summaryEn": "OCBC strategists Sim Moh Siong and Christopher Wong highlight that resilient US data, sticky inflation and elevated energy prices are pushing US Treasury yields higher and supporti…",
-      "link": "https://www.fxstreet.com/news/us-dollar-yields-support-greenback-strength-ocbc-202609251417",
-      "time": "25 Sep 2026, 21:17 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar AS: Imbal hasil mendukung penguatan Greenback – OCBC",
-      "summaryId": "Ahli strategi OCBC Sim Moh Siong dan Christopher Wong menyoroti bahwa data AS yang tangguh, inflasi yang lengket, dan harga energi yang tinggi mendorong imbal hasil Treasury AS lebih tinggi dan mendukung..."
-    },
-    {
-      "titleEn": "Australian Dollar rebounds from 0.7000 as US Dollar eases after strong week",
-      "summaryEn": "AUD/USD edges higher on Friday, trading around 0.7025 at the time of writing, up 0.20% on the day.",
-      "link": "https://www.fxstreet.com/news/australian-dollar-rebounds-from-07000-as-us-dollar-eases-after-strong-week-202609251417",
-      "time": "25 Sep 2026, 21:17 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Australia memantul dari 0,7000 karena Dolar AS mereda setelah minggu yang kuat",
-      "summaryId": "AUD/USD naik tipis pada hari Jumat, diperdagangkan di sekitar 0,7025 pada saat penulisan, naik 0,20% pada hari itu."
-    },
-    {
-      "titleEn": "Mexican Peso: Banxico stance keeps bar high for hikes – BBH",
-      "summaryEn": "Brown Brothers Harriman’s (BBH) Elias Haddad reports that Banxico left its policy rate at 6.50% for a third consecutive meeting and removed prior guidance to keep it fixed, while s…",
-      "link": "https://www.fxstreet.com/news/mexican-peso-banxico-stance-keeps-bar-high-for-hikes-bbh-202609251356",
-      "time": "25 Sep 2026, 20:56 WIB",
+      "titleEn": "ECB’s Vujcic warns energy shock could keep inflation hot",
+      "summaryEn": "European Central Bank (ECB) Vice President Boris Vujcic said on Friday that the ECB started a tightening cycle and sees a “risk of higher for longer energy prices.\" He added that d…",
+      "link": "https://www.fxstreet.com/news/ecbs-vujcic-warns-energy-shock-could-keep-inflation-hot-202609251834",
+      "time": "26 Sep 2026, 01:34 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Peso Meksiko: Sikap Banxico menjaga bar tetap tinggi untuk pendakian – BBH",
-      "summaryId": "Brown Brothers Harriman (BBH) Elias Haddad melaporkan bahwa Banxico meninggalkan tingkat kebijakannya di 6,50% untuk pertemuan ketiga berturut - turut dan menghapus panduan sebelumnya untuk tetap memperbaikinya, sementara..."
+      "titleId": "Vujcic ECB memperingatkan guncangan energi dapat menjaga inflasi tetap panas",
+      "summaryId": "Wakil Presiden Bank Sentral Eropa (ECB) Boris Vujcic mengatakan pada hari Jumat bahwa ECB memulai siklus pengetatan dan melihat \"risiko yang lebih tinggi untuk harga energi yang lebih lama.\" Dia menambahkan bahwa d..."
+    },
+    {
+      "titleEn": "Asian FX: Higher yields and Oil weigh – OCBC",
+      "summaryEn": "OCBC strategists Sim Moh Siong and Christopher Wong report that Asian FX traded broadly softer as higher Oil prices and rising US Treasury yields hurt risk sentiment, with Indonesi…",
+      "link": "https://www.fxstreet.com/news/asian-fx-higher-yields-and-oil-weigh-ocbc-202609251822",
+      "time": "26 Sep 2026, 01:22 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "FX Asia: Hasil yang lebih tinggi dan berat Minyak – OCBC",
+      "summaryId": "Ahli strategi OCBC Sim Moh Siong dan Christopher Wong melaporkan bahwa FX Asia diperdagangkan secara luas lebih lembut karena harga Minyak yang lebih tinggi dan kenaikan imbal hasil Treasury AS melukai sentimen risiko, dengan Indonesia…"
     }
   ],
   "sources": [
