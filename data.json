@@ -1,14 +1,14 @@
 {
-  "updatedAt": "26 Sep 2026, 08:07 WIB",
+  "updatedAt": "26 Sep 2026, 21:50 WIB",
   "price": {
-    "level": "$4,320.50"
+    "level": "$4,321.20"
   },
   "biasScore": -2,
   "biasLabel": "NETRAL",
   "bullishPct": 49,
   "bearishPct": 51,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,320.50</span>, menguat 0.52% pada sesi terakhir, dengan rentang 52 minggu $3,764–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,321.20</span>, menguat 0.54% pada sesi terakhir, dengan rentang 52 minggu $3,786–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 22 Sep 2026 tercatat net long <span class=\"accent\">225,853</span> kontrak (54.7% dari open interest) — relatif seimbang. Net long ini turun 4,485 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 412,800 kontrak (naik 2,901), mengindikasikan minat baru masuk pasar.",
     "<b>Kesimpulan:</b> skor komposit -2/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
@@ -27,7 +27,7 @@
   "cme": {
     "openInterest": 412800,
     "oiChange": 2901,
-    "rangeLow": "$3,764",
+    "rangeLow": "$3,786",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Menguat",
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.18% (+0.43%) dan indeks dolar (DXY) melemah ke 101.03 (-0.25%), sementara XAU/USD naik 0.52%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.18% (+0.43%) dan indeks dolar (DXY) menguat ke 101.03 (+0.06%), sementara XAU/USD naik 0.54%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -100,12 +100,12 @@
       "asOf": "2026-09-24"
     },
     "mediaSentiment": {
-      "avgScore": 0.057,
+      "avgScore": 0.075,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 15,
-      "neutralCount": 21,
-      "bearishCount": 14
+      "bullishCount": 18,
+      "neutralCount": 20,
+      "bearishCount": 12
     },
     "cpi": {
       "index": 334.98,
@@ -123,7 +123,7 @@
     "yield10y": 5.18,
     "yield10yChange": 0.43,
     "dxy": 101.03,
-    "dxyChange": -0.25
+    "dxyChange": 0.06
   },
   "news": [
     {
