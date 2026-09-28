@@ -1,18 +1,18 @@
 {
-  "updatedAt": "28 Sep 2026, 08:21 WIB",
+  "updatedAt": "29 Sep 2026, 01:21 WIB",
   "price": {
-    "level": "$4,255.80"
+    "level": "$4,170.80"
   },
-  "biasScore": -23,
-  "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 38,
-  "bearishPct": 62,
+  "biasScore": -37,
+  "biasLabel": "BEARISH",
+  "bullishPct": 32,
+  "bearishPct": 68,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,255.80</span>, melemah 1.51% pada sesi terakhir, dengan rentang 52 minggu $3,786–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,170.80</span>, melemah 3.48% pada sesi terakhir, dengan rentang 52 minggu $3,786–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 22 Sep 2026 tercatat net long <span class=\"accent\">225,853</span> kontrak (54.7% dari open interest) — relatif seimbang. Net long ini turun 4,485 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 412,800 kontrak (naik 2,901), mengindikasikan minat baru masuk pasar.",
     "Katalis terdekat: <b>Core PCE Price Index m/m</b> pada 30 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -23/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -37/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "22 Sep 2026",
@@ -96,7 +96,7 @@
     {
       "date": "2 Oct 2026, 19:30 WIB",
       "event": "Non-Farm Employment Change",
-      "note": "Dampak tinggi · Prediksi 98K · Sebelumnya 162K",
+      "note": "Dampak tinggi · Prediksi 89K · Sebelumnya 162K",
       "scenario": {
         "strong": {
           "label": "Lebih tinggi dari forecast (data lebih kuat)",
@@ -158,7 +158,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.18% (+0.43%) dan indeks dolar (DXY) menguat ke 101.03 (+0.06%), sementara XAU/USD turun 1.51%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.23% (+0.81%) dan indeks dolar (DXY) menguat ke 101.11 (+0.14%), sementara XAU/USD turun 3.48%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -191,12 +191,12 @@
       "asOf": "2026-09-24"
     },
     "mediaSentiment": {
-      "avgScore": 0.08,
+      "avgScore": 0.132,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 19,
-      "neutralCount": 21,
-      "bearishCount": 10
+      "bullishCount": 26,
+      "neutralCount": 17,
+      "bearishCount": 7
     },
     "cpi": {
       "index": 334.98,
@@ -211,83 +211,83 @@
     }
   },
   "macro": {
-    "yield10y": 5.18,
-    "yield10yChange": 0.43,
-    "dxy": 101.03,
-    "dxyChange": 0.06
+    "yield10y": 5.23,
+    "yield10yChange": 0.81,
+    "dxy": 101.11,
+    "dxyChange": 0.14
   },
   "news": [
     {
-      "titleEn": "British Pound gains as US Dollar weakens despite hawkish Fed, geopolitical tensions",
-      "summaryEn": "GBP/USD gains ground for the second successive day, trading around 1.3230 during the Asian hours on Monday. The currency pair advances as the US Dollar (USD) weakens, despite hawki…",
-      "link": "https://www.fxstreet.com/news/british-pound-gains-as-us-dollar-weakens-despite-hawkish-fed-geopolitical-tensions-202609280119",
-      "time": "28 Sep 2026, 08:19 WIB",
+      "titleEn": "Japanese Yen trades cautiously as intervention risk clashes with Fed rate hike bets",
+      "summaryEn": "USD/JPY trades little changed around 157.25 on Monday as the US Dollar (USD) also holds steady near recent highs, with traders weighing Middle East developments and the risk of Jap…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-trades-cautiously-as-intervention-risk-clashes-with-fed-rate-hike-bets-202609281816",
+      "time": "29 Sep 2026, 01:16 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Pound Inggris menguat karena Dolar AS melemah meskipun Fed hawkish, ketegangan geopolitik",
-      "summaryId": "GBP/USD menguat untuk hari kedua berturut - turut, diperdagangkan di sekitar 1,3230 selama jam - jam Asia pada hari Senin. Pasangan mata uang ini menguat seiring melemahnya Dolar AS (USD), meskipun hawki..."
+      "titleId": "Yen Jepang diperdagangkan dengan hati - hati karena risiko intervensi berbenturan dengan taruhan kenaikan suku bunga Fed",
+      "summaryId": "Perdagangan USD/JPY sedikit berubah di sekitar 157,25 pada hari Senin karena Dolar AS (USD) juga bertahan stabil di dekat level tertinggi baru - baru ini, dengan para trader mempertimbangkan perkembangan Timur Tengah dan risiko Jepang…"
     },
     {
-      "titleEn": "Euro declines below 1.1400 on hawkish Fed stance, ongoing Middle East tensions",
-      "summaryEn": "The EUR/USD pair edges lower to around 1.1380 during the early Asian session on Monday, pressured by hawkish signals from the Federal Reserve (Fed) and escalating Middle East tensi…",
-      "link": "https://www.fxstreet.com/news/euro-declines-below-11400-on-hawkish-fed-stance-ongoing-middle-east-tensions-202609280053",
-      "time": "28 Sep 2026, 07:53 WIB",
+      "titleEn": "Forex Today: The RBA and Fedspeak grab all the attention",
+      "summaryEn": "The US Dollar (USD) has stated the week with slight gains, resuming its recent uptrend and leaving behind Friday’s hiccup.",
+      "link": "https://www.fxstreet.com/news/forex-today-the-rba-and-fedspeak-grab-all-the-attention-202609281808",
+      "time": "29 Sep 2026, 01:08 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Euro turun di bawah 1,1400 pada sikap Fed yang hawkish, ketegangan Timur Tengah yang sedang berlangsung",
-      "summaryId": "Pasangan EUR/USD turun lebih rendah ke sekitar 1,1380 selama awal sesi Asia pada hari Senin, ditekan oleh sinyal hawkish dari Federal Reserve (Fed) dan meningkatnya tensi Timur Tengah..."
+      "titleId": "Forex Hari Ini: RBA dan Fedspeak menarik semua perhatian",
+      "summaryId": "Dolar AS (USD) telah menyatakan pekan ini dengan sedikit kenaikan, melanjutkan tren naik baru - baru ini dan meninggalkan cegukan hari Jumat."
     },
     {
-      "titleEn": "US President Donald Trump says he will not rule out more Iran strikes",
-      "summaryEn": "US President Donald Trump said on Sunday that he believes the war with Iran will be won “very soon,” adding that additional military strikes before the midterm elections are possib…",
-      "link": "https://www.fxstreet.com/news/us-president-donald-trump-says-he-will-not-rule-out-more-iran-strikes-202609280019",
-      "time": "28 Sep 2026, 07:19 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Presiden AS Donald Trump mengatakan dia tidak akan mengesampingkan lebih banyak serangan Iran",
-      "summaryId": "Presiden AS Donald Trump mengatakan pada hari Minggu bahwa dia yakin perang dengan Iran akan dimenangkan \"segera ,\" menambahkan bahwa serangan militer tambahan sebelum pemilihan paruh waktu mungkin..."
-    },
-    {
-      "titleEn": "Australian Dollar softens to near 0.7000 on hawkish Fed signals, RBA rate decision looms",
-      "summaryEn": "The AUD/USD pair loses momentum to near 0.7010 during the early Asian session on Monday. The US Dollar (USD) strengthens against the Australian Dollar (AUD) on rising US Treasury y…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-softens-to-near-07000-on-hawkish-fed-signals-rba-rate-decision-looms-202609272323",
-      "time": "28 Sep 2026, 06:23 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Australia melunak mendekati 0,7000 pada sinyal Fed hawkish, keputusan suku bunga RBA membayangi",
-      "summaryId": "Pasangan AUD/USD kehilangan momentum mendekati 0,7010 selama awal sesi Asia pada hari Senin. Dolar AS (USD) menguat terhadap Dolar Australia (AUD) pada kenaikan Treasury AS y..."
-    },
-    {
-      "titleEn": "Middle East War updates: Trump says he expects renewed Iran talks this week",
-      "summaryEn": "Here’s a brief recap of the key developments in the Middle East war that occurred over the weekend, which are expected to have a significant impact on markets in the upcoming week.",
-      "link": "https://www.fxstreet.com/news/middle-east-war-updates-trump-says-he-expects-renewed-iran-talks-this-week-202609272231",
-      "time": "28 Sep 2026, 05:31 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Pembaruan Perang Timur Tengah: Trump mengatakan dia mengharapkan pembicaraan Iran yang diperbarui minggu ini",
-      "summaryId": "Berikut adalah ringkasan singkat dari perkembangan utama dalam perang Timur Tengah yang terjadi selama akhir pekan, yang diperkirakan akan berdampak signifikan pada pasar di minggu mendatang."
-    },
-    {
-      "titleEn": "South Korean Won: Export strength supports KRW – Societe Generale",
-      "summaryEn": "Societe Generale notes the Korean Won has been one of Asia’s standout performers, with USD/KRW slipping from around 1,390 to 1,360 as local exporters sold Dollars ahead of the Chus…",
-      "link": "https://www.fxstreet.com/news/south-korean-won-export-strength-supports-krw-societe-generale-202609252141",
-      "time": "26 Sep 2026, 04:41 WIB",
+      "titleEn": "US 10-year yield revisits 2007 heights as curve flirts with inversion",
+      "summaryEn": "US Treasury yields climb as energy prices remain high, amid US President Donald Trump's rejection of a peace agreement with Tehran.",
+      "link": "https://www.fxstreet.com/news/us-10-year-yield-revisits-2007-heights-as-curve-flirts-with-inversion-202609281803",
+      "time": "29 Sep 2026, 01:03 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Won Korea Selatan: Kekuatan ekspor mendukung KRW – Societe Generale",
-      "summaryId": "Societe Generale mencatat bahwa Won Korea telah menjadi salah satu pemain yang menonjol di Asia, dengan USD/KRW merosot dari sekitar 1.390 menjadi 1.360 karena eksportir lokal menjual Dolar di depan Chus..."
+      "titleId": "Imbal hasil 10 tahun AS meninjau kembali ketinggian 2007 sebagai kurva menggoda dengan inversi",
+      "summaryId": "Imbal hasil Treasury AS naik karena harga energi tetap tinggi, di tengah penolakan Presiden AS Donald Trump terhadap perjanjian damai dengan Teheran."
     },
     {
-      "titleEn": "Chinese Yuan: Consolidation with downside risk toward 6.7330 – UOB",
-      "summaryEn": "UOB’s Quek Ser Leang and Lee Sue Ann describe USD/CNH as consolidating after a move to 6.7200, with momentum slowing in the very near term.",
-      "link": "https://www.fxstreet.com/news/chinese-yuan-consolidation-with-downside-risk-toward-67330-uob-202609252056",
-      "time": "26 Sep 2026, 03:56 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Yuan Tiongkok: Konsolidasi dengan risiko penurunan menuju 6,7330 – UOB",
-      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari UOB menggambarkan USD/CNH sebagai konsolidasi setelah pindah ke 6,7200, dengan momentum melambat dalam waktu dekat."
+      "titleEn": "Fed’s Cook: AI, Iran risks could keep inflation pressures high",
+      "summaryEn": "Federal Reserve (Fed) Governor Lisa Cook said in a speech in Oakland, California, that the number and magnitude of future adjustments to the Fed funds rate will depend on inflation…",
+      "link": "https://www.fxstreet.com/news/feds-cook-says-ai-iran-risks-could-keep-inflation-pressures-high-202609281733",
+      "time": "29 Sep 2026, 00:33 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Fed's Cook: Risiko AI dan Iran dapat menjaga tekanan inflasi tetap tinggi",
+      "summaryId": "Gubernur Federal Reserve (Fed) Lisa Cook mengatakan dalam sebuah pidato di Oakland, California, bahwa jumlah dan besarnya penyesuaian masa depan terhadap suku bunga dana Fed akan tergantung pada inflasi..."
     },
     {
-      "titleEn": "US Treasury yields rise as 30-year bond hits 22-year high",
-      "summaryEn": "US Treasury yields turned mixed on Friday as the long-end of the curve, the 20s and 30s, posted gains while the short-end and the belly of the yield curve retreated from multi-year…",
-      "link": "https://www.fxstreet.com/news/us-treasury-yields-rise-as-30-year-yield-hits-22-year-high-202609252022",
-      "time": "26 Sep 2026, 03:22 WIB",
+      "titleEn": "USD: Speculative longs steady as Fed hikes – Rabobank",
+      "summaryEn": "Rabobank’s RaboResearch Global Economics & Markets FX Strategy team notes that USD net long speculative positions were broadly unchanged, with both longs and shorts rising modestly…",
+      "link": "https://www.fxstreet.com/news/usd-speculative-longs-steady-as-fed-hikes-rabobank-202609281627",
+      "time": "28 Sep 2026, 23:27 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "USD: Spekulatif lama stabil seiring kenaikan Fed – Rabobank",
+      "summaryId": "Tim RaboResearch Global Economics & Markets FX Strategy Rabobank mencatat bahwa posisi spekulatif panjang bersih USD secara luas tidak berubah, dengan panjang dan pendek naik secara moderat..."
+    },
+    {
+      "titleEn": "British Pound defies US yields surge as BoE hike bets build",
+      "summaryEn": "The Pound Sterling (GBP) registers modest gains of 0.18% on Monday even as US Treasury yields soar, with the US 10-year T-note rising over 10 basis points, underpinning the Greenba…",
+      "link": "https://www.fxstreet.com/news/british-pound-defies-us-yields-surge-as-boe-hike-bets-build-202609281551",
+      "time": "28 Sep 2026, 22:51 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Imbal hasil Treasury AS naik karena obligasi 30 tahun mencapai level tertinggi 22 tahun",
-      "summaryId": "Imbal hasil Treasury AS berubah beragam pada hari Jumat karena akhir kurva yang panjang, 20 - an dan 30 - an, membukukan kenaikan sementara short - end dan perut kurva imbal hasil mundur dari multi - tahun..."
+      "titleId": "Pound Inggris menentang lonjakan imbal hasil AS karena taruhan kenaikan BoE meningkat",
+      "summaryId": "Pound Sterling (GBP) mencatat kenaikan sederhana sebesar 0,18% pada hari Senin bahkan ketika imbal hasil Treasury AS melonjak, dengan catatan T 10 tahun AS naik lebih dari 10 basis poin, yang mendukung Greenba..."
+    },
+    {
+      "titleEn": "Silver Price Forecast: XAG/USD plunges 5% as momentum indicators turn bearish",
+      "summaryEn": "Silver (XAG/USD) falls around 5% on Monday, slipping to its lowest level since early August.",
+      "link": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-plunges-5-as-momentum-indicators-turn-bearish-202609281539",
+      "time": "28 Sep 2026, 22:39 WIB",
+      "tag": "Emas",
+      "titleId": "Prakiraan Harga Perak: XAG/USD anjlok 5% karena indikator momentum berubah menjadi bearish",
+      "summaryId": "Perak (XAG/USD) turun sekitar 5% pada hari Senin, tergelincir ke level terendah sejak awal Agustus."
+    },
+    {
+      "titleEn": "Euro struggles as Fed rate-hike bets overshadow ECB tightening expectations",
+      "summaryEn": "EUR/USD trades on the back foot on Monday, pressured by a stronger US Dollar (USD) as the US-Iran stalemate keeps Oil prices elevated, pushing US Treasury yields higher and strengt…",
+      "link": "https://www.fxstreet.com/news/euro-struggles-as-fed-rate-hike-bets-overshadow-ecb-tightening-expectations-202609281522",
+      "time": "28 Sep 2026, 22:22 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro berjuang karena taruhan kenaikan suku bunga Fed membayangi ekspektasi pengetatan ECB",
+      "summaryId": "EUR/USD diperdagangkan pada hari Senin, ditekan oleh Dolar AS (USD) yang lebih kuat karena kebuntuan AS - Iran membuat harga Minyak naik, mendorong imbal hasil Treasury AS lebih tinggi dan kuat..."
     }
   ],
   "sources": [
