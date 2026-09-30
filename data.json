@@ -1,18 +1,18 @@
 {
-  "updatedAt": "30 Sep 2026, 08:47 WIB",
+  "updatedAt": "30 Sep 2026, 23:37 WIB",
   "price": {
-    "level": "$4,202.00"
+    "level": "$4,191.50"
   },
-  "biasScore": -2,
+  "biasScore": -5,
   "biasLabel": "NETRAL",
-  "bullishPct": 49,
-  "bearishPct": 51,
+  "bullishPct": 48,
+  "bearishPct": 52,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,202.00</span>, menguat 0.53% pada sesi terakhir, dengan rentang 52 minggu $3,821–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,191.50</span>, menguat 0.28% pada sesi terakhir, dengan rentang 52 minggu $3,843–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 22 Sep 2026 tercatat net long <span class=\"accent\">225,853</span> kontrak (54.7% dari open interest) — relatif seimbang. Net long ini turun 4,485 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 412,800 kontrak (naik 2,901), mengindikasikan minat baru masuk pasar.",
     "Katalis terdekat: <b>Core PCE Price Index m/m</b> pada 30 Sep 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -2/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -5/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "22 Sep 2026",
@@ -28,7 +28,7 @@
   "cme": {
     "openInterest": 412800,
     "oiChange": 2901,
-    "rangeLow": "$3,821",
+    "rangeLow": "$3,843",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Menguat",
@@ -158,7 +158,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.25% (+0.29%) dan indeks dolar (DXY) melemah ke 101.34 (-0.03%), sementara XAU/USD naik 0.53%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.53%) dan indeks dolar (DXY) menguat ke 101.42 (+0.04%), sementara XAU/USD naik 0.28%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -191,12 +191,12 @@
       "asOf": "2026-09-28"
     },
     "mediaSentiment": {
-      "avgScore": -0.027,
+      "avgScore": 0.037,
       "label": "NETRAL",
       "sampleSize": 50,
-      "bullishCount": 12,
-      "neutralCount": 22,
-      "bearishCount": 16
+      "bullishCount": 17,
+      "neutralCount": 23,
+      "bearishCount": 10
     },
     "cpi": {
       "index": 334.98,
@@ -211,83 +211,83 @@
     }
   },
   "macro": {
-    "yield10y": 5.25,
-    "yield10yChange": 0.29,
-    "dxy": 101.34,
-    "dxyChange": -0.03
+    "yield10y": 5.28,
+    "yield10yChange": 0.53,
+    "dxy": 101.42,
+    "dxyChange": 0.04
   },
   "news": [
     {
-      "titleEn": "Breaking: Australia’s CPI inflation rises to 4.0% YoY in August, as expected",
-      "summaryEn": "Australia’s Consumer Price Index (CPI) rose by 4.0% year-over-year (YoY) in August, compared to a 3.5% growth reported in July, the latest data published by the Australian Bureau o…",
-      "link": "https://www.fxstreet.com/news/breaking-australias-cpi-inflation-rises-to-40-yoy-in-august-as-expected-202609300136",
-      "time": "30 Sep 2026, 08:36 WIB",
-      "tag": "Data Ekonomi",
-      "titleId": "Melanggar: Inflasi CPI Australia naik menjadi 4,0% YoY pada bulan Agustus, seperti yang diharapkan",
-      "summaryId": "Indeks Harga Konsumen (IHK) Australia naik 4,0% dari tahun ke tahun (yoy) pada bulan Agustus, dibandingkan dengan pertumbuhan 3,5% yang dilaporkan pada bulan Juli, data terbaru yang diterbitkan oleh Biro…"
-    },
-    {
-      "titleEn": "WTI remains below $90.00 due to Middle East export recovery",
-      "summaryEn": "West Texas Intermediate (WTI) oil price edges higher after registering nearly 4.5% losses in the previous day, trading around $88.50 per barrel during Asian hours on Wednesday. Cru…",
-      "link": "https://www.fxstreet.com/news/wti-remains-below-9000-due-to-middle-east-export-recovery-202609300112",
-      "time": "30 Sep 2026, 08:12 WIB",
-      "tag": "Geopolitik",
-      "titleId": "WTI tetap di bawah $ 90,00 karena pemulihan ekspor Timur Tengah",
-      "summaryId": "Harga minyak West Texas Intermediate (WTI) naik lebih tinggi setelah mencatat kerugian hampir 4,5% pada hari sebelumnya, diperdagangkan sekitar $ 88,50 per barel selama jam - jam Asia pada hari Rabu. Cru…"
-    },
-    {
-      "titleEn": "Euro softens below 1.1350 on Lagarde's dovish tilt, German Retail Sales data in focus",
-      "summaryEn": "The EUR/USD pair declines to around 1.3335 during the early Asian trading hours on Wednesday. The Euro (EUR) softens against the US Dollar (USD) after European Central Bank (ECB) P…",
-      "link": "https://www.fxstreet.com/news/euro-softens-below-11350-on-lagardes-dovish-tilt-german-retail-sales-data-in-focus-202609300034",
-      "time": "30 Sep 2026, 07:34 WIB",
+      "titleEn": "ECB’s Lagarde warns France needs a credible path to rein in debt",
+      "summaryEn": "The European Central Bank (ECB) Christine Lagarde said that France’s debt situation is “serious at 120% of GDP and without a path to lowering it,” at an interview with La Croix.",
+      "link": "https://www.fxstreet.com/news/ecbs-lagarde-warns-france-needs-a-credible-path-to-rein-in-debt-202609301625",
+      "time": "30 Sep 2026, 23:25 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Euro melunak di bawah 1,1350 pada kemiringan dovish Lagarde, data Penjualan Ritel Jerman menjadi fokus",
-      "summaryId": "Pasangan EUR/USD turun ke sekitar 1,3335 selama jam perdagangan awal Asia pada hari Rabu. Euro (EUR) melunak terhadap Dolar AS (USD) setelah Bank Sentral Eropa (ECB) P..."
+      "titleId": "Lagarde dari ECB memperingatkan Prancis membutuhkan jalur yang kredibel untuk mengendalikan utang",
+      "summaryId": "Bank Sentral Eropa (ECB) Christine Lagarde mengatakan bahwa situasi utang Prancis \"serius pada 120% dari PDB dan tanpa jalan untuk menurunkannya ,\" pada wawancara dengan La Croix."
     },
     {
-      "titleEn": "Mediators push peace deal between US and Iran — FT",
-      "summaryEn": "Mediators are making a renewed push to advance an agreement between the United States (US) and Iran, the Financial Times reported on Tuesday. This move came after US President Dona…",
-      "link": "https://www.fxstreet.com/news/mediators-push-peace-deal-between-us-and-iran-ft-202609300010",
-      "time": "30 Sep 2026, 07:10 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Mediator mendorong kesepakatan damai antara AS dan Iran — FT",
-      "summaryId": "Mediator membuat dorongan baru untuk memajukan kesepakatan antara Amerika Serikat (AS) dan Iran, Financial Times melaporkan pada hari Selasa. Langkah ini dilakukan setelah Presiden AS Dona..."
+      "titleEn": "ECB’s Schnabel says yield surge could cool inflation pressures",
+      "summaryEn": "The European Central Bank (ECB) Governing Council member Isabel Schnabel said that high costs are passed through to consumers more quickly when the economy is resilient.",
+      "link": "https://www.fxstreet.com/news/ecbs-schnabel-says-yield-surge-could-cool-inflation-pressures-202609301619",
+      "time": "30 Sep 2026, 23:19 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Schnabel ECB mengatakan lonjakan imbal hasil dapat mendinginkan tekanan inflasi",
+      "summaryId": "Anggota Dewan Pengatur Bank Sentral Eropa (ECB) Isabel Schnabel mengatakan bahwa biaya tinggi diteruskan kepada konsumen lebih cepat ketika ekonomi tangguh."
     },
     {
-      "titleEn": "Gold rebounds from eight-week low as traders weigh Fed rate path",
-      "summaryEn": "Gold price (XAU/USD) rebounds from an eight-week low to near $4,180 during the early Asian session on Wednesday. However, the potential upside for the precious metal might be limit…",
-      "link": "https://www.fxstreet.com/news/gold-rebounds-from-eight-week-low-as-traders-weigh-fed-rate-path-202609292331",
-      "time": "30 Sep 2026, 06:31 WIB",
+      "titleEn": "Australian Dollar reverses post-PCE rebound as US Dollar recovers",
+      "summaryEn": "AUD/USD declines 0.41% on Wednesday and trades around 0.6960 at the time of writing, having fully erased its initial rebound following the release of softer-than-expected United St…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-reverses-post-pce-rebound-as-us-dollar-recovers-202609301545",
+      "time": "30 Sep 2026, 22:45 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Australia membalikkan pantulan pasca - PCE saat Dolar AS pulih",
+      "summaryId": "AUD/USD turun 0,41% pada hari Rabu dan diperdagangkan sekitar 0,6960 pada saat penulisan, setelah sepenuhnya menghapus pantulan awalnya setelah rilis United St..."
+    },
+    {
+      "titleEn": "Silver Price Forecast: XAG/USD remains vulnerable near $60",
+      "summaryEn": "Silver (XAG/USD) trades under pressure on Wednesday even as traders reduce bets that the Federal Reserve (Fed) will raise interest rates again in October following softer-than-expe…",
+      "link": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-vulnerable-near-60-202609301526",
+      "time": "30 Sep 2026, 22:26 WIB",
       "tag": "Emas",
-      "titleId": "Emas memantul dari level terendah delapan minggu karena para trader mempertimbangkan jalur suku bunga Fed",
-      "summaryId": "Harga emas (XAU/USD) memantul dari level terendah delapan minggu ke dekat $ 4.180 selama awal sesi Asia pada hari Rabu. Namun, potensi kenaikan untuk logam mulia mungkin terbatas..."
+      "titleId": "Prakiraan Harga Perak: XAG/USD tetap rentan mendekati $ 60",
+      "summaryId": "Perak (XAG/USD) diperdagangkan di bawah tekanan pada hari Rabu bahkan ketika para trader mengurangi taruhan bahwa Federal Reserve (Fed) akan menaikkan suku bunga lagi pada bulan Oktober setelah lebih lembut dari biasanya..."
     },
     {
-      "titleEn": "Australian Dollar cracks 0.70 as Bullock dulls RBA hike, CPI looms",
-      "summaryEn": "The Aussie Dollar tumbled over 0.40% against the US Dollar on Tuesday, even though the Reserve Bank of Australia (RBA) raised rates to 4.60%, but a mild-dovish tilt by RBA Governor…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-cracks-070-as-bullock-dulls-rba-hike-cpi-looms-202609292326",
-      "time": "30 Sep 2026, 06:26 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Australia retak 0,70 karena Bullock menumpulkan kenaikan RBA, CPI membayang",
-      "summaryId": "Dolar Australia jatuh lebih dari 0,40% terhadap Dolar AS pada hari Selasa, meskipun Reserve Bank of Australia (RBA) menaikkan suku bunga menjadi 4,60%, tetapi kemiringan ringan oleh Gubernur RBA…"
-    },
-    {
-      "titleEn": "The Japanese Yen sits still while Tokyo calls it undervalued",
-      "summaryEn": "Finance Minister Katayama said on Tuesday that an undervalued Yen is generally a problem, and that she and US Treasury Secretary Bessent agreed on a September 25 call to strengthen…",
-      "link": "https://www.fxstreet.com/news/the-japanese-yen-sits-still-while-tokyo-calls-it-undervalued-202609292310",
-      "time": "30 Sep 2026, 06:10 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Yen Jepang duduk diam sementara Tokyo menyebutnya undervalued",
-      "summaryId": "Menteri Keuangan Katayama mengatakan pada hari Selasa bahwa Yen yang undervalued umumnya menjadi masalah, dan bahwa dia dan Menteri Keuangan AS Bessent menyetujui panggilan 25 September untuk memperkuat..."
-    },
-    {
-      "titleEn": "The New Zealand Dollar breaks lower after Australia's rate hike",
-      "summaryEn": "Australia's fourth rate hike of 2026 sent the Australian Dollar lower on Tuesday, and NZD/USD closed below 0.5650 for the first time in its slide. The Reserve Bank of Australia (RB…",
-      "link": "https://www.fxstreet.com/news/the-new-zealand-dollar-breaks-lower-after-australias-rate-hike-202609292302",
-      "time": "30 Sep 2026, 06:02 WIB",
+      "titleEn": "The British Pound catches second wind as soft PCE knocks Fed hike bets",
+      "summaryEn": "The Pound Sterling registers solid gains versus the US Dollar on Wednesday, edges up 0.42% as the latest US inflation figures were below estimates, reaffirming NY Fed President Wil…",
+      "link": "https://www.fxstreet.com/news/the-british-pound-catches-second-wind-as-soft-pce-knocks-fed-hike-bets-202609301521",
+      "time": "30 Sep 2026, 22:21 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Selandia Baru turun lebih rendah setelah kenaikan suku bunga Australia",
-      "summaryId": "Kenaikan suku bunga keempat Australia pada 2026 mengirim Dolar Australia lebih rendah pada hari Selasa, dan NZD/USD ditutup di bawah 0,5650 untuk pertama kalinya dalam penurunan. Reserve Bank of Australia (RB…"
+      "titleId": "Pound Inggris menangkap angin kedua saat PCE lunak mengetuk taruhan kenaikan Fed",
+      "summaryId": "Pound Sterling mencatat kenaikan yang solid terhadap Dolar AS pada hari Rabu, naik 0,42% karena angka inflasi AS terbaru di bawah perkiraan, menegaskan kembali Presiden Fed NY Wil..."
+    },
+    {
+      "titleEn": "EUR/USD: Measured ECB tightening to support Euro – TD Securities",
+      "summaryEn": "TD Securities' Macro Research team expects the European Central Bank (ECB) to continue a measured tightening cycle, delivering a final 25bp hike in December and taking the deposit …",
+      "link": "https://www.fxstreet.com/news/eur-usd-measured-ecb-tightening-to-support-euro-td-securities-202609301419",
+      "time": "30 Sep 2026, 21:19 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "EUR/USD: Pengetatan ECB terukur untuk mendukung Euro – TD Securities",
+      "summaryId": "Tim Riset Makro TD Securities mengharapkan Bank Sentral Eropa (ECB) untuk melanjutkan siklus pengetatan yang terukur, memberikan kenaikan 25bp terakhir pada bulan Desember dan mengambil deposit …"
+    },
+    {
+      "titleEn": "Japanese Yen advances as US PCE shifts Fed rate hike bets toward December",
+      "summaryEn": "USD/JPY falls 0.30% on Wednesday and trades around 156.80 at the time of writing, as the US Dollar (USD) comes under selling pressure following softer-than-expected United States (…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-advances-as-us-pce-shifts-fed-rate-hike-bets-toward-december-202609301410",
+      "time": "30 Sep 2026, 21:10 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Yen Jepang naik karena PCE AS menggeser taruhan kenaikan suku bunga Fed menuju Desember",
+      "summaryId": "USD/JPY turun 0,30% pada hari Rabu dan diperdagangkan sekitar 156,80 pada saat penulisan, karena Dolar AS (USD) berada di bawah tekanan jual menyusul Amerika Serikat yang lebih lembut dari perkiraan (..."
+    },
+    {
+      "titleEn": "Euro finds support as softer US PCE data prompts traders to trim Fed rate-hike bets",
+      "summaryEn": "EUR/USD holds modest gains on Wednesday as traders assess the latest economic data from both sides of the Atlantic. At the time of writing, the pair trades around 1.1363, up 0.20% …",
+      "link": "https://www.fxstreet.com/news/euro-finds-support-as-softer-us-pce-data-prompts-traders-to-trim-fed-rate-hike-bets-202609301408",
+      "time": "30 Sep 2026, 21:08 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Euro menemukan dukungan karena data PCE AS yang lebih lembut mendorong para trader untuk memangkas taruhan kenaikan suku bunga Fed",
+      "summaryId": "EUR/USD mempertahankan kenaikan moderat pada hari Rabu karena para trader menilai data ekonomi terbaru dari kedua sisi Atlantik. Pada saat penulisan, pasangan ini diperdagangkan di sekitar 1,1363, naik 0,20%..."
     }
   ],
   "sources": [
