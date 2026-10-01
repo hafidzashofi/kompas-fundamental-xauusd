@@ -1,5 +1,5 @@
 {
-  "generatedAt": "14 Sep 2026, 19:59 WIB",
+  "generatedAt": "01 Oct 2026, 10:21 WIB",
   "symbol": "GC=F",
   "yearsCovered": "2000-2026",
   "sampleCount": 27,
@@ -7,7 +7,7 @@
     {
       "month": 1,
       "name": "Jan",
-      "avgReturnPct": 2.47,
+      "avgReturnPct": 2.46,
       "winRatePct": 54.5,
       "sampleYears": 22,
       "best": {
@@ -24,8 +24,8 @@
     {
       "month": 2,
       "name": "Feb",
-      "avgReturnPct": 2.6,
-      "winRatePct": 68.2,
+      "avgReturnPct": 2.64,
+      "winRatePct": 72.7,
       "sampleYears": 22,
       "best": {
         "year": 2016,
@@ -33,7 +33,7 @@
       },
       "worst": {
         "year": 2021,
-        "returnPct": -6.45
+        "returnPct": -6.41
       },
       "label": "Bullish",
       "cls": "bull"
@@ -41,12 +41,12 @@
     {
       "month": 3,
       "name": "Mar",
-      "avgReturnPct": 0.91,
+      "avgReturnPct": 0.84,
       "winRatePct": 50.0,
       "sampleYears": 22,
       "best": {
         "year": 2025,
-        "returnPct": 10.08
+        "returnPct": 9.63
       },
       "worst": {
         "year": 2008,
@@ -58,7 +58,7 @@
     {
       "month": 4,
       "name": "Apr",
-      "avgReturnPct": 0.88,
+      "avgReturnPct": 0.93,
       "winRatePct": 63.6,
       "sampleYears": 22,
       "best": {
@@ -92,7 +92,7 @@
     {
       "month": 6,
       "name": "Jun",
-      "avgReturnPct": -2.02,
+      "avgReturnPct": -2.01,
       "winRatePct": 36.4,
       "sampleYears": 22,
       "best": {
@@ -109,12 +109,12 @@
     {
       "month": 7,
       "name": "Jul",
-      "avgReturnPct": 1.4,
+      "avgReturnPct": 1.37,
       "winRatePct": 68.2,
       "sampleYears": 22,
       "best": {
         "year": 2020,
-        "returnPct": 9.47
+        "returnPct": 9.01
       },
       "worst": {
         "year": 2015,
@@ -126,7 +126,7 @@
     {
       "month": 8,
       "name": "Agu",
-      "avgReturnPct": 2.12,
+      "avgReturnPct": 2.34,
       "winRatePct": 69.6,
       "sampleYears": 23,
       "best": {
@@ -143,9 +143,9 @@
     {
       "month": 9,
       "name": "Sep",
-      "avgReturnPct": 1.27,
-      "winRatePct": 47.8,
-      "sampleYears": 23,
+      "avgReturnPct": 1.08,
+      "winRatePct": 50.0,
+      "sampleYears": 22,
       "best": {
         "year": 2010,
         "returnPct": 10.67
@@ -160,12 +160,12 @@
     {
       "month": 10,
       "name": "Okt",
-      "avgReturnPct": 0.11,
-      "winRatePct": 50.0,
-      "sampleYears": 22,
+      "avgReturnPct": 0.03,
+      "winRatePct": 52.2,
+      "sampleYears": 23,
       "best": {
         "year": 2024,
-        "returnPct": 9.8
+        "returnPct": 8.77
       },
       "worst": {
         "year": 2008,
@@ -177,7 +177,7 @@
     {
       "month": 11,
       "name": "Nov",
-      "avgReturnPct": 1.66,
+      "avgReturnPct": 1.6,
       "winRatePct": 52.2,
       "sampleYears": 23,
       "best": {
@@ -194,7 +194,7 @@
     {
       "month": 12,
       "name": "Des",
-      "avgReturnPct": 1.29,
+      "avgReturnPct": 1.31,
       "winRatePct": 72.7,
       "sampleYears": 22,
       "best": {
@@ -216,51 +216,51 @@
     },
     {
       "label": "Jan",
-      "index": 102.47
+      "index": 102.46
     },
     {
       "label": "Feb",
-      "index": 105.13
+      "index": 105.16
     },
     {
       "label": "Mar",
-      "index": 106.09
+      "index": 106.05
     },
     {
       "label": "Apr",
-      "index": 107.02
+      "index": 107.03
     },
     {
       "label": "Mei",
-      "index": 108.3
+      "index": 108.31
     },
     {
       "label": "Jun",
-      "index": 106.11
+      "index": 106.13
     },
     {
       "label": "Jul",
-      "index": 107.6
+      "index": 107.59
     },
     {
       "label": "Agu",
-      "index": 109.88
+      "index": 110.1
     },
     {
       "label": "Sep",
-      "index": 111.27
+      "index": 111.29
     },
     {
       "label": "Okt",
-      "index": 111.39
+      "index": 111.33
     },
     {
       "label": "Nov",
-      "index": 113.24
+      "index": 113.11
     },
     {
       "label": "Des",
-      "index": 114.7
+      "index": 114.59
     }
   ],
   "note": "Dihitung dari return bulanan historis GC=F (COMEX Gold futures, data Yahoo Finance sejak 2000). Statistik masa lalu, bukan jaminan pergerakan di masa depan."
