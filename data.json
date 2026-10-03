@@ -1,17 +1,17 @@
 {
-  "updatedAt": "3 Oct 2026, 08:38 WIB",
+  "updatedAt": "3 Oct 2026, 22:02 WIB",
   "price": {
-    "level": "$4,172.10"
+    "level": "$4,162.30"
   },
-  "biasScore": -22,
+  "biasScore": -25,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 39,
-  "bearishPct": 61,
+  "bullishPct": 38,
+  "bearishPct": 62,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,172.10</span>, melemah 0.72% pada sesi terakhir, dengan rentang 52 minggu $3,861–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,162.30</span>, melemah 0.95% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 29 Sep 2026 tercatat net long <span class=\"accent\">218,632</span> kontrak (53.8% dari open interest) — relatif seimbang. Net long ini turun 7,221 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 406,456 kontrak (turun 6,344), mengindikasikan sebagian posisi ditutup.",
-    "<b>Kesimpulan:</b> skor komposit -22/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -25/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "29 Sep 2026",
@@ -27,7 +27,7 @@
   "cme": {
     "openInterest": 406456,
     "oiChange": -6344,
-    "rangeLow": "$3,861",
+    "rangeLow": "$3,901",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.76%) dan indeks dolar (DXY) melemah ke 101.92 (-0.17%), sementara XAU/USD turun 0.72%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.76%) dan indeks dolar (DXY) melemah ke 101.92 (-0.01%), sementara XAU/USD turun 0.95%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -100,12 +100,12 @@
       "asOf": "2026-10-01"
     },
     "mediaSentiment": {
-      "avgScore": 0.126,
-      "label": "NETRAL",
+      "avgScore": 0.171,
+      "label": "BULLISH",
       "sampleSize": 50,
-      "bullishCount": 21,
-      "neutralCount": 26,
-      "bearishCount": 3
+      "bullishCount": 26,
+      "neutralCount": 22,
+      "bearishCount": 2
     },
     "cpi": {
       "index": 334.98,
@@ -123,7 +123,7 @@
     "yield10y": 5.28,
     "yield10yChange": 0.76,
     "dxy": 101.92,
-    "dxyChange": -0.17
+    "dxyChange": -0.01
   },
   "news": [
     {
