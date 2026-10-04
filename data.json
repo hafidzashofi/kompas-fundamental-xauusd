@@ -1,5 +1,5 @@
 {
-  "updatedAt": "4 Oct 2026, 09:19 WIB",
+  "updatedAt": "4 Oct 2026, 22:36 WIB",
   "price": {
     "level": "$4,162.30"
   },
@@ -11,6 +11,7 @@
     "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,162.30</span>, melemah 0.95% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 29 Sep 2026 tercatat net long <span class=\"accent\">218,632</span> kontrak (53.8% dari open interest) — relatif seimbang. Net long ini turun 7,221 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 406,456 kontrak (turun 6,344), mengindikasikan sebagian posisi ditutup.",
+    "Katalis terdekat: <b>FOMC Meeting Minutes</b> pada 8 Oct 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
     "<b>Kesimpulan:</b> skor komposit -25/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
@@ -36,9 +37,23 @@
   },
   "calendar": [
     {
-      "date": "-",
-      "event": "Tidak ada event high-impact USD terjadwal",
-      "note": "Cek kembali menjelang akhir pekan"
+      "date": "8 Oct 2026, 01:00 WIB",
+      "event": "FOMC Meeting Minutes",
+      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
+      "scenario": {
+        "strong": {
+          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
+          "impact": "Bullish",
+          "cls": "tag-bull",
+          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
+        },
+        "weak": {
+          "label": "Hawkish (tahan / naikkan suku bunga)",
+          "impact": "Bearish",
+          "cls": "tag-bear",
+          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
+        }
+      }
     }
   ],
   "positioning": {
@@ -99,9 +114,25 @@
       "changeFromPrior": 0.25,
       "asOf": "2026-10-01"
     },
-    "mediaSentiment": null,
-    "cpi": null,
-    "wti": null
+    "mediaSentiment": {
+      "avgScore": 0.175,
+      "label": "BULLISH",
+      "sampleSize": 50,
+      "bullishCount": 29,
+      "neutralCount": 16,
+      "bearishCount": 5
+    },
+    "cpi": {
+      "index": 334.98,
+      "yoyPct": 3.4,
+      "momPct": 0.32,
+      "asOf": "2026-08-01"
+    },
+    "wti": {
+      "price": 96.16,
+      "changePct": -3.23,
+      "asOf": "2026-09-29"
+    }
   },
   "macro": {
     "yield10y": 5.28,
