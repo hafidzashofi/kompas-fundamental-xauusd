@@ -1,5 +1,5 @@
 {
-  "updatedAt": "3 Oct 2026, 22:02 WIB",
+  "updatedAt": "4 Oct 2026, 09:19 WIB",
   "price": {
     "level": "$4,162.30"
   },
@@ -99,25 +99,9 @@
       "changeFromPrior": 0.25,
       "asOf": "2026-10-01"
     },
-    "mediaSentiment": {
-      "avgScore": 0.171,
-      "label": "BULLISH",
-      "sampleSize": 50,
-      "bullishCount": 26,
-      "neutralCount": 22,
-      "bearishCount": 2
-    },
-    "cpi": {
-      "index": 334.98,
-      "yoyPct": 3.4,
-      "momPct": 0.32,
-      "asOf": "2026-08-01"
-    },
-    "wti": {
-      "price": 96.16,
-      "changePct": -3.23,
-      "asOf": "2026-09-29"
-    }
+    "mediaSentiment": null,
+    "cpi": null,
+    "wti": null
   },
   "macro": {
     "yield10y": 5.28,
