@@ -1,18 +1,18 @@
 {
-  "updatedAt": "4 Oct 2026, 22:36 WIB",
+  "updatedAt": "5 Oct 2026, 08:29 WIB",
   "price": {
-    "level": "$4,162.30"
+    "level": "$4,185.80"
   },
-  "biasScore": -25,
-  "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 38,
-  "bearishPct": 62,
+  "biasScore": -9,
+  "biasLabel": "NETRAL",
+  "bullishPct": 46,
+  "bearishPct": 54,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,162.30</span>, melemah 0.95% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,185.80</span>, menguat 0.56% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 29 Sep 2026 tercatat net long <span class=\"accent\">218,632</span> kontrak (53.8% dari open interest) — relatif seimbang. Net long ini turun 7,221 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 406,456 kontrak (turun 6,344), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>FOMC Meeting Minutes</b> pada 8 Oct 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -25/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -9/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "29 Sep 2026",
@@ -30,7 +30,7 @@
     "oiChange": -6344,
     "rangeLow": "$3,901",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 29 Sep 2026; rentang dari harga 52 minggu terakhir"
@@ -82,7 +82,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.76%) dan indeks dolar (DXY) melemah ke 101.92 (-0.01%), sementara XAU/USD turun 0.95%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.76%) dan indeks dolar (DXY) menguat ke 101.99 (+0.06%), sementara XAU/USD naik 0.56%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -115,12 +115,12 @@
       "asOf": "2026-10-01"
     },
     "mediaSentiment": {
-      "avgScore": 0.175,
+      "avgScore": 0.183,
       "label": "BULLISH",
       "sampleSize": 50,
-      "bullishCount": 29,
-      "neutralCount": 16,
-      "bearishCount": 5
+      "bullishCount": 31,
+      "neutralCount": 15,
+      "bearishCount": 4
     },
     "cpi": {
       "index": 334.98,
@@ -137,10 +137,64 @@
   "macro": {
     "yield10y": 5.28,
     "yield10yChange": 0.76,
-    "dxy": 101.92,
-    "dxyChange": -0.01
+    "dxy": 101.99,
+    "dxyChange": 0.06
   },
   "news": [
+    {
+      "titleEn": "Japanese Yen bulls seem hesitant as USD reverses post-NFP slide amid geopolitical tensions",
+      "summaryEn": "The USD/JPY pair kicks off the new week on a subdued note, stalling Friday's modest bounce from sub-157.00 levels, touched in reaction to the weak US employment details.",
+      "link": "https://www.fxstreet.com/news/japanese-yen-bulls-seem-hesitant-as-usd-reverses-post-nfp-slide-amid-geopolitical-tensions-202610050115",
+      "time": "5 Oct 2026, 08:15 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Banteng Yen Jepang tampak ragu - ragu karena USD membalikkan penurunan pasca - NFP di tengah ketegangan geopolitik",
+      "summaryId": "Pasangan USD/JPY memulai pekan baru dengan catatan tenang, mengulur - ulur pantulan sederhana Jumat dari level sub -157,00, menyentuh sebagai reaksi terhadap rincian ketenagakerjaan AS yang lemah."
+    },
+    {
+      "titleEn": "British Pound softens as US Dollar gains despite easing Fed rate hike odds",
+      "summaryEn": "GBP/USD inches lower after posting modest gains in the previous day, trading around 1.3240 during Asian hours on Monday. The currency pair is under downward pressure as the US Doll…",
+      "link": "https://www.fxstreet.com/news/british-pound-softens-as-us-dollar-gains-despite-easing-fed-rate-hike-odds-202610050114",
+      "time": "5 Oct 2026, 08:14 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "Pound Inggris melunak saat Dolar AS menguat meskipun mengurangi peluang kenaikan suku bunga Fed",
+      "summaryId": "GBP/USD lebih rendah setelah membukukan kenaikan moderat di hari sebelumnya, diperdagangkan di sekitar 1,3240 selama jam - jam Asia pada hari Senin. Pasangan mata uang ini berada di bawah tekanan turun karena US Doll..."
+    },
+    {
+      "titleEn": "Euro softens below 1.1250 on France’s fiscal risk",
+      "summaryEn": "The EUR/USD pair loses momentum to around 1.1245 during the early Asian session on Monday. The Euro (EUR) weakens against the US Dollar (USD) amid fears over France's shaky fiscal …",
+      "link": "https://www.fxstreet.com/news/euro-softens-below-11250-on-frances-fiscal-risk-202610050043",
+      "time": "5 Oct 2026, 07:43 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Euro melunak di bawah 1,1250 pada risiko fiskal Prancis",
+      "summaryId": "Pasangan EUR/USD kehilangan momentum ke sekitar 1,1245 selama awal sesi Asia pada hari Senin. Euro (EUR) melemah terhadap Dolar AS (USD) di tengah kekhawatiran atas kondisi fiskal Prancis yang goyah..."
+    },
+    {
+      "titleEn": "OPEC+ agrees to keep oil output policy unchanged for November",
+      "summaryEn": "The Organization of Petroleum Exporting Countries and its allies (OPEC+) agreed on Sunday to keep oil production ‌targets steady for November. This move came in line with expectati…",
+      "link": "https://www.fxstreet.com/news/opec-agrees-to-keep-oil-output-policy-unchanged-for-november-202610050002",
+      "time": "5 Oct 2026, 07:02 WIB",
+      "tag": "Geopolitik",
+      "titleId": "OPEC+ setuju untuk menjaga kebijakan produksi minyak tidak berubah untuk bulan November",
+      "summaryId": "Organisasi Negara - negara Pengekspor Minyak dan sekutunya (OPEC+) sepakat pada hari Minggu untuk menjaga target produksi minyak tetap stabil untuk bulan November. Langkah ini sejalan dengan expectati..."
+    },
+    {
+      "titleEn": "Australian Dollar drifts higher above 0.6950 on soft US jobs data",
+      "summaryEn": "The AUD/USD pair edges higher to around 0.6955 during the earlyAsian session on Monday. Weaker-than-expected US jobs data weighs on the US Dollar (USD) against the Australian Dolla…",
+      "link": "https://www.fxstreet.com/news/australian-dollar-drifts-higher-above-06950-on-soft-us-jobs-data-202610042321",
+      "time": "5 Oct 2026, 06:21 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Australia melayang lebih tinggi di atas 0,6950 pada data pekerjaan AS yang lunak",
+      "summaryId": "Pasangan AUD/USD naik lebih tinggi ke sekitar 0,6955 selama sesi Asia awal pada hari Senin. Data pekerjaan AS yang lebih lemah dari perkiraan membebani Dolar AS (USD) terhadap Dolla Australia..."
+    },
+    {
+      "titleEn": "Middle East War updates: Iran says Strait of Hormuz main focus of talks to end war with US",
+      "summaryEn": "Here’s a brief recap of the key developments in the Middle East war that occurred over the weekend, which are expected to have a significant impact on markets in the upcoming week.",
+      "link": "https://www.fxstreet.com/news/middle-east-war-updates-iran-says-strait-of-hormuz-main-focus-of-talks-to-end-war-with-us-202610042238",
+      "time": "5 Oct 2026, 05:38 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Pembaruan Perang Timur Tengah: Iran mengatakan Selat Hormuz fokus utama pembicaraan untuk mengakhiri perang dengan AS",
+      "summaryId": "Berikut adalah ringkasan singkat dari perkembangan utama dalam perang Timur Tengah yang terjadi selama akhir pekan, yang diperkirakan akan berdampak signifikan pada pasar di minggu mendatang."
+    },
     {
       "titleEn": "Silver Price Forecast: Bears crowd $60 after six-percent weekly rout",
       "summaryEn": "Silver price retreats on Friday, dropping about 0.76% as US Treasury yields edged higher, capping US Dollar depreciation, while investors punished the Greenback following a soft US…",
@@ -158,60 +212,6 @@
       "tag": "Bank Sentral",
       "titleId": "Peso Meksiko memantul tetapi membawa eksodus perdagangan masih menggigit",
       "summaryId": "Peso Meksiko (MXN) pulih beberapa kali terhadap Dolar AS (USD) pada hari Jumat, naik 0,5%, tetapi tetap siap untuk mengakhiri minggu dengan kerugian 3% karena investor keluar dari 'carry tr..."
-    },
-    {
-      "titleEn": "Gold fails at $4,200 despite NFP miss as US yields climb",
-      "summaryEn": "Gold prices dropped on Friday, with the yellow metal struggling to decisively break the $4,200 milestone. The precious metal is down nearly 1% as US Treasury yields edge higher fol…",
-      "link": "https://www.fxstreet.com/news/gold-fails-at-4-200-despite-nfp-miss-as-us-yields-climb-202610021803",
-      "time": "3 Oct 2026, 01:03 WIB",
-      "tag": "Emas",
-      "titleId": "Emas gagal di $ 4.200 meskipun NFP meleset karena imbal hasil AS naik",
-      "summaryId": "Harga emas turun pada hari Jumat, dengan logam kuning berjuang untuk secara meyakinkan menembus tonggak $ 4.200. Logam mulia turun hampir 1% karena Treasury AS menghasilkan tepi yang lebih tinggi fol..."
-    },
-    {
-      "titleEn": "Fed’s Goolsbee says inflation now outweighs labor concerns",
-      "summaryEn": "Chicago Federal Reserve (Fed) President Austan Goolsbee said in an interview with Fox Business that the labor market is steady and that “the inflation side of the Fed’s job is more…",
-      "link": "https://www.fxstreet.com/news/feds-goolsbee-says-inflation-now-outweighs-labor-concerns-202610021748",
-      "time": "3 Oct 2026, 00:48 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Fed's Goolsbee mengatakan inflasi sekarang melebihi kekhawatiran tenaga kerja",
-      "summaryId": "Presiden Federal Reserve (Fed) Chicago Austan Goolsbee mengatakan dalam sebuah wawancara dengan Fox Business bahwa pasar tenaga kerja stabil dan bahwa “sisi inflasi dari pekerjaan Fed lebih…"
-    },
-    {
-      "titleEn": "New Zealand Dollar rebounds after sharp US employment disappointment",
-      "summaryEn": "NZD/USD advances on Friday and trades around 0.5610 at the time of writing, up 0.12% on the day. The New Zealand Dollar (NZD) benefits mainly from the decline in the US Dollar (USD…",
-      "link": "https://www.fxstreet.com/news/new-zealand-dollar-rebounds-after-sharp-us-employment-disappointment-202610021614",
-      "time": "2 Oct 2026, 23:14 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Selandia Baru memantul setelah kekecewaan kerja AS yang tajam",
-      "summaryId": "NZD/USD naik pada hari Jumat dan diperdagangkan sekitar 0,5610 pada saat penulisan, naik 0,12% pada hari itu. Dolar Selandia Baru (NZD) diuntungkan terutama dari penurunan Dolar AS (USD…"
-    },
-    {
-      "titleEn": "US payrolls miss at 29K and the Dollar Index drops below 102.00",
-      "summaryEn": "US employers added 29K jobs in September against a forecast of 90K, and July and August were revised down by a combined 60K. The unemployment rate rose to 4.2%, and hourly pay grew…",
-      "link": "https://www.fxstreet.com/news/us-payrolls-miss-at-29k-and-the-dollar-index-drops-below-10200-202610021607",
-      "time": "2 Oct 2026, 23:07 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Penggajian AS meleset di 29K dan Indeks Dolar turun di bawah 102,00",
-      "summaryId": "Pengusaha AS menambahkan 29 ribu pekerjaan pada bulan September terhadap perkiraan 90 ribu, dan Juli dan Agustus direvisi turun gabungan 60 ribu. Tingkat pengangguran naik menjadi 4,2%, dan upah per jam tumbuh..."
-    },
-    {
-      "titleEn": "British Pound rebounds as NFP knocks out October Fed hike bets",
-      "summaryEn": "The Pound Sterling (GBP) rises by over 0.41% against the US Dollar (USD) on Friday, as the US Unemployment Rate rises amid a worse-than-expected Nonfarm Payrolls report for Septemb…",
-      "link": "https://www.fxstreet.com/news/british-pound-rebounds-as-nfp-knocks-out-october-fed-hike-bets-202610021556",
-      "time": "2 Oct 2026, 22:56 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Pound Inggris memantul saat NFP mengalahkan taruhan kenaikan Fed Oktober",
-      "summaryId": "Pound Sterling (GBP) naik lebih dari 0,41% terhadap Dolar AS (USD) pada hari Jumat, karena Tingkat Pengangguran AS naik di tengah laporan Nonfarm Payrolls yang lebih buruk dari perkiraan untuk bulan September..."
-    },
-    {
-      "titleEn": "US Dollar: Fading rallies as Fed pricing peaks – TD Securities",
-      "summaryEn": "TD Securities' Macro Research’s FX team notes the softer US payrolls data is only marginally negative for the Dollar, with the labor market still described as buoyant and neither o…",
-      "link": "https://www.fxstreet.com/news/us-dollar-fading-rallies-as-fed-pricing-peaks-td-securities-202610021502",
-      "time": "2 Oct 2026, 22:02 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar AS: Demonstrasi memudar saat harga Fed memuncak – TD Securities",
-      "summaryId": "Tim FX Makro Research TD Securities mencatat bahwa data penggajian AS yang lebih lembut hanya sedikit negatif untuk Dolar, dengan pasar tenaga kerja masih digambarkan sebagai apung dan tidak…"
     }
   ],
   "sources": [
