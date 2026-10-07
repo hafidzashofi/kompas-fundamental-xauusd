@@ -1,18 +1,18 @@
 {
-  "updatedAt": "7 Oct 2026, 08:58 WIB",
+  "updatedAt": "8 Oct 2026, 00:38 WIB",
   "price": {
-    "level": "$4,177.50"
+    "level": "$4,141.10"
   },
-  "biasScore": -17,
+  "biasScore": -26,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 42,
-  "bearishPct": 58,
+  "bullishPct": 37,
+  "bearishPct": 63,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,177.50</span>, melemah 0.23% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,141.10</span>, melemah 1.1% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 29 Sep 2026 tercatat net long <span class=\"accent\">218,632</span> kontrak (53.8% dari open interest) — relatif seimbang. Net long ini turun 7,221 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 406,456 kontrak (turun 6,344), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>FOMC Meeting Minutes</b> pada 8 Oct 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -17/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -26/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "29 Sep 2026",
@@ -82,7 +82,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.27% (-0.79%) dan indeks dolar (DXY) menguat ke 101.97 (+0.14%), sementara XAU/USD turun 0.23%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.28% (+0.19%) dan indeks dolar (DXY) menguat ke 102.27 (+0.43%), sementara XAU/USD turun 1.1%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -128,83 +128,83 @@
     }
   },
   "macro": {
-    "yield10y": 5.27,
-    "yield10yChange": -0.79,
-    "dxy": 101.97,
-    "dxyChange": 0.14
+    "yield10y": 5.28,
+    "yield10yChange": 0.19,
+    "dxy": 102.27,
+    "dxyChange": 0.43
   },
   "news": [
     {
-      "titleEn": "Canadian Dollar edges lower on reviving USD demand; recovering oil prices limit losses",
-      "summaryEn": "The USD/CAD pair edges higher during the Asian session on Wednesday, stalling the previous day's retracement slide from the vicinity of its highest level since April 2025, touched …",
-      "link": "https://www.fxstreet.com/news/canadian-dollar-edges-lower-on-reviving-usd-demand-recovering-oil-prices-limit-losses-202610070155",
-      "time": "7 Oct 2026, 08:55 WIB",
+      "titleEn": "USD/JPY Price Forecast: Pair consolidates below key moving averages",
+      "summaryEn": "USD/JPY trades in a narrow range on Wednesday, with the Japanese Yen (JPY) holding a slight advantage over the US Dollar (USD) as traders assess hawkish Bank of Japan (BoJ) signals…",
+      "link": "https://www.fxstreet.com/news/usd-jpy-price-forecast-pair-consolidates-below-key-moving-averages-202610071705",
+      "time": "8 Oct 2026, 00:05 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Kanada turun lebih rendah karena menghidupkan kembali permintaan USD; memulihkan harga minyak membatasi kerugian",
-      "summaryId": "Pasangan USD/CAD naik lebih tinggi selama sesi Asia pada hari Rabu, mengulur - ulur penurunan retracement hari sebelumnya dari sekitar level tertinggi sejak April 2025, menyentuh ..."
+      "titleId": "Prakiraan Harga USD/JPY: Pasangan berkonsolidasi di bawah rata - rata bergerak utama",
+      "summaryId": "USD/JPY diperdagangkan dalam kisaran sempit pada hari Rabu, dengan Yen Jepang (JPY) memegang sedikit keuntungan atas Dolar AS (USD) karena para trader menilai sinyal Bank of Japan (BoJ) yang hawkish..."
     },
     {
-      "titleEn": "WTI rises to near $89.50 amid Middle East concerns, US storm threats",
-      "summaryEn": "West Texas Intermediate (WTI) oil price extends its gains for the second successive day, trading around $89.50 per barrel during the Asian hours on Wednesday. Crude oil climbed as …",
-      "link": "https://www.fxstreet.com/news/wti-rises-to-near-8950-as-middle-east-supply-threats-offset-persian-gulf-recovery-202610070109",
-      "time": "7 Oct 2026, 08:09 WIB",
-      "tag": "Geopolitik",
-      "titleId": "WTI naik mendekati $ 89,50 di tengah kekhawatiran Timur Tengah, ancaman badai AS",
-      "summaryId": "Harga minyak West Texas Intermediate (WTI) memperpanjang kenaikannya untuk hari kedua berturut - turut, diperdagangkan sekitar $ 89,50 per barel selama jam - jam Asia pada hari Rabu. Minyak mentah naik saat ..."
+      "titleEn": "US Dollar Index climbs back near its 18-month high as yields rise",
+      "summaryEn": "The yield on the US 10-year Treasury note touched 5.35% on Wednesday, its highest since April 2002, and the 30-year bond hit a 24-year high. Brent is back above $100 a barrel after…",
+      "link": "https://www.fxstreet.com/news/us-dollar-index-climbs-back-near-its-18-month-high-as-yields-rise-202610071542",
+      "time": "7 Oct 2026, 22:42 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Indeks Dolar AS naik kembali mendekati level tertinggi 18 bulan karena imbal hasil naik",
+      "summaryId": "Imbal hasil obligasi Treasury 10 tahun AS menyentuh 5,35% pada hari Rabu, tertinggi sejak April 2002, dan obligasi 30 tahun mencapai level tertinggi 24 tahun. Brent kembali di atas $ 100 per barel setelah..."
     },
     {
-      "titleEn": "Euro weakens below 1.1250 on France’s debt fears",
-      "summaryEn": "The EUR/USD pair remains on the defensive near 1.1250 during the early Asian trading hours on Wednesday. The Euro (EUR) weakens against the US Dollar (USD) amid fears of France’s d…",
-      "link": "https://www.fxstreet.com/news/euro-weakens-below-11250-on-frances-debt-fears-202610070047",
-      "time": "7 Oct 2026, 07:47 WIB",
+      "titleEn": "NY Fed September survey shows households bracing for higher prices",
+      "summaryEn": "The New York Fed's September Survey of Consumer Expectations showed that American households expect short-term inflation to rise, while in the long term, they expect prices to cool…",
+      "link": "https://www.fxstreet.com/news/ny-fed-survey-of-consumers-shows-households-bracing-for-higher-prices-202610071539",
+      "time": "7 Oct 2026, 22:39 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Euro melemah di bawah 1,1250 karena kekhawatiran utang Prancis",
-      "summaryId": "Pasangan EUR/USD tetap bertahan di dekat 1,1250 selama jam perdagangan awal Asia pada hari Rabu. Euro (EUR) melemah terhadap Dolar AS (USD) di tengah kekhawatiran mata uang Prancis..."
+      "titleId": "Survei NY Fed September menunjukkan rumah tangga bersiap untuk harga yang lebih tinggi",
+      "summaryId": "Survei Ekspektasi Konsumen September The New York Fed menunjukkan bahwa rumah tangga Amerika memperkirakan inflasi jangka pendek akan naik, sementara dalam jangka panjang, mereka memperkirakan harga akan mendingin..."
     },
     {
-      "titleEn": "RBI looks set to step up Repo Rate by 25 bps to 5.5%",
-      "summaryEn": "The Reserve Bank of India (RBI) is set to announce its bi-monthly monetary policy decision on Wednesday at 10:00 AM IST (04:30 GMT), in a meeting where the central bank is expected…",
-      "link": "https://www.fxstreet.com/news/rbi-looks-set-to-step-up-repo-rate-by-25-bps-to-55-202610070030",
-      "time": "7 Oct 2026, 07:30 WIB",
+      "titleEn": "Vietnam: Strong GDP but rising inflation risks – Commerzbank",
+      "summaryEn": "Commerzbank Research highlights Vietnam’s Q3 GDP growth at 10.0% year-on-year, the strongest since the pandemic, driven by investment and industry. Achieving the government’s 10% f…",
+      "link": "https://www.fxstreet.com/news/vietnam-strong-gdp-but-rising-inflation-risks-commerzbank-202610071518",
+      "time": "7 Oct 2026, 22:18 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Vietnam: PDB yang kuat tetapi meningkatnya risiko inflasi – Commerzbank",
+      "summaryId": "Commerzbank Research menyoroti pertumbuhan PDB Q3 Vietnam sebesar 10,0% dari tahun ke tahun, yang terkuat sejak pandemi, didorong oleh investasi dan industri. Mencapai 10% f…"
+    },
+    {
+      "titleEn": "Euro struggles as French fiscal risks, strong US Dollar weigh ahead of Fed Minutes",
+      "summaryEn": "EUR/USD extends its decline on Wednesday as the Euro (EUR) remains under broad selling pressure, while the US Dollar (USD) strengthens alongside surging US Treasury yields. At the …",
+      "link": "https://www.fxstreet.com/news/euro-struggles-as-french-fiscal-risks-strong-us-dollar-weigh-ahead-of-fed-minutes-202610071459",
+      "time": "7 Oct 2026, 21:59 WIB",
       "tag": "Bank Sentral",
-      "titleId": "RBI tampaknya akan meningkatkan Repo Rate sebesar 25 bps menjadi 5,5%",
-      "summaryId": "Reserve Bank of India (RBI) akan mengumumkan keputusan kebijakan moneter dua bulanan pada hari Rabu pukul 10:00 IST (04:30 GMT), dalam pertemuan di mana bank sentral diharapkan…"
+      "titleId": "Euro berjuang karena risiko fiskal Prancis, Dolar AS yang kuat membebani menjelang Risalah Fed",
+      "summaryId": "EUR/USD memperpanjang penurunannya pada hari Rabu karena Euro (EUR) tetap berada di bawah tekanan jual yang luas, sementara Dolar AS (USD) menguat seiring dengan lonjakan imbal hasil Treasury AS. Pada…"
     },
     {
-      "titleEn": "US VP Vance says Iran must reduce nuclear enrichment capacity to end war",
-      "summaryEn": "US Vice President (VP) JD Vance said that Iran must reduce nuclear enrichment capacity to satisfy US demands and end the countries’ seven-month war, Reuters reported on Tuesday. Va…",
-      "link": "https://www.fxstreet.com/news/us-vp-vance-says-iran-must-reduce-nuclear-enrichment-capacity-to-end-war-202610062353",
-      "time": "7 Oct 2026, 06:53 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Wakil Presiden AS Vance mengatakan Iran harus mengurangi kapasitas pengayaan nuklir untuk mengakhiri perang",
-      "summaryId": "Wakil Presiden (VP) AS JD Vance mengatakan bahwa Iran harus mengurangi kapasitas pengayaan nuklir untuk memenuhi tuntutan AS dan mengakhiri perang tujuh bulan negara - negara itu, Reuters melaporkan pada hari Selasa. Va…"
+      "titleEn": "US Treasury yields hit 24-year highs as 10-year tests 5.35%",
+      "summaryEn": "US Treasury yields soar on Wednesday, with the 10- and 30-year yields reaching 24-year highs of 5.35% and 5.724%, respectively, suggesting that investors are demanding a higher pre…",
+      "link": "https://www.fxstreet.com/news/us-treasury-yields-hit-24-year-highs-as-10-year-tests-535-202610071450",
+      "time": "7 Oct 2026, 21:50 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Imbal hasil Treasury AS mencapai level tertinggi 24 tahun karena tes 10 tahun 5,35%",
+      "summaryId": "Imbal hasil Treasury AS melonjak pada hari Rabu, dengan imbal hasil 10 dan 30 tahun masing - masing mencapai tertinggi 24 tahun 5,35% dan 5,724%, menunjukkan bahwa investor menuntut pra -..."
     },
     {
-      "titleEn": "BoJ’s Sato signals support for future rate hikes",
-      "summaryEn": "The Bank of Japan's (BoJ) new ‌policymaker Ayano Sato said that she supports the idea of raising interest rates in several stages, Reuters reported on Tuesday.",
-      "link": "https://www.fxstreet.com/news/bojs-sato-signals-support-for-future-rate-hikes-202610062346",
-      "time": "7 Oct 2026, 06:46 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Sato BoJ memberi sinyal dukungan untuk kenaikan suku bunga di masa mendatang",
-      "summaryId": "Pembuat kebijakan baru Bank of Japan (BoJ) Ayano Sato mengatakan bahwa dia mendukung gagasan menaikkan suku bunga dalam beberapa tahap, Reuters melaporkan pada hari Selasa."
-    },
-    {
-      "titleEn": "Gold rises above $4,150 as bond yields turn lower, traders await FOMC Minutes",
-      "summaryEn": "Gold price (XAU/USD) rises to near $4,165 during the early Asian session on Wednesday. The precious metal rebounds as long-dated Treasury yields eased from Monday’s multi-decade hi…",
-      "link": "https://www.fxstreet.com/news/gold-rises-above-4-150-as-bond-yields-turn-lower-traders-await-fomc-minutes-202610062328",
-      "time": "7 Oct 2026, 06:28 WIB",
+      "titleEn": "Swiss Franc: Safe haven status versus funding role – Rabobank",
+      "summaryEn": "Rabobank’s Senior FX Strategist Jane Foley highlights Switzerland’s strong current account and budget positions, credible central bank and governance, and high liquidity as underpi…",
+      "link": "https://www.fxstreet.com/news/swiss-franc-safe-haven-status-versus-funding-role-rabobank-202610071447",
+      "time": "7 Oct 2026, 21:47 WIB",
       "tag": "Emas",
-      "titleId": "Emas naik di atas $ 4.150 karena imbal hasil obligasi turun, trader menunggu Risalah FOMC",
-      "summaryId": "Harga emas (XAU/USD) naik mendekati $ 4.165 selama awal sesi Asia pada hari Rabu. Logam mulia memantul karena imbal hasil Treasury jangka panjang mereda dari hi multi - dekade Senin..."
+      "titleId": "Franc Swiss: Status safe haven versus peran pendanaan – Rabobank",
+      "summaryId": "Senior FX Strategist Rabobank Jane Foley menyoroti posisi neraca berjalan dan anggaran Swiss yang kuat, bank sentral dan tata kelola yang kredibel, dan likuiditas tinggi sebagai underpi..."
     },
     {
-      "titleEn": "Australian Dollar eyes 0.70 as three-day rally meets Fed minutes",
-      "summaryEn": "The Australian Dollar extends its rally to three consecutive days, up 0.14% on Tuesday, as the US Dollar behaves erratically ahead of the release of the Federal Reserve’s September…",
-      "link": "https://www.fxstreet.com/news/australian-dollar-eyes-070-as-three-day-rally-meets-fed-minutes-202610062322",
-      "time": "7 Oct 2026, 06:22 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Dolar Australia mengincar 0,70 karena reli tiga hari memenuhi risalah Fed",
-      "summaryId": "Dolar Australia memperpanjang reli menjadi tiga hari berturut - turut, naik 0,14% pada hari Selasa, karena Dolar AS berperilaku tidak menentu menjelang rilis Federal Reserve September..."
+      "titleEn": "Gold: Dip buying case builds into 2027 – TD Securities",
+      "summaryEn": "TD Securities’ Ryan McKay and Bart Melek note heavy CTA (Commodity Trading Advisors) selling across Precious Metals, with Gold under pressure from surging real rates and a stronger…",
+      "link": "https://www.fxstreet.com/news/gold-dip-buying-case-builds-into-2027-td-securities-202610071432",
+      "time": "7 Oct 2026, 21:32 WIB",
+      "tag": "Emas",
+      "titleId": "Emas: Kasus pembelian dip dibangun hingga 2027 – Efek TD",
+      "summaryId": "Ryan McKay dan Bart Melek dari TD Securities mencatat CTA berat (Penasihat Perdagangan Komoditas) yang dijual di Logam Mulia, dengan Emas di bawah tekanan dari lonjakan harga riil dan harga yang lebih kuat…"
     }
   ],
   "sources": [
