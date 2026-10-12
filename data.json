@@ -1,18 +1,18 @@
 {
-  "updatedAt": "11 Oct 2026, 23:29 WIB",
+  "updatedAt": "12 Oct 2026, 08:59 WIB",
   "price": {
-    "level": "$4,216.30"
+    "level": "$4,228.90"
   },
-  "biasScore": -4,
-  "biasLabel": "NETRAL",
-  "bullishPct": 48,
-  "bearishPct": 52,
+  "biasScore": -15,
+  "biasLabel": "NETRAL condong BEARISH",
+  "bullishPct": 42,
+  "bearishPct": 58,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,216.30</span>, menguat 1.43% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,228.90</span>, menguat 0.3% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 6 Oct 2026 tercatat net long <span class=\"accent\">210,335</span> kontrak (53.1% dari open interest) — relatif seimbang. Net long ini turun 8,297 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 396,109 kontrak (turun 10,347), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core CPI m/m</b> pada 14 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -4/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -15/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "6 Oct 2026",
@@ -177,7 +177,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.24% (+0.25%) dan indeks dolar (DXY) menguat ke 102.23 (+0.02%), sementara XAU/USD naik 1.43%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.24% (+0.25%) dan indeks dolar (DXY) melemah ke 102.15 (-0.07%), sementara XAU/USD naik 0.3%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -225,10 +225,55 @@
   "macro": {
     "yield10y": 5.24,
     "yield10yChange": 0.25,
-    "dxy": 102.23,
-    "dxyChange": 0.02
+    "dxy": 102.15,
+    "dxyChange": -0.07
   },
   "news": [
+    {
+      "titleEn": "Saudi-led coalition says it intercepted Houthi ballistic missile toward Khamis Mushait",
+      "summaryEn": "The Saudi-led military coalition said that it has intercepted and destroyed a ballistic missile fired by Yemen's Houthis towards southern Saudi Arabia, the Time of Israel reported …",
+      "link": "https://www.fxstreet.com/news/saudi-led-coalition-says-it-intercepted-houthi-ballistic-missile-toward-khamis-mushait-202610120115",
+      "time": "12 Oct 2026, 08:15 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Koalisi pimpinan Saudi mengatakan pihaknya mencegat rudal balistik Houthi menuju Khamis Mushait",
+      "summaryId": "Koalisi militer pimpinan Saudi mengatakan bahwa mereka telah mencegat dan menghancurkan rudal balistik yang ditembakkan oleh Houthi Yaman ke Arab Saudi selatan, Time of Israel melaporkan ..."
+    },
+    {
+      "titleEn": "Euro holds gains above 1.1200 despite France’s bond turmoil",
+      "summaryEn": "The EUR/USD pair recovers some lost ground to near 1.1215 during the early Asian trading hours on Monday. The US Dollar (USD) softens against the Euro (EUR) after weaker-than-expec…",
+      "link": "https://www.fxstreet.com/news/euro-holds-gains-above-11200-despite-frances-bond-turmoil-202610120100",
+      "time": "12 Oct 2026, 08:00 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Euro bertahan di atas 1,1200 meskipun terjadi gejolak obligasi Prancis",
+      "summaryId": "Pasangan EUR/USD pulih dari kerugian hingga mendekati 1,1215 selama jam perdagangan awal Asia pada hari Senin. Dolar AS (USD) melunak terhadap Euro (EUR) setelah lebih lemah dari ekspektasi..."
+    },
+    {
+      "titleEn": "WTI declines to near $90.00 despite escalating Middle East conflict, supply risks",
+      "summaryEn": "West Texas Intermediate (WTI) declines after two days of gains, trading around $90.00 per barrel during Asian hours on Monday.",
+      "link": "https://www.fxstreet.com/news/wti-declines-to-near-9000-despite-escalating-middle-east-conflict-supply-risks-202610120047",
+      "time": "12 Oct 2026, 07:47 WIB",
+      "tag": "Geopolitik",
+      "titleId": "WTI turun mendekati $ 90,00 meskipun konflik Timur Tengah meningkat, risiko pasokan",
+      "summaryId": "West Texas Intermediate (WTI) turun setelah dua hari kenaikan, diperdagangkan sekitar $ 90,00 per barel selama jam Asia pada hari Senin."
+    },
+    {
+      "titleEn": "Australian Dollar edges higher to near 0.7000 on weak US Sentiment",
+      "summaryEn": "The AUD/USD pair trades with mild gains around 0.6985 during the early Asian session on Monday. Softening US Consumer Sentiment weigh on the US Dollar (USD) against the Australian …",
+      "link": "https://www.fxstreet.com/news/australian-dollar-edges-higher-to-near-07000-on-weak-us-sentiment-202610112344",
+      "time": "12 Oct 2026, 06:44 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Dolar Australia naik lebih tinggi mendekati 0,7000 karena Sentimen AS yang lemah",
+      "summaryId": "Pasangan AUD/USD diperdagangkan dengan kenaikan ringan di sekitar 0,6985 selama awal sesi Asia pada hari Senin. Pelunakan Sentimen Konsumen AS membebani Dolar AS (USD) terhadap Australia ..."
+    },
+    {
+      "titleEn": "Middle East War updates: New attack launched on Saudi airport",
+      "summaryEn": "Here’s a brief recap of the key developments in the Middle East war that occurred over the weekend, which are expected to have a significant impact on markets in the upcoming week.",
+      "link": "https://www.fxstreet.com/news/middle-east-war-updates-new-attack-launched-on-saudi-airport-202610112228",
+      "time": "12 Oct 2026, 05:28 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Pembaruan Perang Timur Tengah: Serangan baru diluncurkan di bandara Saudi",
+      "summaryId": "Berikut adalah ringkasan singkat dari perkembangan utama dalam perang Timur Tengah yang terjadi selama akhir pekan, yang diperkirakan akan berdampak signifikan pada pasar di minggu mendatang."
+    },
     {
       "titleEn": "Aussie extends weekly gains as Fed pause bets offset hawkish rhetoric",
       "summaryEn": "The Aussie Dollar ended Friday’s session on a positive note, gaining 0.38% and 0.58% weekly as the US Dollar trimmed some of its weekly gains, while US data confirmed investors' ex…",
@@ -255,51 +300,6 @@
       "tag": "Bank Sentral",
       "titleId": "Dolar Taiwan: Kekuatan perdagangan tetapi kerugian dibatasi terhadap Dolar AS – Commerzbank",
       "summaryId": "Analis Commerzbank mencatat surplus perdagangan September Taiwan mencapai rekor USD23,6 miliar, dengan ekspor melonjak 60,9% dari tahun ke tahun karena permintaan terkait AI yang kuat. Bank Sentral Repu..."
-    },
-    {
-      "titleEn": "Dollar Index stalls under its high as the Fed's hawks repeat themselves",
-      "summaryEn": "Four sessions after its highest level since April 2025, the Dollar Index hasn't got back to it. The index trades near 102.25 and has made a lower high in each session since Wednesd…",
-      "link": "https://www.fxstreet.com/news/dollar-index-stalls-under-its-high-as-the-feds-hawks-repeat-themselves-202610091910",
-      "time": "10 Oct 2026, 02:10 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Indeks Dolar terhenti di bawah level tertingginya karena elang The Fed berulang",
-      "summaryId": "Empat sesi setelah level tertinggi sejak April 2025, Indeks Dolar belum kembali ke level semula. Indeks diperdagangkan di dekat 102,25 dan telah membuat level tertinggi yang lebih rendah di setiap sesi sejak Rabu..."
-    },
-    {
-      "titleEn": "Silver Price Forecast: Bullish engulfing pattern puts $64 in sight",
-      "summaryEn": "Silver (XAG/USD) price rallies over 2.80% on Friday as buyers buy the dip at $59.17, pushing the white metal above $60.00 to hit a two-day high of $61.19. At the time of writing, X…",
-      "link": "https://www.fxstreet.com/news/silver-price-forecast-bullish-engulfing-pattern-puts-64-in-sight-202610091840",
-      "time": "10 Oct 2026, 01:40 WIB",
-      "tag": "Emas",
-      "titleId": "Prakiraan Harga Perak: Pola engulfing bullish membuat $ 64 terlihat",
-      "summaryId": "Harga perak (XAG/USD) naik lebih dari 2,80% pada hari Jumat karena pembeli membeli penurunan di $ 59,17, mendorong logam putih di atas $ 60,00 untuk mencapai level tertinggi dua hari di $ 61,19. Pada saat penulisan, X…"
-    },
-    {
-      "titleEn": "Singapore Dollar: MAS tightening but gains constrained – OCBC",
-      "summaryEn": "OCBC’s Christopher Wong notes that Singapore Dollar (SGD) has held relatively steady despite a firmer US Dollar (USD) and higher Oil prices, with MAS tightening expectations underp…",
-      "link": "https://www.fxstreet.com/news/singapore-dollar-mas-tightening-but-gains-constrained-ocbc-202610091827",
-      "time": "10 Oct 2026, 01:27 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Dolar Singapura: Pengetatan MAS tetapi keuntungan terbatas – OCBC",
-      "summaryId": "Christopher Wong dari OCBC mencatat bahwa Dolar Singapura (SGD) telah bertahan relatif stabil meskipun Dolar AS (USD) lebih kuat dan harga Minyak lebih tinggi, dengan ekspektasi pengetatan MAS di bawah…"
-    },
-    {
-      "titleEn": "Gold reclaims $4,200 as weak US sentiment revives bullion demand",
-      "summaryEn": "Gold (XAU/USD) price advances more than 1.40% on Friday, capitaliszng on a dip in US Treasury yields and a softer Greenback, as recent US data suggests households are becoming pess…",
-      "link": "https://www.fxstreet.com/news/gold-reclaims-4-200-as-weak-us-sentiment-revives-bullion-demand-202610091804",
-      "time": "10 Oct 2026, 01:04 WIB",
-      "tag": "Emas",
-      "titleId": "Emas mengklaim kembali $ 4.200 karena sentimen AS yang lemah menghidupkan kembali permintaan emas batangan",
-      "summaryId": "Harga emas (XAU/USD) naik lebih dari 1,40% pada hari Jumat, kapitaliszng pada penurunan imbal hasil Treasury AS dan Greenback yang lebih lembut, karena data AS baru - baru ini menunjukkan rumah tangga menjadi pes..."
-    },
-    {
-      "titleEn": "Japanese Yen struggles as wide US-Japan yield gap weighs",
-      "summaryEn": "USD/JPY trades with a positive bias on Friday as the Japanese Yen (JPY) underperforms across the board following a sharp decline in Japanese government bond yields.",
-      "link": "https://www.fxstreet.com/news/japanese-yen-struggles-as-wide-us-japan-yield-gap-weighs-202610091752",
-      "time": "10 Oct 2026, 00:52 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Yen Jepang berjuang karena kesenjangan hasil AS - Jepang yang luas membebani",
-      "summaryId": "USD/JPY diperdagangkan dengan bias positif pada hari Jumat karena Yen Jepang (JPY) berkinerja buruk di seluruh papan menyusul penurunan tajam dalam imbal hasil obligasi pemerintah Jepang."
     }
   ],
   "sources": [
