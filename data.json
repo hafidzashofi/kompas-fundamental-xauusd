@@ -1,18 +1,18 @@
 {
-  "updatedAt": "12 Oct 2026, 08:59 WIB",
+  "updatedAt": "13 Oct 2026, 03:05 WIB",
   "price": {
-    "level": "$4,228.90"
+    "level": "$4,193.30"
   },
-  "biasScore": -15,
+  "biasScore": -24,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 42,
-  "bearishPct": 58,
+  "bullishPct": 38,
+  "bearishPct": 62,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,228.90</span>, menguat 0.3% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,193.30</span>, melemah 0.55% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 6 Oct 2026 tercatat net long <span class=\"accent\">210,335</span> kontrak (53.1% dari open interest) — relatif seimbang. Net long ini turun 8,297 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 396,109 kontrak (turun 10,347), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core CPI m/m</b> pada 14 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -15/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -24/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "6 Oct 2026",
@@ -30,7 +30,7 @@
     "oiChange": -10347,
     "rangeLow": "$3,901",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 6 Oct 2026; rentang dari harga 52 minggu terakhir"
@@ -177,7 +177,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.24% (+0.25%) dan indeks dolar (DXY) melemah ke 102.15 (-0.07%), sementara XAU/USD naik 0.3%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.24% (-0.08%) dan indeks dolar (DXY) menguat ke 102.58 (+0.36%), sementara XAU/USD turun 0.55%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -224,82 +224,82 @@
   },
   "macro": {
     "yield10y": 5.24,
-    "yield10yChange": 0.25,
-    "dxy": 102.15,
-    "dxyChange": -0.07
+    "yield10yChange": -0.08,
+    "dxy": 102.58,
+    "dxyChange": 0.36
   },
   "news": [
     {
-      "titleEn": "Saudi-led coalition says it intercepted Houthi ballistic missile toward Khamis Mushait",
-      "summaryEn": "The Saudi-led military coalition said that it has intercepted and destroyed a ballistic missile fired by Yemen's Houthis towards southern Saudi Arabia, the Time of Israel reported …",
-      "link": "https://www.fxstreet.com/news/saudi-led-coalition-says-it-intercepted-houthi-ballistic-missile-toward-khamis-mushait-202610120115",
-      "time": "12 Oct 2026, 08:15 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Koalisi pimpinan Saudi mengatakan pihaknya mencegat rudal balistik Houthi menuju Khamis Mushait",
-      "summaryId": "Koalisi militer pimpinan Saudi mengatakan bahwa mereka telah mencegat dan menghancurkan rudal balistik yang ditembakkan oleh Houthi Yaman ke Arab Saudi selatan, Time of Israel melaporkan ..."
+      "titleEn": "Gold tumbles as Oil shock fuels US Dollar rally and Fed hike bets",
+      "summaryEn": "Gold (XAU/USD) price drifts lower by about 1.49% on Monday as the Greenback gains ground amid escalating hostilities in the Middle East, pushing energy prices higher and increasing…",
+      "link": "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908",
+      "time": "13 Oct 2026, 02:08 WIB",
+      "tag": "Emas",
+      "titleId": "Emas jatuh karena guncangan Minyak memicu reli Dolar AS dan taruhan kenaikan Fed",
+      "summaryId": "Harga Emas (XAU/USD) melayang lebih rendah sekitar 1,49% pada hari Senin karena Greenback menguat di tengah meningkatnya permusuhan di Timur Tengah, mendorong harga energi lebih tinggi dan meningkat..."
     },
     {
-      "titleEn": "Euro holds gains above 1.1200 despite France’s bond turmoil",
-      "summaryEn": "The EUR/USD pair recovers some lost ground to near 1.1215 during the early Asian trading hours on Monday. The US Dollar (USD) softens against the Euro (EUR) after weaker-than-expec…",
-      "link": "https://www.fxstreet.com/news/euro-holds-gains-above-11200-despite-frances-bond-turmoil-202610120100",
-      "time": "12 Oct 2026, 08:00 WIB",
+      "titleEn": "South Korean Won: Uptrend seen resuming against US Dollar – Societe Generale",
+      "summaryEn": "Societe Generale strategists note that the recent USD/KRW bounce stalled around 1390 and the pair is now testing the lower end of its consolidation, suggesting the broader downtren…",
+      "link": "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851",
+      "time": "13 Oct 2026, 01:51 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Euro bertahan di atas 1,1200 meskipun terjadi gejolak obligasi Prancis",
-      "summaryId": "Pasangan EUR/USD pulih dari kerugian hingga mendekati 1,1215 selama jam perdagangan awal Asia pada hari Senin. Dolar AS (USD) melunak terhadap Euro (EUR) setelah lebih lemah dari ekspektasi..."
+      "titleId": "Won Korea Selatan: Tren Naik terlihat berlanjut terhadap Dolar AS – Societe Generale",
+      "summaryId": "Ahli strategi Societe Generale mencatat bahwa pantulan USD/KRW baru - baru ini terhenti di sekitar 1390 dan pasangan ini sekarang menguji ujung bawah konsolidasinya, menunjukkan tren turun yang lebih luas..."
     },
     {
-      "titleEn": "WTI declines to near $90.00 despite escalating Middle East conflict, supply risks",
-      "summaryEn": "West Texas Intermediate (WTI) declines after two days of gains, trading around $90.00 per barrel during Asian hours on Monday.",
-      "link": "https://www.fxstreet.com/news/wti-declines-to-near-9000-despite-escalating-middle-east-conflict-supply-risks-202610120047",
-      "time": "12 Oct 2026, 07:47 WIB",
+      "titleEn": "WTI hits two-week high Middle East tensions overshadow Russian diesel supplies",
+      "summaryEn": "West Texas Intermediate (WTI) Oil reverses course on Monday and climbs to a two-week high as doubts over a Russia-Ukraine energy ceasefire and supply concerns in the Middle East ke…",
+      "link": "https://www.fxstreet.com/news/wti-reverses-losses-as-middle-east-tensions-overshadow-russian-diesel-supplies-202610121822",
+      "time": "13 Oct 2026, 01:22 WIB",
       "tag": "Geopolitik",
-      "titleId": "WTI turun mendekati $ 90,00 meskipun konflik Timur Tengah meningkat, risiko pasokan",
-      "summaryId": "West Texas Intermediate (WTI) turun setelah dua hari kenaikan, diperdagangkan sekitar $ 90,00 per barel selama jam Asia pada hari Senin."
+      "titleId": "Ketegangan Timur Tengah yang tinggi selama dua minggu di WTI membayangi pasokan diesel Rusia",
+      "summaryId": "Minyak West Texas Intermediate (WTI) berbalik arah pada hari Senin dan naik ke level tertinggi dua minggu karena keraguan atas gencatan senjata energi Rusia - Ukraina dan kekhawatiran pasokan di Timur Tengah ke…"
     },
     {
-      "titleEn": "Australian Dollar edges higher to near 0.7000 on weak US Sentiment",
-      "summaryEn": "The AUD/USD pair trades with mild gains around 0.6985 during the early Asian session on Monday. Softening US Consumer Sentiment weigh on the US Dollar (USD) against the Australian …",
-      "link": "https://www.fxstreet.com/news/australian-dollar-edges-higher-to-near-07000-on-weak-us-sentiment-202610112344",
-      "time": "12 Oct 2026, 06:44 WIB",
+      "titleEn": "Chinese Yuan: Gradual appreciation with trade pressures – MUFG",
+      "summaryEn": "MUFG’s Lee Hardman notes the Chinese Renminbi has outperformed the Euro against the Dollar, with USD/CNY hitting a year-to-date low near 6.6900. PBoC’s lower daily fixes have suppo…",
+      "link": "https://www.fxstreet.com/news/chinese-yuan-gradual-appreciation-with-trade-pressures-mufg-202610121812",
+      "time": "13 Oct 2026, 01:12 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Australia naik lebih tinggi mendekati 0,7000 karena Sentimen AS yang lemah",
-      "summaryId": "Pasangan AUD/USD diperdagangkan dengan kenaikan ringan di sekitar 0,6985 selama awal sesi Asia pada hari Senin. Pelunakan Sentimen Konsumen AS membebani Dolar AS (USD) terhadap Australia ..."
+      "titleId": "Yuan Tiongkok: Apresiasi bertahap dengan tekanan perdagangan – MUFG",
+      "summaryId": "Lee Hardman dari MUFG mencatat bahwa Renminbi Tiongkok telah mengungguli Euro terhadap Dolar, dengan USD/CNY mencapai level terendah tahun ini di dekat 6,6900. Perbaikan harian PBoC yang lebih rendah memiliki suppo…"
     },
     {
-      "titleEn": "Middle East War updates: New attack launched on Saudi airport",
-      "summaryEn": "Here’s a brief recap of the key developments in the Middle East war that occurred over the weekend, which are expected to have a significant impact on markets in the upcoming week.",
-      "link": "https://www.fxstreet.com/news/middle-east-war-updates-new-attack-launched-on-saudi-airport-202610112228",
-      "time": "12 Oct 2026, 05:28 WIB",
-      "tag": "Geopolitik",
-      "titleId": "Pembaruan Perang Timur Tengah: Serangan baru diluncurkan di bandara Saudi",
-      "summaryId": "Berikut adalah ringkasan singkat dari perkembangan utama dalam perang Timur Tengah yang terjadi selama akhir pekan, yang diperkirakan akan berdampak signifikan pada pasar di minggu mendatang."
-    },
-    {
-      "titleEn": "Aussie extends weekly gains as Fed pause bets offset hawkish rhetoric",
-      "summaryEn": "The Aussie Dollar ended Friday’s session on a positive note, gaining 0.38% and 0.58% weekly as the US Dollar trimmed some of its weekly gains, while US data confirmed investors' ex…",
-      "link": "https://www.fxstreet.com/news/aussie-extends-weekly-gains-as-fed-pause-bets-offset-hawkish-rhetoric-202610092218",
-      "time": "10 Oct 2026, 05:18 WIB",
+      "titleEn": "Fed’s Hammack sees higher neutral rate, urges more policy restraint",
+      "summaryEn": "Cleveland Federal Reserve (Fed) President Beth Hammack said on Monday that the neutral rate for the Fed funds “is likely higher,” that she is hearing signs of a problem with inflat…",
+      "link": "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753",
+      "time": "13 Oct 2026, 00:53 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Aussie memperpanjang kenaikan mingguan karena taruhan jeda Fed mengimbangi retorika hawkish",
-      "summaryId": "Dolar Aussie mengakhiri sesi Jumat dengan catatan positif, naik 0,38% dan 0,58% setiap minggu karena Dolar AS memangkas beberapa kenaikan mingguannya, sementara data AS mengkonfirmasi investor sebelumnya..."
+      "titleId": "Fed's Hammack melihat tingkat netral yang lebih tinggi, mendesak lebih banyak pengekangan kebijakan",
+      "summaryId": "Presiden Federal Reserve (Fed) Cleveland Beth Hammack mengatakan pada hari Senin bahwa tingkat netral untuk dana Fed \"kemungkinan lebih tinggi ,\" bahwa dia mendengar tanda - tanda masalah dengan inflat..."
     },
     {
-      "titleEn": "Singapore Dollar: Range trading persists against US Dollar – UOB",
-      "summaryEn": "United Overseas Bank’s (UOB) Quek Ser Leang and Lee Sue Ann note that USD/SGD remains supported within the Monetary Authority of Singapore’s policy band, with SGD NEER likely betwe…",
-      "link": "https://www.fxstreet.com/news/singapore-dollar-range-trading-persists-against-us-dollar-uob-202610092031",
-      "time": "10 Oct 2026, 03:31 WIB",
+      "titleEn": "Singapore Dollar: Range bias holds near 1.2835 against US Dollar – UOB",
+      "summaryEn": "United Overseas Bank’s (UOB) Quek Ser Leang and Lee Sue Ann note USD/SGD was little changed around 1.2800 on Friday and expect consolidation to persist. Intraday, they see the pair…",
+      "link": "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738",
+      "time": "13 Oct 2026, 00:38 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Singapura: Perdagangan kisaran berlanjut terhadap Dolar AS – UOB",
-      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari United Overseas Bank (UOB) mencatat bahwa USD/SGD tetap didukung dalam pita kebijakan Otoritas Moneter Singapura, dengan SGD NEER kemungkinan akan…"
+      "titleId": "Dolar Singapura: Bias kisaran bertahan di dekat 1,2835 terhadap Dolar AS – UOB",
+      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari United Overseas Bank (UOB) mencatat USD/SGD sedikit berubah sekitar 1,2800 pada hari Jumat dan memperkirakan konsolidasi akan bertahan. Intraday, mereka melihat pasangan..."
     },
     {
-      "titleEn": "Taiwan Dollar: Trade strength but losses capped against US Dollar – Commerzbank",
-      "summaryEn": "Commerzbank analysts note Taiwan’s September trade surplus hit a record USD23.6bn, with exports surging 60.9% year-on-year on strong AI-related demand. The Central Bank of the Repu…",
-      "link": "https://www.fxstreet.com/news/taiwan-dollar-trade-strength-but-losses-capped-against-us-dollar-commerzbank-202610091949",
-      "time": "10 Oct 2026, 02:49 WIB",
+      "titleEn": "Fed’s Hammack calls for higher rates as inflation pressures broaden",
+      "summaryEn": "Cleveland Federal Reserve (Fed) President Beth Hammack said Monday that interest rates need to be higher, that inflation remains “too high”, and that more economic tightness is nee…",
+      "link": "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702",
+      "time": "13 Oct 2026, 00:02 WIB",
       "tag": "Bank Sentral",
-      "titleId": "Dolar Taiwan: Kekuatan perdagangan tetapi kerugian dibatasi terhadap Dolar AS – Commerzbank",
-      "summaryId": "Analis Commerzbank mencatat surplus perdagangan September Taiwan mencapai rekor USD23,6 miliar, dengan ekspor melonjak 60,9% dari tahun ke tahun karena permintaan terkait AI yang kuat. Bank Sentral Repu..."
+      "titleId": "Fed's Hammack menyerukan suku bunga yang lebih tinggi karena tekanan inflasi meluas",
+      "summaryId": "Presiden Federal Reserve (Fed) Cleveland Beth Hammack mengatakan pada hari Senin bahwa suku bunga harus lebih tinggi, bahwa inflasi tetap \"terlalu tinggi \", dan bahwa lebih banyak pengetatan ekonomi adalah..."
+    },
+    {
+      "titleEn": "Dollar Index hits an 18-month high as the energy ceasefire fails",
+      "summaryEn": "US President Trump said on Friday that Russia and Ukraine had agreed to stop striking each other's energy sites, and Brent fell below $103 a barrel when markets reopened.",
+      "link": "https://www.fxstreet.com/news/dollar-index-hits-an-18-month-high-as-the-energy-ceasefire-fails-202610121554",
+      "time": "12 Oct 2026, 22:54 WIB",
+      "tag": "Dolar/Yield",
+      "titleId": "Indeks Dolar mencapai level tertinggi 18 bulan karena gencatan senjata energi gagal",
+      "summaryId": "Presiden AS Trump mengatakan pada hari Jumat bahwa Rusia dan Ukraina telah sepakat untuk berhenti menyerang lokasi energi masing - masing, dan Brent turun di bawah $ 103 per barel ketika pasar dibuka kembali."
     }
   ],
   "sources": [
