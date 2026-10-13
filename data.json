@@ -1,18 +1,18 @@
 {
-  "updatedAt": "13 Oct 2026, 03:05 WIB",
+  "updatedAt": "13 Oct 2026, 10:19 WIB",
   "price": {
-    "level": "$4,193.30"
+    "level": "$4,202.70"
   },
-  "biasScore": -24,
+  "biasScore": -15,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 38,
-  "bearishPct": 62,
+  "bullishPct": 42,
+  "bearishPct": 58,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,193.30</span>, melemah 0.55% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,202.70</span>, menguat 0.29% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 6 Oct 2026 tercatat net long <span class=\"accent\">210,335</span> kontrak (53.1% dari open interest) — relatif seimbang. Net long ini turun 8,297 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 396,109 kontrak (turun 10,347), mengindikasikan sebagian posisi ditutup.",
     "Katalis terdekat: <b>Core CPI m/m</b> pada 14 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -24/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -15/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "6 Oct 2026",
@@ -30,7 +30,7 @@
     "oiChange": -10347,
     "rangeLow": "$3,901",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 6 Oct 2026; rentang dari harga 52 minggu terakhir"
@@ -134,7 +134,7 @@
     {
       "date": "15 Oct 2026, 19:30 WIB",
       "event": "Core Retail Sales m/m",
-      "note": "Dampak tinggi · Prediksi 0.5% · Sebelumnya 1.4%",
+      "note": "Dampak tinggi · Prediksi 0.6% · Sebelumnya 1.4%",
       "scenario": {
         "strong": {
           "label": "Lebih tinggi dari forecast (data lebih kuat)",
@@ -177,7 +177,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.24% (-0.08%) dan indeks dolar (DXY) menguat ke 102.58 (+0.36%), sementara XAU/USD turun 0.55%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.24% (-0.08%) dan indeks dolar (DXY) melemah ke 102.41 (-0.17%), sementara XAU/USD naik 0.29%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -225,81 +225,81 @@
   "macro": {
     "yield10y": 5.24,
     "yield10yChange": -0.08,
-    "dxy": 102.58,
-    "dxyChange": 0.36
+    "dxy": 102.41,
+    "dxyChange": -0.17
   },
   "news": [
     {
-      "titleEn": "Gold tumbles as Oil shock fuels US Dollar rally and Fed hike bets",
-      "summaryEn": "Gold (XAU/USD) price drifts lower by about 1.49% on Monday as the Greenback gains ground amid escalating hostilities in the Middle East, pushing energy prices higher and increasing…",
-      "link": "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908",
-      "time": "13 Oct 2026, 02:08 WIB",
-      "tag": "Emas",
-      "titleId": "Emas jatuh karena guncangan Minyak memicu reli Dolar AS dan taruhan kenaikan Fed",
-      "summaryId": "Harga Emas (XAU/USD) melayang lebih rendah sekitar 1,49% pada hari Senin karena Greenback menguat di tengah meningkatnya permusuhan di Timur Tengah, mendorong harga energi lebih tinggi dan meningkat..."
+      "titleEn": "BoE’s Greene: Warns of second-round inflation effects if we act late",
+      "summaryEn": "The comments from Bank of England (BoE) Monetary Policy Committee (MPC) member Megan Greene released during the Asian trade on Tuesday signals that she is worried about second-roun…",
+      "link": "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310",
+      "time": "13 Oct 2026, 10:10 WIB",
+      "tag": "Bank Sentral",
+      "titleId": "BoE's Greene: Memperingatkan efek inflasi putaran kedua jika kita bertindak terlambat",
+      "summaryId": "Komentar dari anggota Komite Kebijakan Moneter (MPC) Bank of England (BoE) Megan Greene yang dirilis selama perdagangan Asia pada hari Selasa memberi sinyal bahwa dia khawatir tentang..."
     },
     {
-      "titleEn": "South Korean Won: Uptrend seen resuming against US Dollar – Societe Generale",
-      "summaryEn": "Societe Generale strategists note that the recent USD/KRW bounce stalled around 1390 and the pair is now testing the lower end of its consolidation, suggesting the broader downtren…",
-      "link": "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851",
-      "time": "13 Oct 2026, 01:51 WIB",
-      "tag": "Dolar/Yield",
-      "titleId": "Won Korea Selatan: Tren Naik terlihat berlanjut terhadap Dolar AS – Societe Generale",
-      "summaryId": "Ahli strategi Societe Generale mencatat bahwa pantulan USD/KRW baru - baru ini terhenti di sekitar 1390 dan pasangan ini sekarang menguji ujung bawah konsolidasinya, menunjukkan tren turun yang lebih luas..."
-    },
-    {
-      "titleEn": "WTI hits two-week high Middle East tensions overshadow Russian diesel supplies",
-      "summaryEn": "West Texas Intermediate (WTI) Oil reverses course on Monday and climbs to a two-week high as doubts over a Russia-Ukraine energy ceasefire and supply concerns in the Middle East ke…",
-      "link": "https://www.fxstreet.com/news/wti-reverses-losses-as-middle-east-tensions-overshadow-russian-diesel-supplies-202610121822",
-      "time": "13 Oct 2026, 01:22 WIB",
+      "titleEn": "IMF forecasts global real GDP growth of 3.1% in 2026",
+      "summaryEn": "The International Monetary Fund (IMF) raised its 2026 global growth forecast to 3.1% from 3.0% in July, with strong AI investment offsetting the energy shock from the Middle East w…",
+      "link": "https://www.fxstreet.com/news/imf-forecasts-global-real-gdp-growth-of-31-in-2026-202610130300",
+      "time": "13 Oct 2026, 10:00 WIB",
       "tag": "Geopolitik",
-      "titleId": "Ketegangan Timur Tengah yang tinggi selama dua minggu di WTI membayangi pasokan diesel Rusia",
-      "summaryId": "Minyak West Texas Intermediate (WTI) berbalik arah pada hari Senin dan naik ke level tertinggi dua minggu karena keraguan atas gencatan senjata energi Rusia - Ukraina dan kekhawatiran pasokan di Timur Tengah ke…"
+      "titleId": "IMF memperkirakan pertumbuhan PDB riil global sebesar 3,1% pada tahun 2026",
+      "summaryId": "Dana Moneter Internasional (IMF) menaikkan proyeksi pertumbuhan global 2026 menjadi 3,1% dari 3,0% pada Juli, dengan investasi AI yang kuat mengimbangi guncangan energi dari Timur Tengah dengan..."
     },
     {
-      "titleEn": "Chinese Yuan: Gradual appreciation with trade pressures – MUFG",
-      "summaryEn": "MUFG’s Lee Hardman notes the Chinese Renminbi has outperformed the Euro against the Dollar, with USD/CNY hitting a year-to-date low near 6.6900. PBoC’s lower daily fixes have suppo…",
-      "link": "https://www.fxstreet.com/news/chinese-yuan-gradual-appreciation-with-trade-pressures-mufg-202610121812",
-      "time": "13 Oct 2026, 01:12 WIB",
+      "titleEn": "Japanese Yen strengthens despite softer PPI data",
+      "summaryEn": "The USD/JPY pair loses ground to near 158.25 during the Asian trading hours on Tuesday. The Japanese Yen (JPY) strengthens against the US Dollar (USD) despite softer Japanese Produ…",
+      "link": "https://www.fxstreet.com/news/japanese-yen-strengthens-despite-softer-ppi-data-202610130250",
+      "time": "13 Oct 2026, 09:50 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Yuan Tiongkok: Apresiasi bertahap dengan tekanan perdagangan – MUFG",
-      "summaryId": "Lee Hardman dari MUFG mencatat bahwa Renminbi Tiongkok telah mengungguli Euro terhadap Dolar, dengan USD/CNY mencapai level terendah tahun ini di dekat 6,6900. Perbaikan harian PBoC yang lebih rendah memiliki suppo…"
+      "titleId": "Yen Jepang menguat meskipun data PPI lebih lembut",
+      "summaryId": "Pasangan USD/JPY kehilangan posisi mendekati 158,25 selama jam perdagangan Asia pada hari Selasa. Yen Jepang (JPY) menguat terhadap Dolar AS (USD) meskipun Produ Jepang lebih lembut…"
     },
     {
-      "titleEn": "Fed’s Hammack sees higher neutral rate, urges more policy restraint",
-      "summaryEn": "Cleveland Federal Reserve (Fed) President Beth Hammack said on Monday that the neutral rate for the Fed funds “is likely higher,” that she is hearing signs of a problem with inflat…",
-      "link": "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753",
-      "time": "13 Oct 2026, 00:53 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Fed's Hammack melihat tingkat netral yang lebih tinggi, mendesak lebih banyak pengekangan kebijakan",
-      "summaryId": "Presiden Federal Reserve (Fed) Cleveland Beth Hammack mengatakan pada hari Senin bahwa tingkat netral untuk dana Fed \"kemungkinan lebih tinggi ,\" bahwa dia mendengar tanda - tanda masalah dengan inflat..."
+      "titleEn": "Silver Price Forecast: XAG/USD falls to near $60.00 amid higher oil prices, US Dollar",
+      "summaryEn": "Silver price (XAG/USD) extends its losses for the second consecutive day, trading around $60.00 per troy ounce during Asian hours on Tuesday. Silver is struggling as rising oil pri…",
+      "link": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-falls-to-near-6000-amid-higher-oil-prices-us-dollar-202610130206",
+      "time": "13 Oct 2026, 09:06 WIB",
+      "tag": "Emas",
+      "titleId": "Prakiraan Harga Perak: XAG/USD turun mendekati $ 60,00 di tengah harga minyak yang lebih tinggi, Dolar AS",
+      "summaryId": "Harga perak (XAG/USD) memperpanjang kerugiannya untuk hari kedua berturut - turut, diperdagangkan sekitar $ 60,00 per troy ounce selama jam - jam Asia pada hari Selasa. Perak sedang berjuang karena kenaikan harga minyak..."
     },
     {
-      "titleEn": "Singapore Dollar: Range bias holds near 1.2835 against US Dollar – UOB",
-      "summaryEn": "United Overseas Bank’s (UOB) Quek Ser Leang and Lee Sue Ann note USD/SGD was little changed around 1.2800 on Friday and expect consolidation to persist. Intraday, they see the pair…",
-      "link": "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738",
-      "time": "13 Oct 2026, 00:38 WIB",
+      "titleEn": "United States Dollar Index eases from 18-month peak; slips below 102.50",
+      "summaryEn": "The US Dollar Index (DXY), which tracks the Greenback against a basket of currencies, drifts lower during the Asians session on Tuesday, eroding a part of the previous day's strong…",
+      "link": "https://www.fxstreet.com/news/united-states-dollar-index-eases-from-18-month-peak-slips-below-10250-202610130156",
+      "time": "13 Oct 2026, 08:56 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Dolar Singapura: Bias kisaran bertahan di dekat 1,2835 terhadap Dolar AS – UOB",
-      "summaryId": "Quek Ser Leang dan Lee Sue Ann dari United Overseas Bank (UOB) mencatat USD/SGD sedikit berubah sekitar 1,2800 pada hari Jumat dan memperkirakan konsolidasi akan bertahan. Intraday, mereka melihat pasangan..."
+      "titleId": "Indeks Dolar Amerika Serikat turun dari puncak 18 bulan; tergelincir di bawah 102,50",
+      "summaryId": "Indeks Dolar AS (DXY), yang melacak Dolar AS terhadap sekeranjang mata uang, melayang lebih rendah selama sesi Asia pada hari Selasa, mengikis sebagian dari penguatan hari sebelumnya..."
     },
     {
-      "titleEn": "Fed’s Hammack calls for higher rates as inflation pressures broaden",
-      "summaryEn": "Cleveland Federal Reserve (Fed) President Beth Hammack said Monday that interest rates need to be higher, that inflation remains “too high”, and that more economic tightness is nee…",
-      "link": "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702",
-      "time": "13 Oct 2026, 00:02 WIB",
-      "tag": "Bank Sentral",
-      "titleId": "Fed's Hammack menyerukan suku bunga yang lebih tinggi karena tekanan inflasi meluas",
-      "summaryId": "Presiden Federal Reserve (Fed) Cleveland Beth Hammack mengatakan pada hari Senin bahwa suku bunga harus lebih tinggi, bahwa inflasi tetap \"terlalu tinggi \", dan bahwa lebih banyak pengetatan ekonomi adalah..."
+      "titleEn": "Euro gathers strength above 1.1150 despite France’s fiscal concerns",
+      "summaryEn": "The EUR/USD pair gains ground to near 1.1165 during the early Asian trading hours on Tuesday. Nonetheless, the potential upside for the major pair might be limited amid growing fis…",
+      "link": "https://www.fxstreet.com/news/euro-gathers-strength-above-11150-despite-frances-fiscal-concerns-202610130154",
+      "time": "13 Oct 2026, 08:54 WIB",
+      "tag": "Data Ekonomi",
+      "titleId": "Euro mengumpulkan kekuatan di atas 1,1150 meskipun ada kekhawatiran fiskal Prancis",
+      "summaryId": "Pasangan EUR/USD menguat ke dekat 1,1165 selama jam perdagangan awal Asia pada hari Selasa. Meskipun demikian, potensi kenaikan untuk pasangan utama mungkin terbatas di tengah meningkatnya fis..."
     },
     {
-      "titleEn": "Dollar Index hits an 18-month high as the energy ceasefire fails",
-      "summaryEn": "US President Trump said on Friday that Russia and Ukraine had agreed to stop striking each other's energy sites, and Brent fell below $103 a barrel when markets reopened.",
-      "link": "https://www.fxstreet.com/news/dollar-index-hits-an-18-month-high-as-the-energy-ceasefire-fails-202610121554",
-      "time": "12 Oct 2026, 22:54 WIB",
+      "titleEn": "British Pound gains on BRC Like-For-Like Retail Sales data despite geopolitical tensions",
+      "summaryEn": "GBP/USD inches higher after posting modest losses in the previous day, trading around 1.3220 during Asian hours on Tuesday. The pair appreciated as the British Pound (GBP) gained g…",
+      "link": "https://www.fxstreet.com/news/british-pound-gains-on-brc-like-for-like-retail-sales-data-despite-geopolitical-tensions-202610130124",
+      "time": "13 Oct 2026, 08:24 WIB",
+      "tag": "Geopolitik",
+      "titleId": "Keuntungan Pound Inggris pada data Penjualan Ritel Like - For - Like BRC meskipun ada ketegangan geopolitik",
+      "summaryId": "GBP/USD lebih tinggi setelah membukukan kerugian moderat di hari sebelumnya, diperdagangkan di sekitar 1,3220 selama jam - jam Asia pada hari Selasa. Pasangan ini diapresiasi karena Pound Inggris (GBP) menguat g..."
+    },
+    {
+      "titleEn": "Canadian Dollar edges higher but remains close to April 2025 lows vs bullish USD",
+      "summaryEn": "The USD/CAD pair edges lower during the Asian session on Tuesday, though it remains close to the highest level since April 2025, touched last week. Spot prices currently trade arou…",
+      "link": "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121",
+      "time": "13 Oct 2026, 08:21 WIB",
       "tag": "Dolar/Yield",
-      "titleId": "Indeks Dolar mencapai level tertinggi 18 bulan karena gencatan senjata energi gagal",
-      "summaryId": "Presiden AS Trump mengatakan pada hari Jumat bahwa Rusia dan Ukraina telah sepakat untuk berhenti menyerang lokasi energi masing - masing, dan Brent turun di bawah $ 103 per barel ketika pasar dibuka kembali."
+      "titleId": "Dolar Kanada naik lebih tinggi tetapi tetap mendekati posisi terendah April 2025 vs USD bullish",
+      "summaryId": "Pasangan USD/CAD naik tipis selama sesi Asia pada hari Selasa, meskipun tetap mendekati level tertinggi sejak April 2025, menyentuh pekan lalu. Harga spot saat ini diperdagangkan arou…"
     }
   ],
   "sources": [
