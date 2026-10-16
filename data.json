@@ -1,18 +1,18 @@
 {
-  "updatedAt": "15 Oct 2026, 22:27 WIB",
+  "updatedAt": "16 Oct 2026, 07:57 WIB",
   "price": {
-    "level": "$4,175.50"
+    "level": "$4,175.00"
   },
-  "biasScore": -2,
-  "biasLabel": "NETRAL",
-  "bullishPct": 49,
-  "bearishPct": 51,
+  "biasScore": -17,
+  "biasLabel": "NETRAL condong BEARISH",
+  "bullishPct": 42,
+  "bearishPct": 58,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,175.50</span>, menguat 1.65% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,175.00</span>, menguat 0.12% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 6 Oct 2026 tercatat net long <span class=\"accent\">210,335</span> kontrak (53.1% dari open interest) — relatif seimbang. Net long ini turun 8,297 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 396,109 kontrak (turun 10,347), mengindikasikan sebagian posisi ditutup.",
-    "Katalis terdekat: <b>Core PPI m/m</b> pada 15 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -2/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Katalis terdekat: <b>Fed Chairman Warsh Speaks</b> pada 16 Oct 2026, 10:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
+    "<b>Kesimpulan:</b> skor komposit -17/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "6 Oct 2026",
@@ -36,82 +36,6 @@
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 6 Oct 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
-    {
-      "date": "15 Oct 2026, 19:30 WIB",
-      "event": "Core PPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 0.2%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "15 Oct 2026, 19:30 WIB",
-      "event": "Core Retail Sales m/m",
-      "note": "Dampak tinggi · Prediksi 0.6% · Sebelumnya 1.4%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "15 Oct 2026, 19:30 WIB",
-      "event": "PPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.6% · Sebelumnya 0.4%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "15 Oct 2026, 19:30 WIB",
-      "event": "Retail Sales m/m",
-      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 1.2%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
     {
       "date": "16 Oct 2026, 10:30 WIB",
       "event": "Fed Chairman Warsh Speaks",
@@ -158,7 +82,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.09% (-1.95%) dan indeks dolar (DXY) melemah ke 102.14 (-0.40%), sementara XAU/USD naik 1.65%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.09% (-1.95%) dan indeks dolar (DXY) menguat ke 102.07 (+0.02%), sementara XAU/USD naik 0.12%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -188,7 +112,7 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-10-13"
+      "asOf": "2026-10-14"
     },
     "mediaSentiment": null,
     "cpi": {
@@ -198,16 +122,16 @@
       "asOf": "2026-09-01"
     },
     "wti": {
-      "price": 96.24,
-      "changePct": 0.11,
-      "asOf": "2026-10-06"
+      "price": 101.91,
+      "changePct": 1.04,
+      "asOf": "2026-10-14"
     }
   },
   "macro": {
     "yield10y": 5.09,
     "yield10yChange": -1.95,
-    "dxy": 102.14,
-    "dxyChange": -0.4
+    "dxy": 102.07,
+    "dxyChange": 0.02
   },
   "news": [],
   "sources": [
