@@ -1,14 +1,14 @@
 {
-  "updatedAt": "24 Oct 2026, 08:19 WIB",
+  "updatedAt": "24 Oct 2026, 21:11 WIB",
   "price": {
-    "level": "$4,010.00"
+    "level": "$4,007.90"
   },
   "biasScore": -33,
   "biasLabel": "BEARISH",
   "bullishPct": 34,
   "bearishPct": 66,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,010.00</span>, melemah 1.24% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,007.90</span>, melemah 1.29% pada sesi terakhir, dengan rentang 52 minggu $3,901–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 20 Oct 2026 tercatat net long <span class=\"accent\">199,865</span> kontrak (49.7% dari open interest) — relatif seimbang. Net long ini turun 8,014 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 402,279 kontrak (naik 5,934), mengindikasikan minat baru masuk pasar.",
     "<b>Kesimpulan:</b> skor komposit -33/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.99% (+0.71%) dan indeks dolar (DXY) menguat ke 101.75 (+0.14%), sementara XAU/USD turun 1.24%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.99% (+0.71%) dan indeks dolar (DXY) melemah ke 101.75 (-0.06%), sementara XAU/USD turun 1.29%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -116,7 +116,7 @@
     "yield10y": 4.99,
     "yield10yChange": 0.71,
     "dxy": 101.75,
-    "dxyChange": 0.14
+    "dxyChange": -0.06
   },
   "news": [],
   "sources": [
