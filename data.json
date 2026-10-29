@@ -1,18 +1,18 @@
 {
-  "updatedAt": "29 Oct 2026, 09:03 WIB",
+  "updatedAt": "30 Oct 2026, 00:16 WIB",
   "price": {
-    "level": "$4,070.80"
+    "level": "$4,031.50"
   },
-  "biasScore": -16,
+  "biasScore": -25,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 42,
-  "bearishPct": 58,
+  "bullishPct": 38,
+  "bearishPct": 62,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,070.80</span>, menguat 0.47% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,031.50</span>, melemah 0.5% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 20 Oct 2026 tercatat net long <span class=\"accent\">199,865</span> kontrak (49.7% dari open interest) — relatif seimbang. Net long ini turun 8,014 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 402,279 kontrak (naik 5,934), mengindikasikan minat baru masuk pasar.",
     "Katalis terdekat: <b>Advance GDP q/q</b> pada 29 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -16/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -25/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "20 Oct 2026",
@@ -30,7 +30,7 @@
     "oiChange": 5934,
     "rangeLow": "$3,925",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Menguat",
     "tagClass": "tag-bull",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 20 Oct 2026; rentang dari harga 52 minggu terakhir"
@@ -101,7 +101,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.04% (+1.04%) dan indeks dolar (DXY) melemah ke 102.15 (-0.05%), sementara XAU/USD naik 0.47%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.0% (-0.95%) dan indeks dolar (DXY) melemah ke 102.0 (-0.20%), sementara XAU/USD turun 0.5%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -147,10 +147,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.04,
-    "yield10yChange": 1.04,
-    "dxy": 102.15,
-    "dxyChange": -0.05
+    "yield10y": 5.0,
+    "yield10yChange": -0.95,
+    "dxy": 102.0,
+    "dxyChange": -0.2
   },
   "news": [],
   "sources": [
