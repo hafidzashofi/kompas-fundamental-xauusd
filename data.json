@@ -1,18 +1,18 @@
 {
-  "updatedAt": "28 Oct 2026, 23:56 WIB",
+  "updatedAt": "29 Oct 2026, 09:03 WIB",
   "price": {
-    "level": "$4,052.50"
+    "level": "$4,070.80"
   },
-  "biasScore": -26,
+  "biasScore": -16,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 37,
-  "bearishPct": 63,
+  "bullishPct": 42,
+  "bearishPct": 58,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,052.50</span>, melemah 0.54% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,070.80</span>, menguat 0.47% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 20 Oct 2026 tercatat net long <span class=\"accent\">199,865</span> kontrak (49.7% dari open interest) — relatif seimbang. Net long ini turun 8,014 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 402,279 kontrak (naik 5,934), mengindikasikan minat baru masuk pasar.",
-    "Katalis terdekat: <b>Federal Funds Rate</b> pada 29 Oct 2026, 01:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -26/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Katalis terdekat: <b>Advance GDP q/q</b> pada 29 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
+    "<b>Kesimpulan:</b> skor komposit -16/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "20 Oct 2026",
@@ -30,69 +30,12 @@
     "oiChange": 5934,
     "rangeLow": "$3,925",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Menguat",
     "tagClass": "tag-bull",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 20 Oct 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
-    {
-      "date": "29 Oct 2026, 01:00 WIB",
-      "event": "Federal Funds Rate",
-      "note": "Dampak tinggi · Prediksi 4.00% · Sebelumnya 4.00%",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
-    {
-      "date": "29 Oct 2026, 01:00 WIB",
-      "event": "FOMC Statement",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
-    {
-      "date": "29 Oct 2026, 01:30 WIB",
-      "event": "FOMC Press Conference",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Dovish (pangkas / sinyal pangkas suku bunga)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "USD melemah karena imbal hasil turun → emas jadi lebih menarik."
-        },
-        "weak": {
-          "label": "Hawkish (tahan / naikkan suku bunga)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "USD & yield naik → biaya peluang memegang emas meningkat."
-        }
-      }
-    },
     {
       "date": "29 Oct 2026, 19:30 WIB",
       "event": "Advance GDP q/q",
@@ -158,7 +101,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.03% (+0.70%) dan indeks dolar (DXY) melemah ke 102.27 (-0.05%), sementara XAU/USD turun 0.54%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.04% (+1.04%) dan indeks dolar (DXY) melemah ke 102.15 (-0.05%), sementara XAU/USD naik 0.47%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -188,7 +131,7 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-10-26"
+      "asOf": "2026-10-27"
     },
     "mediaSentiment": null,
     "cpi": {
@@ -198,15 +141,15 @@
       "asOf": "2026-09-01"
     },
     "wti": {
-      "price": 107.89,
-      "changePct": -1.93,
-      "asOf": "2026-10-20"
+      "price": 103.37,
+      "changePct": -1.79,
+      "asOf": "2026-10-27"
     }
   },
   "macro": {
-    "yield10y": 5.03,
-    "yield10yChange": 0.7,
-    "dxy": 102.27,
+    "yield10y": 5.04,
+    "yield10yChange": 1.04,
+    "dxy": 102.15,
     "dxyChange": -0.05
   },
   "news": [],
