@@ -1,18 +1,17 @@
 {
-  "updatedAt": "30 Oct 2026, 00:16 WIB",
+  "updatedAt": "30 Oct 2026, 09:20 WIB",
   "price": {
-    "level": "$4,031.50"
+    "level": "$4,022.50"
   },
-  "biasScore": -25,
+  "biasScore": -22,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 38,
-  "bearishPct": 62,
+  "bullishPct": 39,
+  "bearishPct": 61,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,031.50</span>, melemah 0.5% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,022.50</span>, melemah 0.22% pada sesi terakhir, dengan rentang 52 minggu $3,925–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 20 Oct 2026 tercatat net long <span class=\"accent\">199,865</span> kontrak (49.7% dari open interest) — relatif seimbang. Net long ini turun 8,014 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 402,279 kontrak (naik 5,934), mengindikasikan minat baru masuk pasar.",
-    "Katalis terdekat: <b>Advance GDP q/q</b> pada 29 Oct 2026, 19:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -25/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -22/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "20 Oct 2026",
@@ -37,42 +36,9 @@
   },
   "calendar": [
     {
-      "date": "29 Oct 2026, 19:30 WIB",
-      "event": "Advance GDP q/q",
-      "note": "Dampak tinggi · Prediksi 3.2% · Sebelumnya 1.5%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "29 Oct 2026, 19:30 WIB",
-      "event": "Core PCE Price Index m/m",
-      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 0.2%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
+      "date": "-",
+      "event": "Tidak ada event high-impact USD terjadwal",
+      "note": "Cek kembali menjelang akhir pekan"
     }
   ],
   "positioning": {
@@ -101,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.0% (-0.95%) dan indeks dolar (DXY) melemah ke 102.0 (-0.20%), sementara XAU/USD turun 0.5%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.99% (-1.11%) dan indeks dolar (DXY) melemah ke 101.75 (-0.28%), sementara XAU/USD turun 0.22%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -131,7 +97,7 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-10-27"
+      "asOf": "2026-10-28"
     },
     "mediaSentiment": null,
     "cpi": {
@@ -147,10 +113,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.0,
-    "yield10yChange": -0.95,
-    "dxy": 102.0,
-    "dxyChange": -0.2
+    "yield10y": 4.99,
+    "yield10yChange": -1.11,
+    "dxy": 101.75,
+    "dxyChange": -0.28
   },
   "news": [],
   "sources": [
