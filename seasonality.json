@@ -1,5 +1,5 @@
 {
-  "generatedAt": "01 Oct 2026, 10:21 WIB",
+  "generatedAt": "01 Nov 2026, 10:33 WIB",
   "symbol": "GC=F",
   "yearsCovered": "2000-2026",
   "sampleCount": 27,
@@ -143,7 +143,7 @@
     {
       "month": 9,
       "name": "Sep",
-      "avgReturnPct": 1.08,
+      "avgReturnPct": 1.09,
       "winRatePct": 50.0,
       "sampleYears": 22,
       "best": {
@@ -160,9 +160,9 @@
     {
       "month": 10,
       "name": "Okt",
-      "avgReturnPct": 0.03,
-      "winRatePct": 52.2,
-      "sampleYears": 23,
+      "avgReturnPct": -0.27,
+      "winRatePct": 45.8,
+      "sampleYears": 24,
       "best": {
         "year": 2024,
         "returnPct": 8.77
@@ -248,19 +248,19 @@
     },
     {
       "label": "Sep",
-      "index": 111.29
+      "index": 111.3
     },
     {
       "label": "Okt",
-      "index": 111.33
+      "index": 111.0
     },
     {
       "label": "Nov",
-      "index": 113.11
+      "index": 112.78
     },
     {
       "label": "Des",
-      "index": 114.59
+      "index": 114.26
     }
   ],
   "note": "Dihitung dari return bulanan historis GC=F (COMEX Gold futures, data Yahoo Finance sejak 2000). Statistik masa lalu, bukan jaminan pergerakan di masa depan."
