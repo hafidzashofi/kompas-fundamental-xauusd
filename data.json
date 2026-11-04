@@ -1,18 +1,18 @@
 {
-  "updatedAt": "4 Nov 2026, 01:11 WIB",
+  "updatedAt": "4 Nov 2026, 09:51 WIB",
   "price": {
-    "level": "$3,942.50"
+    "level": "$3,952.50"
   },
-  "biasScore": -43,
+  "biasScore": -33,
   "biasLabel": "BEARISH",
-  "bullishPct": 28,
-  "bearishPct": 72,
+  "bullishPct": 34,
+  "bearishPct": 66,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,942.50</span>, melemah 0.68% pada sesi terakhir, dengan rentang 52 minggu $3,879–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,952.50</span>, menguat 0.31% pada sesi terakhir, dengan rentang 52 minggu $3,879–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 27 Oct 2026 tercatat net long <span class=\"accent\">186,451</span> kontrak (47.0% dari open interest) — relatif seimbang. Net long ini turun 13,414 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 396,810 kontrak (turun 5,469), mengindikasikan sebagian posisi ditutup.",
-    "Katalis terdekat: <b>Congressional Elections</b> pada 3 Nov 2026, 22:16 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -43/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Katalis terdekat: <b>Average Hourly Earnings m/m</b> pada 6 Nov 2026, 20:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
+    "<b>Kesimpulan:</b> skor komposit -33/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "27 Oct 2026",
@@ -30,31 +30,12 @@
     "oiChange": -5469,
     "rangeLow": "$3,879",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga bergerak searah",
+    "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Melemah",
     "tagClass": "tag-bear",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 27 Oct 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
-    {
-      "date": "3 Nov 2026, 22:16 WIB",
-      "event": "Congressional Elections",
-      "note": "Dampak tinggi · Prediksi - · Sebelumnya -",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
     {
       "date": "6 Nov 2026, 20:30 WIB",
       "event": "Average Hourly Earnings m/m",
@@ -139,7 +120,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.95% (+1.19%) dan indeks dolar (DXY) menguat ke 101.81 (+0.06%), sementara XAU/USD turun 0.68%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.95% (+1.19%) dan indeks dolar (DXY) melemah ke 101.31 (-0.54%), sementara XAU/USD naik 0.31%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -169,7 +150,7 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-10-30"
+      "asOf": "2026-11-02"
     },
     "mediaSentiment": null,
     "cpi": {
@@ -187,8 +168,8 @@
   "macro": {
     "yield10y": 4.95,
     "yield10yChange": 1.19,
-    "dxy": 101.81,
-    "dxyChange": 0.06
+    "dxy": 101.31,
+    "dxyChange": -0.54
   },
   "news": [],
   "sources": [
