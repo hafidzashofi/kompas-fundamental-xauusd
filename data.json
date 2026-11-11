@@ -1,18 +1,18 @@
 {
-  "updatedAt": "11 Nov 2026, 01:24 WIB",
+  "updatedAt": "11 Nov 2026, 09:28 WIB",
   "price": {
-    "level": "$4,026.10"
+    "level": "$4,049.20"
   },
-  "biasScore": -43,
-  "biasLabel": "BEARISH",
-  "bullishPct": 28,
-  "bearishPct": 72,
+  "biasScore": -17,
+  "biasLabel": "NETRAL condong BEARISH",
+  "bullishPct": 42,
+  "bearishPct": 58,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,026.10</span>, melemah 2.15% pada sesi terakhir, dengan rentang 52 minggu $3,879–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$4,049.20</span>, menguat 0.47% pada sesi terakhir, dengan rentang 52 minggu $3,879–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 3 Nov 2026 tercatat net long <span class=\"accent\">179,548</span> kontrak (45.0% dari open interest) — relatif seimbang. Net long ini turun 6,903 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 399,169 kontrak (naik 2,359), mengindikasikan minat baru masuk pasar.",
-    "Katalis terdekat: <b>Core CPI m/m</b> pada 10 Nov 2026, 20:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -43/100 → bias <b>BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "Katalis terdekat: <b>Core PPI m/m</b> pada 13 Nov 2026, 20:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
+    "<b>Kesimpulan:</b> skor komposit -17/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "3 Nov 2026",
@@ -30,50 +30,12 @@
     "oiChange": 2359,
     "rangeLow": "$3,879",
     "rangeHigh": "$5,586",
-    "structureNote": "OI & harga berlawanan arah",
+    "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Menguat",
     "tagClass": "tag-bull",
     "footnote": "Open interest kontrak Gold 100oz COMEX per laporan CFTC 3 Nov 2026; rentang dari harga 52 minggu terakhir"
   },
   "calendar": [
-    {
-      "date": "10 Nov 2026, 20:30 WIB",
-      "event": "Core CPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.2% · Sebelumnya 0.3%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "10 Nov 2026, 20:30 WIB",
-      "event": "CPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 0.6%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
     {
       "date": "13 Nov 2026, 20:30 WIB",
       "event": "Core PPI m/m",
@@ -139,7 +101,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.01% (+2.96%) dan indeks dolar (DXY) menguat ke 102.32 (+0.65%), sementara XAU/USD turun 2.15%. Pola ini konsisten dengan hubungan klasik: yield/dolar naik menekan emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 4.98% (+2.45%) dan indeks dolar (DXY) menguat ke 102.24 (+0.01%), sementara XAU/USD naik 0.47%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -169,15 +131,10 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-11-06"
+      "asOf": "2026-11-09"
     },
     "mediaSentiment": null,
-    "cpi": {
-      "index": 336.94,
-      "yoyPct": 3.74,
-      "momPct": 0.59,
-      "asOf": "2026-09-01"
-    },
+    "cpi": null,
     "wti": {
       "price": 99.64,
       "changePct": -0.42,
@@ -185,10 +142,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.01,
-    "yield10yChange": 2.96,
-    "dxy": 102.32,
-    "dxyChange": 0.65
+    "yield10y": 4.98,
+    "yield10yChange": 2.45,
+    "dxy": 102.24,
+    "dxyChange": 0.01
   },
   "news": [],
   "sources": [
