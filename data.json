@@ -1,18 +1,18 @@
 {
-  "updatedAt": "13 Nov 2026, 10:05 WIB",
+  "updatedAt": "14 Nov 2026, 01:20 WIB",
   "price": {
-    "level": "$3,914.90"
+    "level": "$3,885.80"
   },
-  "biasScore": -14,
+  "biasScore": -21,
   "biasLabel": "NETRAL condong BEARISH",
-  "bullishPct": 43,
-  "bearishPct": 57,
+  "bullishPct": 40,
+  "bearishPct": 60,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,914.90</span>, menguat 0.76% pada sesi terakhir, dengan rentang 52 minggu $3,879–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,885.80</span>, menguat 0.01% pada sesi terakhir, dengan rentang 52 minggu $3,857–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 3 Nov 2026 tercatat net long <span class=\"accent\">179,548</span> kontrak (45.0% dari open interest) — relatif seimbang. Net long ini turun 6,903 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 399,169 kontrak (naik 2,359), mengindikasikan minat baru masuk pasar.",
     "Katalis terdekat: <b>Core PPI m/m</b> pada 13 Nov 2026, 20:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
-    "<b>Kesimpulan:</b> skor komposit -14/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
+    "<b>Kesimpulan:</b> skor komposit -21/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
     "reportDate": "3 Nov 2026",
@@ -28,7 +28,7 @@
   "cme": {
     "openInterest": 399169,
     "oiChange": 2359,
-    "rangeLow": "$3,879",
+    "rangeLow": "$3,857",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga bergerak searah",
     "tagLabel": "Menguat",
@@ -101,7 +101,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.1% (+2.10%) dan indeks dolar (DXY) melemah ke 103.16 (-0.01%), sementara XAU/USD naik 0.76%. Pola ini konsisten dengan hubungan klasik: yield/dolar turun mengangkat emas.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.14% (+0.74%) dan indeks dolar (DXY) menguat ke 103.38 (+0.20%), sementara XAU/USD naik 0.01%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -142,10 +142,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.1,
-    "yield10yChange": 2.1,
-    "dxy": 103.16,
-    "dxyChange": -0.01
+    "yield10y": 5.14,
+    "yield10yChange": 0.74,
+    "dxy": 103.38,
+    "dxyChange": 0.2
   },
   "news": [],
   "sources": [
