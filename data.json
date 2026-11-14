@@ -1,17 +1,16 @@
 {
-  "updatedAt": "14 Nov 2026, 01:20 WIB",
+  "updatedAt": "14 Nov 2026, 09:51 WIB",
   "price": {
-    "level": "$3,885.80"
+    "level": "$3,887.60"
   },
   "biasScore": -21,
   "biasLabel": "NETRAL condong BEARISH",
   "bullishPct": 40,
   "bearishPct": 60,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,885.80</span>, menguat 0.01% pada sesi terakhir, dengan rentang 52 minggu $3,857–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,887.60</span>, menguat 0.06% pada sesi terakhir, dengan rentang 52 minggu $3,857–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 3 Nov 2026 tercatat net long <span class=\"accent\">179,548</span> kontrak (45.0% dari open interest) — relatif seimbang. Net long ini turun 6,903 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 399,169 kontrak (naik 2,359), mengindikasikan minat baru masuk pasar.",
-    "Katalis terdekat: <b>Core PPI m/m</b> pada 13 Nov 2026, 20:30 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
     "<b>Kesimpulan:</b> skor komposit -21/100 → bias <b>NETRAL condong BEARISH</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
   ],
   "cot": {
@@ -37,42 +36,9 @@
   },
   "calendar": [
     {
-      "date": "13 Nov 2026, 20:30 WIB",
-      "event": "Core PPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.3% · Sebelumnya 0.7%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
-    },
-    {
-      "date": "13 Nov 2026, 20:30 WIB",
-      "event": "PPI m/m",
-      "note": "Dampak tinggi · Prediksi 0.4% · Sebelumnya 1.3%",
-      "scenario": {
-        "strong": {
-          "label": "Lebih tinggi dari forecast (data lebih kuat)",
-          "impact": "Bearish",
-          "cls": "tag-bear",
-          "reason": "Memperkuat ekspektasi The Fed hawkish → USD & yield naik → emas tertekan."
-        },
-        "weak": {
-          "label": "Lebih rendah dari forecast (data lebih lemah)",
-          "impact": "Bullish",
-          "cls": "tag-bull",
-          "reason": "Membuka peluang The Fed lebih dovish → USD melemah → emas naik."
-        }
-      }
+      "date": "-",
+      "event": "Tidak ada event high-impact USD terjadwal",
+      "note": "Cek kembali menjelang akhir pekan"
     }
   ],
   "positioning": {
@@ -101,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.14% (+0.74%) dan indeks dolar (DXY) menguat ke 103.38 (+0.20%), sementara XAU/USD naik 0.01%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.15% (+1.00%) dan indeks dolar (DXY) menguat ke 103.41 (+0.23%), sementara XAU/USD naik 0.06%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -131,7 +97,7 @@
     "fedFundsRate": {
       "rate": 3.88,
       "changeFromPrior": 0.25,
-      "asOf": "2026-11-11"
+      "asOf": "2026-11-12"
     },
     "mediaSentiment": null,
     "cpi": null,
@@ -142,10 +108,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.14,
-    "yield10yChange": 0.74,
-    "dxy": 103.38,
-    "dxyChange": 0.2
+    "yield10y": 5.15,
+    "yield10yChange": 1.0,
+    "dxy": 103.41,
+    "dxyChange": 0.23
   },
   "news": [],
   "sources": [
