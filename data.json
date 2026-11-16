@@ -1,14 +1,14 @@
 {
-  "updatedAt": "16 Nov 2026, 00:31 WIB",
+  "updatedAt": "16 Nov 2026, 09:31 WIB",
   "price": {
-    "level": "$3,886.30"
+    "level": "$3,887.40"
   },
   "biasScore": -21,
   "biasLabel": "NETRAL condong BEARISH",
   "bullishPct": 40,
   "bearishPct": 60,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,886.30</span>, menguat 0.03% pada sesi terakhir, dengan rentang 52 minggu $3,857–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,887.40</span>, menguat 0.03% pada sesi terakhir, dengan rentang 52 minggu $3,857–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 3 Nov 2026 tercatat net long <span class=\"accent\">179,548</span> kontrak (45.0% dari open interest) — relatif seimbang. Net long ini turun 6,903 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 399,169 kontrak (naik 2,359), mengindikasikan minat baru masuk pasar.",
     "Katalis terdekat: <b>Fed Chairman Warsh Speaks</b> pada 17 Nov 2026, 00:00 WIB — event high-impact yang berpotensi memicu volatilitas jangka pendek pada USD dan gold.",
@@ -139,7 +139,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.15% (+1.00%) dan indeks dolar (DXY) melemah ke 103.41 (-0.00%), sementara XAU/USD naik 0.03%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun naik ke 5.15% (+1.00%) dan indeks dolar (DXY) menguat ke 103.43 (+0.02%), sementara XAU/USD naik 0.03%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -182,8 +182,8 @@
   "macro": {
     "yield10y": 5.15,
     "yield10yChange": 1.0,
-    "dxy": 103.41,
-    "dxyChange": -0.0
+    "dxy": 103.43,
+    "dxyChange": 0.02
   },
   "news": [],
   "sources": [
