@@ -1,14 +1,14 @@
 {
-  "updatedAt": "20 Nov 2026, 10:49 WIB",
+  "updatedAt": "21 Nov 2026, 01:56 WIB",
   "price": {
-    "level": "$3,543.70"
+    "level": "$3,506.20"
   },
   "biasScore": -6,
   "biasLabel": "NETRAL",
   "bullishPct": 47,
   "bearishPct": 53,
   "narrative": [
-    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,543.70</span>, melemah 3.85% pada sesi terakhir, dengan rentang 52 minggu $3,518–$5,586.",
+    "Harga XAU/USD saat ini berada di area <span class=\"accent\">$3,506.20</span>, melemah 4.87% pada sesi terakhir, dengan rentang 52 minggu $3,504–$5,586.",
     "Posisi non-commercial (spekulan besar) pada laporan COT per 10 Nov 2026 tercatat net long <span class=\"accent\">190,107</span> kontrak (47.0% dari open interest) — relatif seimbang. Net long ini naik 10,559 kontrak dibanding pekan sebelumnya.",
     "Open interest COMEX tercatat 404,725 kontrak (naik 5,556), mengindikasikan minat baru masuk pasar.",
     "<b>Kesimpulan:</b> skor komposit -6/100 → bias <b>NETRAL</b>. Ini gabungan sinyal dari momentum posisi spekulan, tingkat crowding, dan momentum harga terkini — bukan sinyal entry, melainkan konteks fundamental untuk melengkapi analisis teknikal kamu."
@@ -27,7 +27,7 @@
   "cme": {
     "openInterest": 404725,
     "oiChange": 5556,
-    "rangeLow": "$3,518",
+    "rangeLow": "$3,504",
     "rangeHigh": "$5,586",
     "structureNote": "OI & harga berlawanan arah",
     "tagLabel": "Menguat",
@@ -67,7 +67,7 @@
     "alignmentNote": "Retail dan hedge fund/spekulan besar searah — tren yang sedang berjalan cenderung didukung mayoritas pelaku pasar, termasuk institusi besar."
   },
   "policy": {
-    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 5.05% (-0.28%) dan indeks dolar (DXY) melemah ke 103.83 (-0.06%), sementara XAU/USD turun 3.85%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
+    "todayNote": "Hari ini yield US Treasury 10-tahun turun ke 4.95% (-2.10%) dan indeks dolar (DXY) melemah ke 103.88 (-0.02%), sementara XAU/USD turun 4.87%. Pergerakannya tidak sepenuhnya sejalan pola klasik — kemungkinan ada faktor lain (geopolitik, arus safe-haven, atau positioning) yang lebih dominan hari ini.",
     "mechanisms": [
       {
         "title": "Suku bunga The Fed (FOMC)",
@@ -108,10 +108,10 @@
     }
   },
   "macro": {
-    "yield10y": 5.05,
-    "yield10yChange": -0.28,
-    "dxy": 103.83,
-    "dxyChange": -0.06
+    "yield10y": 4.95,
+    "yield10yChange": -2.1,
+    "dxy": 103.88,
+    "dxyChange": -0.02
   },
   "news": [],
   "sources": [
